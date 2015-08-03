@@ -36,34 +36,6 @@
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
-@font-face {
-	font-family: 'Conv_HelveticaNeueCyr-Bold';
-	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
-	src: url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), 
-		 url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'), 
-		 url('../fonts/HelveticaNeueCyr-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Conv_HelveticaNeueCyr-Medium';
-	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-	src: url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), 
-		 url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), 
-		 url('../fonts/HelveticaNeueCyr-Medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Conv_HelveticaNeueCyr-Light';
-	src: url('../fonts/HelveticaNeueCyr-Light.eot');
-	src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'), 
-		 url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), 
-		 url('../fonts/HelveticaNeueCyr-Light.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800&subset=latin,cyrillic-ext,latin-ext);
 
 $c-black:			#000000 !default;
@@ -122,9 +94,13 @@ $max_width: 1440px;
 /*
 html, body { background: #ffffff; }
 */
-html, body { background: #ffffff; }
+html, body { background: #ffffff; height:100%;
+min-height:100%;}
 
 body {  
+	padding: 0; 
+	font-family: 'HelveticaNeueLT-Roman';
+position:relative;
   font-size: 13px;
   line-height:20px; 
  }
@@ -141,10 +117,10 @@ a:hover {color:#111111; text-decoration: none;}
 При ширине экрана более 1440px содержимое страницы выравнивается по центру экрана.
 */
 
-.b-header__nav-wrapper, footer, .b-content {
+/*.b-header__nav-wrapper, footer, .b-content {
 	max-width: $max_width;
 	margin: 0 auto;
-}
+}*/
 
 .nophone {
 	min-width: 768px;
@@ -157,7 +133,7 @@ a:hover {color:#111111; text-decoration: none;}
 
 
 .nowrap { white-space: nowrap; }
-
+.b-content  {padding-bottom:90px;position:relative; }
 
 /*
 .d_table, .d_table_row, .d_table_cell
@@ -174,6 +150,7 @@ a:hover {color:#111111; text-decoration: none;}
     border-bottom:1px solid #edf6f8;
     width: 100%;
 }
+body > .b-fix-wrapper {padding-bottom:90px; position:relative;}
 .b-header_auth {
 	border-bottom:1px solid #4ea5bb;
 	.b-main-menu {height:59px; line-height:59px;}
@@ -209,7 +186,8 @@ a:hover {color:#111111; text-decoration: none;}
 	    height: 100%;
 	    display:block;
 	    font-size: 15px;
-	    font-weight:bold; 
+	  	font-family: 'HelveticaNeueLTStd-Md';
+
 	    line-height: inherit;
 	    text-transform: uppercase;
 		padding:0;
@@ -240,6 +218,8 @@ a:hover {color:#111111; text-decoration: none;}
 }
 .b-footer-copy {font-size:13px; color:#999999; 	height:79px; line-height:79px; }
 .b-footer-copy  p {margin:0;   line-height: inherit;}
+.b-footer-copy  p a {color:#999999;}
+.b-footer-copy  p a:hover {text-decoration:underline;}
 .b-footer-copy .b-color_grey {color:#d9d9d9; line-height:20px; padding:0 8px; font-size:20px;}
 .b-footer-soc {text-align:right;}
 .b-logo { 
@@ -251,20 +231,21 @@ a:hover {color:#111111; text-decoration: none;}
 
 .b-main_big_logo {margin:0 auto; text-align:center; height:100%;
 	.d_table_cell {padding-top:60px;}
-	.b-slogan {font-size:72px; line-height:76px;   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,sans-serif; 
-	   font-weight: 300;
+	.b-slogan {font-size:72px; line-height:76px;   	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial,sans-serif;
 	 margin:110px 0; }
 	.b-slogan .b-color {color:#4ea5bb;}
 	.b-button_row {margin-bottom:60px;
-		a {margin-left:54px; 	    font-weight:bold; 
+		a {margin-left:54px; 	  	font-family: 'HelveticaNeueLTStd-Md';
+
 	    text-transform: uppercase;}
 		a:first-child {margin:0;}
 	}
 
 }
-.b-add-nav .b-footer_link a.b-auth {height:40px;line-height:40px; width:85px; font-weight:bold; font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
+.b-add-nav .b-footer_link a.b-auth {height:40px;line-height:40px; width:85px;	font-family: 'HelveticaNeueLTStd-Md';
+font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 
-#footer {background:#e6e6e6; border-top:1px solid #cccccc;}
+#footer {background:#e6e6e6; border-top:1px solid #cccccc; position:absolute; bottom:0; min-height:79px; width:100%;}
 
 .b-user {
 		font-size:15px; line-height:20px;
@@ -297,30 +278,153 @@ a:hover {color:#111111; text-decoration: none;}
 }
 
 .modal-backdrop {opacity:0.7}
-.b-login .modal-dialog {width:440px; margin-bottom:20px;}
-.b-login .modal-content{ box-shadow:none; border:0 none;}
+.b-login {width:440px; margin-bottom:20px;}
+.b-login .modal-content { box-shadow:none; border:0 none;}
 
-.modal-header {background:#f7f7f7; color:#999999; font-size:32px;line-height:32px; padding:15px;border-radius:5px 5px 0 0;
+.b-login .modal-header {background:#f7f7f7; color:#999999; font-size:32px;line-height:32px; padding:15px;border-radius:5px 5px 0 0;
 	.close {background:url('../icons/ic_close.png')no-repeat 0 0; outline:none; position:absolute; opacity:1;top:-20px; right:-20px; display:block; text-indent:-999em; height:42px; width:42px;}
-	.modal-title {font-weight:300;margin:0;}
+	.modal-title {	font-family: 'HelveticaNeueLT-Light';margin:0;}
 }
-.modal-footer {background:#4ea5bb; padding:0;border-radius:0 0 5px 5px;
-	.b-button {background:none; border:0 none; width:100%; color:#ffffff;outline:none; font-weight:bold; text-transform:uppercase; height:60px; line-height:60px; text-align:center; padding:0; }
+.b-login .modal-footer {background:#4ea5bb; padding:0;border-radius:0 0 5px 5px;
+	.b-button {background:none; border:0 none; width:100%; color:#ffffff;outline:none;	font-family: 'HelveticaNeueLTStd-Md'; text-transform:uppercase; height:60px; line-height:60px; text-align:center; padding:0; }
 }
 .b-login p {width:440px; text-align:center; margin:0 auto; color:#999999;}
-.modal-body {padding:0;}
+.b-login .modal-body {padding:0;}
 .b-login {
 	.form-group {border:1px solid #f0f0f0; padding:10px 20px;
-		label {cursor:pointer; text-transform:uppercase; color:#999999; font-size:13px; font-weight:bold;}
+		label {cursor:pointer; text-transform:uppercase; color:#999999; font-size:13px; 	font-family: 'HelveticaNeueLTStd-Md';}
 
 
 	}
 
-	.form-control {border:0 none; font-size:21px;line-height:24px;font-weight:300;}
+	.form-control {border:0 none; font-size:21px;line-height:24px;font-family: 'HelveticaNeueLT-Light';}
 	.form-control:placeholder {color:#cccccc;}
 }
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row {
+    border-color: #ccc;
+}
+#directives-calendar {
+	position: relative;
 
+.btn {
+	padding: 0 15px;
+	height:40px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size:13px;
+	line-height:20px;
+	letter-spacing:0.025em;
+	cursor: pointer;
+	white-space: nowrap; 
+	text-transform: uppercase;
+	color: #4ea5bb;
+	background-color: #fff;
+	border: 1px solid #ccc;
+        border-radius: 4px;
+	outline:none;
+}
+.fc-view-group {
+	float:left;
+	margin-right:10px;
+		.btn {border-radius:0;  margin: 0 0 0 -1px; float: left;}
+		.btn:first-child {border-radius:4px 0 0 4px; margin-left:0;}
+		.btn:last-child {border-radius:0 4px 4px 0;}
+	}
+.fc-event[tooltip="Interview"] {background:#4ea5bb;color:#ffffff; border-color:#4ea5bb; border-radius:0;}
+.fc-event[tooltip="Click for Google"] {background:#ff3366; color:#ffffff;border-color:#ff3366;border-radius:0;}
+.fc-event[tooltip="Open Sesame"] {background:#cc2952;color:#ffffff;border-color:#cc2952;border-radius:0;}
 
+.fc-button {
+	padding: 0 15px;
+	height:40px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size:13px;
+	line-height:20px;
+	letter-spacing:0.025em;
+	cursor: pointer;
+	white-space: nowrap; 
+	text-transform: uppercase;
+	color: #4ea5bb;
+	background-color: #fff;
+	border: 1px solid #ccc;
+        border-radius: 4px;
+	outline:none;
+}
+.fc-state-default {
+	background: #fff;
+}
+ .fc-corner-left {border-radius:4px 0 0 4px;}
+  .fc-corner-right {border-radius:0 4px 4px 0;}
+
+}
+.fc-toolbar {
+	padding: 10px 400px 10px 70px; 
+	background: #e6e6e6;
+	 h2 {font-size:24px; color:#111111; font-weight:normal; margin:0; line-height:40px;font-family: 'HelveticaNeueLTStd-Md';}
+}
+
+.fc-view-container {
+	margin-top: 30px;
+}
+
+.fc-unthemed thead th {
+	border: 0 none;
+	border-bottom: 1px solid #4ea5bb;
+	font-size:15px;
+	font-family: 'HelveticaNeueLTStd-Md';
+
+}
+
+.fc td.fc-widget-header {
+	border: 0 none;
+	.fc-row.fc-widget-header {border:0 none !important;}
+}
+.fc-time {border:0 none;
+	padding:10px 20px;
+	span {opacity:0.5;}
+}
+.fc-title {font-size:18px; line-height:20px;
+	font-family: 'HelveticaNeueLTStd-Md'; padding:20px 20px 10px 20px;}
+.fc-view-container {
+	margin: 0 20px;
+}
+.fc-time-grid-container {height:720px !important;}
+.b-add-event {
+	position: absolute;
+	top: 10px;
+	left: 20px; 
+	display: block;
+}
+
+.b-btn-toolbar {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	
+	.b-link_update {
+	width: 40px;
+	height: 40px;
+	text-indent: -999em;
+	background: url('../icons/ic_update.png') no-repeat center center; 
+	border: 1px solid #ccc;
+	        border-radius: 4px 0 0 4px;
+	}
+	.b-link_print {
+	width: 40px;
+	height: 40px;
+	text-indent: -999em;
+	background: url('../icons/ic_print.png') no-repeat center center; 
+	border-left: 0 none;
+	        border-radius: 0 4px 4px 0;
+	}
+	.b-link_settings {
+	width: 40px;
+	height: 40px;
+	text-indent: -999em;
+	background: url('../icons/ic_settings.png') no-repeat center center; 
+	border: 1px solid #ccc;
+	        border-radius: 4px;
+	}
+}
 @media (min-width: 768px) and (max-width: 991px) {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -331,253 +435,6 @@ a:hover {color:#111111; text-decoration: none;}
 
 }
 
-input:focus { outline: 0 none; }
-
-.jq-checkbox {
-	top: -1px;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #CCC;
-	background:#ffffff;
-	vertical-align: middle;
-	cursor: pointer;
-	margin-right:8px;
-}
-.jq-checkbox.checked .jq-checkbox__div {
-	width: 20px;
-	height: 20px;
-	background: url('../icons/check.png') no-repeat center center;
-}
-.jq-checkbox.focused {
-	border: 1px solid #aaa;
-}
-.jq-checkbox.disabled {
-	opacity: 0.55;
-	filter: alpha(opacity=55);
-}
-.jq-radio {
-	top: -1px;
-	width: 20px;
-	height: 20px;
-	margin-right:5px;
-	border: 1px solid #CCC;
-	vertical-align: middle;
-	cursor: pointer;
-	border-radius:10px;
-}
-.jq-radio.checked .jq-radio__div {
-	width: 12px;
-	height: 12px;
-	margin: 3px 0 0 3px;
-	background: #0073be;
-	border-radius:6px;
-}
-.jq-radio.focused {
-	border: 1px solid #aaa;
-}
-.jq-radio.disabled {
-	opacity: 0.55;
-	filter: alpha(opacity=55);
-}
-.jq-selectbox {
-	background: rgba(255,255,255,1); 
-	width: 220px;
-	font-size: 13px;
-	height: 30px; 
-	line-height: 30px;
- }     
- .jq-selectbox__select-text.placeholder {color:#999999;}
-.jq-selectbox__select-text {padding: 0 30px 0 10px;border: solid 1px #cccccc;}
-.jq-selectbox.opened .jq-selectbox__select-text	 {border-bottom:0 none;}
-.jq-selectbox__trigger{
-	z-index: 100;
-  position: absolute;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  cursor:pointer;
-  width: 100%;
-  }
- .jq-selectbox__trigger-arrow {background:url('../icons/sel.png') no-repeat center center; height:30px; width:30px;  right: 0;
-  position: absolute;
-  top: 0;}
- .jq-selectbox__dropdown {
-	width:100%;
-	background: rgba(255,255,255,1);
-	border-left: solid 1px #cccccc;
-	border-right: solid 1px #cccccc;
- 	border-bottom: solid 1px #cccccc;
-	}
- .jq-selectbox__dropdown ul {margin:0; padding:0;}
- .jq-selectbox__dropdown ul li {padding:0 10px; cursor:pointer; }
-  .jq-selectbox__dropdown ul li:hover {background:#cccccc;}
-
- .b-form .input,  .b-form .textarea {
-	  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-	display: block;
-	color:#1a1a1a;
-	background: rgba(255,255,255,1); 
-	border: solid 1px #cccccc;
-	width: 100%;
-	font-size: 13px;
-	padding: 0 10px;
-	height: 40px; 
-	line-height: 40px; 
-	resize: none;
-}
-.b-form {
-	.textarea {height:140px; line-height:20px;}
-	.input.error {border-color:#d05353;}
-	 .input.ok {border-color:#49a078;}
-	  
-	 em.error {display:none; color:red;}
-	  .fieldrow { margin-bottom: 20px; position: relative;}
-	  .buttonrow { margin-bottom:20px; }
-	  .fieldcell { white-space: normal; width: 300px; position: relative; }
-	  .note {margin:0; color:#999999; font-size:11px;}
-	  .fieldcell.nowrap { white-space: nowrap; }
-	  .field { position: relative; }
-	  label {font-size:11px; display:block; font-weight:700; line-height:15px; text-transform:uppercase; color:#999999; margin-bottom:10px;}
-	  .chkwrap label {font-size:13px; line-height:20px;font-weight:normal; display:inline-block; vertical-align:top;text-transform:none; color:#1a1a1a; margin-bottom:0;}
-	  label[for] {cursor:pointer;}
-	  .chkwrap label a {text-decoration:underline;}
-	  .chkwrap label a:hover {text-decoration:none;}
-	  .chkwrap + .chkwrap {margin-left:40px;}
-	  .seldate .jq-selectbox__select-text {border-left:0 none;}
-	  .seldate.error .jq-selectbox__select-text {border-color:#d05353;}
-	  .seldate.ok .jq-selectbox__select-text {border-color:#49a078;}
-
-	  .sel_day .jq-selectbox__select-text {border-left:1px solid #cccccc; }
-	  .sel_day {width:60px; float:left;}
-	  .sel_month {width:90px; float:left;}
-	  .sel_year {width:70px;float:left;}
-	  .sel_month .jq-selectbox__dropdown {width:91px; margin-left:-1px;}
-	  .sel_year .jq-selectbox__dropdown {width:71px; margin-left:-1px;}
-	  .addlang {position:absolute; top:0; left:190px;background:url('../icons/add.png') no-repeat center center; height:30px; width:30px; display:block;}
-	  .onelang {background:#0073be; border-radius:13px; padding:0 10px; margin-top:12px; line-height:26px; display:inline-block; vertical-align:top; }
-	  .onelang:first-child {width:220px; padding:0; margin-top:0; display:block;}
-	  .onelang a.del { display:inline-block; vertical-align:top;  margin-right:-10px; background:url('../icons/ic_del.png') no-repeat center center; height:26px; width:26px; }
-	  .onelang span.text {color:#ffffff; display:inline-block; vertical-align:top; }
-
-	  .selgroup .fieldcell, .selgroup .jq-selectbox {width:120px;}
-	  .selgroup label {white-space:nowrap;}
-
-	  .chckgroup .fieldcell	{width:45%;}
-	  .chckgroup .chkwrap {display:block; margin-top:20px;}
-	  .chckgroup .chkwrap:first-child {margin-top:0;}
-	  .chckgroup .chkwrap + .chkwrap { margin-left: 0;}
-
-	  .radiogroup .chkwrap {display:block;}
-	  .b-graph .chkwrap label {color:#999999;}
-	  .radiogroup .chkwrap label em {display:block; font-size:11px;}
-	  .radiogroup .chkwrap + .chkwrap { margin-left: 0;}
-
-	  .file .fieldcell, .fieldcell.w460+.fieldcell  {width:190px; margin-right:0;}
-	  .file .fieldcell { margin-left:20px;}
-	  .file .fieldcell:first-child {width:460px; margin-left:0;}
-	  .file .field {background:#f0f0f0; position:relative;  text-align:center;}
-	  .file .field.photofile {padding:50px 30px 70px 30px;}
-	   .file .field.videofile {padding:80px 45px;}
-	  .file .hint {height:20px; width:20px; line-height:20px; color:#f0f0f0; font-weight:700; position:absolute; top:10px; border-radius:10px; right:10px;}
-	  .file .image {margin-bottom:110px;}
-	  .file .button_white {background:#ffffff; line-height:30px; display:inline-block; vertical-align:top; border-color:#cccccc;}
-	  .file .upload span:before {
-		content:'';
-		width:12px;
-		height:13px;
-		display:inline-block; vertical-align:middle;
-		background: url('../icons/ic_upload.png') no-repeat 0 0;
-		margin-right:5px;
-	  }
-	  .file .write span:before {
-		content:'';
-		width:12px;
-		height:12px;
-		border-radius:6px;
-		display:inline-block;
-		background:#999999;
-		margin-right:5px;
-	  }
-	  .b-upload {position:relative;}
-	  .b-upload input[type="file"] {position:absolute; top:0; left:0; opacity:0; cursor:pointer; display:block; height:30px; width:100%; z-index:1;}
-	 
- }
- .b-common .b-form {
-		.fieldcell.w660 {width:660px;}
-		.input {height:30px; line-height:30px;}
-
- }
-.button {
-  font-size: 16px;
-  color: #ffffff;
-  border-radius: 3px;
-	box-shadow:  0px 2px 2px 0px #194861;
-	background: rgb(41,120,160); /* Old browsers */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5NzhhMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMTYxODEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: linear-gradient(to bottom,  rgba(41,120,160,1) 0%,rgba(33,97,129,1) 100%); /* W3C */
-	  border: none;
-	  width: 140px;
-	  cursor: pointer;
-	  margin-right: 20px;
-	  line-height: 40px;
-	  height: 40px;
-}
-.button:hover {
-	background: rgb(33,97,129); /* Old browsers */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIxNjE4MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyOTc4YTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: linear-gradient(to bottom,  rgba(33,97,129,1) 0%,rgba(41,120,160,1) 100%); /* W3C */
-}
-.button_white {
-	border:1px solid #cccccc;
-	border-radius:3px;
-	color:#0073be;
-	line-height:38px;
-	background:none;
-	padding:0 15px;
-	}
- .button_white:hover {background:#ffffff;}
-.button.btdisable {cursor:default; opacity:0.5;}
-.button_orange {
-  font-size: 16px;
-  color: #ffffff;
-  border-radius: 3px;
-	box-shadow:  0px 2px 2px 0px #943a17;
-	background: rgb(244,96,39); /* Old browsers */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0NjAyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNjRlMjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: linear-gradient(to bottom,  rgba(244,96,39,1) 0%,rgba(198,78,32,1) 100%); /* W3C */
-	  border: none;
-	  width: 140px;
-	  cursor: pointer;
-	  margin-right: 20px;
-	  line-height: 40px;
-	  height: 40px;
-}
-.button_orange:hover {
-	background: rgb(198,78,32); /* Old browsers */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2NGUyMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNDYwMjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: linear-gradient(to bottom,  rgba(198,78,32,1) 0%,rgba(244,96,39,1) 100%); /* W3C */
-}
-
-.button_green {
-  font-size: 16px;
-  color: #ffffff;
-  border-radius: 3px;
-	box-shadow:  0px 2px 2px 0px #226d2c;
-	background: rgb(57,181,74); /* Old browsers */
-	background: linear-gradient(to bottom,  rgba(57,181,74,1) 0%,rgba(46,146,60,1) 100%); /* W3C */
-	  border: none;
-	  width: 210px;
-	  cursor: pointer;
-	  margin-right: 20px;
-	  line-height: 40px;
-	  height: 40px;
-}
-.button_green:hover {
-	background: rgb(46,146,60); /* Old browsers */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzJlOTIzYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iIzM5YjU0YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-	background: linear-gradient(to bottom,  rgba(46,146,60,1) 1%,rgba(57,181,74,1) 99%); /* W3C */
-}
 /*!
  * FullCalendar v2.3.2 Stylesheet
  * Docs & License: http://fullcalendar.io/
@@ -1830,460 +1687,3 @@ a.b-button {
 		color:#4ea5bb;
 	}
 }
-
-/*
-== malihu jquery custom scrollbar plugin ==
-Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
-*/
-
-
-
-/*
-CONTENTS: 
-	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
-	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar. 
-	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
-	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars. 
-	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars. 
-	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
-		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
-*/
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-1. BASIC STYLE  
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-	.mCustomScrollbar{ -ms-touch-action: none; touch-action: none; /* MSPointer events - direct all pointer events to js */ }
-	.mCustomScrollbar.mCS_no_scrollbar{ -ms-touch-action: auto; touch-action: auto; }
-	
-	.mCustomScrollBox{ /* contains plugin's markup */
-		position: relative;
-		overflow: hidden;
-		height: 100%;
-		max-width: 100%;
-		outline: none;
-		direction: ltr;
-	}
-
-	.mCSB_container{ /* contains the original content */
-		overflow: hidden;
-		width: auto;
-		height: auto;
-	}
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-2. VERTICAL SCROLLBAR 
-y-axis
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-	.mCSB_inside > .mCSB_container{ margin-right: 30px; }
-
-	.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; } /* non-visible scrollbar */
-	
-	.mCS-dir-rtl > .mCSB_inside > .mCSB_container{ /* RTL direction/left-side scrollbar */
-		margin-right: 0;
-		margin-left: 30px;
-	}
-	
-	.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-left: 0; } /* RTL direction/left-side scrollbar */
-
-	.mCSB_scrollTools{ /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
-		position: absolute;
-		width: 16px;
-		height: auto;
-		left: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-	}
-
-	.mCSB_outside + .mCSB_scrollTools{ right: -26px; } /* scrollbar position: outside */
-	
-	.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools, 
-	.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ /* RTL direction/left-side scrollbar */
-		right: auto;
-		left: 0;
-	}
-	
-	.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ left: -26px; } /* RTL direction/left-side scrollbar (scrollbar position: outside) */
-
-	.mCSB_scrollTools .mCSB_draggerContainer{ /* contains the draggable element and dragger rail markup */
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0; 
-		height: auto;
-	}
-
-	.mCSB_scrollTools a + .mCSB_draggerContainer{ margin: 20px 0; }
-
-	.mCSB_scrollTools .mCSB_draggerRail{
-		width: 2px;
-		height: 100%;
-		margin: 0 auto;
-	}
-
-	.mCSB_scrollTools .mCSB_dragger{ /* the draggable element */
-		cursor: pointer;
-		width: 100%;
-		height: 30px; /* minimum dragger height */
-		z-index: 1;
-	}
-
-	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ /* the dragger element */
-		position: relative;
-		width: 7px;
-		height: 100%;
-		margin: 0 auto;
-		border-radius:7px;
-		text-align: center;
-	}
-	
-	.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar, 
-	.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{ width: 12px; /* auto-expanded scrollbar */ }
-	
-	.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail, 
-	.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{ width: 8px; /* auto-expanded scrollbar */ }
-
-	.mCSB_scrollTools .mCSB_buttonUp,
-	.mCSB_scrollTools .mCSB_buttonDown{
-		display: block;
-		position: absolute;
-		height: 20px;
-		width: 100%;
-		overflow: hidden;
-		margin: 0 auto;
-		cursor: pointer;
-	}
-
-	.mCSB_scrollTools .mCSB_buttonDown{ bottom: 0; }
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-3. HORIZONTAL SCROLLBAR 
-x-axis
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-	.mCSB_horizontal.mCSB_inside > .mCSB_container{
-		margin-right: 0;
-		margin-bottom: 30px;
-	}
-	
-	.mCSB_horizontal.mCSB_outside > .mCSB_container{ min-height: 100%; }
-
-	.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden{ margin-bottom: 0; } /* non-visible scrollbar */
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal{
-		width: auto;
-		height: 16px;
-		top: auto;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-
-	.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
-	.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal{ bottom: -26px; } /* scrollbar position: outside */
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer{ margin: 0 20px; }
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{
-		width: 100%;
-		height: 2px;
-		margin: 7px 0;
-	}
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
-		width: 30px; /* minimum dragger width */
-		height: 100%;
-		left: 0;
-	}
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
-		width: 100%;
-		height: 4px;
-		margin: 6px auto;
-	}
-	
-	.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar, 
-	.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{
-		height: 12px; /* auto-expanded scrollbar */
-		margin: 2px auto;
-	}
-	
-	.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail, 
-	.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{
-		height: 8px; /* auto-expanded scrollbar */
-		margin: 4px 0;
-	}
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{
-		display: block;
-		position: absolute;
-		width: 20px;
-		height: 100%;
-		overflow: hidden;
-		margin: 0 auto;
-		cursor: pointer;
-	}
-	
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft{ left: 0; }
-
-	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{ right: 0; }
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-4. VERTICAL AND HORIZONTAL SCROLLBARS 
-yx-axis 
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-	.mCSB_container_wrapper{
-		position: absolute;
-		height: auto;
-		width: auto;
-		overflow: hidden;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		margin-right: 30px;
-		margin-bottom: 30px;
-	}
-	
-	.mCSB_container_wrapper > .mCSB_container{
-		padding-right: 30px;
-		padding-bottom: 30px;
-	}
-	
-	.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical{ bottom: 20px; }
-	
-	.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal{ right: 20px; }
-	
-	/* non-visible horizontal scrollbar */
-	.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical{ bottom: 0; }
-	
-	/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
-	.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal, 
-	.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal{ right: 0; }
-	
-	/* RTL direction/left-side scrollbar */
-	.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal{ left: 20px; }
-	
-	/* non-visible scrollbar/RTL direction/left-side scrollbar */
-	.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal{ left: 0; }
-	
-	.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper{ /* RTL direction/left-side scrollbar */
-		margin-right: 0;
-		margin-left: 30px;
-	}
-	
-	.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container{ 
-		padding-right: 0; 
-		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-	}
-	
-	.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container{ 
-		padding-bottom: 0; 
-		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-	}
-	
-	.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden{
-		margin-right: 0; /* non-visible scrollbar */
-		margin-left: 0;
-	}
-	
-	/* non-visible horizontal scrollbar */
-	.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden{ margin-bottom: 0; }
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-5. TRANSITIONS  
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-	.mCSB_scrollTools, 
-	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, 
-	.mCSB_scrollTools .mCSB_buttonUp,
-	.mCSB_scrollTools .mCSB_buttonDown,
-	.mCSB_scrollTools .mCSB_buttonLeft,
-	.mCSB_scrollTools .mCSB_buttonRight{
-		-webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
-		-moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
-		-o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
-		transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
-	}
-	
-	.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar, /* auto-expanded scrollbar */
-	.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail, 
-	.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar, 
-	.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail{
-		-webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, 
-					margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, 
-					margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
-					opacity .2s ease-in-out, background-color .2s ease-in-out; 
-		-moz-transition: width .2s ease-out .2s, height .2s ease-out .2s, 
-					margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, 
-					margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
-					opacity .2s ease-in-out, background-color .2s ease-in-out; 
-		-o-transition: width .2s ease-out .2s, height .2s ease-out .2s, 
-					margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, 
-					margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
-					opacity .2s ease-in-out, background-color .2s ease-in-out; 
-		transition: width .2s ease-out .2s, height .2s ease-out .2s, 
-					margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, 
-					margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
-					opacity .2s ease-in-out, background-color .2s ease-in-out; 
-	}
-
-
-
-/* 
-------------------------------------------------------------------------------------------------------------------------
-6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS  
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-	/* 
-	----------------------------------------
-	6.1 THEMES 
-	----------------------------------------
-	*/
-	
-	/* default theme ("light") */
-
-	
-	.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
-	.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools{ opacity: 0; filter: "alpha(opacity=0)"; -ms-filter: "alpha(opacity=0)"; }
-	
-	.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
-	.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
-	.mCustomScrollBox:hover > .mCSB_scrollTools,
-	.mCustomScrollBox:hover ~ .mCSB_scrollTools,
-	.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
-	.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools{ opacity: 1; filter: "alpha(opacity=100)"; -ms-filter: "alpha(opacity=100)"; }
-
-	.mCSB_scrollTools .mCSB_draggerRail{
-		background-color: #ffffff;
-	}
-
-	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-		background-color: #7f7f7f;
-	}
-
-	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
-		background-color: #7f7f7f;
-	}
-	.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-	.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
-		background-color: #7f7f7f;
-	}
-
-.tt-menu,
-.gist {
-  text-align: left;
-}
-
-.typeahead,
-.tt-query,
-.tt-hint {
-  width: 510;
-  height: 32px;
-  padding: 0 10px;
-  font-size: 13px;
-  line-height: 32px;
-  border: 1px solid #ccc;
-  outline: none;
-  vertical-align:top;
-}
-
-.typeahead {
-  background-color: #fff;
-}
-
-.typeahead:focus {
-  border: 2px solid #0097cf;
-}
-
-.tt-query {
-}
-
-.tt-hint {
-  color: #999
-}
-
-.tt-menu {
-  width: 510px;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-
-}
-
-.tt-suggestion {
-  padding: 0 10px;
-  font-size: 13px;
-  line-height: 32px;
-}
-
-.tt-suggestion:hover {
-  cursor: pointer;
-  background-color: #f5f5f5;
-}
-
-.tt-suggestion.tt-cursor {
-  background-color: #f5f5f5;
-
-}
-
-.tt-suggestion p {
-  margin: 0;
-}
-
-.gist {
-  font-size: 14px;
-}
-
-/* example specific styles */
-/* ----------------------- */
-
-#custom-templates .empty-message {
-  padding: 5px 10px;
- text-align: center;
-}
-
-#multiple-datasets .league-name {
-  margin: 0 20px 5px 20px;
-  padding: 3px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-#scrollable-dropdown-menu .tt-menu {
-  max-height: 150px;
-  overflow-y: auto;
-}
-
-#rtl-support .tt-menu {
-  text-align: right;
-}
-.b-form .twitter-typeahead .input {line-height:32px; height:32px; width:510px;}

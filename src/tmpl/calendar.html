@@ -1,61 +1,97 @@
-	<header id="header" class="b-header b-header_auth">
-			<nav id="main-menu" class="b-header__nav-wrapper">
-				<div class="container-fluid">
-					<a href="#/" class="b-logo"><img src="icons/logo.png" alt="Thalamus"></a>
-					<!-- - основное меню-->
-					<ul class="nav b-main-menu">
-						<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard.html">Dashboard</a>
-						</li>
-						<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program.html">Program</a>
-						</li>
-						<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration.html">Administration</a>
-						</li>
-						<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
-						</li>
-						<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants.html">Applicants</a>
-						</li>
-						<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents.html">Documents</a>
-						</li>
-					</ul>
-					<div class="b-user">
-						<span class="b-user_name">
+<header id="header" class="b-header b-header_auth">
+	<nav id="main-menu" class="b-header__nav-wrapper">
+		<div class="container-fluid">
+			<a href="#/" class="b-logo">
+				<img src="icons/logo.png" alt="Thalamus">
+			</a>
+			<!-- - основное меню-->
+			<ul class="nav b-main-menu">
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard.html">Dashboard</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program.html">Program</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration.html">Administration</a>
+				</li>
+				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants.html">Applicants</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents.html">Documents</a>
+				</li>
+			</ul>
+			<div class="b-user">
+				<span class="b-user_name">
 							<a href="#">Program Admin</a>
 							<b class="b-job">UW School of Medicine</b>
 						</span>
-						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-						<a href="#" class="b-mess"></a>
-						<a href="#" class="b-dzn"></a>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<div class="b-fix-wrapper">
-			<div class="b-content">
-				<!--<div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources"></div> -->
-				<div id="calendar" class="fc fc-ltr"><table style="width:100%" class="fc-header"><tbody><tr><td class="fc-header-left"><span class="fc-button fc-button-prev fc-state-default fc-corner-left" unselectable="on" style="-moz-user-select: none;"><span class="fc-icon fc-icon-left-single-arrow"></span></span><span class="fc-button fc-button-next fc-state-default fc-corner-right" unselectable="on" style="-moz-user-select: none;"><span class="fc-icon fc-icon-right-single-arrow"></span></span><span class="fc-header-space"></span><span class="fc-button fc-button-today fc-state-default fc-corner-left fc-corner-right" unselectable="on" style="-moz-user-select: none;">today</span></td><td class="fc-header-center"><span class="fc-header-title"><h2>Jun 8 - 14 2014</h2></span></td><td class="fc-header-right"><span class="fc-button fc-button-month fc-state-default fc-corner-left" unselectable="on" style="-moz-user-select: none;">month</span><span class="fc-button fc-button-agendaWeek fc-state-default fc-state-active" unselectable="on" style="-moz-user-select: none;">week</span><span class="fc-button fc-button-agendaDay fc-state-default fc-corner-right" unselectable="on" style="-moz-user-select: none;">day</span></td></tr></tbody></table><div class="fc-content" style=""><div class="fc-view fc-view-agendaWeek fc-agenda" unselectable="on" style="-moz-user-select: none;"><table cellspacing="0" class="fc-agenda-days fc-border-separate" style="width:100%"><thead><tr class="fc-first fc-last"><th class="fc-agenda-axis fc-widget-header fc-first" style="width: 50px;">&nbsp;</th><th class="fc-sun fc-col0 fc-widget-header" style="width: 117px;">Sun 6/8</th><th class="fc-mon fc-col1 fc-widget-header" style="width: 116px;">Mon 6/9</th><th class="fc-tue fc-col2 fc-widget-header" style="width: 116px;">Tue 6/10</th><th class="fc-wed fc-col3 fc-widget-header" style="width: 116px;">Wed 6/11</th><th class="fc-thu fc-col4 fc-widget-header" style="width: 116px;">Thu 6/12</th><th class="fc-fri fc-col5 fc-widget-header" style="width: 116px;">Fri 6/13</th><th class="fc-sat fc-col6 fc-widget-header">Sat 6/14</th><th class="fc-agenda-gutter fc-widget-header fc-last" style="width: 15px;">&nbsp;</th></tr></thead><tbody><tr class="fc-first fc-last"><th class="fc-agenda-axis fc-widget-header fc-first">&nbsp;</th><td class="fc-col0 fc-sun fc-widget-content fc-past"><div style="height: 648px;"><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-col1 fc-mon fc-widget-content fc-past"><div><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-col2 fc-tue fc-widget-content fc-past"><div><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-col3 fc-wed fc-widget-content fc-past"><div><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-col4 fc-thu fc-widget-content fc-past"><div><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-col5 fc-fri fc-widget-content fc-past"><div><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-col6 fc-sat fc-widget-content fc-past"><div><div class="fc-day-content"><div style="position:relative">&nbsp;</div></div></div></td><td class="fc-agenda-gutter fc-widget-content fc-last" style="width: 15px;">&nbsp;</td></tr></tbody></table><div style="position: absolute; z-index: 2; left: 0px; width: 100%; top: 18px;"><div style="position:absolute;z-index:8;top:0;left:0" class="fc-event-container"><div style="position: absolute; left: 60px; width: 232px; top: 2px;">Long Event</div></div><table cellspacing="0" class="fc-agenda-allday" style="width:100%"><tbody><tr><th class="fc-widget-header fc-agenda-axis" style="width: 50px;">all-day</th><td><div class="fc-day-content"><div style="position: relative; height: 16px;"></div></div></td><th class="fc-widget-header fc-agenda-gutter" style="width: 15px;">&nbsp;</th></tr></tbody></table><div class="fc-agenda-divider fc-widget-header"><div class="fc-agenda-divider-inner"></div></div><div style="position: absolute; width: 100%; overflow-x: hidden; overflow-y: auto; height: 607px;"><div style="position:relative;width:100%;overflow:hidden"><div style="position:absolute;z-index:8;top:0;left:0" class="fc-event-container"><div style="position: absolute; top: 671px; left: 180px; width: 109.2px; height: 84px;">Repeating Event</div><div style="position: absolute; top: 440px; left: 531px; width: 89.2px; height: 84px;" class="ui-draggable ui-resizable">Meeting</div><div style="position: absolute; top: 503px; left: 585.6px; width: 54.6px; height: 84px;">Lunch</div><div style="position: absolute; top: 293px; left: 648px; width: 109.2px; height: 84px;">Birthday Party</div></div><table cellspacing="0" style="width:100%" class="fc-agenda-slots"><tbody><tr class="fc-slot0 "><th class="fc-agenda-axis fc-widget-header" style="width: 50px;">12am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot1 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot2 "><th class="fc-agenda-axis fc-widget-header">1am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot3 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot4 "><th class="fc-agenda-axis fc-widget-header">2am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot5 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot6 "><th class="fc-agenda-axis fc-widget-header">3am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot7 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot8 "><th class="fc-agenda-axis fc-widget-header">4am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot9 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot10 "><th class="fc-agenda-axis fc-widget-header">5am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot11 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot12 "><th class="fc-agenda-axis fc-widget-header">6am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot13 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot14 "><th class="fc-agenda-axis fc-widget-header">7am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot15 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot16 "><th class="fc-agenda-axis fc-widget-header">8am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot17 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot18 "><th class="fc-agenda-axis fc-widget-header">9am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot19 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot20 "><th class="fc-agenda-axis fc-widget-header">10am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot21 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot22 "><th class="fc-agenda-axis fc-widget-header">11am</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot23 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot24 "><th class="fc-agenda-axis fc-widget-header">12pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot25 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot26 "><th class="fc-agenda-axis fc-widget-header">1pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot27 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot28 "><th class="fc-agenda-axis fc-widget-header">2pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot29 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot30 "><th class="fc-agenda-axis fc-widget-header">3pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot31 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot32 "><th class="fc-agenda-axis fc-widget-header">4pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot33 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot34 "><th class="fc-agenda-axis fc-widget-header">5pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot35 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot36 "><th class="fc-agenda-axis fc-widget-header">6pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot37 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot38 "><th class="fc-agenda-axis fc-widget-header">7pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot39 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot40 "><th class="fc-agenda-axis fc-widget-header">8pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot41 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot42 "><th class="fc-agenda-axis fc-widget-header">9pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot43 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot44 "><th class="fc-agenda-axis fc-widget-header">10pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot45 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot46 "><th class="fc-agenda-axis fc-widget-header">11pm</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr><tr class="fc-slot47 fc-minor"><th class="fc-agenda-axis fc-widget-header">&nbsp;</th><td class="fc-widget-content"><div style="position:relative">&nbsp;</div></td></tr></tbody></table></div></div></div></div></div></div>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				<a href="#" class="b-mess"></a>
+				<a href="#" class="b-dzn"></a>
 			</div>
 		</div>
-		<footer id="footer">
-			<div class="b-footer-wrapper">
-				<div class="container-fluid b-footer-aboutme">
-					<div class="row">
-						<div class="col-xs-12 col-md-6 pull-right">
-							<div class="b-footer-soc">
-								<ul class="b-footer_link">
-									<li><a href="#" class="soc_fb"></a></li>
-									<li><a href="#" class="soc_tw"></a></li>
-									<li><a href="#" class="soc_in"></a></li>
-									<li><a href="#" class="soc_yt"></a></li>
-									<li><a href="#" class="b-help"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="b-footer-copy">
-								<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; Terms of Service  <span class="b-color_grey">|</span>   Privacy Policy</p>
-							</div>
-						</div>
+	</nav>
+</header>
+<div class="b-fix-wrapper">
+	<div class="b-content" ng-controller="CalendarCtrl">
+		<section id="directives-calendar">
+			<button class="b-add-event btn fc-button" ng-click="addEvent()">+</button>
+			<ul class="unstyled" style="display:none;">
+				<li ng-repeat="e in events">
+					<div class="alert alert-info">
+						<a class="close" ng-click="remove($index)"><i class="icon-remove"></i></a>
+						<b> <input ng-model="e.title"></b>{{e.start | date:"MMM dd"}} - {{e.end | date:"MMM dd"}}
+					</div>
+				</li>
+			</ul>
+			<div class="b-btn-toolbar">
+				<div class="btn-group fc-button-group fc-view-group">
+					<button class="btn btn-success" ng-click="changeView('agendaDay', 'myCalendar1')">Day</button>
+					<button class="btn btn-success" ng-click="changeView('agendaWeek', 'myCalendar1')">Week</button>
+					<button class="btn btn-success" ng-click="changeView('month', 'myCalendar1')">Month</button>
+				</div>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success fc-button b-link_update">update</button>
+					<button class="btn btn-success fc-button b-link_print">print</button>
+				</div>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success fc-button b-link_settings">settings</button>
+				</div>
+			</div>
+			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
+		</section>
+	</div>
+</div>
+<footer id="footer">
+	<div class="b-footer-wrapper">
+		<div class="container-fluid b-footer-aboutme">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 pull-right">
+					<div class="b-footer-soc">
+						<ul class="b-footer_link">
+							<li>
+								<a href="#" class="soc_fb"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_tw"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_in"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_yt"></a>
+							</li>
+							<li>
+								<a href="#" class="b-help"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="b-footer-copy">
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</div>
+</footer>
