@@ -12,6 +12,9 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar.html',
 	    controller: 'CalendarCtrl'
       }).
+	when('/security', {
+        templateUrl: 'tmpl/security.html'
+      }).
       when('/', {
         templateUrl: 'tmpl/main.html'
       }).
@@ -47,7 +50,6 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
             end: new Date(y, m, d, 6, 0),
             allDay: false,
             textColor: "white",
-			backgroundColor:"#4ea5bb",
             distribution: [
                 { tierTitle: 'Tier 1: ', slots: 2, slotsTotal: 4 },
                 { tierTitle: 'Tier 2: ', slots: 3, slotsTotal: 4 },
@@ -116,7 +118,6 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
     /* Change View */
     $scope.changeView = function(view, calendar) {
         uiCalendarConfig.calendars[calendar].fullCalendar('changeView', view);
-		console.log(view);
     };
     /* Change View */
     $scope.renderCalender = function(calendar) {

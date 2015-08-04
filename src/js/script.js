@@ -1,3 +1,4 @@
+
 var oldIE = false;
 
 
@@ -48,8 +49,7 @@ $(document).ready(function() {
 	var T;
 	wnd = $(window);
 
-
-
+	
 	oldIE = $('html').hasClass('lt-ie10');
 
 	doc = $(document); 

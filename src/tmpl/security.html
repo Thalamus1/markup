@@ -1,0 +1,277 @@
+<header id="header" class="b-header b-header_auth">
+	<nav id="main-menu" class="b-header__nav-wrapper">
+		<div class="container-fluid">
+			<a href="#/" class="b-logo">
+				<img src="icons/logo.png" alt="Thalamus">
+			</a>
+			<!-- - основное меню-->
+			<ul class="nav b-main-menu">
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">System</a>
+				</li>
+				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/calendar">Security</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/audit">Audit</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Templates</a>
+				</li>
+			</ul>
+			<div class="b-user">
+				<span class="b-user_name">
+							<a href="#">System Admin</a>
+							<b class="b-job">Thalamus System</b>
+						</span>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				<a href="#" class="b-mess"></a>
+				<a href="#" class="b-dzn"></a>
+			</div>
+		</div>
+	</nav>
+</header>
+<div class="b-fix-wrapper">
+	<div class="b-content">
+		<div class="fc-toolbar b-filter clearfix">
+			<button class="b-add btn fc-button">+</button>
+			<form class="b-search-form" method="get" action=".">
+				<fieldset>
+					<input type="button" class="b-search-panel__button">
+					<input type="text" name="q" class="b-search-input" value='' placeholder="Search…">
+					
+				</fieldset>
+			</form>
+			<div class="b-btn-toolbar">
+				<span class="b-result">340 records</span>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success b-link_filtr"><span>Filter</span></button>
+				</div>
+				<div class="btn-group fc-button-group b-tab-view clearfix">
+					<button class="btn btn-success fc-button b-link_tab">tab</button>
+					<button class="btn btn-success fc-button b-link_list active">list</button>
+				</div>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success fc-button b-link_settings">settings</button>
+				</div>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success fc-button b-link_info">info</button>
+				</div>
+			</div>
+		</div>
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#Users" data-toggle="tab">Users<span class="b-count">Records Count: 340</span></a></li>
+		  <li><a href="#Roles" data-toggle="tab">Roles<span class="b-count">Records Count: 1</span></a></li>
+		  <li><a href="#Permissions" data-toggle="tab">Permissions<span class="b-count">Records Count: 12</span></a></li>
+		  <li><a href="#RoleGroups" data-toggle="tab">Role Groups<span class="b-count">Records Count: 1</span></a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+		  <div class="tab-pane fade in active" id="Users">
+			<table class="b-table">
+				<thead>
+					<tr>
+						<th>
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</th>
+						<th>Photo</th>
+						<th>Name</th>
+						<th>Surname</th>
+						<th class="b-description"></th>
+						<th>Username</th>
+						<th>Role Group</th>
+						<th>Role</th>
+						<th>Email</th>
+						<th>Phone</th>
+						<th>Locked</th>
+						<th class="b-td_last"><a href="#">Last Updated</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td  class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203)<span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td  class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>	
+						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td  class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>	
+						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>	
+						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>	
+						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>	
+						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+					<tr>
+						<td class="fon">
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>	
+						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John</b></a></td>
+						<td class="fon"><a href="#"><b>Doe</b></a></td>
+						<td class="b-description fon"><a href="#">...</a></td>
+						<td><a href="#">SysAdm</a></td>
+						<td><a href="#">System Administration</a></td>
+						<td><a href="#">System Administrator</a></td>
+						<td><a href="#">admin@thalamus.com</a></td>
+						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+						<td>No</td>
+						<td>Apr 24, 2015</td>
+					</tr>
+				</tbody>
+			</table>
+		  </div>
+		  <div class="tab-pane fade" id="Roles">...</div>
+		  <div class="tab-pane fade" id="Permissions">...</div>
+		  <div class="tab-pane fade" id="RoleGroups">...</div>
+		</div>
+	</div>
+</div>
+<footer id="footer">
+	<div class="b-footer-wrapper">
+		<div class="container-fluid b-footer-aboutme">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 pull-right">
+					<div class="b-footer-soc">
+						<ul class="b-footer_link">
+							<li>
+								<a href="#" class="soc_fb"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_tw"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_in"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_yt"></a>
+							</li>
+							<li>
+								<a href="#" class="b-help"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="b-footer-copy">
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -12,6 +12,9 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar.html',
 	    controller: 'CalendarCtrl'
       }).
+	when('/security', {
+        templateUrl: 'tmpl/security.html'
+      }).
       when('/', {
         templateUrl: 'tmpl/main.html'
       }).
