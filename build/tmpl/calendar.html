@@ -34,15 +34,15 @@
 <div class="b-fix-wrapper">
 	<div class="b-content" ng-controller="CalendarCtrl">
 		<section id="directives-calendar">
-			<button class="b-add btn fc-button b-add-event" ng-click="addEvent()">+</button>
-			<ul class="unstyled" style="display:none;">
-				<li ng-repeat="e in events">
-					<div class="alert alert-info">
-						<a class="close" ng-click="remove($index)"><i class="icon-remove"></i></a>
-						<b> <input ng-model="e.title"></b>{{e.start | date:"MMM dd"}} - {{e.end | date:"MMM dd"}}
-					</div>
-				</li>
-			</ul>
+			<div class="dropdown">
+			<button class="b-add btn fc-button b-add-event" ng-click="addEvent()" data-toggle="dropdown">+</button>
+			<ul class="dropdown-menu" role="menu">
+							<li role="presentation" class="disabled"><a role="menuitem" href="#" >Add Interview Session</a></li>
+							<li role="presentation" class="disabled"><a role="menuitem" href="#" >Add Common Session</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Add Interview Date</a></li>
+					   </ul>
+			</div>	
 			<div class="b-btn-toolbar">
 				<div class="btn-group fc-button-group fc-view-group">
 					<button class="btn btn-success" ng-click="changeView('month', 'myCalendar1')">Month</button>
@@ -50,11 +50,20 @@
 					<button class="btn btn-success" ng-click="changeView('agendaWeek', 'myCalendar1')">Week</button>
 				</div>
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success fc-button b-link_update">update</button>
-					<button class="btn btn-success fc-button b-link_print">print</button>
+					<div class="dropdown">
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>settings</span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Show Information Panel</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Refresh View</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Settings</a></li>
+					   </ul>
+					</div>				
 				</div>
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success fc-button b-link_settings">settings</button>
+					<button class="btn btn-success fc-button b-link_info">info</button>
 				</div>
 			</div>
 			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>

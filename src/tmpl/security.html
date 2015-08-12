@@ -32,7 +32,13 @@
 <div class="b-fix-wrapper">
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
-			<button class="b-add btn fc-button">+</button>
+			<div class="dropdown">
+				<button class="b-add btn fc-button" data-toggle="dropdown" >+</button>
+				<ul class="dropdown-menu" role="menu">
+					<li role="presentation"><a role="menuitem" href="#">Create New User</a></li>
+					<li role="presentation"><a role="menuitem" href="#">Create New Role</a></li>
+				  </ul>
+			</div>
 			<form class="b-search-form" method="get" action=".">
 				<fieldset>
 					<input type="button" class="b-search-panel__button">
@@ -43,14 +49,32 @@
 			<div class="b-btn-toolbar">
 				<span class="b-result">340 records</span>
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success b-link_filtr"><span>Filter</span></button>
+					<div class="dropdown">
+						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span></button>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><label for="filtr1">No Tier<input type="checkbox" class="form-control" id="filtr1"></label></li>
+							<li role="presentation"><label for="filtr2">Tier I<input type="checkbox" class="form-control" id="filtr2"></label></li>
+							<li role="presentation"><label for="filtr3">Tier II<input type="checkbox" class="form-control" id="filtr3"></label></li>
+							<li role="presentation"><label for="filtr4">Tier III<input type="checkbox" class="form-control" id="filtr4"></label></li>
+							<li role="presentation"><label for="filtr5">Tier GTA<input type="checkbox" class="form-control" id="filtr5"></label></li>
+							<li role="presentation"><label for="filtr6">Male<input type="checkbox" class="form-control" id="filtr6"></label></li>
+							<li role="presentation"><label for="filtr7">Female<input type="checkbox" class="form-control" id="filtr7"></label></li>
+							<li role="presentation"><label for="filtr8">Inactive<input type="checkbox" class="form-control" id="filtr8"></label></li>
+						  </ul>
+					</div>
 				</div>
 				<div class="btn-group fc-button-group b-tab-view clearfix">
 					<button class="btn btn-success fc-button b-link_tab">tab</button>
 					<button class="btn btn-success fc-button b-link_list active">list</button>
 				</div>
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success fc-button b-link_settings">settings</button>
+					<div class="dropdown">
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+						  </ul>
+					</div>
 				</div>
 				<div class="btn-group fc-button-group">
 					<button class="btn btn-success fc-button b-link_info">info</button>
@@ -59,9 +83,7 @@
 		</div>
 		<ul class="nav nav-tabs">
 		  <li class="active"><a href="#Users" data-toggle="tab">Users<span class="b-count">Records Count: 340</span></a></li>
-		  <li><a href="#Roles" data-toggle="tab">Roles<span class="b-count">Records Count: 1</span></a></li>
-		  <li><a href="#Permissions" data-toggle="tab">Permissions<span class="b-count">Records Count: 12</span></a></li>
-		  <li><a href="#RoleGroups" data-toggle="tab">Role Groups<span class="b-count">Records Count: 1</span></a></li>
+		  <li><a href="#Roles" data-toggle="tab">Roles & Permissions<span class="b-count">Records Count: 1</span></a></li>
 		</ul>
 
 		<!-- Tab panes -->
@@ -236,8 +258,6 @@
 			</table>
 		  </div>
 		  <div class="tab-pane fade" id="Roles">...</div>
-		  <div class="tab-pane fade" id="Permissions">...</div>
-		  <div class="tab-pane fade" id="RoleGroups">...</div>
 		</div>
 	</div>
 </div>

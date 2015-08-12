@@ -46,33 +46,96 @@
 			</div>
 		</div>
 		<!-- Modal -->
-					<div class="modal fade b-login" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					  <div class="modal-dialog">
 						<div class="modal-content">
-						  <div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Thalamus Login</h4>
-						  </div>
-						   <form action="." class="b-form" role="form" method="post">
-							<div class="modal-body">
-								<div class="form-group">
-									<label for="exampleInputEmail1">E-mail</label>
-									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Type Your E-mail">
-								  </div>
-								  <div class="form-group">
-									<label for="exampleInputPassword1">Password</label>
-									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-								  </div>
+							<div class="b-login ng-scope">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+											<h4 class="modal-title" id="myModalLabel">Thalamus Login</h4>
+										</div>
+										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="login()">
+											<div class="modal-body">
+												<div class="form-group">
+													<label for="exampleInputEmail1">E-mail</label>
+													<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail1" placeholder="Type Your E-mail" data-ng-model="loginData.userName" required="" autofocus="">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPassword1">Password</label>
+													<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword1" placeholder="Password" data-ng-model="loginData.password" required="">
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="submit" class="b-button">Login</button>
+											</div>
+										</form>
+										<p>Forgot your password? <br/>Don’t have access yet? <a href="#fogot"  data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#fogot">Get Started</a></p>
 							</div>
-							<div class="modal-footer">
-								  <button type="submit" value="1" class="b-button">Login</button>
-							 </div>
-							</form>	
 						  </div>
 						</div>
-						<p>Forgot your password? <br/>Don’t have access yet? <a href="#">Get Started</a></p>
 					  </div>
 					</div>
 			<!-- /Modal -->
-
-
+		<!-- Modal -->
+					<div class="modal fade" id="fogot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+					  <div class="modal-dialog">
+						<div class="modal-content">
+							<div class="b-login ng-scope">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+											<h4 class="modal-title" id="myModalLabel">Reset Password</h4>
+											<p>Enter your email address and we'll get you back on track.</p>
+										</div>
+										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+											<div class="modal-body">
+												<div class="form-group">
+													<label for="exampleInputEmail2">E-mail</label>
+													<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail2" placeholder="Type Your E-mail" required="" autofocus="">
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="submit" class="b-button" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#reset">Send reset link</button>
+											</div>
+										</form>
+										<p><a href="#login" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-toggle="modal" data-target="#login">Back to Login</a></p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			<!-- /Modal -->
+			<!-- Modal -->
+					<div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+					  <div class="modal-dialog">
+						<div class="modal-content">
+							<div class="b-login ng-scope">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+											<h4 class="modal-title" id="myModalLabel">Enter Your New Password</h4>
+										</div>
+										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+											<div class="modal-body">
+												<div class="form-group">
+													<label for="exampleInputToken1">Token (if necessary)</label>
+													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputToken1" placeholder="0664C23F78C54F29BE24DD41B2C438AC" required="" autofocus="">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPassword2">Password</label>
+													<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword2" placeholder="Password" required="">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPassword3">Confirm Password</label>
+													<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword3" placeholder="Confirm Password"  required="">
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="submit" class="b-button">Set new password</button>
+											</div>
+										</form>
+										<p><a href="#login" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#login">Back to Login</a></p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			<!-- /Modal -->

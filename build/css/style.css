@@ -4098,6 +4098,7 @@ body > .b-fix-wrapper {
 }
 .b-add-nav .b-main-menu a {
 	font-size: 13px;
+	line-height: 79px; 
 	text-transform: uppercase;
 }
 .b-add-nav .b-footer_link {
@@ -4324,12 +4325,24 @@ body > .b-fix-wrapper {
 	        border-radius: 20px;
 }
 
-.modal-backdrop {
+.modal-dialog {
+	background: none;
+}
+
+.modal-dialog .modal-content {
+	background: none; 
+	border: 0 none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.modal-backdrop.in {
 	opacity: .7;
 }
 
 .b-login {
-	margin-bottom: 20px; 
+	position: relative; 
+	margin: 0 auto 20px auto;
 	width: 440px;
 }
 
@@ -4363,6 +4376,16 @@ body > .b-fix-wrapper {
 .b-login .modal-header .modal-title {
 	margin: 0; 
 	font-family: 'HelveticaNeueLT-Light';
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 32px;
+}
+.b-login .modal-header p {
+	margin: 20px 0 0 0;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: left; 
+	color: #111;
 }
 
 .b-login .modal-footer {
@@ -4392,26 +4415,48 @@ body > .b-fix-wrapper {
 	color: #999;
 }
 
+.b-login p a:hover {
+	color: #4ea5bb;
+}
+
 .b-login .modal-body {
 	padding: 0;
 }
 
+.b-login .b-form {
+	margin-bottom: 20px;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
 .b-login .form-group {
-	padding: 10px 20px; 
+	margin-bottom: 0; 
+	padding: 10px 20px;
 	border: 1px solid #f0f0f0;
 }
 .b-login .form-group label {
+	margin: 0;
+	display: block;
 	font-family: 'HelveticaNeueLTStd-Md'; 
 	font-size: 13px;
+	font-weight: normal;
 	cursor: pointer;
 	text-transform: uppercase;
 	color: #999;
 }
 .b-login .form-control {
-	font-family: 'HelveticaNeueLT-Light'; 
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+	height: 30px;
+	font-family: 'HelveticaNeueLT-Light';
 	font-size: 21px;
-	line-height: 24px;
+	line-height: 30px;
+	color: #111;
 	border: 0 none;
+	outline: none; 
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 .b-login .form-control:placeholder {
 	color: #ccc;
@@ -4502,6 +4547,13 @@ body > .b-fix-wrapper {
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
 	outline: none;
+}
+#directives-calendar .dropdown.open .b-add {
+	background: #666 url('../icons/ic_add_open.png') no-repeat center center;
+	outline: none;
+}
+#directives-calendar .open.dropdown .b-link_settings {
+	background: #666 url('../icons/ic_settings_open.png') no-repeat center center;
 }
 #directives-calendar .fc-state-default {
 	background: #fff;
@@ -4605,6 +4657,8 @@ body > .b-fix-wrapper {
 	        border-radius: 0 4px 4px 0;
 }
 .b-btn-toolbar .b-link_settings {
+	position: relative;
+	overflow: hidden; 
 	width: 40px;
 	height: 40px;
 	text-indent: -999em;
@@ -4612,6 +4666,18 @@ body > .b-fix-wrapper {
 	border: 1px solid #ccc;
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
+}
+.b-btn-toolbar .b-link_settings:after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	content: ''; 
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid #666;
+	border-left: 9px solid transparent;
+}
+.b-btn-toolbar .open.dropdown .b-link_settings {
+	background: #666 url('../icons/ic_settings_open.png') no-repeat center center;
 }
 .b-btn-toolbar .b-link_info {
 	width: 40px;
@@ -4766,6 +4832,50 @@ body > .b-fix-wrapper {
 	border-bottom: 1px solid #ccc;
 }
 
+.dropdown-menu {
+	top: 40px;
+	padding: 3px 0;
+	border-color: #ccc;
+}
+.dropdown-menu > li > a {
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: .025em;
+	color: #000;
+}
+.dropdown-menu > li > a:hover {
+	color: #4ea5bb; 
+	background: #f7f7f7;
+}
+.dropdown-menu .divider {
+	margin: 1px 0;
+}
+.dropdown-menu .disabled {
+	color: #ccc;
+}
+.dropdown-menu > li > label {
+	padding: 0 20px;
+	display: block;
+	clear: both;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 30px;
+	white-space: nowrap;
+	letter-spacing: .025em;
+	color: #000;
+}
+.dropdown-menu > li > label:hover {
+	background: #f7f7f7;
+}
+.dropdown-menu > li > label input {
+	float: right;
+}
+
+.dropdown.open .b-add {
+	background: #666 url('../icons/ic_add_open.png') no-repeat center center;
+	outline: none;
+}
+
 .nav-tabs {
 	margin: 0 0 20px 0;
 	padding: 0; 
@@ -4870,7 +4980,9 @@ body > .b-fix-wrapper {
 }
 .b-table tbody tr td.b-description a {
 	display: block;
-	text-indent: -999em; 
+	width: 3px; 
+	height: 15px;
+	text-indent: -999em;
 	background: url('../icons/ic_descr.png') no-repeat center center;
 }
 .b-table tbody tr td.fon {
