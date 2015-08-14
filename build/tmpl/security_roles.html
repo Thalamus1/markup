@@ -1,0 +1,279 @@
+<header id="header" class="b-header b-header_auth">
+	<nav id="main-menu" class="b-header__nav-wrapper">
+		<div class="container-fluid">
+			<a href="#/" class="b-logo">
+				<img src="icons/logo.png" alt="Thalamus">
+			</a>
+			<!-- - основное меню-->
+			<ul class="nav b-main-menu">
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">System</a>
+				</li>
+				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/administration">Security</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/audit">Audit</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Templates</a>
+				</li>
+			</ul>
+			<div class="b-user">
+				<span class="b-user_name">
+							<a href="#">System Admin</a>
+							<b class="b-job">Thalamus System</b>
+						</span>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				<a href="#" class="b-mess"></a>
+				<a href="#" class="b-dzn"></a>
+			</div>
+		</div>
+	</nav>
+</header>
+<div class="b-fix-wrapper">
+	<div class="b-content">
+		<div class="fc-toolbar b-filter clearfix">
+			<div class="dropdown">
+				<button class="b-add btn fc-button" data-toggle="dropdown">+</button>
+				<ul class="dropdown-menu" role="menu">
+					<li role="presentation"><a role="menuitem" href="#">Create New User</a>
+					</li>
+					<li role="presentation"><a role="menuitem" href="#">Create New Role</a>
+					</li>
+				</ul>
+			</div>
+			<form class="b-search-form" method="get" action=".">
+				<fieldset>
+					<input type="button" class="b-search-panel__button">
+					<input type="text" name="q" class="b-search-input" value='' placeholder="Search…">
+				</fieldset>
+			</form>
+			<div class="b-btn-toolbar">
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation">
+								<label for="filtr1">No Tier
+									<input type="checkbox" class="form-control" id="filtr1">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr2">Tier I
+									<input type="checkbox" class="form-control" id="filtr2">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr3">Tier II
+									<input type="checkbox" class="form-control" id="filtr3">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr4">Tier III
+									<input type="checkbox" class="form-control" id="filtr4">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr5">Tier GTA
+									<input type="checkbox" class="form-control" id="filtr5">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr6">Male
+									<input type="checkbox" class="form-control" id="filtr6">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr7">Female
+									<input type="checkbox" class="form-control" id="filtr7">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr8">Inactive
+									<input type="checkbox" class="form-control" id="filtr8">
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a>
+							</li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="nav nav-tabs">
+			<li><a href="#/administration/users">Users<span class="b-count">Records Count: 340</span></a>
+			</li>
+			<li class="active"><a href="#/administration/roles">Roles & Permissions<span class="b-count">Records Count: 1</span></a>
+			</li>
+		</ul>
+		<div class="container-fluid b-role_list">
+			<div class="row">
+				<div class="col-xs-2 col-md-2">
+					<div class="b-role_title">Role Groups/Roles List</div>
+					<div class="js-scroll">
+						<div class="b-section">
+							<div class="b-title">System Administration</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">System Administrator</a>
+							</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">System Operator</a>
+							</div>
+						</div>
+						<div class="b-section">
+							<div class="b-title">Business Administration</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Business Administrator</a>
+							</div>
+							<div class="b-section_item active">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Business Manager</a>
+							</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Finance Manager</a>
+							</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Finance Agent</a>
+							</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Customer Service Agent</a>
+							</div>
+						</div>
+						<div class="b-section">
+							<div class="b-title">Program Administration</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Program Administrator</a>
+							</div>
+							<div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+								</div>
+								<a href="#" class="b-section_item-name">Program Operator</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-5 col-md-5">
+					<div class="b-role_title">Permissons for ‘<a href="#">Business Manager</a>’</div>
+					<div class="b-permissons_item"><span>Can create program director</span>
+					</div>
+					<div class="b-permissons_item"><span>Can create program associate director</span>
+					</div>
+					<div class="b-permissons_item"><span>Can create program assistant director</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can create account for program coordinator</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can create account for program interviewer</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can update any program user data</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can add/remove program user to/from role</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can add/remove program user to/from role</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can create applications</span>
+					</div>
+					<div class="b-permissons_item check"><span>Can create applications</span>
+					</div>
+					<div class="b-permissons_item"><span>Can add program document categories</span>
+					</div>
+					<div class="b-permissons_item"><span>Can delete program document categories</span>
+					</div>
+					<div class="b-permissons_item"><span>Can delete program document categories</span>
+					</div>
+					<div class="b-permissons_item"><span>Can delete program documents</span>
+					</div>
+				</div>
+				<div class="col-xs-5 col-md-5">
+					<div class="b-role_title">Users as ‘<a href="#">Business Manager</a>’</div>
+					<div class="b-user_item">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">MartinScorsese</a><span class="b-nikename">MartinScorsese</span>
+					</div>
+					<div class="b-user_item">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">Louis Tomlinson</a><span class="b-nikename">lt_1977</span>
+					</div>
+					<div class="b-user_item">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">Taylor Swift</a><span class="b-nikename">TaylorSwift</span>
+					</div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer id="footer">
+	<div class="b-footer-wrapper">
+		<div class="container-fluid b-footer-aboutme">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 pull-right">
+					<div class="b-footer-soc">
+						<ul class="b-footer_link">
+							<li>
+								<a href="#" class="soc_fb"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_tw"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_in"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_yt"></a>
+							</li>
+							<li>
+								<a href="#" class="b-help"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="b-footer-copy">
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

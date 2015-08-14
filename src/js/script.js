@@ -1,4 +1,3 @@
-
 var oldIE = false;
 
 
@@ -49,7 +48,13 @@ $(document).ready(function() {
 	var T;
 	wnd = $(window);
 
-	
+	$('.js-scroll').mCustomScrollbar({
+				live:true,
+				axis:"y",
+				advanced:{
+					updateOnContentResize: true
+				}
+			});
 	oldIE = $('html').hasClass('lt-ie10');
 
 	doc = $(document); 
