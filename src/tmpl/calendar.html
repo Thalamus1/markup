@@ -12,7 +12,12 @@
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
 				</li>
-				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
+				<li class="menuitem active dropdown" >
+					<a  class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
+					<ul class="dropdown-menu" role="menu">
+						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty" >Empty Calendar</a></li>
+						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar" >Calendar</a></li>
+					 </ul>
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
 				</li>
@@ -40,14 +45,15 @@
 							<li role="presentation" class="disabled"><a role="menuitem" href="#" >Add Interview Session</a></li>
 							<li role="presentation" class="disabled"><a role="menuitem" href="#" >Add Common Session</a></li>
 							<li role="presentation" class="divider"></li>
-							<li><a href="#">Add Interview Date</a></li>
+							<li><a data-target="#event" data-toggle="modal">Add Interview Date</a></li>
 					   </ul>
 			</div>	
+			<button ng-show="menuactive=='agendaDay'" class="btn btn-success fc-button b-btn-datepicker"></button>
 			<div class="b-btn-toolbar">
 				<div class="btn-group fc-button-group fc-view-group">
-					<button class="btn btn-success" ng-click="changeView('month', 'myCalendar1')">Month</button>
-					<button class="btn btn-success" data-target="#event" data-toggle="modal">Day</button>
-					<button class="btn btn-success" ng-click="changeView('agendaWeek', 'myCalendar1')">Week</button>
+					<button class="btn btn-success"  ng-class="{active:menuactive=='month'}" ng-click="changeView('month', 'myCalendar1')">Month</button>
+					<button class="btn btn-success"  ng-class="{active:menuactive=='agendaWeek'}" ng-click="changeView('agendaWeek', 'myCalendar1')">Week</button>
+					<button class="btn btn-success"  ng-class="{active:menuactive=='agendaDay'}" ng-click="changeView('agendaDay', 'myCalendar1')">Day</button>
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
@@ -58,13 +64,84 @@
 							<li role="presentation"><a role="menuitem" href="#">Refresh View</a></li>
 							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
 							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" href="#">Settings</a></li>
+							<li role="presentation"><a role="menuitem" data-target="#settings" data-toggle="modal">Settings</a></li>
 					   </ul>
 					</div>				
 				</div>
 				<div class="btn-group fc-button-group">
 					<button class="btn btn-success fc-button b-link_info">info</button>
 				</div>
+			</div>
+			<ul class="nav nav-tabs" ng-show="menuactive=='agendaDay'">
+			  <li class="active"><a href="#">Interview Day Event<span class="b-count">8:00AM—5:00PM</span></a><a href="#" class="b-edite_event"></a></li>
+			  <li><a href="#">Interview Day Event 2<span class="b-count">5:00PM—9:00PM</span></a></li>
+			  <li><a data-target="#event" data-toggle="modal" class="b-add_interview"><span class="ico">+</span> Create Interview Event</a></li>
+			</ul>
+			<div class="b-app_users_list" ng-show="menuactive=='agendaDay'">
+				<div class="b-app_user">
+					<a href="#">
+						<img src="images/avatar-defult.png" height="40" width="40" class="img-circle">
+						<span class="name">Common <br/>Sessions</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T1</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T2</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T3</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T4</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T5</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T6</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+				<div class="b-app_user">
+					<a href="#">
+						<span class="b-tier">T7</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						<span class="name">John  <br/>Someone</span>
+						<span class="b-descr"></span>
+					</a>
+				</div>
+
 			</div>
 			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
 		</section>
@@ -234,6 +311,52 @@
 											</div>
 											<div class="modal-footer">
 												<button type="submit" class="b-button">Create</button>
+												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+											</div>
+										</form>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			<!-- /Modal -->
+
+<!-- Modal -->
+					<div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+					  <div class="modal-dialog">
+						<div class="modal-content">
+							<div class="b-modal">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+											<h4 class="modal-title" id="myModalLabel">Calendar Settings</h4>
+										</div>
+										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+											<div class="modal-body container-fluid">
+												<div class="form-group">
+													<label for="EventTitle">name of the Period</label>
+													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="EventTitle" placeholder="Type Name, e.g. Residency 2015" required="" autofocus="">
+												</div>
+												<div class="form-group row">
+													<label for="date" class="col-sm-4 control-label">Date from</label>
+													<div class="col-sm-8 input-group date input-append" id="date">
+														<input type="text" data-format="dd/mm/yyyy"  value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="date2" class="col-sm-4 control-label">Date To</label>
+													<div class="col-sm-8 input-group date input-append" id="date2">
+														<input type="text" data-format="dd/mm/yyyy" class="form-control" value="04/26/2015"><span class="add-on"><i class="icon-th"></i></span>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="Period" class="col-sm-4 control-label">Schedule lock Period</label>
+													<div class="col-sm-8">
+														<input type="text" class="form-control  inp-right ng-pristine ng-valid ng-valid-required ng-touched" id="Period"  name="Period" required="" value="72 h" placeholder="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="submit" class="b-button">Save</button>
 												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
 											</div>
 										</form>

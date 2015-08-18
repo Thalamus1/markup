@@ -12,6 +12,14 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar.html',
 	    controller: 'CalendarCtrl'
       }).
+	  when('/calendar_empty', {
+        templateUrl: 'tmpl/calendar_empty.html',
+	    controller: 'CalendarCtrl'
+      }).
+	 when('/calendar_day', {
+        templateUrl: 'tmpl/calendar_day.html',
+	    controller: 'CalendarCtrl'
+      }).
 	when('/administration', {
         templateUrl: 'tmpl/security.html'
       }).
@@ -124,6 +132,8 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
     /* Change View */
     $scope.changeView = function(view, calendar) {
         uiCalendarConfig.calendars[calendar].fullCalendar('changeView', view);
+		 $scope.menuactive = view;
+
     };
     /* Change View */
     $scope.renderCalender = function(calendar) {
@@ -132,7 +142,7 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
         }
     };
     /* Render Tooltip */
-    $scope.eventRender = function(event, element, view) {
+   $scope.eventRender = function(event, element, view) {
         element.attr({
             'tooltip': event.title,
             'tooltip-append-to-body': true
@@ -153,7 +163,7 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
             eventClick: $scope.alertOnEventClick,
             eventDrop: $scope.alertOnDrop,
             eventResize: $scope.alertOnResize,
-            eventRender: $scope.eventRender
+            //eventRender: $scope.eventRender
         }
     };
 
@@ -170,6 +180,8 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
     };
     /* event sources array*/
     $scope.eventSources = [$scope.events, $scope.calEventsExt];
+	 $scope.menuactive ='month';
+	 console.log($scope.menuactive);
     //$scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
     //$scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
 }]);
