@@ -5276,33 +5276,52 @@ input:focus {
 	left: 0;
 	width: 40px;
 	height: 40px;
+	cursor: pointer; 
 	opacity: 0;
 }
-.b-modal .b-form input[type='date']:after {
-	width: 15px;
-	height: 30px;
-	content: '';
-	background: url('../icons/ic_date.png') no-repeat center center;
+.b-modal .b-form label.checkbox-inline.checked {
+	color: #fff; 
+	background: #4ea5bb;
 }
-.b-modal .b-form input[type='time']:after {
-	width: 15px;
+.b-modal .b-form .inp-location .add-on {
+	display: inline-block;
+	width: 30px;
 	height: 30px;
-	content: '';
-	background: url('../icons/ic_time.png') no-repeat center center;
+	vertical-align: top; 
+	background: url('../icons/ic_location.png') no-repeat right center;
 }
-.b-modal .b-form .inp-location {
-	position: relative;
-}
-.b-modal .b-form .inp-location:after {
-	width: 15px;
+.b-modal .b-form .date .add-on {
+	display: inline-block;
+	width: 30px;
 	height: 30px;
-	content: '';
-	background: url('../icons/ic_location.png') no-repeat center center;
+	vertical-align: top; 
+	background: url('../icons/ic_calend.png') no-repeat right center;
+}
+.b-modal .b-form .date .form-control,
+.b-modal .b-form .inp-location .form-control {
+	width: 93%;
+	text-align: right;
+}
+.b-modal .b-form .timepicker .add-on {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: top; 
+	background: url('../icons/ic_time.png') no-repeat right center;
+}
+.b-modal .b-form .timepicker .form-control {
+	width: 84%;
+	text-align: right;
+}
+.b-modal .b-form .weekly-group {
+	text-align: center;
 }
 .b-modal .b-form input[type='date'],
 .b-modal .b-form input[type='time'],
 .b-modal .b-form input[name='location'] {
+	display: inline-block;
 	text-align: right;
+	vertical-align: top;
 }
 .b-modal .b-form .form-control {
 	padding: 0;
@@ -5330,6 +5349,69 @@ input:focus {
 	text-align: right;
 	vertical-align: top;
 	text-transform: none;
+}
+.b-modal .b-form .col-sm-8.date .form-control {
+	width: 90%;
+}
+.b-modal .b-form .b-upload_file {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	text-align: center; 
+	vertical-align: top;
+	border: 1px solid #4ea5bb;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.b-modal .b-form .b-upload_file.hidden {
+	dispalay: none;
+}
+.b-modal .b-form .b-upload_file input {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 40px; 
+	height: 40px;
+	opacity: 0;
+}
+.b-modal .b-form .loaded-file {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+	vertical-align: top;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.b-modal .b-form .loaded-file a.link_pdf {
+	margin: 0 10px; 
+	padding-left: 10px;
+	display: inline-block;
+	font-family: 'HelveticaNeueLTStd-Md';
+	vertical-align: top;
+}
+.b-modal .b-form .loaded-file a.link_pdf:before {
+	display: inline-block;
+	width: 20px;
+	height: 35px;
+	content: '';
+	vertical-align: top;
+	background: url('../icons/ic_pdf.png') no-repeat center center;
+}
+.b-modal .b-form .loaded-file .remove {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: top;
+	background: url('../icons/ic_del.png') no-repeat center center;
 }
 .b-modal .b-form .switch {
 	position: relative;
@@ -5434,6 +5516,16 @@ input:focus {
 }
 .b-modal .panel table th:last-child {
 	color: #111;
+}
+.b-modal .panel table td .form-control {
+	margin: 0 auto;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
 }
 .b-modal .panel table td {
 	padding: 10px 20px;

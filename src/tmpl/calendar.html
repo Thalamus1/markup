@@ -122,28 +122,28 @@
 												</div>
 												<div class="form-group row">
 													<label for="date" class="col-sm-2 control-label">Date</label>
-													<div class="col-sm-10">
-													<input type="date" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="date"  required="" value="">
+													<div class="col-sm-10 input-group date input-append" id="date">
+														<input type="text" data-format="dd/mm/yyyy" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
 													</div>
 												</div>
 												<div class="row">
 												<div class="form-group col-sm-6">
 													<label for="timefrom" class="col-sm-2 control-label">From</label>
-													<div class="col-sm-10">
-													<input type="time" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value="">
+													<div class="col-sm-10 timepicker input-append">
+													<input type="text" data-format="HH:mm PP" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value=""><span class="add-on"><i class="icon-th"></i></span>
 													</div>
 												</div>
 												<div class="form-group col-sm-6">
 													<label for="timeto" class="col-sm-2 control-label">To</label>
-													<div class="col-sm-10">
-													<input type="time" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timeto"  required="" value="">
+													<div class="col-sm-10 timepicker input-append">
+													<input type="text" data-format="HH:mm PP" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timeto"  required="" value=""><span class="add-on"><i class="icon-th"></i></span>
 													</div>
 												</div>
 												</div>
 												<div class="form-group row">
 													<label for="location" class="col-sm-2 control-label">Location</label>
 													<div class="col-sm-10 inp-location">
-													<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location"  name="location" required="" placeholder="Add location">
+													<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location"  name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
 													</div>
 												</div>
 												<div class="panel">
@@ -164,11 +164,19 @@
 																<td>3</td>
 																<td>5</td>
 																<td></th>
-																<td>13</td>
+																<td ng-model="tot1">13</td>
+															</tr>
+															<tr>
+																<td><span class="b-defualt">Tr 1</span>Neurology</td>
+																<td><input type="number" class="form-control" ng-model="name1" name="name3" required="" placeholder="0"></td>
+																<td><input type="number" class="form-control" ng-model="name2"  name="name2" required="" placeholder="0"></td>
+																<td><input type="number" class="form-control" ng-model="name3"  name="name1" required="" placeholder="0"></td>
+																<td></th>
+																<td ng-model="tot2">{{name1+name2+name3}}</td>
 															</tr>
 															<tr>
 																<td colspan="5">Total Number of slots</td>
-																<td>13</td>
+																<td>{{tot1+tot2}}</td>
 															</tr>
 														</table>
 													</div>
@@ -177,18 +185,26 @@
 													<label class="col-sm-4 control-label">Repeat Weekly</label>
 													<div class="col-sm-8">
 														<label>You can select recurrency and date when events ends</label>
-														<span class="switch"><input data-toggle="collapse" data-target="#weekly" type="checkbox"><i></i></span>
+														<span class="switch"><input data-toggle="collapse" data-target="#Weekly" type="checkbox"><i></i></span>
 													</div>
 												</div>
-												<div class="form-group collapse" id="weekly">
-														     <label class="checkbox-inline"><input type="checkbox" value="">Mo</label>
-														     <label class="checkbox-inline" ><input type="checkbox" value="">Tu</label>
-														     <label class="checkbox-inline"><input type="checkbox" value="">We</label>
-														     <label class="checkbox-inline"><input type="checkbox" value="">Th</label>
-														     <label class="checkbox-inline"><input type="checkbox" value="">Fr</label>
-														     <label class="checkbox-inline"><input type="checkbox" value="">Sa</label>
-														     <label class="checkbox-inline"><input type="checkbox" value="">Su</label>
+												<div class="collapse" id="Weekly">
+												<div class="form-group weekly-group">
+															<label class="checkbox-inline" ng-class="{checked:Mo}"><input type="checkbox" ng-model="Mo" value="">Mo</label>
+														     <label class="checkbox-inline" ng-class="{checked:Tu}" ><input type="checkbox"ng-model="Tu" value="">Tu</label>
+														     <label class="checkbox-inline" ng-class="{checked:We}"><input type="checkbox" ng-model="We"value="">We</label>
+														     <label class="checkbox-inline" ng-class="{checked:Th}"><input type="checkbox"ng-model="Th" value="">Th</label>
+														     <label class="checkbox-inline" ng-class="{checked:Fr}"><input type="checkbox"ng-model="Fr" value="">Fr</label>
+														     <label class="checkbox-inline" ng-class="{checked:Sa}"><input type="checkbox"ng-model="Sa" value="">Sa</label>
+														     <label class="checkbox-inline" ng-class="{checked:Su}"><input type="checkbox"ng-model="Su" value="">Su</label>
 
+												</div>
+												<div class="form-group row">
+													<label for="date" class="col-sm-4 control-label">Date Until</label>
+													<div class="col-sm-8 input-group date">
+														<input type="text" data-format="dd/mm/yyyy" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+													</div>
+												</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-sm-4 control-label">description</label>
@@ -198,7 +214,7 @@
 													</div>
 												</div>
 												<div class="form-group collapse" id="description">
-														<textarea  class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. Excellent teaching is offered to medical students, graduate students, and residents and fellows training in hospitals or clinics. Residents train under some of the nation's top clinicians, educators, and researchers.</textarea>
+														<textarea  class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
 													
 												</div>
 												<div class="form-group row">
@@ -213,7 +229,7 @@
 														<a href="#" class="b-upload"><span>+</span></a></span>
 														<span class="b-upload_file"><input type="file" class="opaque" name="files[]" id=""/>
 														<a href="#" class="b-upload"><span>+</span></a></span>
-														<div class="loaded" data-id="1534135956317186"><a href="#">Attachment.pdf</a><a href="#" class="remove"></a></div>
+														<div class="loaded-file" data-id="1534135956317186"><a href="#" class="link_pdf">Attachment.pdf</a><a href="#" class="remove"></a></div>
 												</div>
 											</div>
 											<div class="modal-footer">

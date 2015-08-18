@@ -675,18 +675,31 @@ input:focus { outline: 0 none; }
 
 	}
 	label.checkbox-inline {display:inline-block; vertical-align:top; height:40px; border-radius:20px; line-height:40px; text-align:center; position:relative; border:1px solid #e6e6e6; color:#4ea5bb; text-transform:none; width:40px;}
-	.checkbox-inline input {position:absolute; top:0; left:0; height:40px; width:40px; z-index:1; opacity:0;}
-	input[type="date"]:after {content:''; height:30px; width:15px; background:url('../icons/ic_date.png')no-repeat center center;}
-	input[type="time"]:after {content:''; height:30px; width:15px; background:url('../icons/ic_time.png')no-repeat center center;}
-	.inp-location {position:relative;}
-	.inp-location:after {content:''; height:30px; width:15px; background:url('../icons/ic_location.png')no-repeat center center;}
+	.checkbox-inline input {position:absolute; top:0; left:0; height:40px; width:40px; z-index:1; opacity:0; cursor:pointer;}
+	label.checkbox-inline.checked {background:#4ea5bb; color:#ffffff;}
+	.inp-location .add-on {height:30px; width:30px; background:url('../icons/ic_location.png')no-repeat right center; display:inline-block; vertical-align:top}
+	.date .add-on {height:30px; width:30px; background:url('../icons/ic_calend.png')no-repeat right center; display:inline-block; vertical-align:top;}
+	.date .form-control, .inp-location .form-control {width:93%; text-align:right;}
+	.timepicker .add-on {height:30px; width:30px; background:url('../icons/ic_time.png')no-repeat right center; display:inline-block; vertical-align:top;}
+
+	.timepicker .form-control {width:84%; text-align:right;}
+	.weekly-group {text-align:center;}
 	input[type="date"],
 	input[type="time"],
-	input[name="location"]  {text-align:right;}
+	input[name="location"]  {text-align:right; display:inline-block; vertical-align:top; }
 	.form-control {border:0 none; font-size:21px;line-height:30px; width:100%; height:30px; max-width:100%; padding:0;font-family: 'HelveticaNeueLT-Light';color:#111111; box-shadow:none;outline:none;}
 	.form-control:placeholder {color:#cccccc;}
 	label.col-sm-2 {line-height:30px;}
 	.col-sm-8 label {text-align:right; text-transform:none; display:inline-block; vertical-align:top;font-family: 'HelveticaNeueLT-Roman';}
+	.col-sm-8.date .form-control {width:90%;}
+	.b-upload_file {position:relative; display:inline-block; vertical-align:top;font-family: 'HelveticaNeueLTStd-Md'; font-size:30px; border:1px solid #4ea5bb; height:40px; width:40px; overflow:hidden; cursor:pointer; border-radius:20px; line-height:30px; text-align:center;}
+	.b-upload_file.hidden {dispalay:none;} 
+	.b-upload_file input {position:absolute; top:0; left:0; opacity:0; z-index:1; height:40px; width:40px;}
+	.loaded-file {display:inline-block; vertical-align:top; border:1px solid #e6e6e6; height:40px;  border-radius:20px; line-height:40px; text-align:center;
+		a.link_pdf {display:inline-block; vertical-align:top; font-family: 'HelveticaNeueLTStd-Md'; padding-left:10px; margin:0 10px;}
+		a.link_pdf:before {display:inline-block; vertical-align:top; content:''; height:35px; width:20px; background:url('../icons/ic_pdf.png')no-repeat center center;}
+		.remove {display:inline-block; vertical-align:top; height:40px; width:40px;  background:url('../icons/ic_del.png')no-repeat center center;}
+	}
 	.switch {position:relative; text-align:right;}
 	.switch input {
 		position:absolute; top:-8px;right:0;
@@ -731,6 +744,7 @@ input:focus { outline: 0 none; }
 		 th {background:#f7f7f7; color:#999999; border-top:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6; font-family: 'HelveticaNeueLTStd-Md';  text-transform:uppercase; text-align:center; padding:10px 20px; font-weight:normal; font-size:13px;}
 		 th:first-child {color:#111111;}
 		 th:last-child {color:#111111;}
+		 td .form-control {border:1px solid #e6e6e6; width:60px; margin:0 auto; height:40px; text-align:center; line-height:40px; border-radius:3px;}
 		td {padding:10px 20px; color:#111111; font-family: 'HelveticaNeueLT-Light';font-size:24px;text-align:center;border-top:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6; }
 		 td:first-child {font-family: 'HelveticaNeueLTStd-Md'; background:#f7f7f7; font-size:13px; text-align:left;}
 		 td:first-child span {color:#999999; text-transform:uppercase; display:block;}
