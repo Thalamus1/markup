@@ -105,6 +105,26 @@ a:hover {color:#111111; text-decoration: none;}
 .d_table_row { display: table-row; }
 .d_table_cell { display: table-cell; vertical-align: middle; }
 
+.docsEmpty {
+	text-align:center;
+	height: 40vh;
+	line-height: 40vh;
+}
+.docsEmpty div {
+	width:60%;
+	display:inline-block;
+	vertical-align:middle;
+	font-size: 2.5em;
+	line-height:normal;
+	color:$c-gray;
+	padding:15px;
+	font-family: 'HelveticaNeueLT-Light';
+	cursor:default;
+}
+.docsEmpty span {
+	color:#4ea5bb;
+}
+
 .b-header {
     position: relative;
     z-index: 150;
@@ -482,7 +502,7 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	}
 		.b-link_list.active {	background:#666666 url('../icons/line.png') no-repeat center center; }
 
-	.btn.b-link_filtr {color:#000000; margin-right:10px; text-transform:none;}
+	.btn.b-link_filtr, .btn.b-link_actions {color:#000000; margin-right:10px; text-transform:none;}
 	.b-result {color:#999999; font-size:15x; line-height:40px; margin-right:20px;}
 	.btn {
 	padding: 0 15px;
@@ -546,6 +566,30 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 		content:'';
 		
 	}
+.b-link_actions {
+	width: auto;
+	height: 40px;
+	color:#000000;
+	font-size:15px;line-height:40px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	border: 1px solid #ccc;
+	        border-radius: 4px;
+		text-transform:none;
+		overflow:hidden;
+		position:relative;
+	span {	background:#ffffff url('../icons/') no-repeat 0 center; padding-left:20px;}
+}
+.b-link_actions:after {
+		border-top:9px solid transparent;
+		border-left:9px solid transparent;
+		border-bottom:9px solid #666666;
+		position:absolute;
+		bottom:0;
+		right:0;
+		content:'';
+		
+	}
+.b-link_actions.active { background:#666666; color:#ffffff; }
 .b-search-form {
 	float:left;
 	.b-search-panel__button {
@@ -622,9 +666,22 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	
 	}
 }
+.b-table.docs {
+	thead {
+		tr th {text-align:left;}
+	}
+	tbody {
+		tr.checked {background-color:#f7f7f7;}
+		tr td {text-align:left; padding:5px 20px;}
+		tr td img {margin-right:15px;}
+	}
+	tr th.b-td_last a:after {
+		left:20px;
+		bottom:-16px;
+	}
+}
 
 input:focus { outline: 0 none; }
-
 
 .jq-checkbox {
 	top: -1px;

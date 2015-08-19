@@ -4058,6 +4058,28 @@ a:hover {
 	vertical-align: middle;
 }
 
+.docsEmpty {
+	height: 40vh;
+	line-height: 40vh; 
+	text-align: center;
+}
+
+.docsEmpty div {
+	padding: 15px;
+	display: inline-block;
+	width: 60%;
+	font-family: 'HelveticaNeueLT-Light';
+	font-size: 2.5em;
+	line-height: normal;
+	cursor: default; 
+	vertical-align: middle;
+	color: #b2b2b2;
+}
+
+.docsEmpty span {
+	color: #4ea5bb;
+}
+
 .b-header {
 	position: relative;
 	z-index: 150;
@@ -4769,7 +4791,8 @@ body > .b-fix-wrapper {
 .b-btn-toolbar .b-link_list.active {
 	background: #666 url('../icons/line.png') no-repeat center center;
 }
-.b-btn-toolbar .btn.b-link_filtr {
+.b-btn-toolbar .btn.b-link_filtr,
+.b-btn-toolbar .btn.b-link_actions {
 	margin-right: 10px;
 	text-transform: none; 
 	color: #000;
@@ -4848,6 +4871,40 @@ body > .b-fix-wrapper {
 	border-top: 9px solid transparent;
 	border-bottom: 9px solid #666;
 	border-left: 9px solid transparent;
+}
+
+.b-link_actions {
+	position: relative; 
+	overflow: hidden;
+	width: auto;
+	height: 40px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 15px;
+	line-height: 40px;
+	text-transform: none;
+	color: #000;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+.b-link_actions span {
+	padding-left: 20px; 
+	background: #fff url('../icons/') no-repeat 0 center;
+}
+
+.b-link_actions:after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	content: ''; 
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid #666;
+	border-left: 9px solid transparent;
+}
+
+.b-link_actions.active {
+	color: #fff; 
+	background: #666;
 }
 
 .b-search-form {
@@ -5047,6 +5104,24 @@ body > .b-fix-wrapper {
 }
 .b-table tbody tr:hover td.fon {
 	background: #e6e6e6;
+}
+
+.b-table.docs thead tr th {
+	text-align: left;
+}
+.b-table.docs tbody tr.checked {
+	background-color: #f7f7f7;
+}
+.b-table.docs tbody tr td {
+	padding: 5px 20px; 
+	text-align: left;
+}
+.b-table.docs tbody tr td img {
+	margin-right: 15px;
+}
+.b-table.docs tr th.b-td_last a:after {
+	bottom: -16px; 
+	left: 20px;
 }
 
 input:focus {

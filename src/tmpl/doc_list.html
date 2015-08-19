@@ -1,0 +1,225 @@
+<header id="header" class="b-header b-header_auth">
+	<nav id="main-menu" class="b-header__nav-wrapper">
+		<div class="container-fluid">
+			<a href="#/" class="b-logo">
+				<img src="icons/logo.png" alt="Thalamus">
+			</a>
+			<!-- - основное меню-->
+			<ul class="nav b-main-menu">
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">Program</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
+				</li>
+			</ul>
+			<div class="b-user">
+				<span class="b-user_name">
+							<a href="#">System Admin</a>
+							<b class="b-job">Thalamus System</b>
+						</span>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				<a href="#" class="b-mess"></a>
+				<a href="#" class="b-dzn"></a>
+			</div>
+		</div>
+	</nav>
+</header>
+<div class="b-fix-wrapper">
+	<div class="b-content">
+		<div class="fc-toolbar b-filter clearfix">
+			<div class="dropdown">
+				<button class="b-add btn fc-button" data-toggle="dropdown" >+</button>
+				<ul class="dropdown-menu" role="menu">
+					<li role="presentation"><a role="menuitem" href="#">Create New Category</a></li>
+					<li role="presentation"><a role="menuitem" href="#">Add New Document</a></li>
+				  </ul>
+			</div>
+			<form class="b-search-form" method="get" action=".">
+				<fieldset>
+					<input type="button" class="b-search-panel__button">
+					<input type="text" name="q" class="b-search-input" value='' placeholder="Document search…">
+					
+				</fieldset>
+			</form>
+			<div class="b-btn-toolbar">
+				<span class="b-result">No documents</span>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						
+						<button class="btn btn-success b-link_actions" data-toggle="dropdown"><span>Actions</span></button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Delete Documents</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Move to Category...</a></li>
+						  </ul>
+					</div>
+				</div>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span></button>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><label for="filtr1">No Tier<input type="checkbox" class="form-control" id="filtr1"></label></li>
+							<li role="presentation"><label for="filtr2">Tier I<input type="checkbox" class="form-control" id="filtr2"></label></li>
+							<li role="presentation"><label for="filtr3">Tier II<input type="checkbox" class="form-control" id="filtr3"></label></li>
+							<li role="presentation"><label for="filtr4">Tier III<input type="checkbox" class="form-control" id="filtr4"></label></li>
+							<li role="presentation"><label for="filtr5">Tier GTA<input type="checkbox" class="form-control" id="filtr5"></label></li>
+							<li role="presentation"><label for="filtr6">Male<input type="checkbox" class="form-control" id="filtr6"></label></li>
+							<li role="presentation"><label for="filtr7">Female<input type="checkbox" class="form-control" id="filtr7"></label></li>
+							<li role="presentation"><label for="filtr8">Inactive<input type="checkbox" class="form-control" id="filtr8"></label></li>
+						  </ul>
+					</div>
+				</div>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+						  </ul>
+					</div>
+				</div>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success fc-button b-link_info">info</button>
+				</div>
+			</div>
+		</div>
+
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#/documents/list">Documents List<span class="b-count">Records Count: 0</span></a></li>
+		  <li><a href="#/documents/">Categories List<span class="b-count">Records Count: 0</span></a></li>
+		</ul>
+
+		<div class="container-fluid ">
+			<table class="b-table docs">
+				<thead>
+					<tr>
+						<th>
+							<div class="jq-checkbox checked" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</th>
+						<th>Name</th>
+						<th>Owner</th>
+						<th>Categories</th>
+						<th class="b-td_last"><a href="#">Last Updated</a></th>
+						<th>Size</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"><b>document.pdf</b></a></td>
+						<td><a href="#">Program Admin</a></td>
+						<td><a href="#">Basic Info</a></td>
+						<td>Apr 24, 2015</td>
+						<td>1.2 Mb</td>
+					</tr>
+					<tr class="checked">
+						<td>
+							<div class="jq-checkbox checked" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"><b>document.pdf</b></a></td>
+						<td><a href="#">Program Admin</a></td>
+						<td><a href="#">Basic Info</a></td>
+						<td>Apr 24, 2015</td>
+						<td>1.2 Mb</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"><b>document.pdf</b></a></td>
+						<td><a href="#">Program Admin</a></td>
+						<td><a href="#">Basic Info</a></td>
+						<td>Apr 24, 2015</td>
+						<td>1.2 Mb</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"><b>document.pdf</b></a></td>
+						<td><a href="#">Program Admin</a></td>
+						<td><a href="#">Basic Info</a></td>
+						<td>Apr 24, 2015</td>
+						<td>1.2 Mb</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"><b>document.pdf</b></a></td>
+						<td><a href="#">Program Admin</a></td>
+						<td><a href="#">Basic Info</a></td>
+						<td>Apr 24, 2015</td>
+						<td>1.2 Mb</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+								<div class="jq-checkbox__div"></div>
+							</div>
+						</td>
+						<td><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"><b>document.pdf</b></a></td>
+						<td><a href="#">Program Admin</a></td>
+						<td><a href="#">Basic Info</a></td>
+						<td>Apr 24, 2015</td>
+						<td>1.2 Mb</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<footer id="footer">
+	<div class="b-footer-wrapper">
+		<div class="container-fluid b-footer-aboutme">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 pull-right">
+					<div class="b-footer-soc">
+						<ul class="b-footer_link">
+							<li>
+								<a href="#" class="soc_fb"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_tw"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_in"></a>
+							</li>
+							<li>
+								<a href="#" class="soc_yt"></a>
+							</li>
+							<li>
+								<a href="#" class="b-help"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="b-footer-copy">
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
