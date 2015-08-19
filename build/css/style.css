@@ -3965,6 +3965,7 @@ $c-green:			#6bba38 !default;
 /* norm */
 /*$c-blue-light:	#2a9dff !default;*/
 /* border */
+/*badge for cal_apl*/
 /*
 html, body { background: #ffffff; }
 */
@@ -5818,6 +5819,96 @@ input:focus {
 
 .calendar.marginTop .fc-view-container {
 	margin-top: 120px;
+}
+
+.ic_etc {
+	background: url('../icons/ic_etc.png') no-repeat center center;
+}
+
+.cal_apl .fc-toolbar {
+	padding-left: 20px;
+}
+.cal_apl .fc-view-container {
+	padding-right: 240px;
+}
+.cal_apl .fc-aside {
+	position: absolute;
+	z-index: 300000;
+	top: 58px;
+	right: 0;
+	bottom: -10px;
+	display: block;
+	overflow: hidden; 
+	width: 240px;
+	background-color: #fafafa;
+	border-left: 1px solid #e6e6e6;
+}
+.cal_apl .fc-aside .fc-ahead,
+.cal_apl .fc-aside .fc-abody,
+.cal_apl .fc-aside .fc-afoot {
+	padding: 15px;
+	overflow: auto;
+	width: 100%;
+	font-size: 16px;
+	color: #555;
+}
+.cal_apl .fc-aside .fc-ahead em,
+.cal_apl .fc-aside .fc-abody em,
+.cal_apl .fc-aside .fc-afoot em {
+	margin-top: 10px;
+	display: block;
+	font-size: 14px;
+	color: #a2a2a2;
+}
+.cal_apl .fc-aside .fc-ahead {
+	height: auto; 
+	border-bottom: 1px solid #e6e6e6;
+}
+.cal_apl .fc-aside .fc-abody {
+	overflow: auto; 
+	max-height: -webkit-calc(100% - 165px);
+	max-height:         calc(100% - 165px);
+}
+.cal_apl .fc-aside .fc-abody .fc-abody-item {
+	width: 100%;
+}
+.cal_apl .fc-aside .fc-abody .fc-abody-item div {
+	padding: 14px 0;
+	font-size: 14px;
+	line-height: normal;
+}
+.cal_apl .fc-aside .fc-abody .fc-abody-item div a i {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	vertical-align: middle;
+	background-position: center right;
+}
+.cal_apl .fc-aside .fc-abody .fc-abody-item div em {
+	margin: 0 10px 0 0;
+	padding: 0; 
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+.cal_apl .fc-aside .fc-abody .b-pink {
+	color: #bd6ac5;
+}
+.cal_apl .fc-aside .fc-abody .b-pink em {
+	background-color: #bd6ac5;
+}
+.cal_apl .fc-aside .fc-afoot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: auto; 
+	height: 150px;
+	color: #6f6f6f;
+	background-color: #f7f7f7;
+	border-top: 1px solid #e6e6e6;
 }
 
 .b-app_users_list {

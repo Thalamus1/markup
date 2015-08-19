@@ -12,13 +12,14 @@
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
 				</li>
-				<li class="menuitem active dropdown" >
-					<a  class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
+				<li class="menuitem active dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
 					<ul class="dropdown-menu" role="menu">
-						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty" >Empty Calendar</a></li>
-						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar" >Calendar</a></li>
-					 </ul>
-
+						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty">Empty Calendar</a>
+						</li>
+						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar">Calendar</a>
+						</li>
+					</ul>
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
 				</li>
@@ -43,29 +44,36 @@
 			<div class="dropdown">
 				<button class="b-add btn fc-button b-add-event" data-toggle="dropdown">+</button>
 				<ul class="dropdown-menu" role="menu">
-								<li role="presentation"><a role="menuitem" data-target="#session_new" data-toggle="modal">Add Interview Session</a></li>
-								<li role="presentation"><a role="menuitem" data-target="#session_common" data-toggle="modal">Add Common Session</a></li>
-								<li role="presentation"><a role="menuitem" data-target="#session_delete" data-toggle="modal">Delete Session</a></li>
-								<li role="presentation" class="divider"></li>
-								<li><a data-target="#event" data-toggle="modal">Add Interview Date</a></li>
-			   </ul>
-			</div>	
+					<li role="presentation"><a role="menuitem" data-target="#session_new" data-toggle="modal">Add Interview Session</a>
+					</li>
+					<li role="presentation"><a role="menuitem" data-target="#session_common" data-toggle="modal">Add Common Session</a>
+					</li>
+					<li role="presentation"><a role="menuitem" data-target="#session_delete" data-toggle="modal">Delete Session</a>
+					</li>
+					<li role="presentation" class="divider"></li>
+					<li><a data-target="#event" data-toggle="modal">Add Interview Date</a>
+					</li>
+				</ul>
+			</div>
 			<div class="calendar fc fc-ltr fc-unthemed">
 				<div class="fc-toolbar">
 					<div class="fc-left">
 						<button type="button" class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-disabled">today</button>
 						<div class="fc-button-group">
-							<button type="button" class="fc-prev-button fc-button fc-state-default fc-corner-left"><span class="fc-icon fc-icon-left-single-arrow"></span></button>
-							<button type="button" class="fc-next-button fc-button fc-state-default fc-corner-right"><span class="fc-icon fc-icon-right-single-arrow"></span></button>
+							<button type="button" class="fc-prev-button fc-button fc-state-default fc-corner-left"><span class="fc-icon fc-icon-left-single-arrow"></span>
+							</button>
+							<button type="button" class="fc-next-button fc-button fc-state-default fc-corner-right"><span class="fc-icon fc-icon-right-single-arrow"></span>
+							</button>
 						</div>
 					</div>
 					<div class="fc-right"></div>
-					<div class="fc-center"><h2>August 18, 2015</h2></div>
+					<div class="fc-center">
+						<h2>August 18, 2015</h2>
+					</div>
 					<div class="fc-clear"></div>
-				</div>	
+				</div>
 			</div>
-			
-				<button  class="btn btn-success fc-button b-btn-datepicker"></button>
+			<button class="btn btn-success fc-button b-btn-datepicker"></button>
 			<div class="b-btn-toolbar">
 				<div class="btn-group fc-button-group fc-view-group">
 					<button class="btn btn-success">Month</button>
@@ -74,24 +82,31 @@
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>settings</span></button>
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>settings</span>
+						</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Show Information Panel</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Show Information Panel</a>
+							</li>
 							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" href="#">Refresh View</a></li>
-							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Refresh View</a>
+							</li>
+							<li role="presentation"><a role="menuitem" href="#">Print Current View</a>
+							</li>
 							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" data-target="#settings" data-toggle="modal">Settings</a></li>
-					   </ul>
-					</div>				
+							<li role="presentation"><a role="menuitem" data-target="#settings" data-toggle="modal">Settings</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="btn-group fc-button-group">
 					<button class="btn btn-success fc-button b-link_info">info</button>
 				</div>
 			</div>
-			<div class="b-calendar_submemu"><a data-target="#event" data-toggle="modal" class="b-add_interview"><span class="ico">+</span> Create Interview Event</a></div>
+			<div class="b-calendar_submemu"><a data-target="#event" data-toggle="modal" class="b-add_interview"><span class="ico">+</span> Create Interview Event</a>
+			</div>
 			<div class="b-calendar_empty">
-				<p>This date is currently empty.<br/>Please <a data-target="#event" data-toggle="modal">create</a> Interview Day Event first.</p>
+				<p>This date is currently empty.
+					<br/>Please <a data-target="#event" data-toggle="modal">create</a> Interview Day Event first.</p>
 			</div>
 		</section>
 	</div>
@@ -123,339 +138,386 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-
 <!-- Modal -->
-					<div class="modal fade" id="event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Create Event</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body js-scroll container-fluid">
-												<div class="form-group">
-													<label for="EventTitle">Event Title</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="EventTitle" placeholder="Type Event Title" required="" autofocus="">
-												</div>
-												<div class="form-group row">
-													<label for="date" class="col-sm-2 control-label">Date</label>
-													<div class="col-sm-10 input-group date input-append" id="date">
-														<input type="text" data-format="dd/mm/yyyy" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="row">
-												<div class="form-group col-sm-6">
-													<label for="timefrom" class="col-sm-2 control-label">From</label>
-													<div class="col-sm-10 timepicker input-append">
-													<input type="text" data-format="HH:mm PP" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value=""><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group col-sm-6">
-													<label for="timeto" class="col-sm-2 control-label">To</label>
-													<div class="col-sm-10 timepicker input-append">
-													<input type="text" data-format="HH:mm PP" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timeto"  required="" value=""><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												</div>
-												<div class="form-group row">
-													<label for="location" class="col-sm-2 control-label">Location</label>
-													<div class="col-sm-10 inp-location">
-													<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location"  name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="panel">
-													<span data-toggle="collapse" data-target="#tierinfo" class="b-name collapsed">Tier Interview Slots Distribution Setup</span>
-													<div  id="tierinfo" class="collapse">
-														<table>
-															<tr>
-																<th>Track / Name</th>
-																<th>Tier I</th>
-																<th>Tier II</th>
-																<th>Tier III</th>
-																<th></th>
-																<th>Total <br/>by TRack</th>
-															</tr>
-															<tr>
-																<td><span class="b-defualt">Tr default</span>Neurology</td>
-																<td>5</td>
-																<td>3</td>
-																<td>5</td>
-																<td></th>
-																<td ng-model="tot1">13</td>
-															</tr>
-															<tr>
-																<td><span class="b-defualt">Tr 1</span>Neurology</td>
-																<td><input type="number" class="form-control" ng-model="name1" name="name3" required="" placeholder="0"></td>
-																<td><input type="number" class="form-control" ng-model="name2"  name="name2" required="" placeholder="0"></td>
-																<td><input type="number" class="form-control" ng-model="name3"  name="name1" required="" placeholder="0"></td>
-																<td></th>
-																<td ng-model="tot2">{{name1+name2+name3}}</td>
-															</tr>
-															<tr>
-																<td colspan="5">Total Number of slots</td>
-																<td>{{tot1+tot2}}</td>
-															</tr>
-														</table>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Repeat Weekly</label>
-													<div class="col-sm-8">
-														<label>You can select recurrency and date when events ends</label>
-														<span class="switch"><input data-toggle="collapse" data-target="#Weekly" type="checkbox"><i></i></span>
-													</div>
-												</div>
-												<div class="collapse" id="Weekly">
-												<div class="form-group weekly-group">
-															<label class="checkbox-inline" ng-class="{checked:Mo}"><input type="checkbox" ng-model="Mo" value="">Mo</label>
-														     <label class="checkbox-inline" ng-class="{checked:Tu}" ><input type="checkbox"ng-model="Tu" value="">Tu</label>
-														     <label class="checkbox-inline" ng-class="{checked:We}"><input type="checkbox" ng-model="We"value="">We</label>
-														     <label class="checkbox-inline" ng-class="{checked:Th}"><input type="checkbox"ng-model="Th" value="">Th</label>
-														     <label class="checkbox-inline" ng-class="{checked:Fr}"><input type="checkbox"ng-model="Fr" value="">Fr</label>
-														     <label class="checkbox-inline" ng-class="{checked:Sa}"><input type="checkbox"ng-model="Sa" value="">Sa</label>
-														     <label class="checkbox-inline" ng-class="{checked:Su}"><input type="checkbox"ng-model="Su" value="">Su</label>
-
-												</div>
-												<div class="form-group row">
-													<label for="date" class="col-sm-4 control-label">Date Until</label>
-													<div class="col-sm-8 input-group date">
-														<input type="text" data-format="dd/mm/yyyy" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">description</label>
-													<div class="col-sm-8">
-														<label>You can add description to the Event</label>
-														<span class="switch"><input data-toggle="collapse" data-target="#description"  type="checkbox"><i></i></span>
-													</div>
-												</div>
-												<div class="form-group collapse" id="description">
-														<textarea  class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
-													
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Attachment</label>
-													<div class="col-sm-8">
-														<label>Upload attachment to the Event</label>
-														<span class="switch"><input data-toggle="collapse" data-target="#Attachment"   type="checkbox"><i></i></span>
-													</div>
-												</div>
-												<div class="form-group collapse" id="Attachment">
-														<span class="b-upload_file hidden"><input type="file" class="opaque" name="name" id="1534135956317186"/>
-														<a href="#" class="b-upload"><span>+</span></a></span>
-														<span class="b-upload_file"><input type="file" class="opaque" name="files[]" id=""/>
-														<a href="#" class="b-upload"><span>+</span></a></span>
-														<div class="loaded-file" data-id="1534135956317186"><a href="#" class="link_pdf">Attachment.pdf</a><a href="#" class="remove"></a></div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Create</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
-							</div>
-						  </div>
+<div class="modal fade" id="event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Create Event</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body js-scroll container-fluid">
+						<div class="form-group">
+							<label for="EventTitle">Event Title</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="EventTitle" placeholder="Type Event Title" required="" autofocus="">
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-			<!-- Modal -->
-					<div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Calendar Settings</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid">
-												<div class="form-group">
-													<label for="EventTitle">name of the Period</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="EventTitle" placeholder="Type Name, e.g. Residency 2015" required="" autofocus="">
-												</div>
-												<div class="form-group row">
-													<label for="date" class="col-sm-4 control-label">Date from</label>
-													<div class="col-sm-8 input-group date input-append" id="date">
-														<input type="text" data-format="dd/mm/yyyy"  value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="date2" class="col-sm-4 control-label">Date To</label>
-													<div class="col-sm-8 input-group date input-append" id="date2">
-														<input type="text" data-format="dd/mm/yyyy" class="form-control" value="04/26/2015"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="Period" class="col-sm-4 control-label">Schedule lock Period</label>
-													<div class="col-sm-8">
-														<input type="text" class="form-control  inp-right ng-pristine ng-valid ng-valid-required ng-touched" id="Period"  name="Period" required="" value="72 h" placeholder="">
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Save</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+						<div class="form-group row">
+							<label for="date" class="col-sm-2 control-label">Date</label>
+							<div class="col-sm-10 input-group date input-append" id="date">
+								<input type="text" data-format="dd/mm/yyyy" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
 							</div>
-						  </div>
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-			<!-- Modal -->
-					<div class="modal fade" id="session_delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal w440">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Delete Session</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid">
-													<div class="form-group"><p class="inf-warn">You are going to delete this session. This operation cannot be undone. Are you sure?</p></div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Delete</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<label for="timefrom" class="col-sm-2 control-label">From</label>
+								<div class="col-sm-10 timepicker input-append">
+									<input type="text" data-format="HH:mm PP" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom" required="" value=""><span class="add-on"><i class="icon-th"></i></span>
+								</div>
 							</div>
-						  </div>
-						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-						<!-- Modal -->
-					<div class="modal fade" id="session_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Create Interview Session</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid">
-												<div class="form-group row">
-													<label for="date" class="col-sm-4 control-label">Date</label>
-													<div class="col-sm-8 input-group date input-append" id="date">
-														<input type="text" data-format="dd/mm/yyyy"  value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="timefrom" class="col-sm-4 control-label">Interview time</label>
-													<div class="col-sm-8 timepicker input-append time_period">
-													<input type="text" data-format="HH:mm PP" value="08:00AM"  class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value=""><span class="b-dash">-</span><input type="text" data-format="HH:mm PP" value="09:00AM"  class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value=""><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="location" class="col-sm-2 control-label">Location</label>
-													<div class="col-sm-10 inp-location">
-													<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location"  name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<hr/>
-												<div class="form-group">
-													<label>Add Applicants</label>
-													<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span></a></span>
-													<div class="loaded-file" data-id="1534135956317186"><a href="#"><img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Warren Mayers</a><a href="#" class="remove"></a></div>
-
-												</div>
-												<div class="form-group">
-													<label>Add Interviewers</label>
-													<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span></a></span>
-													<div class="loaded-file" data-id="1534135956317186"><a href="#"><img src="images/pic_01.jpg" height="25" width="25" class="img-circle">John Someone</a><a href="#" class="remove"></a></div>
-													<div class="loaded-file" data-id="1534135956317186"><a href="#"><img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Matthew Cowles</a><a href="#" class="remove"></a></div>
-
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Save</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+							<div class="form-group col-sm-6">
+								<label for="timeto" class="col-sm-2 control-label">To</label>
+								<div class="col-sm-10 timepicker input-append">
+									<input type="text" data-format="HH:mm PP" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timeto" required="" value=""><span class="add-on"><i class="icon-th"></i></span>
+								</div>
 							</div>
-						  </div>
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-				<!-- Modal -->
-					<div class="modal fade" id="session_common" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Create Interview Session</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid">
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Session type</label>
-													<div class="col-sm-8 input-group inp-prgtour input-append">
-														<input type="text"  value="Program Tour" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="date" class="col-sm-4 control-label">Date</label>
-													<div class="col-sm-8 input-group date input-append" id="date">
-														<input type="text" data-format="dd/mm/yyyy"  value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="timefrom" class="col-sm-4 control-label">Interview time</label>
-													<div class="col-sm-8 timepicker input-append time_period">
-													<input type="text" data-format="HH:mm PP" value="08:00AM"  class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value=""><span class="b-dash">-</span><input type="text" data-format="HH:mm PP" value="09:00AM"  class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom"  required="" value=""><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label for="location" class="col-sm-2 control-label">Location</label>
-													<div class="col-sm-10 inp-location">
-													<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location"  name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
-													</div>
-												</div>
-												<hr/>
-												<div class="form-group">
-													<label>Add Applicants</label>
-													<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span></a></span>
-													<div class="loaded-file" data-id="1534135956317186"><a href="#"><img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Warren Mayers</a><a href="#" class="remove"></a></div>
-
-												</div>
-												<div class="form-group">
-													<label>Add Interviewers</label>
-													<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span></a></span>
-													<div class="loaded-file" data-id="1534135956317186"><a href="#"><img src="images/pic_01.jpg" height="25" width="25" class="img-circle">John Someone</a><a href="#" class="remove"></a></div>
-													<div class="loaded-file" data-id="1534135956317186"><a href="#"><img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Matthew Cowles</a><a href="#" class="remove"></a></div>
-
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Save</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+						<div class="form-group row">
+							<label for="location" class="col-sm-2 control-label">Location</label>
+							<div class="col-sm-10 inp-location">
+								<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location" name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
 							</div>
-						  </div>
 						</div>
-					  </div>
+						<div class="panel">
+							<span data-toggle="collapse" data-target="#tierinfo" class="b-name collapsed">Tier Interview Slots Distribution Setup</span>
+							<div id="tierinfo" class="collapse">
+								<table>
+									<tr>
+										<th>Track / Name</th>
+										<th>Tier I</th>
+										<th>Tier II</th>
+										<th>Tier III</th>
+										<th></th>
+										<th>Total
+											<br/>by TRack</th>
+									</tr>
+									<tr>
+										<td><span class="b-defualt">Tr default</span>Neurology</td>
+										<td>5</td>
+										<td>3</td>
+										<td>5</td>
+										<td>
+											</th>
+											<td ng-model="tot1">13</td>
+									</tr>
+									<tr>
+										<td><span class="b-defualt">Tr 1</span>Neurology</td>
+										<td>
+											<input type="number" class="form-control" ng-model="name1" name="name3" required="" placeholder="0">
+										</td>
+										<td>
+											<input type="number" class="form-control" ng-model="name2" name="name2" required="" placeholder="0">
+										</td>
+										<td>
+											<input type="number" class="form-control" ng-model="name3" name="name1" required="" placeholder="0">
+										</td>
+										<td>
+											</th>
+											<td ng-model="tot2">{{name1+name2+name3}}</td>
+									</tr>
+									<tr>
+										<td colspan="5">Total Number of slots</td>
+										<td>{{tot1+tot2}}</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Repeat Weekly</label>
+							<div class="col-sm-8">
+								<label>You can select recurrency and date when events ends</label>
+								<span class="switch"><input data-toggle="collapse" data-target="#Weekly" type="checkbox"><i></i></span>
+							</div>
+						</div>
+						<div class="collapse" id="Weekly">
+							<div class="form-group weekly-group">
+								<label class="checkbox-inline" ng-class="{checked:Mo}">
+									<input type="checkbox" ng-model="Mo" value="">Mo</label>
+								<label class="checkbox-inline" ng-class="{checked:Tu}">
+									<input type="checkbox" ng-model="Tu" value="">Tu</label>
+								<label class="checkbox-inline" ng-class="{checked:We}">
+									<input type="checkbox" ng-model="We" value="">We</label>
+								<label class="checkbox-inline" ng-class="{checked:Th}">
+									<input type="checkbox" ng-model="Th" value="">Th</label>
+								<label class="checkbox-inline" ng-class="{checked:Fr}">
+									<input type="checkbox" ng-model="Fr" value="">Fr</label>
+								<label class="checkbox-inline" ng-class="{checked:Sa}">
+									<input type="checkbox" ng-model="Sa" value="">Sa</label>
+								<label class="checkbox-inline" ng-class="{checked:Su}">
+									<input type="checkbox" ng-model="Su" value="">Su</label>
+							</div>
+							<div class="form-group row">
+								<label for="date" class="col-sm-4 control-label">Date Until</label>
+								<div class="col-sm-8 input-group date">
+									<input type="text" data-format="dd/mm/yyyy" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">description</label>
+							<div class="col-sm-8">
+								<label>You can add description to the Event</label>
+								<span class="switch"><input data-toggle="collapse" data-target="#description"  type="checkbox"><i></i></span>
+							</div>
+						</div>
+						<div class="form-group collapse" id="description">
+							<textarea class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Attachment</label>
+							<div class="col-sm-8">
+								<label>Upload attachment to the Event</label>
+								<span class="switch"><input data-toggle="collapse" data-target="#Attachment"   type="checkbox"><i></i></span>
+							</div>
+						</div>
+						<div class="form-group collapse" id="Attachment">
+							<span class="b-upload_file hidden"><input type="file" class="opaque" name="name" id="1534135956317186"/>
+														<a href="#" class="b-upload"><span>+</span>
+							</a>
+							</span>
+							<span class="b-upload_file"><input type="file" class="opaque" name="files[]" id=""/>
+														<a href="#" class="b-upload"><span>+</span>
+							</a>
+							</span>
+							<div class="loaded-file" data-id="1534135956317186"><a href="#" class="link_pdf">Attachment.pdf</a>
+								<a href="#" class="remove"></a>
+							</div>
+						</div>
 					</div>
-			<!-- /Modal -->
-
-
-
-
-
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Create</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Calendar Settings</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid">
+						<div class="form-group">
+							<label for="EventTitle">name of the Period</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="EventTitle" placeholder="Type Name, e.g. Residency 2015" required="" autofocus="">
+						</div>
+						<div class="form-group row">
+							<label for="date" class="col-sm-4 control-label">Date from</label>
+							<div class="col-sm-8 input-group date input-append" id="date">
+								<input type="text" data-format="dd/mm/yyyy" value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="date2" class="col-sm-4 control-label">Date To</label>
+							<div class="col-sm-8 input-group date input-append" id="date2">
+								<input type="text" data-format="dd/mm/yyyy" class="form-control" value="04/26/2015"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="Period" class="col-sm-4 control-label">Schedule lock Period</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control  inp-right ng-pristine ng-valid ng-valid-required ng-touched" id="Period" name="Period" required="" value="72 h" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Save</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="session_delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal w440">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Delete Session</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid">
+						<div class="form-group">
+							<p class="inf-warn">You are going to delete this session. This operation cannot be undone. Are you sure?</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Delete</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="session_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Create Interview Session</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid">
+						<div class="form-group row">
+							<label for="date" class="col-sm-4 control-label">Date</label>
+							<div class="col-sm-8 input-group date input-append" id="date">
+								<input type="text" data-format="dd/mm/yyyy" value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="timefrom" class="col-sm-4 control-label">Interview time</label>
+							<div class="col-sm-8 timepicker input-append time_period">
+								<input type="text" data-format="HH:mm PP" value="08:00AM" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom" required="" value=""><span class="b-dash">-</span>
+								<input type="text" data-format="HH:mm PP" value="09:00AM" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom" required="" value=""><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="location" class="col-sm-2 control-label">Location</label>
+							<div class="col-sm-10 inp-location">
+								<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location" name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<hr/>
+						<div class="form-group">
+							<label>Add Applicants</label>
+							<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span>
+							</a>
+							</span>
+							<div class="loaded-file" data-id="1534135956317186">
+								<a href="#">
+									<img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Warren Mayers</a>
+								<a href="#" class="remove"></a>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Add Interviewers</label>
+							<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span>
+							</a>
+							</span>
+							<div class="loaded-file" data-id="1534135956317186">
+								<a href="#">
+									<img src="images/pic_01.jpg" height="25" width="25" class="img-circle">John Someone</a>
+								<a href="#" class="remove"></a>
+							</div>
+							<div class="loaded-file" data-id="1534135956317186">
+								<a href="#">
+									<img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Matthew Cowles</a>
+								<a href="#" class="remove"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Save</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="session_common" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Create Interview Session</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid">
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Session type</label>
+							<div class="col-sm-8 input-group inp-prgtour input-append">
+								<input type="text" value="Program Tour" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="date" class="col-sm-4 control-label">Date</label>
+							<div class="col-sm-8 input-group date input-append" id="date">
+								<input type="text" data-format="dd/mm/yyyy" value="04/26/2015" class="form-control"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="timefrom" class="col-sm-4 control-label">Interview time</label>
+							<div class="col-sm-8 timepicker input-append time_period">
+								<input type="text" data-format="HH:mm PP" value="08:00AM" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom" required="" value=""><span class="b-dash">-</span>
+								<input type="text" data-format="HH:mm PP" value="09:00AM" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="timefrom" required="" value=""><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="location" class="col-sm-2 control-label">Location</label>
+							<div class="col-sm-10 inp-location">
+								<input type="text" class="form-control  ng-pristine ng-valid ng-valid-required ng-touched" id="location" name="location" required="" placeholder="Add location"><span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<hr/>
+						<div class="form-group">
+							<label>Add Applicants</label>
+							<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span>
+							</a>
+							</span>
+							<div class="loaded-file" data-id="1534135956317186">
+								<a href="#">
+									<img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Warren Mayers</a>
+								<a href="#" class="remove"></a>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Add Interviewers</label>
+							<span class="b-upload_file"><a href="#" class="b-upload"><span>+</span>
+							</a>
+							</span>
+							<div class="loaded-file" data-id="1534135956317186">
+								<a href="#">
+									<img src="images/pic_01.jpg" height="25" width="25" class="img-circle">John Someone</a>
+								<a href="#" class="remove"></a>
+							</div>
+							<div class="loaded-file" data-id="1534135956317186">
+								<a href="#">
+									<img src="images/pic_01.jpg" height="25" width="25" class="img-circle">Matthew Cowles</a>
+								<a href="#" class="remove"></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Save</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
