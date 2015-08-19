@@ -815,18 +815,23 @@ input:focus { outline: 0 none; }
 
 .b-calendar_submemu {border-bottom:1px solid #e6e6e6; min-height:60px; padding:0 20px; margin-top:-10px;}
 .b-calendar_submemu .b-add_interview {line-height:60px; font-family: 'HelveticaNeueLTStd-Md'; font-size:15px; color:#4ea5bb;}
-.b-calendar_submemu .b-add_interview .ico {display:inline-block; vertical-align:top; text-indent:-999em; height:30px; width:30px;  background:url('../icons/ic_add.png')no-repeat center center;}
+.b-calendar_submemu .b-add_interview .ico {display:inline-block; vertical-align:top; text-indent:-999em; height:60px; width:30px;  background:url('../icons/ic_add.png')no-repeat center center;}
 
+#directives-calendar {
 .nav-tabs { 
-	.b-add_interview {line-height:30px; font-family: 'HelveticaNeueLTStd-Md'; font-size:15px; color:#4ea5bb;}
+	position:absolute; left:0; top:56px; margin-bottom:0; background:#fafafa; width:100%;
+	.b-add_interview {line-height:32px; font-family: 'HelveticaNeueLTStd-Md'; font-size:15px; color:#4ea5bb;}
         .b-add_interview .ico {display:inline-block; vertical-align:top; text-indent:-999em; height:30px; width:30px;  background:url('../icons/ic_add.png')no-repeat center center;}
-	.b-edite_event {display:inline-block; vertical-align:top; height:15px; width:15px; background:url('../icons/ic_edite.png') no-repeat center center;}
+	li.active a {padding-right:30px; background:#fff url('../icons/ic_edite.png') no-repeat 100% center;}
 }
-
+}
+.calendar.marginTop {
+	.fc-view-container {margin-top:120px;}
+}
 .b-app_users_list {
-	padding:0 60px;
+	padding:0 60px; white-space:nowrap; overflow:hidden; width:100%; position:absolute; left:0; top:133px;
 	.b-app_user:first-child a {color:#000000; border-right:1px solid #e6e6e6;}
-	.b-app_user {display:inline-block; vertical-align:top; position:relative; margin-right:10px;
+	.b-app_user {display:inline-block; vertical-align:top; position:relative; margin-right:10px; white-space:normal;
 		 a {display:block; position:relative;  font-family: 'HelveticaNeueLTStd-Md'; font-size:15px; line-height:16px;}
 		 .name, img {display:inline-block; vertical-align:top;}
 		 img {margin-right:10px;}
@@ -835,7 +840,7 @@ input:focus { outline: 0 none; }
 		 a .b-tier {position:absolute; left:20px; top:20px; background:#333333; color:#ffffff; border-radius:10px; height:20px; width:20px; text-align:center; line-height:20px; font-size:11px;font-family: 'HelveticaNeueLTStd-Md'; }
 	 }
 }
-
+.b-interview_info {display:none;}
 @media (min-width: 768px) and (max-width: 991px) {
 }
 @media (min-width: 992px) and (max-width: 1199px) {

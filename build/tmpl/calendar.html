@@ -73,7 +73,7 @@
 				</div>
 			</div>
 			<ul class="nav nav-tabs" ng-show="menuactive=='agendaDay'">
-			  <li class="active"><a href="#">Interview Day Event<span class="b-count">8:00AM—5:00PM</span></a><a href="#" class="b-edite_event"></a></li>
+			  <li class="active"><a href="#">Interview Day Event<span class="b-count">8:00AM—5:00PM</span></a></li>
 			  <li><a href="#">Interview Day Event 2<span class="b-count">5:00PM—9:00PM</span></a></li>
 			  <li><a data-target="#event" data-toggle="modal" class="b-add_interview"><span class="ico">+</span> Create Interview Event</a></li>
 			</ul>
@@ -87,6 +87,7 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T1</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
@@ -95,6 +96,7 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T2</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
@@ -103,6 +105,7 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T3</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
@@ -111,6 +114,7 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T4</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
@@ -119,6 +123,7 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T5</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
@@ -127,6 +132,7 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T6</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
@@ -135,15 +141,24 @@
 				</div>
 				<div class="b-app_user">
 					<a href="#">
+						
 						<span class="b-tier">T7</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
-						<span class="b-descr"></span>
 					</a>
 				</div>
 
 			</div>
-			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
+			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{marginTop: menuactive=='agendaDay'}"></div>
+			<div class="b-interview_info" >
+				<ul class="nav">
+					<li  class="active"><a href="#">Current Event</a></li>
+					<li><a href="#">Interview Date</a></li>
+				</ul>
+				<div class="b-interview_item">
+					
+				</div>
+			</div>
 		</section>
 	</div>
 </div>

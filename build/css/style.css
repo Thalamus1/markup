@@ -5708,19 +5708,27 @@ input:focus {
 .b-calendar_submemu .b-add_interview .ico {
 	display: inline-block;
 	width: 30px;
-	height: 30px;
+	height: 60px;
 	vertical-align: top;
 	text-indent: -999em;
 	background: url('../icons/ic_add.png') no-repeat center center;
 }
 
-.nav-tabs .b-add_interview {
+#directives-calendar .nav-tabs {
+	position: absolute;
+	top: 56px;
+	left: 0;
+	margin-bottom: 0;
+	width: 100%; 
+	background: #fafafa;
+}
+#directives-calendar .nav-tabs .b-add_interview {
 	font-family: 'HelveticaNeueLTStd-Md';
 	font-size: 15px;
-	line-height: 30px;
+	line-height: 32px;
 	color: #4ea5bb;
 }
-.nav-tabs .b-add_interview .ico {
+#directives-calendar .nav-tabs .b-add_interview .ico {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -5728,16 +5736,23 @@ input:focus {
 	text-indent: -999em;
 	background: url('../icons/ic_add.png') no-repeat center center;
 }
-.nav-tabs .b-edite_event {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	vertical-align: top;
-	background: url('../icons/ic_edite.png') no-repeat center center;
+#directives-calendar .nav-tabs li.active a {
+	padding-right: 30px;
+	background: #fff url('../icons/ic_edite.png') no-repeat 100% center;
+}
+
+.calendar.marginTop .fc-view-container {
+	margin-top: 120px;
 }
 
 .b-app_users_list {
+	position: absolute;
+	top: 133px; 
+	left: 0;
 	padding: 0 60px;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
 }
 .b-app_users_list .b-app_user:first-child a {
 	color: #000;
@@ -5745,9 +5760,10 @@ input:focus {
 }
 .b-app_users_list .b-app_user {
 	position: relative;
-	margin-right: 10px; 
+	margin-right: 10px;
 	display: inline-block;
 	vertical-align: top;
+	white-space: normal;
 }
 .b-app_users_list .b-app_user a {
 	position: relative;
@@ -5787,6 +5803,10 @@ input:focus {
 	background: #333;
 	-webkit-border-radius: 10px;
 	        border-radius: 10px;
+}
+
+.b-interview_info {
+	display: none;
 }
 
 /*!

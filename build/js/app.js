@@ -181,7 +181,6 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
     /* event sources array*/
     $scope.eventSources = [$scope.events, $scope.calEventsExt];
 	 $scope.menuactive ='month';
-	 console.log($scope.menuactive);
     //$scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
     //$scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
 }]);
