@@ -29,10 +29,10 @@ angular.module('thalamusApp', [
 	 when('/administration/roles', {
         templateUrl: 'tmpl/security_roles.html'
       }).
-            when('/documents', {
+	when('/documents', {
         templateUrl: 'tmpl/add_doc_cat.html'
       }).
-      	when('/documents/list', {
+	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
       }).
       	when('/calendar_apl', {
