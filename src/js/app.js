@@ -20,6 +20,19 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar_day.html',
 	    controller: 'CalendarCtrl'
       }).
+       when('/calendar_apl', {
+        templateUrl: 'tmpl/calendar_apl.html',
+	    controller: 'CalendarCtrl'
+      }).
+             when('/documents', {
+        templateUrl: 'tmpl/add_doc_cat.html'
+      }).
+      	when('/documents/list', {
+        templateUrl: 'tmpl/doc_list.html'
+      }).
+      	when('/calendar_apl', {
+        templateUrl: 'tmpl/calendar_apl.html'
+      }).
 	when('/administration', {
         templateUrl: 'tmpl/security.html'
       }).
