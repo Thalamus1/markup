@@ -4642,8 +4642,8 @@ body > .b-fix-wrapper {
 	outline: none;
 }
 #directives-calendar .dropdown.open .b-add {
-	color: #fff;
-	background: #666;
+	text-indent: -999em;
+	background: #666 url('../icons/ic_add_open.png') no-repeat center center;
 	outline: none;
 }
 #directives-calendar .open.dropdown .b-link_settings {
@@ -4652,8 +4652,7 @@ body > .b-fix-wrapper {
 }
 #directives-calendar .btn.b-link_settings,
 #directives-calendar .btn.b-link_info,
-#directives-calendar .btn.b-btn-datepicker,
-#directives-calendar .btn.b-add {
+#directives-calendar .btn.b-btn-datepicker {
 	padding: 0; 
 	font-family: 'thalamus';
 }
@@ -4927,8 +4926,9 @@ body > .b-fix-wrapper {
 	font-family: 'thalamus';
 	font-size: 13px;
 	line-height: 40px;
+	text-indent: -999em;
 	color: #4ea5bb;
-	background: #fff;
+	background: #fff url('../icons/ic_add.png') no-repeat center center;
 	border: 1px solid #ccc;
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
@@ -5006,7 +5006,6 @@ body > .b-fix-wrapper {
 	font-family: 'thalamus'; 
 	font-size: 13px;
 	line-height: 20px;
-	content: '\e698';
 	text-align: center;
 	color: #4ea5bb;
 	background: #fff;
@@ -5111,8 +5110,8 @@ body > .b-fix-wrapper {
 }
 
 .dropdown.open .b-add {
-	color: #fff;
-	background: #666;
+	text-indent: -999em;
+	background: #666 url('../icons/ic_add_open.png') no-repeat center center;
 	outline: none;
 }
 

@@ -399,9 +399,9 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
         border-radius: 4px;
 	outline:none;
 }
-.dropdown.open .b-add {background: #666666; color:#ffffff;  outline:none;}
+.dropdown.open .b-add {text-indent:-999em;   background:#666666 url('../icons/ic_add_open.png')no-repeat center center; outline:none;}
 .open.dropdown .b-link_settings {background:#666666; color:#ffffff; }
-.btn.b-link_settings, .btn.b-link_info, .btn.b-btn-datepicker,  .btn.b-add {
+.btn.b-link_settings, .btn.b-link_info, .btn.b-btn-datepicker {
 	font-family: 'thalamus'; padding:0;}
 
 .fc-state-default {
@@ -599,9 +599,9 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 .b-add {
 	width: 40px;
 	height: 40px;
-	background:#ffffff;
 	font-family: 'thalamus';
 	color:#4ea5bb;
+	text-indent:-999em;  background:#ffffff url('../icons/ic_add.png')no-repeat center center;
 	font-size:13px; line-height:40px;
 	border: 1px solid #ccc;
 	        border-radius: 4px;
@@ -668,7 +668,7 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	    text-align:center;
 	    color:#4ea5bb;
 	     margin-right:10px;
-	    content: "\e698"; font-family: 'thalamus';
+	    font-family: 'thalamus';
 	    }
 }
 .b-link_actions:after {
@@ -722,7 +722,7 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 
 
 }
-.dropdown.open .b-add {background: #666666; color:#ffffff; outline:none;}
+.dropdown.open .b-add {text-indent:-999em; background:#666666 url('../icons/ic_add_open.png')no-repeat center center; outline:none;}
 .b-btn-toolbar .dropdown.open .btn.b-link_filtr, .b-btn-toolbar .dropdown.open .btn.b-link_actions {background: #666666; color:#ffffff; outline:none;}
 .nav-tabs {background:#fafafa; border-bottom:1px solid #e6e6e6; margin: 0 0 20px 0; padding:0;}
 .nav-tabs > li > a {font-family: 'HelveticaNeueLTStd-Md'; font-size:15px; padding:15px 20px; line-height:16px; border-radius:0; margin:0;border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6; border-left:0 none;background:#f0f0f0;}
