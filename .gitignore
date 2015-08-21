@@ -29,6 +29,8 @@ Thumbs.db
 .idea
 bower_components
 tmp
+build
+build
 
 # Node.JS
 node_modules
