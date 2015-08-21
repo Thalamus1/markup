@@ -39,7 +39,6 @@
 				<ul class="dropdown-menu" role="menu">
 					<li role="presentation"><a role="menuitem"  data-target="#new-cat" data-toggle="modal">Create New Category</a></li>
 					<li role="presentation"><a role="menuitem" data-target="#new-docs" data-toggle="modal">Add New Document</a></li>
-					<!--<li><a href="#addocs" data-toggle="modal" data-target="#adddocs">Create New Document</a></li>-->
 				  </ul>
 			</div>
 			<form class="b-search-form" method="get" action=".">
@@ -201,27 +200,43 @@
 					</div>
 					<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
 						<div class="modal-body js-scroll container-fluid">
-							<div class="form-group row">
-								<label class="col-sm-4 control-label">Category Name</label>
-								<div class="col-sm-8">
-									<span class="add-on"><i class="icon-th"></i></span>
+							<div class="form-group row pupMenu">
+								<label class="col-sm-3 control-label">Category Name</label>
+								<div class="col-sm-9 cat-name">
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="catName"  name="catName" required="" placeholder="" value="Event Guide"><span class="m-icon">
+									<i class="icon icon-tag"></i>
+									<div class="popover left" style="display:block;"><div class="arrow"></div>
+										<div class="popover-content">Event Guides<i class="icon icon-check"></i></div>
+										<div class="popover-content">Direction Giudes</div>
+										<div class="popover-content">Common Information</div>
+										<div class="popover-content">Personal Guides</div>
+									</div>
+								</span>
+								
 								</div>
 							</div>
-							<div class="form-group row">
-								<label class="col-sm-4 control-label">Categpry Description</label>
-								<div class="col-sm-8">
-									<label>Optional</label>
-									<span class="switch"><input data-toggle="collapse" data-target="#description" type="checkbox"><i></i></span>
+							<div class="form-group row fileSet collapse" id="fUpload">
+								<label class="col-sm-12 control-label">Documents List</label>
+								<div class="col-sm-12">
+									<label class="cFile" for="">Document 1.pdf<i class="icon icon-check"></i></label>
+									<label class="cFile" for="">Document 1.pdf<i class="icon icon-check"></i></label>
+									<label class="cFile" for="">Document 1.pdf<i class="icon icon-check"></i></label>
+									<label class="cFile" for="">Document 1.pdf<i class="icon icon-check"></i></label>
 								</div>
 							</div>
-							<div class="form-group collapse" id="description">
-									<textarea  class="form-control" placeholder="Type your description..."></textarea>
+							<div class="form-group row fileSetPan">
+								<div class="col-sm-12">
+									<a data-toggle="collapse" data-target="#fUpload" class="b-name collapsed"><i class="icon icon-plus"></i>Upload Documents</a>
+									<span>You can upload multiple documents at once.<br/>
+									All of you documents will be automaticaly converted into PDF during upload process.</span>
+								</div>
 							</div>
 						</div>
 						<div class="modal-footer">
 							<button type="submit" class="b-button">Create</button>
 							<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
 						</div>
+						
 					</form>
 		</div>
 	  </div>
@@ -229,3 +244,4 @@
   </div>
 </div>
 <!-- /Modal -->
+
