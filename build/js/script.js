@@ -47,7 +47,6 @@ var wnd;
 $(document).ready(function() {
 	var T;
 	wnd = $(window);
-
 	$('.js-scroll').mCustomScrollbar({
 				live:true,
 				axis:"y",

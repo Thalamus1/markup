@@ -13,21 +13,31 @@
 					</li>
 					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
 					</li>
+<<<<<<< HEAD
 					<li class="menuitem active dropdown">
+=======
+					<li class="menuitem dropdown">
+>>>>>>> master
 						<a class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
 						<ul class="dropdown-menu" role="menu">
 							<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty">Empty Calendar</a>
 							</li>
 							<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar">Calendar</a>
 							</li>
+<<<<<<< HEAD
 							<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_day">Calendar Day</a>
 							</li>
+=======
+>>>>>>> master
 						</ul>
 					</li>
 					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
 					</li>
+<<<<<<< HEAD
 					<li role="menuitem"><a role="menuitem" href="#/calendar_apl">Calendar APL</a>
 					</li>
+=======
+>>>>>>> master
 					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
 					</li>
 				</ul>
@@ -80,6 +90,7 @@
 				</div>
 				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="login()">
 					<div class="modal-body">
+<<<<<<< HEAD
 						<div class="form-group">
 							<label for="exampleInputEmail1">E-mail</label>
 							<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail1" placeholder="Type Your E-mail" data-ng-model="loginData.userName" required="" autofocus="">
@@ -87,6 +98,15 @@
 						<div class="form-group">
 							<label for="exampleInputPassword1">Password</label>
 							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword1" placeholder="Password" data-ng-model="loginData.password" required="">
+=======
+						<div class="form-group validate">
+							<label for="exampleInputEmail1">E-mail</label>
+							<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail1" placeholder="Type Your E-mail" name="user" data-ng-model="loginData.userName" required="">
+						</div>
+						<div class="form-group validate">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword1" name="password" placeholder="Password" data-ng-model="loginData.password" required="">
+>>>>>>> master
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -145,6 +165,7 @@
 						<div class="form-group">
 							<label for="exampleInputToken1">Token (if necessary)</label>
 							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputToken1" placeholder="0664C23F78C54F29BE24DD41B2C438AC" required="" autofocus="">
+<<<<<<< HEAD
 						</div>
 						<div class="form-group">
 							<label for="exampleInputPassword2">Password</label>
@@ -158,6 +179,21 @@
 					<div class="modal-footer">
 						<button type="submit" class="b-button">Set new password</button>
 					</div>
+=======
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword2">Password</label>
+							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword2" placeholder="Password" required="">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword3">Confirm Password</label>
+							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword3" placeholder="Confirm Password" required="">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Set new password</button>
+					</div>
+>>>>>>> master
 				</form>
 				<p><a href="#login" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#login">Back to Login</a>
 				</p>
@@ -167,3 +203,51 @@
 </div>
 </div>
 <!-- /Modal -->
+<<<<<<< HEAD
+=======
+<script>
+$(function()
+{
+	$(".b-login form").validate(
+	{
+		success: function(label)
+		{
+			label.closest(".form-group").removeClass('has-error').addClass("has-success");
+			label.closest(".b-login").removeClass('has-error').addClass("has-success");
+		},
+		errorPlacement: function(error, element)
+		{
+			$(element).parent().addClass('has-error');
+			$(element).closest(".b-login").addClass('has-error');
+			$(element)
+				.closest("form")
+				.find("label[for='" + element.attr("id") + "']")
+				.append(error);
+		},
+		errorElement: "span",
+		rules:
+		{
+			user:
+			{
+				required: true
+			},
+			password:
+			{
+				required: true
+			}
+		},
+		messages:
+		{
+			user:
+			{
+				required: " - Please correct your email"
+			},
+			password:
+			{
+				required: " - password required"
+			}
+		}
+	});
+});
+</script>
+>>>>>>> master

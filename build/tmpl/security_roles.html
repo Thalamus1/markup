@@ -23,8 +23,8 @@
 							<b class="b-job">Thalamus System</b>
 						</span>
 				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-				<a href="#" class="b-mess"></a>
-				<a href="#" class="b-dzn"></a>
+				<a href="#" class="b-mess">&#xe661</a>
+				<a href="#" class="b-dzn">&#xe670</a>
 			</div>
 		</div>
 	</nav>
@@ -33,7 +33,11 @@
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
 			<div class="dropdown">
+<<<<<<< HEAD
 				<button class="b-add btn fc-button" data-toggle="dropdown">+</button>
+=======
+				<button class="b-add btn fc-button" data-toggle="dropdown">&#xe67a</button>
+>>>>>>> master
 				<ul class="dropdown-menu" role="menu">
 					<li role="presentation"><a role="menuitem" href="#">Create New User</a>
 					</li>
@@ -98,7 +102,7 @@
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">&#xe68c</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
 							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a>
 							</li>
@@ -122,65 +126,81 @@
 					<div class="js-scroll">
 						<div class="b-section">
 							<div class="b-title">System Administration</div>
-							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
-								<a href="#" class="b-section_item-name">System Administrator</a>
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">System Administrator</a>
 							</div>
-							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
-								<a href="#" class="b-section_item-name">System Operator</a>
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">System Operator</a>
 							</div>
 						</div>
 						<div class="b-section">
 							<div class="b-title">Business Administration</div>
 							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
+<<<<<<< HEAD
 								<a href="#" class="b-section_item-name">Business Administrator</a>
 							</div>
 							<div class="b-section_item active">
 								<div class="jq-checkbox checked" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
 									<div class="jq-checkbox__div"></div>
-								</div>
-								<a href="#" class="b-section_item-name">Business Manager</a>
+=======
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Business Administrator</a>
 							</div>
-							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+							<div class="b-section_item active" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
+>>>>>>> master
 								</div>
-								<a href="#" class="b-section_item-name">Finance Manager</a>
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Business Manager</a>
 							</div>
-							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Finance Manager</a>
+							</div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
+								</div>
+<<<<<<< HEAD
 								<a href="#" class="b-section_item-name">Finance Agent</a>
 							</div>
 							<div class="b-section_item">
 								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
 									<div class="jq-checkbox__div"></div>
+=======
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Finance Agent</a>
+							</div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
+>>>>>>> master
 								</div>
-								<a href="#" class="b-section_item-name">Customer Service Agent</a>
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Customer Service Agent</a>
 							</div>
 						</div>
 						<div class="b-section">
 							<div class="b-title">Program Administration</div>
-							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)" checked="checked">
+									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
-								<a href="#" class="b-section_item-name">Program Administrator</a>
+								<a href="" class="b-section_item-name ng-binding" ng-click="checkRole(role)">Program Administrator</a>
 							</div>
-							<div class="b-section_item">
-								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
-									<div class="jq-checkbox__div"></div>
+							<div class="b-section_item" ng-class="{active: role.checked}">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
+									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
-								<a href="#" class="b-section_item-name">Program Operator</a>
+								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Program Operator</a>
 							</div>
 						</div>
 					</div>
