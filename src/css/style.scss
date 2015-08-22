@@ -126,7 +126,9 @@ a:hover {color:#111111; text-decoration: none;}
 	max-width: $max_width;
 	margin: 0 auto;
 }*/
-
+.errorTxt {
+	color:$c-red;
+}
 .nophone {
 	min-width: 768px;
 	body, .b-header__nav-wrapper, header, footer, .b-content { min-width: 768px; }
@@ -148,24 +150,22 @@ a:hover {color:#111111; text-decoration: none;}
 .d_table_row { display: table-row; }
 .d_table_cell { display: table-cell; vertical-align: middle; }
 
-.docsEmpty {
+.docsEmpty, aplEmpty {
 	text-align:center;
 	height: 40vh;
 	line-height: 40vh;
-}
-.docsEmpty div {
-	width:60%;
-	display:inline-block;
-	vertical-align:middle;
-	font-size: 2.5em;
-	line-height:normal;
-	color:$c-gray;
-	padding:15px;
-	font-family: 'HelveticaNeueLT-Light';
-	cursor:default;
-}
-.docsEmpty span {
-	color:#4ea5bb;
+	a {color:#4ea5bb}
+	div {
+		width:60%;
+		display:inline-block;
+		vertical-align:middle;
+		font-size: 2.5em;
+		line-height:normal;
+		color:$c-gray;
+		padding:15px;
+		font-family: 'HelveticaNeueLT-Light';
+		cursor:default;
+	}
 }
 
 .b-header {
@@ -336,11 +336,15 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	.form-group {border:1px solid #f0f0f0; padding:10px 20px; margin-bottom:0;
 		label {cursor:pointer; text-transform:uppercase; color:#999999; margin:0; font-size:13px; font-weight:normal;	display:block;
 		font-family: 'HelveticaNeueLTStd-Md';}
+<<<<<<< HEAD
 
 	}
 	.has-error, .has-success {position:relative;}
 	.form-group.has-error:after {background:#d27979; color:#ffffff; content: "\e623"; font-family: 'thalamus'; display:block;position:absolute; top:20px; right:20px; height:20px; width:20px; border-radius:10px; font-size:10px; line-height:20px; text-align:center;}
 	.form-group.has-success:after {background:#66cc66; color:#ffffff; content: "\e614"; font-family: 'thalamus'; display:block; position:absolute; top:20px; right:20px; height:20px; width:20px;  border-radius:10px; font-size:10px; line-height:20px; text-align:center;}
+=======
+	}
+>>>>>>> thalamusYasha
 	.form-control {border:0 none; font-size:21px;line-height:30px; width:100%; height:30px; max-width:100%; padding:0;font-family: 'HelveticaNeueLT-Light';color:#111111; box-shadow:none;outline:none;}
 	.form-control:placeholder {color:#cccccc;}
 }
@@ -595,6 +599,9 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
         border-radius: 4px;
 	outline:none;
 	}
+}
+.b-btn-toolbar.inner {position:relative;
+	.btn {color:#000000; margin-right:10px; text-transform:none;}
 }
 .b-add {
 	width: 40px;
@@ -860,6 +867,11 @@ input:focus { outline: 0 none; }
 		.close {background:url('../icons/ic_close.png')no-repeat 0 0; outline:none; position:absolute; opacity:1;top:-20px; right:-20px; display:block; text-indent:-999em; height:42px; width:42px;}
 		.modal-title {font-weight:normal;font-size:32px;line-height:32px;font-family: 'HelveticaNeueLT-Light';margin:0;}
 	}
+	.modal-header.done {background-color:#dbffd8;padding-bottom:5px;
+		.info-descr {font-size:14px;color:$c-gray-dark;
+			.icon {color:#4ea4ba;}
+		}
+	}
 	hr { margin:0; border-top: 1px solid #4ea5bb;}
 	.b-form {
 	.form-group {border-bottom:1px solid #f0f0f0; padding:10px 20px; margin-bottom:0;
@@ -868,6 +880,60 @@ input:focus { outline: 0 none; }
 		.col-sm-8 {text-align:right;}
 		textarea.form-control {border:1px solid #f0f0f0; font-size:15px;line-height:20px; width:100%; height:120px; max-width:100%; padding:10px;font-family: 'HelveticaNeueLT-Roman';color:#111111; resize:none; box-shadow:none;outline:none;}
 	}
+<<<<<<< HEAD
+=======
+	.form-group.grayPad {background-color:#f7f7f7;}
+	/*docs modal popup menu*/
+	.pupMenu {border:none;
+		.m-icon {display:inline-block;vertical-align:middle;width:10%;text-align:right;
+			.icon-tag {color:#4ea4ba;display:inline-block;vertical-align:middle;width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;margin-left:10px;cursor:pointer;}
+			&:hover .icon-tag {background-color:#4ea4ba;color:#ffffff;}
+			.popover {top:-8px;left:200px;visibility:hidden;
+				.arrow{top:30px;}
+				.popover-content {cursor:pointer;padding-right:40px;
+					.icon {position:absolute;right:15px;color:#4ea5bb;}
+					&:hover{background-color:#f7f7f7;color:#4ea5bb;}
+				}
+			}
+			&:hover .popover {visibility:visible;}
+		} 
+		.control-label {height:30px;line-height: 30px;}
+		#catName {display:inline-block; vertical-align:top;width:90%; text-align:right;}
+	}
+	#fUpload {border-top:1px solid #4ea5bb;}
+	.fileSet {
+		label.cFile {
+			font-family: 'HelveticaNeueLT-Light';
+			border:1px solid $c-gray-light;
+			height:30px; line-height:30px;
+			padding:0 10px;
+			margin:10px 0;
+			text-transform:none;
+			color:$c-gray-dark; 
+			overflow:hidden;
+			i {float:right;color:#4ea5bb;height:30px;line-height:30px;}
+			background: linear-gradient(to right, #ffffff 70%, $c-gray-light 70%);
+		 }
+		 label.cFile.uploaded {
+			 background:#ffffff;
+		 }
+	}
+	.fileSetPan {
+		a {color:#4ea5bb;display:block;height:30px;line-height:30px;text-transform:uppercase;margin-bottom:10px;cursor:pointer;
+			i{margin-right:10px;}
+		}
+		span {color:$c-gray;font-size: 12px;}
+	}
+	.apl-list {max-height:300px;overflow:auto;
+		.apl-item {display:block; position:relative;  font-family: 'HelveticaNeueLTStd-Md'; font-size:15px; line-height:16px;padding-top:10px;padding-bottom:10px;border-bottom:1px solid $c-gray-light;color:lighten($c-gray,10);overflow:hidden;
+			 .name, img {display:inline-block; vertical-align:top;}
+			 img {margin-right:10px;}
+			  .icon, .errorTxt {height:inherit;float:right;vertical-align:middle;padding-top:13px;}
+			  .errorTxt {font-family: 'HelveticaNeueLT-Light';}
+			 &.done {color:#4ea5bb;}
+		}
+	}
+>>>>>>> thalamusYasha
 	label.checkbox-inline {display:inline-block; vertical-align:top; height:40px; border-radius:20px; line-height:40px; text-align:center; position:relative; border:1px solid #e6e6e6; color:#4ea5bb; text-transform:none; width:40px;}
 	.checkbox-inline input {position:absolute; top:0; left:0; height:40px; width:40px; z-index:1; opacity:0; cursor:pointer;}
 	label.checkbox-inline.checked {background:#4ea5bb; color:#ffffff;}
@@ -959,6 +1025,7 @@ input:focus { outline: 0 none; }
 	.modal-footer { padding:0;border-radius:0 0 5px 5px;
 		.b-button {background:#4ea5bb; border:0 none; border-radius:0 0 0 5px;float:left; width:50%; color:#ffffff;outline:none;font-family: 'HelveticaNeueLTStd-Md'; text-transform:uppercase; height:60px; line-height:60px; text-align:center; padding:0; }
 		.b-button.b-cancel {background:#999999; border-radius:0 0 5px 0;}
+		.b-button.singleBtn {border-radius:0 0 5px 5px;width:100%;}
 	}
 
 }

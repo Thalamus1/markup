@@ -33,88 +33,56 @@
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
 			<div class="dropdown">
+<<<<<<< HEAD
 				<button class="b-add btn fc-button" data-toggle="dropdown">&#xe67a</button>
+=======
+				<button class="b-add btn fc-button" data-toggle="dropdown" >+</button>
+>>>>>>> thalamusYasha
 				<ul class="dropdown-menu" role="menu">
-					<li role="presentation"><a role="menuitem" href="#">Create New User</a>
-					</li>
-					<li role="presentation"><a role="menuitem" href="#">Create New Role</a>
-					</li>
-				</ul>
+					<li role="presentation"><a role="menuitem" href="#">Create New User</a></li>
+					<li role="presentation"><a role="menuitem" href="#">Create New Role</a></li>
+				  </ul>
 			</div>
 			<form class="b-search-form" method="get" action=".">
 				<fieldset>
 					<input type="button" class="b-search-panel__button">
 					<input type="text" name="q" class="b-search-input" value='' placeholder="Search…">
+					
 				</fieldset>
 			</form>
 			<div class="b-btn-toolbar">
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span>
-						</button>
+						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span></button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation">
-								<label for="filtr1">No Tier
-									<input type="checkbox" class="form-control" id="filtr1">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr2">Tier I
-									<input type="checkbox" class="form-control" id="filtr2">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr3">Tier II
-									<input type="checkbox" class="form-control" id="filtr3">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr4">Tier III
-									<input type="checkbox" class="form-control" id="filtr4">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr5">Tier GTA
-									<input type="checkbox" class="form-control" id="filtr5">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr6">Male
-									<input type="checkbox" class="form-control" id="filtr6">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr7">Female
-									<input type="checkbox" class="form-control" id="filtr7">
-								</label>
-							</li>
-							<li role="presentation">
-								<label for="filtr8">Inactive
-									<input type="checkbox" class="form-control" id="filtr8">
-								</label>
-							</li>
-						</ul>
+							<li role="presentation"><label for="filtr1">No Tier<input type="checkbox" class="form-control" id="filtr1"></label></li>
+							<li role="presentation"><label for="filtr2">Tier I<input type="checkbox" class="form-control" id="filtr2"></label></li>
+							<li role="presentation"><label for="filtr3">Tier II<input type="checkbox" class="form-control" id="filtr3"></label></li>
+							<li role="presentation"><label for="filtr4">Tier III<input type="checkbox" class="form-control" id="filtr4"></label></li>
+							<li role="presentation"><label for="filtr5">Tier GTA<input type="checkbox" class="form-control" id="filtr5"></label></li>
+							<li role="presentation"><label for="filtr6">Male<input type="checkbox" class="form-control" id="filtr6"></label></li>
+							<li role="presentation"><label for="filtr7">Female<input type="checkbox" class="form-control" id="filtr7"></label></li>
+							<li role="presentation"><label for="filtr8">Inactive<input type="checkbox" class="form-control" id="filtr8"></label></li>
+						  </ul>
 					</div>
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
 						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">&#xe68c</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a>
-							</li>
-							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a>
-							</li>
-						</ul>
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+						  </ul>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<ul class="nav nav-tabs">
-			<li><a href="#/administration/users">Users<span class="b-count">Records Count: 340</span></a>
-			</li>
-			<li class="active"><a href="#/administration/roles">Roles & Permissions<span class="b-count">Records Count: 1</span></a>
-			</li>
+		  <li><a href="#/administration/users">Users<span class="b-count">Records Count: 340</span></a></li>
+		  <li class="active"><a href="#/administration/roles">Roles & Permissions<span class="b-count">Records Count: 1</span></a></li>
 		</ul>
+
 		<div class="container-fluid b-role_list">
 			<div class="row">
 				<div class="col-xs-2 col-md-2">
@@ -141,11 +109,18 @@
 								<div class="jq-checkbox" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
 									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
+<<<<<<< HEAD
 								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Business Administrator</a>
 							</div>
 							<div class="b-section_item active" ng-class="{active: role.checked}">
 								<div class="jq-checkbox checked" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
 									<div class="jq-checkbox__div">&#xe614</div>
+=======
+								<a href="#" class="b-section_item-name">Business Administrator</a>
+							</div><div class="b-section_item active">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+>>>>>>> thalamusYasha
 								</div>
 								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Business Manager</a>
 							</div>
@@ -159,11 +134,18 @@
 								<div class="jq-checkbox" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
 									<div class="jq-checkbox__div">&#xe614</div>
 								</div>
+<<<<<<< HEAD
 								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Finance Agent</a>
 							</div>
 							<div class="b-section_item" ng-class="{active: role.checked}">
 								<div class="jq-checkbox" role="checkbox" ng-checked="role.checked" ng-class="{checked: role.checked}" ng-click="checkRole(role)">
 									<div class="jq-checkbox__div">&#xe614</div>
+=======
+								<a href="#" class="b-section_item-name">Finance Agent</a>
+							</div><div class="b-section_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="checkedin" ng-class="{checked: checkedin}">
+									<div class="jq-checkbox__div"></div>
+>>>>>>> thalamusYasha
 								</div>
 								<a href="#" class="b-section_item-name" ng-click="checkRole(role)">Customer Service Agent</a>
 							</div>
@@ -184,9 +166,11 @@
 							</div>
 						</div>
 					</div>
+
 				</div>
 				<div class="col-xs-5 col-md-5">
 					<div class="b-role_title">Permissons for ‘<a href="#">Business Manager</a>’</div>
+<<<<<<< HEAD
 					<div class="b-permissons_item"><span>Can create program director</span>
 					</div>
 					<div class="b-permissons_item"><span>Can create program associate director</span>
@@ -208,9 +192,42 @@
 						<a href="#">
 							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">Taylor Swift</a><span class="b-nikename">TaylorSwift</span>
 					</div>
+=======
+					<div class="b-permissons_item"><span>Can create program director</span></div>
+					<div class="b-permissons_item"><span>Can create program associate director</span></div>
+					<div class="b-permissons_item"><span>Can create program assistant director</span></div>
+					<div class="b-permissons_item check"><span>Can create account for program coordinator</span></div>
+					<div class="b-permissons_item check"><span>Can create account for program interviewer</span></div>
+					<div class="b-permissons_item check"><span>Can update any program user data</span></div>
+					<div class="b-permissons_item check"><span>Can add/remove program user to/from role</span></div>
+					<div class="b-permissons_item check"><span>Can add/remove program user to/from role</span></div>
+					<div class="b-permissons_item check"><span>Can create applications</span></div>
+					<div class="b-permissons_item check"><span>Can create applications</span></div>
+					<div class="b-permissons_item"><span>Can add program document categories</span></div>
+					<div class="b-permissons_item"><span>Can delete program document categories</span></div>
+					<div class="b-permissons_item"><span>Can delete program document categories</span></div>
+					<div class="b-permissons_item"><span>Can delete program documents</span></div>
+
 				</div>
+				<div class="col-xs-5 col-md-5">
+					<div class="b-role_title">Users as ‘<a href="#">Business Manager</a>’</div>
+					<div class="b-user_item"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle">MartinScorsese</a><span class="b-nikename">MartinScorsese</span></div>
+					<div class="b-user_item"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle">Louis Tomlinson</a><span class="b-nikename">lt_1977</span></div>
+					<div class="b-user_item"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle">Taylor Swift</a><span class="b-nikename">TaylorSwift</span></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+					<div class="b-user_item"></div>
+
+>>>>>>> thalamusYasha
+				</div>
+			
 			</div>
 		</div>
+
 	</div>
 </div>
 <footer id="footer">
@@ -240,8 +257,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
-						</p>
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
 					</div>
 				</div>
 			</div>

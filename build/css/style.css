@@ -4009,6 +4009,10 @@ a:hover {
 	max-width: $max_width;
 	margin: 0 auto;
 }*/
+.errorTxt {
+	color: #e63333;
+}
+
 .nophone {
 	min-width: 768px;
 }
@@ -4059,13 +4063,18 @@ a:hover {
 	vertical-align: middle;
 }
 
-.docsEmpty {
+.docsEmpty,
+aplempty {
 	height: 40vh;
 	line-height: 40vh; 
 	text-align: center;
 }
-
-.docsEmpty div {
+.docsEmpty a,
+aplempty a {
+	color: #4ea5bb;
+}
+.docsEmpty div,
+aplempty div {
 	padding: 15px;
 	display: inline-block;
 	width: 60%;
@@ -4075,10 +4084,6 @@ a:hover {
 	cursor: default; 
 	vertical-align: middle;
 	color: #b2b2b2;
-}
-
-.docsEmpty span {
-	color: #4ea5bb;
 }
 
 .b-header {
@@ -4917,6 +4922,15 @@ body > .b-fix-wrapper {
 	outline: none;
 }
 
+.b-btn-toolbar.inner {
+	position: relative;
+}
+.b-btn-toolbar.inner .btn {
+	margin-right: 10px;
+	text-transform: none; 
+	color: #000;
+}
+
 .b-add {
 	position: relative; 
 	float: left;
@@ -5495,6 +5509,17 @@ input:focus {
 	font-weight: normal;
 	line-height: 32px;
 }
+.b-modal .modal-header.done {
+	padding-bottom: 5px; 
+	background-color: #dbffd8;
+}
+.b-modal .modal-header.done .info-descr {
+	font-size: 14px;
+	color: #303030;
+}
+.b-modal .modal-header.done .info-descr .icon {
+	color: #4ea4ba;
+}
 .b-modal hr {
 	margin: 0;
 	border-top: 1px solid #4ea5bb;
@@ -5532,6 +5557,152 @@ input:focus {
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
+<<<<<<< HEAD
+=======
+.b-modal .b-form .form-group.grayPad {
+	background-color: #f7f7f7;
+}
+.b-modal .b-form .pupMenu {
+	border: none;
+}
+.b-modal .b-form .pupMenu .m-icon {
+	display: inline-block;
+	width: 10%;
+	text-align: right; 
+	vertical-align: middle;
+}
+.b-modal .b-form .pupMenu .m-icon .icon-tag {
+	margin-left: 10px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer; 
+	text-align: center;
+	vertical-align: middle;
+	color: #4ea4ba;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+.b-modal .b-form .pupMenu .m-icon:hover .icon-tag {
+	color: #fff; 
+	background-color: #4ea4ba;
+}
+.b-modal .b-form .pupMenu .m-icon .popover {
+	top: -8px;
+	left: 200px;
+	visibility: hidden;
+}
+.b-modal .b-form .pupMenu .m-icon .popover .arrow {
+	top: 30px;
+}
+.b-modal .b-form .pupMenu .m-icon .popover .popover-content {
+	padding-right: 40px; 
+	cursor: pointer;
+}
+.b-modal .b-form .pupMenu .m-icon .popover .popover-content .icon {
+	position: absolute;
+	right: 15px;
+	color: #4ea5bb;
+}
+.b-modal .b-form .pupMenu .m-icon .popover .popover-content:hover {
+	color: #4ea5bb; 
+	background-color: #f7f7f7;
+}
+.b-modal .b-form .pupMenu .m-icon:hover .popover {
+	visibility: visible;
+}
+.b-modal .b-form .pupMenu .control-label {
+	height: 30px;
+	line-height: 30px;
+}
+.b-modal .b-form .pupMenu #catName {
+	display: inline-block;
+	width: 90%;
+	text-align: right; 
+	vertical-align: top;
+}
+.b-modal .b-form #fUpload {
+	border-top: 1px solid #4ea5bb;
+}
+.b-modal .b-form .fileSet label.cFile {
+	margin: 10px 0;
+	padding: 0 10px;
+	overflow: hidden;
+	height: 30px;
+	font-family: 'HelveticaNeueLT-Light';
+	line-height: 30px;
+	text-transform: none;
+	color: #303030;
+	background: -webkit-gradient(linear, left top, right top, color-stop(70%, #fff), color-stop(70%, #eaeaea));
+	background: -webkit-linear-gradient(left, #fff 70%, #eaeaea 70%);
+	background:      -o-linear-gradient(left, #fff 70%, #eaeaea 70%);
+	background:         linear-gradient(to right, #fff 70%, #eaeaea 70%); 
+	border: 1px solid #eaeaea;
+}
+.b-modal .b-form .fileSet label.cFile i {
+	float: right;
+	height: 30px;
+	line-height: 30px; 
+	color: #4ea5bb;
+}
+.b-modal .b-form .fileSet label.cFile.uploaded {
+	background: #fff;
+}
+.b-modal .b-form .fileSetPan a {
+	margin-bottom: 10px;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer; 
+	text-transform: uppercase;
+	color: #4ea5bb;
+}
+.b-modal .b-form .fileSetPan a i {
+	margin-right: 10px;
+}
+.b-modal .b-form .fileSetPan span {
+	font-size: 12px; 
+	color: #b2b2b2;
+}
+.b-modal .b-form .apl-list {
+	overflow: auto; 
+	max-height: 300px;
+}
+.b-modal .b-form .apl-list .apl-item {
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	overflow: hidden; 
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 15px;
+	line-height: 16px;
+	color: #cbcbcb;
+	border-bottom: 1px solid #eaeaea;
+}
+.b-modal .b-form .apl-list .apl-item .name,
+.b-modal .b-form .apl-list .apl-item img {
+	display: inline-block;
+	vertical-align: top;
+}
+.b-modal .b-form .apl-list .apl-item img {
+	margin-right: 10px;
+}
+.b-modal .b-form .apl-list .apl-item .icon,
+.b-modal .b-form .apl-list .apl-item .errorTxt {
+	padding-top: 13px; 
+	float: right;
+	height: inherit;
+	vertical-align: middle;
+}
+.b-modal .b-form .apl-list .apl-item .errorTxt {
+	font-family: 'HelveticaNeueLT-Light';
+}
+.b-modal .b-form .apl-list .apl-item.done {
+	color: #4ea5bb;
+}
+>>>>>>> thalamusYasha
 .b-modal .b-form label.checkbox-inline {
 	position: relative;
 	display: inline-block;
@@ -5891,6 +6062,11 @@ input:focus {
 	background: #999;
 	-webkit-border-radius: 0 0 5px 0;
 	        border-radius: 0 0 5px 0;
+}
+.b-modal .modal-footer .b-button.singleBtn {
+	width: 100%; 
+	-webkit-border-radius: 0 0 5px 5px;
+	        border-radius: 0 0 5px 5px;
 }
 
 .b-calendar_empty {
