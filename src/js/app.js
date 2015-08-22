@@ -30,9 +30,6 @@ angular.module('thalamusApp', [
       	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
       }).
-      	when('/applicants', {
-        templateUrl: 'tmpl/applicants.html'
-      }).
 	when('/administration', {
         templateUrl: 'tmpl/security.html'
       }).
@@ -47,6 +44,9 @@ angular.module('thalamusApp', [
       }).
 	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
+      }).
+	when('/applicants', {
+        templateUrl: 'tmpl/applicants.html'
       }).
       when('/', {
         templateUrl: 'tmpl/main.html'
