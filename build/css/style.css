@@ -4059,13 +4059,18 @@ a:hover {
 	vertical-align: middle;
 }
 
-.docsEmpty {
+.docsEmpty,
+aplempty {
 	height: 40vh;
 	line-height: 40vh; 
 	text-align: center;
 }
-
-.docsEmpty div {
+.docsEmpty a,
+aplempty a {
+	color: #4ea5bb;
+}
+.docsEmpty div,
+aplempty div {
 	padding: 15px;
 	display: inline-block;
 	width: 60%;
@@ -4075,10 +4080,6 @@ a:hover {
 	cursor: default; 
 	vertical-align: middle;
 	color: #b2b2b2;
-}
-
-.docsEmpty span {
-	color: #4ea5bb;
 }
 
 .b-header {

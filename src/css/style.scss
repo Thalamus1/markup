@@ -148,24 +148,22 @@ a:hover {color:#111111; text-decoration: none;}
 .d_table_row { display: table-row; }
 .d_table_cell { display: table-cell; vertical-align: middle; }
 
-.docsEmpty {
+.docsEmpty, aplEmpty {
 	text-align:center;
 	height: 40vh;
 	line-height: 40vh;
-}
-.docsEmpty div {
-	width:60%;
-	display:inline-block;
-	vertical-align:middle;
-	font-size: 2.5em;
-	line-height:normal;
-	color:$c-gray;
-	padding:15px;
-	font-family: 'HelveticaNeueLT-Light';
-	cursor:default;
-}
-.docsEmpty span {
-	color:#4ea5bb;
+	a {color:#4ea5bb}
+	div {
+		width:60%;
+		display:inline-block;
+		vertical-align:middle;
+		font-size: 2.5em;
+		line-height:normal;
+		color:$c-gray;
+		padding:15px;
+		font-family: 'HelveticaNeueLT-Light';
+		cursor:default;
+	}
 }
 
 .b-header {

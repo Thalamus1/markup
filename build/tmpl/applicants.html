@@ -12,24 +12,17 @@
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
 				</li>
-				<li class="menuitem active dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
-					<ul class="dropdown-menu" role="menu">
-						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty">Empty Calendar</a>
-						</li>
-						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar">Calendar</a>
-						</li>
-					</ul>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
 				</li>
-				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
+				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
 				</li>
 			</ul>
 			<div class="b-user">
 				<span class="b-user_name">
-							<a href="#">Program Admin</a>
-							<b class="b-job">UW School of Medicine</b>
+							<a href="#">System Admin</a>
+							<b class="b-job">Thalamus System</b>
 						</span>
 				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 				<a href="#" class="b-mess"></a>
@@ -39,6 +32,37 @@
 	</nav>
 </header>
 <div class="b-fix-wrapper">
+	<div class="b-content">
+		<div class="fc-toolbar b-filter clearfix">
+			<div class="dropdown">
+				<button class="b-add btn fc-button" data-toggle="dropdown" >+</button>
+			</div>
+			<form class="b-search-form" method="get" action=".">
+				<fieldset>
+					<input type="button" class="b-search-panel__button">
+					<input type="text" name="q" class="b-search-input" value='' placeholder="Applicants search…">
+					
+				</fieldset>
+			</form>
+			<div class="b-btn-toolbar">
+				<span class="b-result">No records</span>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+						  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d_table docsEmpty">
+			<div class="d_table_cell">
+				There are no Applicants added to the Program. Please <a data-target="#new-docs" data-toggle="modal">import</a>...
+			</div>
+		</div>
+	</div>
 </div>
 <footer id="footer">
 	<div class="b-footer-wrapper">
@@ -67,8 +91,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
-						</p>
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
 					</div>
 				</div>
 			</div>
