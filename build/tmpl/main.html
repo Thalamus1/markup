@@ -1,184 +1,212 @@
-	<header id="header" class="b-header">
-			<nav id="main-menu" class="b-header__nav-wrapper">
-				<div class="container-fluid">
-					<a href="#/" class="b-logo"><img src="icons/logo.png" alt="Thalamus"></a>
-					<!-- - основное меню-->
-					<div class="b-add-nav">
-						<ul class="nav b-main-menu">
-							<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
+<header id="header" class="b-header">
+	<nav id="main-menu" class="b-header__nav-wrapper">
+		<div class="container-fluid">
+			<a href="#/" class="b-logo">
+				<img src="icons/logo.png" alt="Thalamus">
+			</a>
+			<!-- - основное меню-->
+			<div class="b-add-nav">
+				<ul class="nav b-main-menu">
+					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
+					</li>
+					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">Program</a>
+					</li>
+					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
+					</li>
+					<li class="menuitem dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty">Empty Calendar</a>
 							</li>
-							<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">Program</a>
-							</li>
-							<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
-							</li>
-							<li class="menuitem dropdown" >
-								<a  class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
-								<ul class="dropdown-menu" role="menu">
-									<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty" >Empty Calendar</a></li>
-									<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar" >Calendar</a></li>
-								 </ul>
-							</li>
-							<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
-							</li>
-							<li role="menuitem"><a role="menuitem" href="#/calendar_apl" >Calendar APL</a>
-							</li>
-							<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
+							<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar">Calendar</a>
 							</li>
 						</ul>
-						<ul class="b-footer_link">
-										<li><a href="#" class="soc_tw"></a></li>
-										<li><a href="#" class="soc_in"></a></li>
-										<li><a href="#" class="soc_fb"></a></li>
-										<li><a href="#" class="soc_yt"></a></li>
-										<li><a href="#login" class="b-auth b-button" data-toggle="modal" data-target="#login">Login</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<div class="b-fix-wrapper">
-			<div class="b-content">
-				<div class="d_table b-main_big_logo">
-					<div class="d_table_cell">
-						<div class="b-img-logo"><img src="images/tlm-logo.svg" alt="Thalamus"></div>
-						<div class="b-slogan">
-							<span class="b-color">Apply.</span> Schedule. <span class="b-color">Interview.</span> Match.
-						</div>
-						<div class="b-button_row">
-						<a href="#" class="b-button">Learn More</a>
-						<a href="#" class="b-button_white">Request a Demo</a>
-						</div>
-					</div>
-				</div>	
+					</li>
+					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
+					</li>
+					<li role="menuitem"><a role="menuitem" href="#/calendar_apl">Calendar APL</a>
+					</li>
+					<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
+					</li>
+				</ul>
+				<ul class="b-footer_link">
+					<li>
+						<a href="#" class="soc_tw"></a>
+					</li>
+					<li>
+						<a href="#" class="soc_in"></a>
+					</li>
+					<li>
+						<a href="#" class="soc_fb"></a>
+					</li>
+					<li>
+						<a href="#" class="soc_yt"></a>
+					</li>
+					<li><a href="#login" class="b-auth b-button" data-toggle="modal" data-target="#login">Login</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<!-- Modal -->
-					<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-login ng-scope">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Thalamus Login</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="login()">
-											<div class="modal-body">
-												<div class="form-group validate">
-													<label for="exampleInputEmail1">E-mail</label>
-													<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail1" placeholder="Type Your E-mail" name="user" data-ng-model="loginData.userName" required="">
-												</div>
-												<div class="form-group validate">
-													<label for="exampleInputPassword1">Password</label>
-													<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword1" name="password" placeholder="Password" data-ng-model="loginData.password" required="">
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Login</button>
-											</div>
-										</form>
-										<p>Forgot your password? <br/>Don’t have access yet? <a href="#fogot"  data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#fogot">Get Started</a></p>
-							</div>
-						  </div>
+	</nav>
+</header>
+<div class="b-fix-wrapper">
+	<div class="b-content">
+		<div class="d_table b-main_big_logo">
+			<div class="d_table_cell">
+				<div class="b-img-logo">
+					<img src="images/tlm-logo.svg" alt="Thalamus">
+				</div>
+				<div class="b-slogan">
+					<span class="b-color">Apply.</span> Schedule. <span class="b-color">Interview.</span> Match.
+				</div>
+				<div class="b-button_row">
+					<a href="#" class="b-button">Learn More</a>
+					<a href="#" class="b-button_white">Request a Demo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-login ng-scope">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Thalamus Login</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="login()">
+					<div class="modal-body">
+						<div class="form-group validate">
+							<label for="exampleInputEmail1">E-mail</label>
+							<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail1" placeholder="Type Your E-mail" name="user" data-ng-model="loginData.userName" required="">
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-
-		<!-- Modal -->
-					<div class="modal fade" id="fogot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-login ng-scope">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Reset Password</h4>
-											<p>Enter your email address and we'll get you back on track.</p>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body">
-												<div class="form-group">
-													<label for="exampleInputEmail2">E-mail</label>
-													<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail2" placeholder="Type Your E-mail" required="" autofocus="">
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#reset">Send reset link</button>
-											</div>
-										</form>
-										<p><a href="#login" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-toggle="modal" data-target="#login">Back to Login</a></p>
-							</div>
-						  </div>
+						<div class="form-group validate">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword1" name="password" placeholder="Password" data-ng-model="loginData.password" required="">
 						</div>
-					  </div>
 					</div>
-			<!-- /Modal -->
-			<!-- Modal -->
-					<div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-login ng-scope">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Enter Your New Password</h4>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body">
-												<div class="form-group">
-													<label for="exampleInputToken1">Token (if necessary)</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputToken1" placeholder="0664C23F78C54F29BE24DD41B2C438AC" required="" autofocus="">
-												</div>
-												<div class="form-group">
-													<label for="exampleInputPassword2">Password</label>
-													<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword2" placeholder="Password" required="">
-												</div>
-												<div class="form-group">
-													<label for="exampleInputPassword3">Confirm Password</label>
-													<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword3" placeholder="Confirm Password"  required="">
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Set new password</button>
-											</div>
-										</form>
-										<p><a href="#login" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#login">Back to Login</a></p>
-							</div>
-						  </div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Login</button>
+					</div>
+				</form>
+				<p>Forgot your password?
+					<br/>Don’t have access yet? <a href="#fogot" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#fogot">Get Started</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="fogot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-login ng-scope">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Reset Password</h4>
+					<p>Enter your email address and we'll get you back on track.</p>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="exampleInputEmail2">E-mail</label>
+							<input class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail2" placeholder="Type Your E-mail" required="" autofocus="">
 						</div>
-					  </div>
 					</div>
-			<!-- /Modal -->
-			<script>
-				$(function(){
-					$(".b-login form").validate({
-						success: function(label) {
-							label.closest( ".form-group" ).removeClass('has-error').addClass("has-success");
-							label.closest( ".b-login" ).removeClass('has-error').addClass("has-success");
-						},
-						errorPlacement: function(error, element) {
-							$( element ).parent().addClass('has-error');
-							$( element ).closest( ".b-login" ).addClass('has-error');
-							$( element )
-								.closest( "form" )
-									.find( "label[for='" + element.attr( "id" ) + "']" )
-										.append( error );
-						},
-						errorElement: "span",
-						rules: {
-							user: {
-								required: true
-							},
-							password: {
-								required: true
-							}
-						},
-						messages: {
-							user: {
-								required: " - Please correct your email"
-							},
-							password: {
-								required: " - password required"
-							}
-						}
-					});
-				});
-			</script>
+					<div class="modal-footer">
+						<button type="submit" class="b-button" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#reset">Send reset link</button>
+					</div>
+				</form>
+				<p><a href="#login" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-toggle="modal" data-target="#login">Back to Login</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-login ng-scope">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Enter Your New Password</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="exampleInputToken1">Token (if necessary)</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputToken1" placeholder="0664C23F78C54F29BE24DD41B2C438AC" required="" autofocus="">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword2">Password</label>
+							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword2" placeholder="Password" required="">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword3">Confirm Password</label>
+							<input type="password" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputPassword3" placeholder="Confirm Password" required="">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Set new password</button>
+					</div>
+				</form>
+				<p><a href="#login" data-toggle="modal" data-dismiss="modal" ng-click="cancel()" aria-hidden="true" data-target="#login">Back to Login</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<script>
+$(function()
+{
+	$(".b-login form").validate(
+	{
+		success: function(label)
+		{
+			label.closest(".form-group").removeClass('has-error').addClass("has-success");
+			label.closest(".b-login").removeClass('has-error').addClass("has-success");
+		},
+		errorPlacement: function(error, element)
+		{
+			$(element).parent().addClass('has-error');
+			$(element).closest(".b-login").addClass('has-error');
+			$(element)
+				.closest("form")
+				.find("label[for='" + element.attr("id") + "']")
+				.append(error);
+		},
+		errorElement: "span",
+		rules:
+		{
+			user:
+			{
+				required: true
+			},
+			password:
+			{
+				required: true
+			}
+		},
+		messages:
+		{
+			user:
+			{
+				required: " - Please correct your email"
+			},
+			password:
+			{
+				required: " - password required"
+			}
+		}
+	});
+});
+</script>

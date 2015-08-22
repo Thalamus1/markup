@@ -4172,8 +4172,8 @@ body > .b-fix-wrapper {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-	background-color: none;
-	border-color: none;
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .b-footer_link {
@@ -5319,8 +5319,10 @@ input:focus {
 	max-height: 574px;
 }
 .b-role_list .col-md-5 {
-	padding: 0; 
+	padding: 0;
 	width: 37%;
+	min-height: 625px;
+	border-right: 1px solid #e6e6e6;
 }
 .b-role_list .col-md-2 {
 	padding: 0; 
@@ -5343,6 +5345,9 @@ input:focus {
 .b-role_list .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:focus {
 	background-color: #b8b8b8;
 }
+.b-role_list .col-md-2 + .col-md-5 {
+	background: #fafafa;
+}
 .b-role_list .b-section .b-title {
 	padding: 0 20px;
 	font-family: 'HelveticaNeueLTStd-Md';
@@ -5357,7 +5362,12 @@ input:focus {
 	font-size: 18px;
 	line-height: 50px;
 	color: #111;
+	background: #fff; 
 	border-bottom: 1px solid #4ea5bb;
+}
+.b-role_list .col-md-5 .b-role_title {
+	margin: 0 -1px 0 0;
+	border-right: 1px solid #fff;
 }
 .b-role_list .b-section_item {
 	padding: 5px 20px;
@@ -5437,9 +5447,7 @@ input:focus {
 	min-height: 60px;
 	font-size: 13px;
 	line-height: 20px;
-	border-top: 1px solid #e6e6e6; 
-	border-right: 1px solid #e6e6e6;
-	border-left: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
 }
 
 .b-modal.w440 {
