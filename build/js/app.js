@@ -16,26 +16,10 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar_empty.html',
 	    controller: 'CalendarCtrl'
       }).
-	 when('/calendar_day', {
-        templateUrl: 'tmpl/calendar_day.html',
-	    controller: 'CalendarCtrl'
-      }).
        when('/calendar_apl', {
         templateUrl: 'tmpl/calendar_apl.html',
 	    controller: 'CalendarCtrl'
       }).
-             when('/documents', {
-        templateUrl: 'tmpl/add_doc_cat.html'
-      }).
-      	when('/documents/list', {
-        templateUrl: 'tmpl/doc_list.html'
-      }).
-<<<<<<< HEAD
-      	when('/applicants', {
-        templateUrl: 'tmpl/applicants.html'
-      }).
-=======
->>>>>>> thalamusYasha
 	when('/administration', {
         templateUrl: 'tmpl/security.html'
       }).
@@ -50,6 +34,9 @@ angular.module('thalamusApp', [
       }).
 	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
+      }).
+	when('/applicants', {
+        templateUrl: 'tmpl/applicants.html'
       }).
       when('/', {
         templateUrl: 'tmpl/main.html'
