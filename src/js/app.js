@@ -4,6 +4,7 @@ angular.module('thalamusApp', [
 	'ngRoute',
 	'ui.calendar', 
 	'CalendarControllers',
+	'PopoverModule',
 	'ui.bootstrap'
 ]).config(['$routeProvider',
   function($routeProvider) {
@@ -47,6 +48,12 @@ angular.module('thalamusApp', [
   }]);
   
 /* Controllers */
+angular.module("PopoverModule", [])
+    .directive("tbPopover", function(){
+        return function(scope, element, iAttrs) {
+                $(element).popover({html:true});
+        }
+ });
 
 angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
     var date = new Date();
