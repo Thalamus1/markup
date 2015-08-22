@@ -30,8 +30,8 @@ angular.module('thalamusApp', [
       	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
       }).
-      	when('/calendar_apl', {
-        templateUrl: 'tmpl/calendar_apl.html'
+      	when('/applicants', {
+        templateUrl: 'tmpl/applicants.html'
       }).
 	when('/administration', {
         templateUrl: 'tmpl/security.html'
