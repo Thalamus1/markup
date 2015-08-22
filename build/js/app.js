@@ -48,12 +48,6 @@ angular.module('thalamusApp', [
 	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
       }).
-<<<<<<< HEAD
-=======
-	when('/applicants', {
-        templateUrl: 'tmpl/applicants.html'
-      }).
->>>>>>> thalamusYasha
       when('/', {
         templateUrl: 'tmpl/main.html'
       }).

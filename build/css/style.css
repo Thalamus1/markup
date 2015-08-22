@@ -3987,7 +3987,7 @@ body {
 a:link,
 a:visited {
 	text-decoration: none; 
-	color: #4ea5bb;
+	color: #4ea4ba;
 }
 
 a:active,
@@ -4921,6 +4921,14 @@ body > .b-fix-wrapper {
 	        border-radius: 4px;
 	outline: none;
 }
+.b-btn-toolbar .btn .icon {
+	margin: 0 8px 0 0;
+	padding: 0; 
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	color: #4ea4ba;
+}
 
 .b-btn-toolbar.inner {
 	position: relative;
@@ -5265,8 +5273,17 @@ body > .b-fix-wrapper {
 	padding: 5px 20px; 
 	text-align: left;
 }
-.b-table.docs tbody tr td img {
-	margin-right: 15px;
+.b-table.docs tbody tr td i.icon-file {
+	margin-right: 10px; 
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #eaeaea;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
 }
 .b-table.docs tr th.b-td_last a:after {
 	bottom: -16px; 
@@ -5524,6 +5541,9 @@ input:focus {
 	margin: 0;
 	border-top: 1px solid #4ea5bb;
 }
+.b-modal .b-form {
+	/*docs modal popup menu*/
+}
 .b-modal .b-form .form-group {
 	margin-bottom: 0; 
 	padding: 10px 20px;
@@ -5557,8 +5577,6 @@ input:focus {
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
-<<<<<<< HEAD
-=======
 .b-modal .b-form .form-group.grayPad {
 	background-color: #f7f7f7;
 }
@@ -5702,7 +5720,6 @@ input:focus {
 .b-modal .b-form .apl-list .apl-item.done {
 	color: #4ea5bb;
 }
->>>>>>> thalamusYasha
 .b-modal .b-form label.checkbox-inline {
 	position: relative;
 	display: inline-block;

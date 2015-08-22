@@ -110,7 +110,7 @@ position:relative;
   line-height:20px; 
  }
 
-a:link, a:visited {color:#4ea5bb; text-decoration: none;}
+a:link, a:visited {color:#4ea4ba; text-decoration: none;}
 
 a:active, a:focus {
 	color:#111111;
@@ -336,15 +336,11 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	.form-group {border:1px solid #f0f0f0; padding:10px 20px; margin-bottom:0;
 		label {cursor:pointer; text-transform:uppercase; color:#999999; margin:0; font-size:13px; font-weight:normal;	display:block;
 		font-family: 'HelveticaNeueLTStd-Md';}
-<<<<<<< HEAD
 
 	}
 	.has-error, .has-success {position:relative;}
 	.form-group.has-error:after {background:#d27979; color:#ffffff; content: "\e623"; font-family: 'thalamus'; display:block;position:absolute; top:20px; right:20px; height:20px; width:20px; border-radius:10px; font-size:10px; line-height:20px; text-align:center;}
 	.form-group.has-success:after {background:#66cc66; color:#ffffff; content: "\e614"; font-family: 'thalamus'; display:block; position:absolute; top:20px; right:20px; height:20px; width:20px;  border-radius:10px; font-size:10px; line-height:20px; text-align:center;}
-=======
-	}
->>>>>>> thalamusYasha
 	.form-control {border:0 none; font-size:21px;line-height:30px; width:100%; height:30px; max-width:100%; padding:0;font-family: 'HelveticaNeueLT-Light';color:#111111; box-shadow:none;outline:none;}
 	.form-control:placeholder {color:#cccccc;}
 }
@@ -599,6 +595,12 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
         border-radius: 4px;
 	outline:none;
 	}
+	.btn .icon {
+		font-size: 16px;
+		color:#4ea4ba;
+		display:inline-block;vertical-align:middle;
+		margin:0 8px 0 0;padding:0;
+	}
 }
 .b-btn-toolbar.inner {position:relative;
 	.btn {color:#000000; margin-right:10px; text-transform:none;}
@@ -775,12 +777,14 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	}
 	tbody {
 		tr.checked {background-color:#f7f7f7;}
-		tr td {text-align:left; padding:5px 20px;}
-		tr td img {margin-right:15px;}
+		tr td {text-align:left; padding:5px 20px;
+			i.icon-file {display:inline-block;vertical-align:middle;width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background-color:$c-gray-light;margin-right:10px;}
+		}
 	}
 	tr th.b-td_last a:after {
 		left:20px;
 		bottom:-16px;
+		
 	}
 }
 
@@ -820,7 +824,6 @@ input:focus { outline: 0 none; }
 	opacity: 0.55;
 	filter: alpha(opacity=55);
 }
-
 .b-role_list {
 	 margin:0 20px; max-height:625px; overflow:hidden; border-bottom:1px solid #cccccc;
 	 .js-scroll {overflow:hidden; max-height:574px;}
@@ -880,8 +883,6 @@ input:focus { outline: 0 none; }
 		.col-sm-8 {text-align:right;}
 		textarea.form-control {border:1px solid #f0f0f0; font-size:15px;line-height:20px; width:100%; height:120px; max-width:100%; padding:10px;font-family: 'HelveticaNeueLT-Roman';color:#111111; resize:none; box-shadow:none;outline:none;}
 	}
-<<<<<<< HEAD
-=======
 	.form-group.grayPad {background-color:#f7f7f7;}
 	/*docs modal popup menu*/
 	.pupMenu {border:none;
@@ -933,7 +934,6 @@ input:focus { outline: 0 none; }
 			 &.done {color:#4ea5bb;}
 		}
 	}
->>>>>>> thalamusYasha
 	label.checkbox-inline {display:inline-block; vertical-align:top; height:40px; border-radius:20px; line-height:40px; text-align:center; position:relative; border:1px solid #e6e6e6; color:#4ea5bb; text-transform:none; width:40px;}
 	.checkbox-inline input {position:absolute; top:0; left:0; height:40px; width:40px; z-index:1; opacity:0; cursor:pointer;}
 	label.checkbox-inline.checked {background:#4ea5bb; color:#ffffff;}
@@ -1027,8 +1027,8 @@ input:focus { outline: 0 none; }
 		.b-button.b-cancel {background:#999999; border-radius:0 0 5px 0;}
 		.b-button.singleBtn {border-radius:0 0 5px 5px;width:100%;}
 	}
-
 }
+
 
 .b-calendar_empty {color:#999999; font-size:32px; line-height:40px; font-family: 'HelveticaNeueLT-Light'; text-align:center; padding:0 160px;}
 .b-calendar_empty a {color:#4ea5bb; cursor:pointer;}

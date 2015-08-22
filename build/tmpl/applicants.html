@@ -41,6 +41,7 @@
 				<fieldset>
 					<input type="button" class="b-search-panel__button">
 					<input type="text" name="q" class="b-search-input" value='' placeholder="Applicants search…">
+					
 				</fieldset>
 			</form>
 			<div class="b-btn-toolbar">
@@ -49,18 +50,16 @@
 					<div class="dropdown">
 						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a>
-							</li>
-							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a>
-							</li>
-						</ul>
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+						  </ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="d_table docsEmpty">
 			<div class="d_table_cell">
-				There are no Applicants added to the Program. Please <a data-target="#apl-import-ok" data-toggle="modal">import</a>...
+				There are no Applicants added to the Program. Please <a  data-target="#apl-import-ok" data-toggle="modal">import</a>...
 			</div>
 		</div>
 	</div>
@@ -92,8 +91,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
-						</p>
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
 					</div>
 				</div>
 			</div>
@@ -102,132 +100,130 @@
 </footer>
 <!-- /Modal -->
 <div class="modal fade" id="apl-import" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="b-modal">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-					<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
-				</div>
-				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-					<div class="modal-body js-scroll container-fluid">
-						<div class="form-group row fileSet collapse" id="aplUpload">
-							<label class="col-sm-12 control-label">Importing Applicants List</label>
-							<div class="col-sm-12">
-								<label class="cFile" for="">UW-ERAS Applicant1.csv</label>
-								<div class="row">
-									<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
-								</div>
-								<div class="row errorTxt">
-									<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="b-modal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
+					</div>
+					<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+						<div class="modal-body js-scroll container-fluid">
+							<div class="form-group row fileSet collapse" id="aplUpload">
+								<label class="col-sm-12 control-label">Importing Applicants List</label>
+								<div class="col-sm-12">
+									<label class="cFile" for="">UW-ERAS Applicant1.csv</label>
+									<div class="row">
+										<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
+									</div>
+									<div class="row errorTxt">
+										<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="form-group row fileSetPan">
-							<div class="col-sm-12">
-								<a data-toggle="collapse" data-target="#aplUpload" class="b-name collapsed"><i class="icon icon-plus"></i>Open Import Files</a>
-								<span>Please select .CSV file you previuosly downloaded from ERAS.<br/>
+							<div class="form-group row fileSetPan">
+								<div class="col-sm-12">
+									<a data-toggle="collapse" data-target="#aplUpload" class="b-name collapsed"><i class="icon icon-plus"></i>Open Import Files</a>
+									<span>Please select .CSV file you previuosly downloaded from ERAS.<br/>
 									Impor process will immediately start.<br/>
 									We will provide import report after processing.</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="modal-footer">
-						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel singleBtn">Cancel</button>
-					</div>
-				</form>
-			</div>
+						<div class="modal-footer">
+							<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel singleBtn">Cancel</button>
+						</div>
+					</form>
 		</div>
+	  </div>
 	</div>
-</div>
+  </div>
 </div>
 <!-- /Modal -->
 <!-- /Modal -->
 <div class="modal fade" id="apl-import-ok" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="b-modal">
-				<div class="modal-header done">
-					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-					<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
-					<div class="info-descr"><span class="icon icon-info"></span> Broken records should be added manualy.</div>
-				</div>
-				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-					<div class="modal-body js-scroll container-fluid">
-						<div class="form-group row fileSet grayPad">
-							<label class="col-sm-12 control-label">Success!</label>
-							<div class="col-sm-12">
-								<label class="cFile uploaded" for="">UW-ERAS Applicant1.csv<i class="icon icon-check"></i>
-								</label>
-								<div class="row">
-									<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="b-modal">
+					<div class="modal-header done">
+						<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
+						<div class="info-descr"><span class="icon icon-info"></span> Broken records should be added manualy.</div>
+					</div>
+					<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+						<div class="modal-body js-scroll container-fluid">
+							<div class="form-group row fileSet grayPad">
+								<label class="col-sm-12 control-label">Success!</label>
+								<div class="col-sm-12">
+									<label class="cFile uploaded" for="">UW-ERAS Applicant1.csv<i class="icon icon-check"></i></label>
+									<div class="row">
+										<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
+									</div>
+									<div class="row errorTxt">
+										<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
+									</div>
 								</div>
-								<div class="row errorTxt">
-									<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="b-btn-toolbar inner col-sm-12">
-									<div class="btn-group col-sm-12">
-										<button class="btn btn-success fc-button"><span class="icon icon-print"></span><span>Print Report</span>
-										</button>
+								<div class="form-group row">
+									<div class="b-btn-toolbar inner col-sm-12">
+										<div class="btn-group col-sm-12">
+											<button class="btn btn-success fc-button"><span class="icon icon-print"></span><span>Print Report</span></button>
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="form-group apl-list">
+								<div class="apl-item col-sm-12 done">
+									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="icon icon-check"></span>
+								</div>
+								<div class="apl-item col-sm-12 done">
+									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="icon icon-check"></span>
+								</div>
+								<div class="apl-item col-sm-12 done">
+									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="icon icon-check"></span>
+								</div>
+								<div class="apl-item col-sm-12">
+									<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="errorTxt">Broken</span>
+								</div>
+								<div class="apl-item col-sm-12">
+									<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="errorTxt">Broken</span>
+								</div>
+								<div class="apl-item col-sm-12 done">
+									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="icon icon-check"></span>
+								</div>
+								<div class="apl-item col-sm-12 done">
+									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="icon icon-check"></span>
+								</div>
+								<div class="apl-item col-sm-12">
+									<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+									<span class="name">John  <br/>Someone</span>
+									<span class="errorTxt">Broken</span>
+								</div>
+							</div>
 						</div>
-						<div class="form-group apl-list">
-							<div class="apl-item col-sm-12 done">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="icon icon-check"></span>
-							</div>
-							<div class="apl-item col-sm-12 done">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="icon icon-check"></span>
-							</div>
-							<div class="apl-item col-sm-12 done">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="icon icon-check"></span>
-							</div>
-							<div class="apl-item col-sm-12">
-								<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="errorTxt">Broken</span>
-							</div>
-							<div class="apl-item col-sm-12">
-								<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="errorTxt">Broken</span>
-							</div>
-							<div class="apl-item col-sm-12 done">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="icon icon-check"></span>
-							</div>
-							<div class="apl-item col-sm-12 done">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="icon icon-check"></span>
-							</div>
-							<div class="apl-item col-sm-12">
-								<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
-								<span class="name">John  <br/>Someone</span>
-								<span class="errorTxt">Broken</span>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
 						<div class="modal-footer">
+							<div class="modal-footer">
 							<button type="submit" class="b-button">Finish</button>
 							<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
 						</div>
-					</div>
-				</form>
-			</div>
+						</div>
+					</form>
 		</div>
+	  </div>
 	</div>
-</div>
+  </div>
 </div>
 <!-- /Modal -->
