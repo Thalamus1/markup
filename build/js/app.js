@@ -52,6 +52,12 @@ angular.module("PopoverModule", [])
     .directive("tbPopover", function(){
         return function(scope, element, iAttrs) {
                 $(element).popover({html:true});
+				 $(element).on('show.bs.popover', function () {
+					 $(this).addClass('active');
+				});
+				$(element).on('hide.bs.popover', function () {
+					 $(this).removeClass('active');
+				});
         }
  });
 
