@@ -251,6 +251,7 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 		}
 		.b-prof {display:block; height:49px}
 		.dropdown.open .b-prof {border-bottom:2px solid #4ea5bb;}
+		.b-prof:hover {border-bottom:2px solid #4ea5bb;}
 		.dropdown-menu {top:49px; width:280px;}
 		.b-user_name {
 			display:inline-block; 
@@ -1048,7 +1049,11 @@ input:focus { outline: 0 none; }
 		 }
 
 	}
-	
+	.lnk_print {display:inline-block; vertical-align:top; background:#ffffff; border-raduis:3px; border:1px solid #cccccc; height:40px; width:40px;}
+	.lnk_print .icon {color:#4ea5bb; line-height:40px;}
+	.lnk_left {display:inline-block; vertical-align:top; background:#ffffff; border-raduis:3px 0 0 3px; border:1px solid #cccccc; height:40px; width:40px;}
+	.lnk_right {display:inline-block; vertical-align:top; background:#ffffff; border-raduis:0 3px 3px 0; border:1px solid #cccccc; height:40px; width:40px;}
+	.lnk_left .icon, .lnk_right .icon  {color:#4ea5bb; line-height:40px;}
 	.modal-body {padding:0; background:#ffffff; max-height:680px; overflow:hidden;}
 	.modal-footer { padding:0;border-radius:0 0 5px 5px;
 		.b-button {background:#4ea5bb; border:0 none; border-radius:0 0 0 5px;float:left; width:50%; color:#ffffff;outline:none;font-family: 'HelveticaNeueLTStd-Md'; text-transform:uppercase; height:60px; line-height:60px; text-align:center; padding:0; }
@@ -1057,7 +1062,7 @@ input:focus { outline: 0 none; }
 	}
 }
 
-
+a[data-dismiss="modal"] {cursor:pointer;}
 .b-calendar_empty {color:#999999; font-size:32px; line-height:40px; font-family: 'HelveticaNeueLT-Light'; text-align:center; padding:0 160px;}
 .b-calendar_empty a {color:#4ea5bb; cursor:pointer;}
 

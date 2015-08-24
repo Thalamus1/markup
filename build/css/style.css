@@ -4337,6 +4337,9 @@ body > .b-fix-wrapper {
 .b-user .dropdown.open .b-prof {
 	border-bottom: 2px solid #4ea5bb;
 }
+.b-user .b-prof:hover {
+	border-bottom: 2px solid #4ea5bb;
+}
 .b-user .dropdown-menu {
 	top: 49px;
 	width: 280px;
@@ -6307,6 +6310,45 @@ input:focus {
 	font-family: 'HelveticaNeueLTStd-Md';
 	background: #f7f7f7;
 }
+.b-modal .lnk_print {
+	display: inline-block;
+	width: 40px; 
+	height: 40px;
+	vertical-align: top;
+	background: #fff;
+	border: 1px solid #ccc;
+
+	border-raduis: 3px;
+}
+.b-modal .lnk_print .icon {
+	line-height: 40px; 
+	color: #4ea5bb;
+}
+.b-modal .lnk_left {
+	display: inline-block;
+	width: 40px; 
+	height: 40px;
+	vertical-align: top;
+	background: #fff;
+	border: 1px solid #ccc;
+
+	border-raduis: 3px 0 0 3px;
+}
+.b-modal .lnk_right {
+	display: inline-block;
+	width: 40px; 
+	height: 40px;
+	vertical-align: top;
+	background: #fff;
+	border: 1px solid #ccc;
+
+	border-raduis: 0 3px 3px 0;
+}
+.b-modal .lnk_left .icon,
+.b-modal .lnk_right .icon {
+	line-height: 40px; 
+	color: #4ea5bb;
+}
 .b-modal .modal-body {
 	padding: 0;
 	overflow: hidden; 
@@ -6343,6 +6385,10 @@ input:focus {
 	width: 100%; 
 	-webkit-border-radius: 0 0 5px 5px;
 	        border-radius: 0 0 5px 5px;
+}
+
+a[data-dismiss='modal'] {
+	cursor: pointer;
 }
 
 .b-calendar_empty {
