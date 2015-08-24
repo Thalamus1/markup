@@ -283,11 +283,39 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 		position:absolute;
 		top:10px; 
 		right:20px;
+		.dropdown {
+			display:inline-block; 
+			vertical-align:top;
+		}
+		.b-prof {display:block; height:49px}
+		.dropdown.open .b-prof {border-bottom:2px solid #4ea5bb;}
+		.dropdown-menu {top:49px; width:280px;}
 		.b-user_name {
 			display:inline-block; 
 			vertical-align:top;
 			text-align:right;
-			.b-job {display:block; font-size:13px;}
+			.b-job {display:block; font-size:13px;  line-height:16px; color:#111111; font-weight:normal;font-family: 'HelveticaNeueLTStd-Md';}
+		}
+		.b-profile {border-bottom:1px solid #e6e6e6;
+			padding:15px 17px;
+			img {margin: 3px 10px 0 0;}
+			.b-info {display:inline-block; vertical-align:top; font-size:15px; line-height:20px;
+				a {display:block;}
+				.name {font-size:21px; font-family: 'HelveticaNeueLT-Light';}
+				.but_out {box-shadow: 0 0 1px rgba(0,0,0,0.15);border:1px solid #cccccc; border-radius:3px; margin-top:20px;font-family: 'HelveticaNeueLTStd-Md'; text-transform:uppercase; height:30px; font-size:13px; line-height:30px; width:100px; text-align:center; }
+			}
+
+		}
+		.my-user {text-transform:uppercase; display:block; color:#cccccc; font-size:11px; line-height:20px; font-family: 'HelveticaNeueLTStd-Md';}
+		.b-prof_roles {
+			.my-user {padding:0 10px;}
+			.b-user_role {
+				display:block; margin:1px 1px 0 1px; background:#fafafa; padding:10px 15px; border-left:3px solid #fafafa;
+				.b-job {display:block; font-size:13px; line-height:16px; color:#111111; font-weight:normal; font-family: 'HelveticaNeueLTStd-Md';}
+				img {margin:0 10px 0 0;}
+			}
+			.b-user_role.active {border-color:#4ea5bb;background:#f0f0f0;}
+			.b-user_name {text-align:left;}
 		}
 		img {margin:0 10px;}
 		.b-mess {display:inline-block; 

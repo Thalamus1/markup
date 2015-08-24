@@ -2,6 +2,7 @@
 angular.module('thalamusApp', [
 	'ngAnimate',
 	'ngRoute',
+	'mgcrea.ngStrap',
 	'ui.calendar', 
 	'CalendarControllers',
 	'PopoverModule',
@@ -46,7 +47,6 @@ angular.module('thalamusApp', [
         redirectTo: '/'
       });
   }]);
-  
 /* Controllers */
 angular.module("PopoverModule", [])
     .directive("tbPopover", function(){
@@ -60,8 +60,7 @@ angular.module("PopoverModule", [])
 				});
         }
  });
-
-angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
+ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
     var date = new Date();
     var d = date.getDate();
     var m = date.getMonth();
@@ -85,6 +84,7 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
             start: new Date(y, m, d, 2, 0),
             end: new Date(y, m, d, 6, 0),
             allDay: false,
+			businessHours: true,
             textColor: "white",
             distribution: [
                 { tierTitle: 'Tier 1: ', slots: 2, slotsTotal: 4 },
@@ -175,6 +175,7 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
     $scope.uiConfig = {
         calendar: {
             height: 720,
+			businessHours: true,
             editable: true,
             allDay: false,
             header: {

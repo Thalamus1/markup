@@ -4326,6 +4326,21 @@ body > .b-fix-wrapper {
 	font-size: 15px;
 	line-height: 20px;
 }
+.b-user .dropdown {
+	display: inline-block;
+	vertical-align: top;
+}
+.b-user .b-prof {
+	display: block;
+	height: 49px;
+}
+.b-user .dropdown.open .b-prof {
+	border-bottom: 2px solid #4ea5bb;
+}
+.b-user .dropdown-menu {
+	top: 49px;
+	width: 280px;
+}
 .b-user .b-user_name {
 	display: inline-block;
 	text-align: right; 
@@ -4333,7 +4348,82 @@ body > .b-fix-wrapper {
 }
 .b-user .b-user_name .b-job {
 	display: block;
+	font-family: 'HelveticaNeueLTStd-Md'; 
 	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #111;
+}
+.b-user .b-profile {
+	padding: 15px 17px; 
+	border-bottom: 1px solid #e6e6e6;
+}
+.b-user .b-profile img {
+	margin: 3px 10px 0 0;
+}
+.b-user .b-profile .b-info {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 20px; 
+	vertical-align: top;
+}
+.b-user .b-profile .b-info a {
+	display: block;
+}
+.b-user .b-profile .b-info .name {
+	font-family: 'HelveticaNeueLT-Light'; 
+	font-size: 21px;
+}
+.b-user .b-profile .b-info .but_out {
+	margin-top: 20px;
+	width: 100px;
+	height: 30px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 13px;
+	line-height: 30px;
+	text-align: center; 
+	text-transform: uppercase;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .15);
+	        box-shadow: 0 0 1px rgba(0, 0, 0, .15);
+}
+.b-user .my-user {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md'; 
+	font-size: 11px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #ccc;
+}
+.b-user .b-prof_roles .my-user {
+	padding: 0 10px;
+}
+.b-user .b-prof_roles .b-user_role {
+	margin: 1px 1px 0 1px;
+	padding: 10px 15px;
+	display: block;
+	background: #fafafa;
+	border-left: 3px solid #fafafa;
+}
+.b-user .b-prof_roles .b-user_role .b-job {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md'; 
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #111;
+}
+.b-user .b-prof_roles .b-user_role img {
+	margin: 0 10px 0 0;
+}
+.b-user .b-prof_roles .b-user_role.active {
+	background: #f0f0f0; 
+	border-color: #4ea5bb;
+}
+.b-user .b-prof_roles .b-user_name {
+	text-align: left;
 }
 .b-user img {
 	margin: 0 10px;
