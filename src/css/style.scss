@@ -960,9 +960,19 @@ input:focus { outline: 0 none; }
 		 }
 	}
 	.fileSetPan {
+		.file_wrapper {cursor: pointer;overflow: hidden;position: relative;height:30px; width:100%;}
 		a {color:#4ea5bb;display:block;height:30px;line-height:30px;text-transform:uppercase;margin-bottom:10px;cursor:pointer;
 			i{margin-right:10px;}
 		}
+		input {cursor: pointer;
+			    font-size: 999%;
+			    height: 100%;
+			    left: 0;
+			    opacity: 0;
+			    overflow: hidden;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;}
 		span {color:$c-gray;font-size: 12px;}
 	}
 	.apl-list {max-height:300px;overflow:auto;
@@ -1003,7 +1013,14 @@ input:focus { outline: 0 none; }
 	.b-addrole.active {background:#4ea5bb url('../icons/ic_add_open.png')no-repeat center center;}
 	.b-upload_file {position:relative; display:inline-block; vertical-align:top; border:1px solid #4ea5bb; background:url('../icons/ic_add.png')no-repeat center center; height:40px; width:40px; overflow:hidden; cursor:pointer; border-radius:20px; text-indent:-999em;}
 	.b-upload_file.hidden {dispalay:none;} 
-	.b-upload_file input {position:absolute; top:0; left:0; opacity:0; z-index:1; height:40px; width:40px;}
+	.b-upload_file input {cursor: pointer;
+			    font-size: 999%;
+			    left: 0;
+			    opacity: 0;
+			    overflow: hidden;
+			    position: absolute;
+			    top: 0;
+			   height:40px; width:40px;}
 	.loaded-file {display:inline-block; vertical-align:top; border:1px solid #e6e6e6; height:40px;  border-radius:20px; line-height:40px; text-align:center; margin-left:10px;
 		a {display:inline-block; vertical-align:top; font-family: 'HelveticaNeueLTStd-Md'; padding-left:10px;}
 		a img {margin-right:10px;}
@@ -1067,7 +1084,13 @@ input:focus { outline: 0 none; }
 	.b-avatar_img {display:inline-block; vertical-align:top; margin-right:20px;}
 	.b-profile {display:inline-block; vertical-align:top; margin-top:10px;}
 	.inp_file_wrap {position:relative; display:block; margin-top:15px; cursor:pointer; border-radius:3px; border:1px solid #cccccc;overflow:hidden; height:40px; width:100px;}
-	.inp_file_wrap .form-control {position:absolute; display:block;top:0; left:0; opacity:0; z-index:3;  height:40px; width:100px;}
+	.inp_file_wrap .form-control {cursor: pointer;
+			    font-size: 999%;
+			    left: 0;
+			    opacity: 0;
+			    overflow: hidden;
+			    position: absolute;
+			    top: 0; height:40px; width:100px;}
 	.inp_file_wrap span { font-size:13px; line-height:40px; text-transform:uppercase; text-align:center; display:block; cursor:pointer; color:#4ea5bb;}
 	.panel {border-top:1px solid #4ea5bb;
 		.b-name {color:#111111; font-size:18px; background:#f7f7f7; line-height:60px; display:block; padding:0 20px; cursor:pointer; position:relative;}

@@ -5799,6 +5799,13 @@ input:focus {
 .b-modal .b-form .fileSet label.cFile.uploaded {
 	background: #fff;
 }
+.b-modal .b-form .fileSetPan .file_wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%; 
+	height: 30px;
+	cursor: pointer;
+}
 .b-modal .b-form .fileSetPan a {
 	margin-bottom: 10px;
 	display: block;
@@ -5810,6 +5817,17 @@ input:focus {
 }
 .b-modal .b-form .fileSetPan a i {
 	margin-right: 10px;
+}
+.b-modal .b-form .fileSetPan input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%; 
+	height: 100%;
+	font-size: 999%;
+	cursor: pointer;
+	opacity: 0;
 }
 .b-modal .b-form .fileSetPan span {
 	font-size: 12px; 
@@ -6026,11 +6044,13 @@ input:focus {
 }
 .b-modal .b-form .b-upload_file input {
 	position: absolute;
-	z-index: 1;
 	top: 0;
 	left: 0;
+	overflow: hidden;
 	width: 40px; 
 	height: 40px;
+	font-size: 999%;
+	cursor: pointer;
 	opacity: 0;
 }
 .b-modal .b-form .loaded-file {
@@ -6200,12 +6220,13 @@ input:focus {
 }
 .b-modal .inp_file_wrap .form-control {
 	position: absolute;
-	z-index: 3;
 	top: 0;
 	left: 0;
-	display: block;
+	overflow: hidden;
 	width: 100px; 
 	height: 40px;
+	font-size: 999%;
+	cursor: pointer;
 	opacity: 0;
 }
 .b-modal .inp_file_wrap span {
