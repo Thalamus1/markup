@@ -5168,6 +5168,7 @@ body > .b-fix-wrapper {
 .b-search-form .b-search-input {
 	padding: 0;
 	display: inline-block;
+	height: 40px;
 	font-family: 'HelveticaNeueLT-Light'; 
 	font-size: 18px;
 	line-height: 40px;
