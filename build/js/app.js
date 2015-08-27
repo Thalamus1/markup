@@ -2,8 +2,10 @@
 angular.module('thalamusApp', [
 	'ngAnimate',
 	'ngRoute',
+	'mgcrea.ngStrap',
 	'ui.calendar', 
 	'CalendarControllers',
+	'PopoverModule',
 	'ui.bootstrap'
 ]).config(['$routeProvider',
   function($routeProvider) {
@@ -16,19 +18,9 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar_empty.html',
 	    controller: 'CalendarCtrl'
       }).
-	 when('/calendar_day', {
-        templateUrl: 'tmpl/calendar_day.html',
-	    controller: 'CalendarCtrl'
-      }).
        when('/calendar_apl', {
         templateUrl: 'tmpl/calendar_apl.html',
 	    controller: 'CalendarCtrl'
-      }).
-             when('/documents', {
-        templateUrl: 'tmpl/add_doc_cat.html'
-      }).
-      	when('/documents/list', {
-        templateUrl: 'tmpl/doc_list.html'
       }).
 	when('/administration', {
         templateUrl: 'tmpl/security.html'
@@ -45,6 +37,9 @@ angular.module('thalamusApp', [
 	when('/documents/list', {
         templateUrl: 'tmpl/doc_list.html'
       }).
+	when('/applicants', {
+        templateUrl: 'tmpl/applicants.html'
+      }).
       when('/', {
         templateUrl: 'tmpl/main.html'
       }).
@@ -52,10 +47,20 @@ angular.module('thalamusApp', [
         redirectTo: '/'
       });
   }]);
-  
 /* Controllers */
-
-angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
+angular.module("PopoverModule", [])
+    .directive("tbPopover", function(){
+        return function(scope, element, iAttrs) {
+                $(element).popover({html:true});
+				 $(element).on('show.bs.popover', function () {
+					 $(this).addClass('active');
+				});
+				$(element).on('hide.bs.popover', function () {
+					 $(this).removeClass('active');
+				});
+        }
+ });
+ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
     var date = new Date();
     var d = date.getDate();
     var m = date.getMonth();
@@ -79,6 +84,7 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
             start: new Date(y, m, d, 2, 0),
             end: new Date(y, m, d, 6, 0),
             allDay: false,
+			businessHours: true,
             textColor: "white",
             distribution: [
                 { tierTitle: 'Tier 1: ', slots: 2, slotsTotal: 4 },
@@ -169,6 +175,7 @@ angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", 
     $scope.uiConfig = {
         calendar: {
             height: 720,
+			businessHours: true,
             editable: true,
             allDay: false,
             header: {

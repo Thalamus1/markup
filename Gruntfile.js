@@ -218,7 +218,7 @@ module.exports = function (grunt) {
 				tasks: ['newer:imagemin:icons']
 			},
 			copyMain: {
-				files: ['source/**/.{php,html,json}'],
+				files: ['src/**/.{php,html,json,js}'],
 				tasks: ['newer:copy:main']
 			},
 	    	htmldist: {

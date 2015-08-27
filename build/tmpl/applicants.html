@@ -20,13 +20,52 @@
 				</li>
 			</ul>
 			<div class="b-user">
-				<span class="b-user_name">
-							<a href="#">System Admin</a>
+				<span class="dropdown">
+					<a href="" class="b-prof" data-toggle="dropdown">
+						<span class="b-user_name">
+							<span class="name">System Admin</span>
 							<b class="b-job">Thalamus System</b>
 						</span>
-				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-				<a href="#" class="b-mess"></a>
-				<a href="#" class="b-dzn"></a>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" role="menu">
+						<div class="b-profile">
+							<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
+							<div class="b-info">
+								<span class="my-user">My user Profile</span>
+								<span class="name">Patricia Oakes</span>
+								<a href="#">View Profile</a>
+								<a href="#" class="but_out">Sign out</a>
+							</div>
+						</div>
+						<div class="b-prof_roles">
+							<span class="my-user">My Granted Roles</span>
+							<a href="#" class="b-user_role">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="b-user_name">
+									<span class="name">System Admin</span>
+									<b class="b-job">Thalamus System</b>
+								</span>
+							</a>
+							<a href="#" class="b-user_role">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="b-user_name">
+									<span class="name">Interviewer</span>
+									<b class="b-job">Harvard Medical School</b>
+								</span>
+							</a>
+							<a href="#" class="b-user_role active">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="b-user_name">
+									<span class="name">Applicant</span>
+									<b class="b-job">Archived</b>
+								</span>
+							</a>
+						</div>
+					</div>
+				</span>
+				<a href="#" class="b-mess">&#xe661</a>
+				<a href="#" class="b-dzn">&#xe670</a>
 			</div>
 		</div>
 	</nav>
@@ -35,7 +74,7 @@
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
 			<div class="dropdown">
-				<button class="b-add btn fc-button" data-target="#apl-import" data-toggle="modal">+</button>
+				<button class="b-add btn fc-button" data-target="#apl-import" data-toggle="modal">&#xe67a</button>
 			</div>
 			<form class="b-search-form" method="get" action=".">
 				<fieldset>
@@ -48,7 +87,7 @@
 				<span class="b-result">No records</span>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">settings</button>
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>&#xe68c</span></button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
 							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
 							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
@@ -123,7 +162,10 @@
 							</div>
 							<div class="form-group row fileSetPan">
 								<div class="col-sm-12">
-									<a data-toggle="collapse" data-target="#aplUpload" class="b-name collapsed"><i class="icon icon-plus"></i>Open Import Files</a>
+									<div class="file_wrapper">
+										<a href="#" class="b-name"><i class="icon icon-plus"></i>Open Import Files</a>
+										<input type="file" name="files[]">
+									</div>
 									<span>Please select .CSV file you previuosly downloaded from ERAS.<br/>
 									Impor process will immediately start.<br/>
 									We will provide import report after processing.</span>
