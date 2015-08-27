@@ -58,7 +58,7 @@ angular.module("PopoverModule", [])
 				$(element).on('hide.bs.popover', function () {
 					 $(this).removeClass('active');
 				});
-        }
+        };
  });
  angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
     var date = new Date();
