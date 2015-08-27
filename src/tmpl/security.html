@@ -167,7 +167,7 @@
 						<td  class="fon"><a data-target="#view_user"  data-toggle="modal"><b>Doe</b></a></td>
 						<td class="b-description fon"><a href="#">...</a></td>
 						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
+						<td><a  data-target="#view_role"  data-toggle="modal">System Administration</a></td>
 						<td><a  data-target="#edite_role"  data-toggle="modal">System Administrator</a></td>
 						<td><a href="#">admin@thalamus.com</a></td>
 						<td>+1 (203)<span class="noskype">&nbsp;</span> 555-4545</td>
@@ -722,17 +722,18 @@
 										<div class="modal-header container-fluid">
 											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
 											<h4 class="modal-title" id="myModalLabel">User Details</h4>
-											<div class="b-info row">
+											<div class="b-info_detalis row">
 												<div class="col-xs-12 col-md-6">ID: 678876</div>
 												<div class="col-xs-12 col-md-6">
-													<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span></a>
-													<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
+													<span class="form-group">
+														<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span></a>
+														<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
+													</span>
 													<a href="#" class="lnk_print"><span class="ico icon-fax"></span></a>
 												</div>
 											</div>
 										</div>
-										<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid js-scroll">
+											<div class="modal-body b-detalis container-fluid js-scroll" ng-class="{lock: user.locked}">
 												<div class="b-profile_user">
 													<div class="b-avatar_img"><img src="images/pic_02.jpg" class="img-circle" height="100" width="100" alt="" ></div>
 													<div class="b-profile">
@@ -747,37 +748,96 @@
 												</div>
 												<div class="b-adding_role">
 													<span class="title">User Roles</span>
-													<div>
+													<a href="#">
 														<span class="icon icon-user"></span>
-														Business Administration <span class="">/</span> 
-														Business Manager
-													</div>
+														<span class="name">Business Administration <span class="b-rez">/</span> 
+														<strong>Business Manager</strong></span>
+													</a>
 												</div>
 												<div class="panel">
 													<span data-toggle="collapse" data-target="#roleinfo" class="b-name collapsed">Email Signature</span>
-													<div  id="roleinfo" class="collapse">
+													<div  id="roleinfo" class="collapse roleinfo">
 														<hr/>
 														Sincirelly Yours,
-														<strong>Richard Webber, MD</strong>
+														<strong><i>Richard Webber</i>, MD</strong>
 														Chief of Surgery at Seattle Grace Mercy West Hospital
 														<p>
 															Phone: <span class="phone">+1 (475) 555-5566</span>
-															Email: <a href="#">Richard.Webber@greysloanmem.edu</a>
+															<br/>Email: <a href="#">Richard.Webber@greysloanmem.edu</a>
 														</p>
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-sm-4 control-label">Locked</label>
-													<div class="col-sm-8">
-														<span class="switch"><input type="checkbox"><i></i></span>
+													<label class="col-sm-6 control-label">Locked</label>
+													<div class="col-sm-6">
+														<span class="switch"><input ng-model="user.locked" type="checkbox"><i></i></span>
 													</div>
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button type="submit" class="b-button">Edit</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Close</button>
+												<a href="#" class="b-button">Edit</a>
+												<a data-dismiss="modal" ng-click="cancel()" href="#" class="b-button b-cancel">Close</a>
 											</div>
-										</form>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			<!-- /Modal -->
+	<!-- Modal -->
+					<div class="modal fade" id="view_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+					  <div class="modal-dialog">
+						<div class="modal-content">
+							<div class="b-modal w440">
+										<div class="modal-header container-fluid">
+											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+											<h4 class="modal-title" id="myModalLabel">Role Details</h4>
+											<div class="b-info_detalis row">
+												<div class="col-xs-12 col-md-6">ID: 345</div>
+												<div class="col-xs-12 col-md-6">
+													<span class="form-group">
+														<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span></a>
+														<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
+													</span>
+													<a href="#" class="lnk_print"><span class="ico icon-fax"></span></a>
+												</div>
+											</div>
+										</div>
+											<div class="modal-body b-detalis container-fluid js-scroll">
+												<div class="b-rolegroup">
+													<span class="icon icon-users"></span>
+													<span class="name"><strong>group</strong>
+													Business Administration</span>
+												</div>
+												<div class="b-role_view">
+													<i class="icon icon-user"></i>
+													<span class="title">Program Coordinator Special Projects</span>
+													<p>This role is responsible to create special events within program timeframe and manage them. </p>
+												</div>
+
+												<div class="panel">
+													<span data-toggle="collapse" data-target="#rolelist" class="b-name collapsed">List of Permissions</span>
+													<div  id="rolelist" class="collapse b-permissons_list">
+														<div class="b-permissons_item"><span>Can create program director</span></div>
+														<div class="b-permissons_item"><span>Can create program associate director</span></div>
+														<div class="b-permissons_item"><span>Can create program assistant director</span></div>
+														<div class="b-permissons_item"><span>Can create program director</span></div>
+														<div class="b-permissons_item check"><span>Can create program associate director</span></div>
+														<div class="b-permissons_item check"><span>Can create program assistant director</span></div>
+														<div class="b-permissons_item check"><span>Can create program director</span></div>
+														<div class="b-permissons_item"><span>Can create program associate director</span></div>
+														<div class="b-permissons_item"><span>Can create program assistant director</span></div>
+														<div class="b-permissons_item"><span>Can create program director</span></div>
+														<div class="b-permissons_item"><span>Can create program associate director</span></div>
+														<div class="b-permissons_item"><span>Can create program assistant director</span></div>
+													</div>
+												</div>
+													
+											</div>
+											<div class="modal-footer">
+												<a href="#" class="b-button">Edit</a>
+												<a data-dismiss="modal" ng-click="cancel()" href="#" class="b-button b-cancel">Close</a>
+											</div>
 							</div>
 						  </div>
 						</div>

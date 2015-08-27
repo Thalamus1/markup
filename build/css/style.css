@@ -5658,6 +5658,12 @@ input:focus {
 .b-modal .modal-header .b-info_detalis .col-md-4 {
 	text-align: right;
 }
+.b-modal .modal-header .b-info_detalis .col-md-6 {
+	text-align: right;
+}
+.b-modal .modal-header .b-info_detalis .col-md-6:first-child {
+	text-align: left;
+}
 .b-modal .modal-header.done {
 	padding-bottom: 5px; 
 	background-color: #dbffd8;
@@ -6492,7 +6498,7 @@ input:focus {
 	color: #f36 !important;
 }
 
-a[data-dismiss='modal'] {
+a[data-toggle='modal'] {
 	cursor: pointer;
 }
 
@@ -6876,6 +6882,200 @@ a[data-dismiss='modal'] {
 }
 .b-detalis .collapse.in + ul.user_info {
 	display: none;
+}
+.b-detalis .b-profile_user {
+	padding: 20px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.b-detalis .b-profile_user .b-profile {
+	display: inline-block;
+	font-size: 15px; 
+	vertical-align: top;
+}
+.b-detalis .b-profile_user .name {
+	display: block; 
+	font-size: 21px;
+	line-height: 24px;
+	color: #4ea5bb;
+}
+.b-detalis .b-profile_user .nikname {
+	display: block; 
+	color: #999;
+}
+.b-detalis .b-profile_user .contacts {
+	margin-top: 20px;
+}
+.b-detalis .b-profile_user .contacts a {
+	display: block;
+}
+.b-detalis .b-adding_role {
+	padding: 20px;
+	font-size: 15px;
+}
+.b-detalis .b-adding_role .title {
+	margin-bottom: 10px; 
+	display: block;
+	font-size: 18px;
+	line-height: 20px;
+}
+.b-detalis .b-adding_role a {
+	display: block;
+}
+.b-detalis .b-adding_role .icon {
+	margin-right: 10px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+	vertical-align: top;
+	background: #f0f0f0;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.b-detalis .b-adding_role .name {
+	display: inline-block;
+	vertical-align: top;
+}
+.b-detalis .b-adding_role .b-res {
+	color: #111;
+}
+.b-detalis .b-adding_role a strong {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-weight: normal;
+}
+.b-detalis .roleinfo.in {
+	background: #f7f7f7;
+}
+.b-detalis .roleinfo {
+	padding: 0 20px 20px 20px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.b-detalis .roleinfo hr {
+	margin-bottom: 20px; 
+	width: 170px;
+}
+.b-detalis .roleinfo strong {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md'; 
+	font-weight: normal;
+}
+.b-detalis .roleinfo p {
+	padding: 0;
+}
+.b-detalis .b-rolegroup {
+	padding: 20px 20px 40px 20px; 
+	color: #fff;
+	background: #4ea5bb;
+}
+.b-detalis .b-rolegroup .icon {
+	margin-right: 10px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+	vertical-align: top;
+	color: #4ea5bb;
+	background: #f0f0f0;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.b-detalis .b-rolegroup span {
+	display: inline-block;
+	vertical-align: top;
+}
+.b-detalis .b-rolegroup .name {
+	font-family: 'HelveticaNeueLT-Light'; 
+	font-size: 24px;
+	line-height: 25px;
+}
+.b-detalis .b-rolegroup .name strong {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.b-detalis .b-role_view {
+	padding: 20px;
+}
+.b-detalis .b-role_view .icon {
+	margin-top: -40px;
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+	vertical-align: top;
+	color: #4ea5bb;
+	background: #f0f0f0;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+
+	marin-right: 10px;
+}
+.b-detalis .b-role_view .title {
+	display: block; 
+	font-size: 21px;
+	line-height: 25px;
+}
+.b-detalis .b-role_view p {
+	padding: 0;
+	font-size: 15px;
+	color: #999;
+}
+.b-detalis .b-permissons_list.in {
+	background: #f7f7f7;
+}
+.b-detalis .b-permissons_item {
+	position: relative; 
+	padding: 0 20px;
+	font-size: 13px;
+	line-height: 40px;
+	color: #999;
+	background: #fafafa;
+}
+.b-detalis .b-permissons_item.check {
+	color: #111;
+}
+.b-detalis .b-permissons_item.check:after {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	display: block;
+	width: 14px;
+	height: 40px;
+	font-family: 'thalamus'; 
+	font-size: 10px;
+	line-height: 40px;
+	content: '\e614';
+	text-align: center;
+	color: #4ea5bb;
+}
+.b-detalis .b-permissons_item span {
+	display: block;
+	font-size: 13px;
+	line-height: 40px;
+	border-top: 1px solid #e6e6e6;
+}
+
+.b-modal .modal-body.lock {
+	background: #f7f7f7;
+}
+.b-modal .modal-body.lock .b-profile_user .b-avatar_img {
+	background: #4ea5bb;
+	-webkit-border-radius: 50px;
+	        border-radius: 50px;
+}
+.b-modal .modal-body.lock .b-profile_user img {
+	opacity: .5;
+}
+.b-modal .modal-body.lock .panel .b-name.collapsed {
+	background: #f7f7f7;
 }
 
 .user_info {
