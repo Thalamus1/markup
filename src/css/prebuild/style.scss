@@ -1317,6 +1317,74 @@ a[data-toggle="modal"] {cursor:pointer;}
 	.empty .b-prog {color:#999999;}
 
 }
+.p-program {background-color: $c-gray-light;
+	.iconBtn {
+		font-family: 'thalamus';
+	}
+	.btn-default {
+		background:transparent;
+		color:$c-gray;
+	}
+	.fc-toolbar {padding:10px 20px; border-bottom:1px solid #cccccc; margin:0;text-align:left;
+		.leftSet {position:absolute;display:inline-block;vertical-align:top;margin:0;padding:0;top:10px;left:20px;
+			.btn {vertical-align:top;}
+			.btn:first-child{border-radius: 4px 0 0 4px;margin-right:0;text-transform: none;font-size: 16px;font-family: 'HelveticaNeueLTStd-Md';}
+			.btn:last-child{border-radius: 0 4px 4px 0;margin-left:-4px;border-left:none;}
+		}
+	}
+	.pTitle {
+		width:100%;
+		font-size: 2em;
+		text-align:center;
+		height:40px;
+		display:block;
+		font-family: 'HelveticaNeueLT-Light'; 
+		padding-top:12px;
+	}
+	.p-content {padding:15px;
+		.leftCol {padding-left:0;padding-right:0;
+			.pi {padding-right:0;}
+			.p-item { margin-bottom:15px;}
+		}
+		.rightCol {
+			.p-item {background-color:lighten($c-gray,28);border-bottom:1px solid $c-gray-light;
+				.b-btn-toolbar {position:relative;top:0;left:0;font-size:14px;color:$c-gray-dark;padding:15px;
+					.icon {color:#4ea4ba;display:inline-block;vertical-align:top;}
+					span {display:inline-block;vertical-align:top;width:96%;margin-bottom:10px;}
+					button {width:100%;padding-top:10px;}
+				}
+				.p-itemDescr {
+					padding:15px;
+					em {color:$c-gray;}
+					.b-user_role {
+						img {display:inline-block;vertical-align: top;margin-right:10px;}
+						.b-user_name {display:inline-block;vertical-align: top;width:80%;
+							.name {text-transform: uppercase;color:$c-gray;}
+						}
+					}
+				}
+				&.done {background-color:#dbffd8;}
+			}
+		}
+		.p-item {
+			background-color:#ffffff;
+			position:relative;height:auto;
+			.p-itemTitle {
+				font-family: 'HelveticaNeueLT-Light';
+				position:relative;
+				padding:15px;
+				font-size: 1.8em;
+				border-bottom:1px solid $c-gray-light;
+				.innerBtn {
+					top:5px;right:5px;
+				}
+			}
+			.p-itemContent {
+				padding:15px;
+			}
+		}
+	}
+}
 @media (min-width: 768px) and (max-width: 991px) {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
