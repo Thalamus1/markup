@@ -58,4 +58,17 @@ $(document).ready(function() {
 
 	doc = $(document); 
 	
+	$(document).on('click','.editBtn',function() {
+		var item = $(this).parents('.p-item');
+		$(this).find('.iconBtn').toggleClass('icon-write icon-delete');
+		item.toggleClass('edit').find('.wysiwigHead').toggle();
+		if(item.hasClass('edit')) {
+			item.find('.wysiwigBody').attr('contenteditable', 'true').focus();
+		} else {
+			item.find('.wysiwigBody').attr('contenteditable', 'false').blur();
+		}
+	});
+	$(document).on('click','.saveBtn',function() {
+		$(this).parents('.p-item').find('.editBtn').click();
+	});
 }); //  document ready
