@@ -4096,7 +4096,7 @@ aplempty div {
 
 body > .b-fix-wrapper {
 	position: relative;
-	padding-bottom: 90px;
+	padding-bottom: 80px;
 	min-height: 100%;
 }
 
@@ -7437,18 +7437,21 @@ a[data-toggle='modal'] {
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .b-btn-toolbar .icon {
 	display: inline-block;
-	vertical-align: top; 
+	width: 10%; 
+	vertical-align: top;
 	color: #4ea4ba;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .b-btn-toolbar span {
 	margin-bottom: 10px; 
 	display: inline-block;
-	width: 96%;
+	width: 87%;
 	vertical-align: top;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .b-btn-toolbar button {
-	padding-top: 10px; 
+	padding-top: 10px;
 	width: 100%;
+	height: auto;
+	white-space: normal;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent {
 	padding: 15px;
@@ -7469,15 +7472,25 @@ a[data-toggle='modal'] {
 	-webkit-border-radius: 50%;
 	        border-radius: 50%;
 }
+.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dl {
+	position: relative;
+}
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dt,
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd {
-	padding-right: 10px; 
 	display: inline-block;
-	width: auto;
-	vertical-align: bottom;
+	vertical-align: middle;
+}
+.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dt {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -20px;
+	width: 40px; 
+	height: 40px;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd {
-	text-transform: uppercase; 
+	padding-left: 50px; 
+	text-transform: uppercase;
 	color: #b2b2b2;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd span {
@@ -7562,7 +7575,7 @@ a[data-toggle='modal'] {
 	vertical-align: top;
 }
 .b-fix-wrapper .p-program .p-content #initProg .p-itemContent div dl.short {
-	width: 20%;
+	padding-right: 0;
 }
 .b-fix-wrapper .p-program .p-content #initProg .p-itemContent div.col-sm-3 {
 	padding-left: 10px;

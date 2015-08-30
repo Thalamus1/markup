@@ -175,7 +175,7 @@ a:hover {color:#111111; text-decoration: none;}
     border-bottom:1px solid #edf6f8;
     width: 100%;
 }
-body > .b-fix-wrapper {padding-bottom:90px; position:relative; min-height:100%;}
+body > .b-fix-wrapper {padding-bottom:80px; position:relative; min-height:100%;}
 .b-header_auth {
 	border-bottom:1px solid #4ea5bb;
 	.b-main-menu {height:59px; line-height:59px;}
@@ -1471,9 +1471,9 @@ a[data-toggle="modal"] {cursor:pointer;}
 			.rightCol {
 				.p-item {background-color:lighten($c-gray,28);border-bottom:1px solid $c-gray-light;
 					.b-btn-toolbar {position:relative;top:0;left:0;font-size:14px;color:$c-gray-dark;padding:15px;
-						.icon {color:#4ea4ba;display:inline-block;vertical-align:top;}
-						span {display:inline-block;vertical-align:top;width:96%;margin-bottom:10px;}
-						button {width:100%;padding-top:10px;}
+						.icon {color:#4ea4ba;display:inline-block;vertical-align:top; width:10%;}
+						span {display:inline-block;vertical-align:top;width:87%;margin-bottom:10px;}
+						button {width:100%;padding-top:10px; height:auto; white-space:normal;}
 					}
 					.p-itemContent {
 						padding:15px;
@@ -1481,8 +1481,10 @@ a[data-toggle="modal"] {cursor:pointer;}
 						.itemList {
 							a {font-family: 'HelveticaNeueLTStd-Md';}
 							.icon-file {display:block;width:40px;height:40px;line-height:40px;border-radius: 50%;text-align: center;background-color:lighten($c-gray,20);}
-							dt,dd {display:inline-block;vertical-align:bottom;width:auto;padding-right:10px;}
-							dd {color:$c-gray;text-transform:uppercase;
+							dl {position:relative;}
+							dt,dd {display:inline-block;vertical-align:middle;}
+							dt {position:absolute; top:50%; left:0; margin-top:-20px; height:40px; width:40px;}
+							dd {color:$c-gray;text-transform:uppercase;padding-left:50px;
 								span {font-family: 'HelveticaNeueLT-Light';}
 								span,a{text-transform: none;}
 							}
@@ -1520,7 +1522,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 				.p-itemContent {
 					div {margin:0;padding:0;
 						dl {padding:15px;margin:0;display:inline-block;vertical-align:top;width:auto;
-							&.short {width:20%;}
+							&.short {padding-right:0;}
 						}
 					}
 					div.col-sm-3 {padding-left:10px;}
