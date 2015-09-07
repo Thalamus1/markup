@@ -1090,7 +1090,7 @@ input:focus { outline: 0 none; }
 	.lnk_left{display:inline-block; vertical-align:top;background:#ffffff; border-radius:3px 0 0 3px; border:1px solid #cccccc; height:40px; width:40px;text-align:center; line-height:40px; font-size:13px;}
 	.lnk_right {display:inline-block; vertical-align:top;background:#ffffff; border-radius:0 3px 3px 0;margin-left:-7px; border:1px solid #cccccc; height:40px; width:40px;text-align:center; line-height:40px;font-size:13px;}
 	.lnk_left .icon, .lnk_right .icon  {color:#4ea5bb; line-height:40px;}
-	.modal-body {padding:0; background:#ffffff; max-height:680px; overflow:hidden;}
+	.modal-body {padding:0; background:#ffffff; /*max-height:680px;*/ overflow:hidden;}
 	.modal-footer { padding:0;border-radius:0 0 5px 5px;
 		.b-button {background:#4ea5bb; border:0 none; border-radius:0 0 0 5px;float:left; width:50%; color:#ffffff;outline:none;font-family: 'HelveticaNeueLTStd-Md'; text-transform:uppercase; height:60px; line-height:60px; text-align:center; padding:0; }
 		.b-button.b-cancel {background:#999999; border-radius:0 0 5px 0;}
@@ -1318,7 +1318,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 
 }
 .b-fix-wrapper {
-	.p-program {
+	.p-program,.program-modal {
 	& {background-color: $c-gray-light;min-height:calc(100vh - 150px);}
 		.iconBtn {
 			font-family: 'thalamus';
@@ -1329,9 +1329,11 @@ a[data-toggle="modal"] {cursor:pointer;}
 		}
 		.saveBtn,
 		.uploadBtn {
+			visibility:hidden;
+		}
+		.btn-success.inverse {
 			background-color:#4ea4ba;
 			color:#ffffff;
-			visibility:hidden;
 		}
 		.fc-toolbar {padding:10px 20px; border-bottom:1px solid #cccccc; margin:0;text-align:left;
 			.leftSet {position:absolute;display:inline-block;vertical-align:top;margin:0;padding:0;top:10px;left:20px;
@@ -1501,6 +1503,9 @@ a[data-toggle="modal"] {cursor:pointer;}
 					.innerBtn {
 						top:10px;right:10px;
 					}
+					&.bNone {
+						border:none;
+					}
 				}
 				.p-itemContent {
 					dt {margin:0;padding:0;text-transform:uppercase;color:$c-gray;}
@@ -1555,6 +1560,63 @@ a[data-toggle="modal"] {cursor:pointer;}
 				&:hover .icon {background-color:#4ea4ba;color:#ffffff;}
 			}
 			.switch {margin-top:3px;} 
+		}
+		&#pub-prog {
+			.modal-dialog {min-width: 992px;background:red;
+				.b-modal {width: 992px;background:green;
+					.b-btn-toolbar {position:relative;
+						.btn-line {background:transparent;border:1px solid #ffffff;color:#ffffff;opacity:0.8;
+							&:hover{opacity:1;}
+						}
+					}
+					.modal-header {background-color:#ffffff;color:#000000;padding:0;
+						.modal-title{padding:20px;}
+						.modal-title-img {background-color:red;background-image:url('../images/hospital.jpg');background-repeat: no-repeat;background-position: center center;background-size:cover;padding:150px 0 0 0;
+							.modal-title-content {padding:50px 20px 20px 20px;
+								background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.8)));
+								background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+								background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+								background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+								background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+								h2 {color:#ffffff;margin:0;padding:0;font-family: 'HelveticaNeueLT-Light';font-size: 1.5em;line-height:1;margin-bottom:15px;}
+								.program-logo {width:170px;height:170px;background-color:#ffffff;border-radius:4px;background-image:url('../images/program_logo.jpg');background-repeat: no-repeat;background-position: center center;background-size:90%;}
+							}
+						}
+					}
+					.p-content {padding:0;
+						.leftCol {padding-left:30px;
+							.p-itemContent {
+								dt,dd,dl {text-align:left;}
+								dl {
+									dt {color:$c-gray;font-family: 'HelveticaNeueLTStd-Md';}
+								}
+								&.registerBox {background-color:#4ea4ba;padding:0 0 25px 35px;
+									dl {margin:10px 0;
+										dd {color:#ffffff;font-size:2em;font-family: 'HelveticaNeueLT-Light';}
+									}
+									.b-btn-toolbar {border-bottom:1px solid rgba(255,255,255,0.3);margin:5px 0;padding-bottom:10px;
+										.btn-group {padding:10px 0;text-align:right;}
+										&:last-child {border:none;padding-bottom:0;}
+									}
+								}
+								&.aboutProg {padding:15px;font-family: 'HelveticaNeueLT-Light';font-size: 14px; 
+									a{display:inline-block;margin-top:10px;}
+								}
+								&.conTrav {
+									dd {font-size: 14px;font-family:'HelveticaNeueLT-Light';}
+									a {text-decoration:none;}
+								}
+								.b-main-menu {margin:0; padding:0; display:inline-block; vertical-align:top; width:auto; text-align:right;padding:0;height:50px;line-height:50px;
+									li {margin:0;padding:0 20px 0 0;}
+									a {text-decoration:none;font-family: 'HelveticaNeueLTStd-Md';}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
