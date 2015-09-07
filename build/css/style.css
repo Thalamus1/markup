@@ -7540,14 +7540,9 @@ a[data-toggle='modal'] {
 	width: 87%;
 	vertical-align: top;
 }
-<<<<<<< HEAD
-.b-fix-wrapper .p-program .p-content .rightCol .p-item .b-btn-toolbar button {
-	padding-top: 10px;
-=======
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .b-btn-toolbar button,
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item .b-btn-toolbar button {
-	padding-top: 10px; 
->>>>>>> thalamusYasha
+	padding-top: 10px;
 	width: 100%;
 	height: auto;
 	white-space: normal;
@@ -7575,22 +7570,19 @@ a[data-toggle='modal'] {
 	-webkit-border-radius: 50%;
 	        border-radius: 50%;
 }
-.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dl {
+.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dl,
+.b-fix-wrapper .program-modal .p-content .rightCol .p-item .p-itemContent .itemList dl {
 	position: relative;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dt,
-<<<<<<< HEAD
-.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd {
-=======
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd,
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item .p-itemContent .itemList dt,
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item .p-itemContent .itemList dd {
-	padding-right: 10px; 
->>>>>>> thalamusYasha
 	display: inline-block;
 	vertical-align: middle;
 }
-.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dt {
+.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dt,
+.b-fix-wrapper .program-modal .p-content .rightCol .p-item .p-itemContent .itemList dt {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -7598,15 +7590,10 @@ a[data-toggle='modal'] {
 	width: 40px; 
 	height: 40px;
 }
-<<<<<<< HEAD
-.b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd {
-	padding-left: 50px; 
-	text-transform: uppercase;
-=======
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd,
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item .p-itemContent .itemList dd {
-	text-transform: uppercase; 
->>>>>>> thalamusYasha
+	padding-left: 50px; 
+	text-transform: uppercase;
 	color: #b2b2b2;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent .itemList dd span,
@@ -7692,29 +7679,29 @@ a[data-toggle='modal'] {
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item.done {
 	background-color: #dbffd8;
 }
-<<<<<<< HEAD
-.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div {
+.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div,
+.b-fix-wrapper .program-modal .p-content #initProg .p-itemContent div {
 	margin: 0;
 	padding: 0;
 }
-.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div dl {
+.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div dl,
+.b-fix-wrapper .program-modal .p-content #initProg .p-itemContent div dl {
 	margin: 0;
 	padding: 15px;
 	display: inline-block;
 	width: auto; 
 	vertical-align: top;
 }
-.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div dl.short {
+.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div dl.short,
+.b-fix-wrapper .program-modal .p-content #initProg .p-itemContent div dl.short {
 	padding-right: 0;
 }
-.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div.col-sm-3 {
+.b-fix-wrapper .p-program .p-content #initProg .p-itemContent div.col-sm-3,
+.b-fix-wrapper .program-modal .p-content #initProg .p-itemContent div.col-sm-3 {
 	padding-left: 10px;
 }
-.b-fix-wrapper .p-program .p-content .p-item {
-=======
 .b-fix-wrapper .p-program .p-content .p-item,
 .b-fix-wrapper .program-modal .p-content .p-item {
->>>>>>> thalamusYasha
 	position: relative;
 	height: auto; 
 	background-color: #fff;
