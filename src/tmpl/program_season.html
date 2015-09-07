@@ -11,6 +11,7 @@
 				<li class="menuitem active dropdown" >
 					<a  class="dropdown-toggle" data-toggle="dropdown">Program</a>
 					<ul class="dropdown-menu" role="menu">
+						<li role="presentation"><a role="menuitem" href="#/program/empty" >Program empty</a></li>
 						<li role="presentation"><a role="menuitem" href="#/program" >Init Program</a></li>
 						<li role="presentation"><a role="menuitem" href="#/program/season" >Season 2015</a></li>
 					 </ul>
@@ -80,7 +81,18 @@
 		<div class="fc-toolbar clearfix">
 			<div class="b-btn-toolbar leftSet">
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success" data-target="#new-prog" data-toggle="modal"><span class="iconBtn">Season 2015</span></button><button class="btn btn-success"><span class="iconBtn">&#xe60e</span></button>
+					<button class="btn btn-success seasonBtn" data-target="#new-prog" data-toggle="modal"><span class="iconBtn">Season 2015</span></button>
+					<div class="dropdown">
+						<button class="btn btn-success"  data-toggle="dropdown"><span class="iconBtn">&#xe60e</span></button>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem clearfix" href="#"><b>Residency 2015<i class="icon-check pull-right"></i></b><small>Current</small></a></li>
+							<li role="presentation" class="divider"></li>
+							<li class="caption">Archived Seasons</li>
+							<li role="presentation" class="archived"><a role="menuitem disable" href="#"><b>Residency 2014</b><small>Archived</small></a></li>
+							<li role="presentation" class="archived"><a role="menuitem disable" href="#"><b>Residency 2013</b><small>Archived</small></a></li>
+						</ul>
+					</div>	
+					
 				</div>
 			</div>
 			<div class="pTitle">UW Neurology Residency Program</div>
@@ -99,93 +111,76 @@
 		</div>
 		<div class="p-content clearfix">
 			<div class="col-sm-9 leftCol clearfix">
-				<div class="pi col-sm-12" id="initProg">
+				<div class="pi col-sm-12 initProg">
 					<div class="p-item">
 						<div class="p-itemTitle">Program Initial Parameters
 							<div class="b-btn-toolbar innerBtn">
-									<button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
-								</div>
+								<button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
+							</div>
 						</div>
-						<div class="p-itemContent clearfix">
-							<div class="col-sm-6">
-								<div class="row"><dl class="short"><dt>ACGME ID</dt><dd>2409837898</dd></dl><dl><dt>Program Name</dt><dd>UW Neurology Residency Program</dd></dl></div>
-							</div>
-							<div class="col-sm-3">
-								<div class="row"><dl><dt>program Status</dt><dd>Disabled (Not published)</dd></dl></div>
-							</div>
-							<div class="col-sm-3">
-								<div class="row"><dl><dt>Universal Application</dt><dd>Disabled</dd></dl></div>
-							</div>
+						<div class="tDisclamer disclamer hidden">
+							<div><i class="icon-alert"></i>&nbsp;&nbsp;Some of the fiealds require to request for update. Please <a href="#">send a message</a> to your Business Administrator</div>
 						</div>
 						<div class="p-itemContent clearfix bb">
 							<div class="col-sm-6">
-								<dl><dt>Institution</dt><dd>University of Washington Scholl of Medicine (UWSOM)</dd></dl>
+								<div class="row"><dl class="col-sm-3"><dt>ACGME ID</dt><dd>2409837898</dd></dl><dl class="col-sm-9"><dt>Program Name</dt><dd>UW Neurology Residency Program</dd></dl></div>
+								<div class="row"><dl class="col-sm-9"><dt>Institution</dt><dd>University of Washington Scholl of Medicine (UWSOM)</dd></dl></div>
 							</div>
-							<div class="col-sm-3">
-								<dl><dt>Program Status</dt><dd>Disabled (Not published)</dd></dl>
-							</div>
-							<div class="col-sm-3">
-								<dl><dt>Universal Application</dt><dd>Disabled</dd></dl>
+							<div class="col-sm-6">
+								<div class="col-sm-12 padding14"><dl><dt class="col-sm-6">Program Status</dt><dd class="col-sm-6">Disabled (Not published)</dd></dl></div>
+								<div class="col-sm-12 padding14"><dl><dt class="col-sm-6">Universal Application</dt><dd class="col-sm-6">Disabled</dd></dl></div>
+								<div class="col-sm-12 padding14"><dl><dt class="col-sm-6">Document Management</dt><dd class="col-sm-6"><label>Disabled</label><span class="switch hidden"><input
+								type="checkbox"><i></i></span></dd></dl></div>
 							</div>
 						</div>
 						<div class="p-itemContent clearfix bbGray">
 							<div class="col-sm-6">
-								<dl class="short"><dt>NRMP #</dt></dl><dl><dt>Speciality</dt></dl>
+								<dl class="col-sm-3"><dt>NRMP #</dt></dl><dl class="col-sm-9"><dt>Speciality</dt></dl>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-sm-6 padding14">
 								<dl><dt>NRMP Residency Spots</dt></dl>
 							</div>
-							<div class="col-sm-3"></div>
 						</div>
-						<div class="p-itemContent clearfix bbGray">
+						<div class="p-itemContent clearfix bbGray editable">
 							<div class="col-sm-6">
-								<dl class="short"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl><dd class="thin"><span class="wysiwigBody">-</span></dd></dl>
+								<div class="row"><dl class="col-sm-3"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl class="col-sm-9"><dd class="thin"><span class="wysiwigBody">-</span></dd></dl></div>
 							</div>
 							<div class="col-sm-3">
-								<dl><dd>Inside Match: <span class="wysiwigBody">8</span></dd></dl>
+								<div class="row"><dl><dd><span>Inside Match:&nbsp;</span><span class="wysiwigBody">8</span></dd></dl></div>
 							</div>
 							<div class="col-sm-3">
-								<dl><dd>Outside Match: <span class="wysiwigBody">30</span></dd></dl>
+								<div class="row"><dl><dd><span>Outside Match:&nbsp;</span><span class="wysiwigBody">30</span></dd></dl><i class="deleteBtn icon-delete hidden"></i></div>
 							</div>
 						</div>
-						<div class="p-itemContent clearfix bbGray">
+						<div class="p-itemContent clearfix bbGray editable">
 							<div class="col-sm-6">
-								<dl class="short"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl><dd class="thin"><span class="wysiwigBody">Neurology Advanced</span></dd></dl>
+								<div class="row"><dl class="col-sm-3"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl class="col-sm-9"><dd class="thin"><span class="wysiwigBody">-</span></dd></dl></div>
 							</div>
 							<div class="col-sm-3">
-								<dl><dd>Inside Match: <span class="wysiwigBody">12</span></dd></dl>
+								<div class="row"><dl><dd><span>Inside Match:&nbsp;</span><span class="wysiwigBody">8</span></dd></dl></div>
 							</div>
 							<div class="col-sm-3">
-								<dl><dd>Outside Match: <span class="wysiwigBody">24</span></dd></dl>
+								<div class="row"><dl><dd><span>Outside Match:&nbsp;</span><span class="wysiwigBody">30</span></dd></dl><i class="deleteBtn icon-delete hidden"></i></div>
 							</div>
 						</div>
-						<div class="p-itemContent clearfix bbGray">
+						<div class="p-itemContent clearfix bbGray editable">
 							<div class="col-sm-6">
-								<dl class="short"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl><dd class="thin"><span class="wysiwigBody">-</span></dd></dl>
+								<div class="row"><dl class="col-sm-3"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl class="col-sm-9"><dd class="thin"><span class="wysiwigBody">-</span></dd></dl></div>
 							</div>
 							<div class="col-sm-3">
-								<dl><dd>Inside Match: <span class="wysiwigBody">36</span></dd></dl>
+								<div class="row"><dl><dd><span>Inside Match:&nbsp;</span><span class="wysiwigBody">8</span></dd></dl></div>
 							</div>
 							<div class="col-sm-3">
-								<dl><dd>Outside Match: <span class="wysiwigBody">21</span></dd></dl>
+								<div class="row"><dl><dd><span>Outside Match:&nbsp;</span><span class="wysiwigBody">30</span></dd></dl><i class="deleteBtn icon-delete hidden"></i></div>
 							</div>
 						</div>
-						<div class="p-itemContent clearfix bbGray">
-							<div class="col-sm-6">
-								<dl class="short"><dd><span class="wysiwigBody">1000140C0</span></dd></dl><dl><dd class="thin"><span class="wysiwigBody">-</span></dd></dl>
-							</div>
-							<div class="col-sm-3">
-								<dl><dd>Inside Match: <span class="wysiwigBody">28</span></dd></dl>
-							</div>
-							<div class="col-sm-3">
-								<dl><dd>Outside Match: <span class="wysiwigBody">11</span></dd></dl>
-							</div>
+						<div class="p-itemContent clearfix bbGray editable">
+							<a href="#"><i class="icon-plus"></i>&nbsp; Add New Speciality</a>
 						</div>
-						<div class="p-itemContent">&nbsp;</div>
 					</div>
 				</div>
 				<div class="pi col-sm-6">
-						<div class="p-item">
+					<div class="p-item">
 							<div class="p-itemTitle">About Program
 								<div class="b-btn-toolbar innerBtn">
 									<button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
@@ -199,10 +194,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="p-item">
+					<div class="p-item">
 							<div class="p-itemTitle">Gallery
 								<div class="b-btn-toolbar innerBtn">
-									<button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
+									<button class="btn btn-success inverse uploadBtn"><span class="iconBtn icon-upload"></span>&nbsp;<span>Upload</span></button><button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
+									<input type="file" class="hidden" name="program-photo">
 								</div>
 							</div>
 							<div class="p-itemContent">
@@ -220,23 +216,30 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				<div class="pi col-sm-6">
-						<div class="p-item">
+				</div>
+				<div class="pi col-sm-6 initProg">
+					<div class="p-item">
 							<div class="p-itemTitle">Program Year Solaries
 								<div class="b-btn-toolbar innerBtn">
 									<button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
 								</div>
 							</div>
-							<div class="p-itemContent">
-								<div class="itemList clearfix">
-									<dl><dt>PGY1 SALARY</dt><dd class="pull-right"><span class="wysiwigBody">$39,000</span></dd></dl>
-									<dl><dt>PGY2 SALARY</dt><dd class="pull-right"><span class="wysiwigBody">$48,000</span></dd></dl>
-								</div>
+							<div class="p-itemContent clearfix editable bbGray disclamer hidden">
+								<div class="col-sm-12">You can add up to 7 Program Year Salaries</div>
+							</div>
+							<div class="p-itemContent clearfix editable bbGray">
+								<div class="row"><dl><dt class="col-sm-6"><span>PGY1 SALARY</span></dt><dd class="col-sm-3 pull-right"><span class="wysiwigBody text-right">$39,000</span></dd></dl><i class="deleteBtn icon-delete hidden"></i></div>
+								
+							</div>
+							<div class="p-itemContent clearfix editable bbGray">
+								<div class="row"><dl><dt class="col-sm-6"><span>PGY2 SALARY</span></dt><dd class="col-sm-3 pull-right"><span class="wysiwigBody text-right">$59,000</span></dd></dl><i class="deleteBtn icon-delete hidden"></i></div>
+								
+							</div>
+							<div class="p-itemContent clearfix editable">
+								<a href="#"><i class="icon-plus"></i>&nbsp; Add New PY Salary</a>
 							</div>
 						</div>
-						
-						<div class="p-item">
+					<div class="p-item">
 							<div class="p-itemTitle">Contacts and Locations
 								<div class="b-btn-toolbar innerBtn">
 									<button class="btn btn-success inverse saveBtn"><span class="iconBtn icon-check"></span>&nbsp;<span>Save</span></button><button class="btn btn-success editBtn"><span class="iconBtn icon-write"></span></button>
@@ -263,7 +266,7 @@
 								</form>
 							</div>
 						</div>
-					</div>
+				</div>
 			</div>
 			<div class="col-sm-3 rightCol clearfix">
 				<div class="p-item">
@@ -386,9 +389,23 @@
 								</span>
 								</div>
 							</div>
+							<div class="form-group row pupMenu">
+								<label class="col-sm-4 control-label">Schedule lock period</label>
+								<div class="col-sm-8">
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="dateTo"  name="lockPer" required="" placeholder="" value="72h"><span class="m-icon">
+									<i class="icon"></i>
+								</span>
+								</div>
+							</div>
+							<div class="switcher form-group row pupMenu">
+								<label class="col-sm-10 control-label">Copy Base Program Data from Previouse Year (if Applicable)</label>
+								<div class="col-sm-2 text-right">
+									<span class="switch pull-right"><input type="checkbox" checked><i></i></span>
+								</div>
+							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="b-button">Save</button>
+							<button type="submit" class="b-button">Create</button>
 							<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
 						</div>
 						
