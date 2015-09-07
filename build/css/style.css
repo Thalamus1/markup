@@ -5762,30 +5762,6 @@ input:focus {
 	color: #fff; 
 	background-color: #4ea4ba;
 }
-.b-modal .b-form .pupMenu .m-icon .popover {
-	top: -8px;
-	left: 200px;
-	visibility: hidden;
-}
-.b-modal .b-form .pupMenu .m-icon .popover .arrow {
-	top: 30px;
-}
-.b-modal .b-form .pupMenu .m-icon .popover .popover-content {
-	padding-right: 40px; 
-	cursor: pointer;
-}
-.b-modal .b-form .pupMenu .m-icon .popover .popover-content .icon {
-	position: absolute;
-	right: 15px;
-	color: #4ea5bb;
-}
-.b-modal .b-form .pupMenu .m-icon .popover .popover-content:hover {
-	color: #4ea5bb; 
-	background-color: #f7f7f7;
-}
-.b-modal .b-form .pupMenu .m-icon:hover .popover {
-	visibility: visible;
-}
 .b-modal .b-form .pupMenu .control-label {
 	height: 30px;
 	line-height: 30px;
@@ -6497,6 +6473,25 @@ input:focus {
 }
 .b-modal .warn-color {
 	color: #f36 !important;
+}
+.b-modal .popover .popover-content span {
+	padding: 10px 40px 10px 10px;
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+	border-bottom: 1px solid #eaeaea;
+}
+.b-modal .popover .popover-content span:last-child {
+	border-bottom: none;
+}
+.b-modal .popover .popover-content span .icon {
+	position: absolute;
+	right: 15px;
+	color: #4ea5bb;
+}
+.b-modal .popover .popover-content span:hover {
+	color: #4ea5bb; 
+	background-color: #f7f7f7;
 }
 
 a[data-toggle='modal'] {
