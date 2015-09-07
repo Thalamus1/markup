@@ -46,6 +46,9 @@ angular.module('thalamusApp', [
 	when('/program/season', {
         templateUrl: 'tmpl/program_season.html'
       }).
+	when('/program/empty', {
+        templateUrl: 'tmpl/program_empty.html'
+      }).
       when('/', {
         templateUrl: 'tmpl/main.html'
       }).

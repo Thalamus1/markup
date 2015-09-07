@@ -64,11 +64,20 @@ $(document).ready(function() {
 		item.toggleClass('edit').find('.wysiwigHead').toggle();
 		if(item.hasClass('edit')) {
 			item.find('.wysiwigBody').attr('contenteditable', 'true').focus();
+			item.find('.switch').removeClass('hidden');
+			item.find('.deleteBtn').removeClass('hidden');
+			item.find('.disclamer').removeClass('hidden');
 		} else {
 			item.find('.wysiwigBody').attr('contenteditable', 'false').blur();
+			item.find('.switch').addClass('hidden');
+			item.find('.deleteBtn').addClass('hidden');
+			item.find('.disclamer').addClass('hidden');
 		}
 	});
 	$(document).on('click','.saveBtn',function() {
 		$(this).parents('.p-item').find('.editBtn').click();
+	});
+	$(document).on('click','.uploadBtn',function() {
+		$('input[name="program-photo"]').click();
 	});
 }); //  document ready
