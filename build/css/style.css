@@ -4669,7 +4669,6 @@ body > .b-fix-wrapper {
 	font-size: 13px;
 	line-height: 20px;
 	cursor: pointer;
-	white-space: nowrap;
 	letter-spacing: .025em;
 	text-transform: uppercase;
 	color: #4ea5bb;
@@ -4730,7 +4729,6 @@ body > .b-fix-wrapper {
 	font-size: 13px;
 	line-height: 20px;
 	cursor: pointer;
-	white-space: nowrap;
 	letter-spacing: .025em;
 	text-transform: uppercase;
 	color: #4ea5bb;
@@ -5005,7 +5003,6 @@ body > .b-fix-wrapper {
 	font-size: 13px;
 	line-height: 20px;
 	cursor: pointer;
-	white-space: nowrap;
 	letter-spacing: .025em;
 	text-transform: uppercase;
 	color: #4ea5bb;
@@ -6439,8 +6436,10 @@ input:focus {
 .b-modal .modal-body {
 	padding: 0;
 	overflow: hidden; 
-	max-height: 680px;
 	background: #fff;
+}
+.b-modal .modal-body.js-scroll {
+	max-height: 680px;
 }
 .b-modal .modal-footer {
 	padding: 0;
@@ -7392,6 +7391,15 @@ a[data-toggle='modal'] {
 	position: absolute;
 	right: 0;
 }
+.b-fix-wrapper .p-program .p-content .leftCol .pi .edit .txtarea,
+.b-fix-wrapper .program-modal .p-content .leftCol .pi .edit .txtarea {
+	padding: 10px; 
+	border: 1px solid #eaeaea;
+}
+.b-fix-wrapper .p-program .p-content .leftCol .pi .edit .editable dd,
+.b-fix-wrapper .program-modal .p-content .leftCol .pi .edit .editable dd {
+	margin-right: 30px;
+}
 .b-fix-wrapper .p-program .p-content .leftCol .pi .edit .padding14:nth-child(2),
 .b-fix-wrapper .program-modal .p-content .leftCol .pi .edit .padding14:nth-child(2) {
 	border-color: #eaeaea;
@@ -7543,8 +7551,9 @@ a[data-toggle='modal'] {
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .b-btn-toolbar button,
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item .b-btn-toolbar button {
-	padding-top: 10px; 
+	padding-top: 10px;
 	width: 100%;
+	height: auto;
 }
 .b-fix-wrapper .p-program .p-content .rightCol .p-item .p-itemContent,
 .b-fix-wrapper .program-modal .p-content .rightCol .p-item .p-itemContent {
@@ -7768,7 +7777,6 @@ a[data-toggle='modal'] {
 	display: table-cell;
 	height: 50px;
 	vertical-align: middle;
-	white-space: nowrap;
 }
 .b-fix-wrapper .p-program .p-content .initProg .p-itemContent.editable dl span.wysiwigBody,
 .b-fix-wrapper .program-modal .p-content .initProg .p-itemContent.editable dl span.wysiwigBody {
@@ -7812,10 +7820,6 @@ a[data-toggle='modal'] {
 }
 .b-fix-wrapper .modal #seasonName {
 	padding-left: 15px;
-}
-.b-fix-wrapper .modal .prevProg {
-	padding: 0; 
-	background-color: #fff;
 }
 .b-fix-wrapper .modal .pupMenu {
 	border-bottom: 1px solid #f0f0f0;

@@ -354,7 +354,6 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	line-height:20px;
 	letter-spacing:0.025em;
 	cursor: pointer;
-	white-space: nowrap; 
 	text-transform: uppercase;
 	color: #4ea5bb;
 	background-color: #fff;
@@ -382,7 +381,6 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	line-height:20px;
 	letter-spacing:0.025em;
 	cursor: pointer;
-	white-space: nowrap; 
 	text-transform: uppercase;
 	color: #4ea5bb;
 	background-color: #fff;
@@ -578,7 +576,6 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	line-height:20px;
 	letter-spacing:0.025em;
 	cursor: pointer;
-	white-space: nowrap; 
 	text-transform: uppercase;
 	color: #4ea5bb;
 	background-color: #fff;
@@ -1081,7 +1078,9 @@ input:focus { outline: 0 none; }
 	.lnk_left{display:inline-block; vertical-align:top;background:#ffffff; border-radius:3px 0 0 3px; border:1px solid #cccccc; height:40px; width:40px;text-align:center; line-height:40px; font-size:13px;}
 	.lnk_right {display:inline-block; vertical-align:top;background:#ffffff; border-radius:0 3px 3px 0;margin-left:-7px; border:1px solid #cccccc; height:40px; width:40px;text-align:center; line-height:40px;font-size:13px;}
 	.lnk_left .icon, .lnk_right .icon  {color:#4ea5bb; line-height:40px;}
-	.modal-body {padding:0; background:#ffffff; max-height:680px; overflow:hidden;}
+	.modal-body {padding:0; background:#ffffff; overflow:hidden;
+		&.js-scroll {max-height:680px;}
+	}
 	.modal-footer { padding:0;border-radius:0 0 5px 5px;
 		.b-button {background:#4ea5bb; border:0 none; border-radius:0 0 0 5px;float:left; width:50%; color:#ffffff;outline:none;font-family: 'HelveticaNeueLTStd-Md'; text-transform:uppercase; height:60px; line-height:60px; text-align:center; padding:0; }
 		.b-button.b-cancel {background:#999999; border-radius:0 0 5px 0;}
@@ -1404,6 +1403,8 @@ a[data-toggle="modal"] {cursor:pointer;}
 						dd {position:relative;
 							.switch {position:absolute;right:0;}
 						}
+						.txtarea {border:1px solid $c-gray-light;padding:10px;}
+						.editable dd {margin-right:30px;}
 						.padding14:nth-child(2) {border-color:$c-gray-light;}
 					}
 				}
@@ -1448,7 +1449,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 					.b-btn-toolbar {position:relative;top:0;left:0;font-size:14px;color:$c-gray-dark;padding:15px;
 						.icon {color:#4ea4ba;display:inline-block;vertical-align:top;}
 						span {display:inline-block;vertical-align:top;width:96%;margin-bottom:10px;}
-						button {width:100%;padding-top:10px;}
+						button {width:100%;padding-top:10px;height:auto;}
 					}
 					.p-itemContent {
 						padding:15px;
@@ -1532,7 +1533,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 					&.editable {
 						.deleteBtn {position:absolute;right:0;top:0;line-height:50px;color:$c-gray;cursor:pointer;width:30px;text-align:center;}
 						dl {padding:0 0 0 15px;margin:0;display:table-cell;vertical-align:middle;
-							span {display:table-cell;vertical-align:middle;height:50px;white-space:nowrap;padding: 0 10px;
+							span {display:table-cell;vertical-align:middle;height:50px;padding: 0 10px;
 								&.wysiwigBody {min-width:120px;
 									&.text-right {text-align:right;}
 								}
@@ -1553,7 +1554,6 @@ a[data-toggle="modal"] {cursor:pointer;}
 	}
 	.modal {
 		#seasonName {padding-left:15px;}
-		.prevProg {background-color:#ffffff;padding:0;}
 		.pupMenu {border-bottom:1px solid #f0f0f0;
 			input[type="text"] {display:inline-block; vertical-align:top;width:90%; text-align:right;}
 			.m-icon {display:inline-block;vertical-align:middle;width:10%;text-align:right;
