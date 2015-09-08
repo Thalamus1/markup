@@ -54,6 +54,13 @@ $(document).ready(function() {
 					updateOnContentResize: true
 				}
 			});
+	$('.js-horisontal-scroll').mCustomScrollbar({
+				live:true,
+				axis:"x",
+				advanced:{
+					updateOnContentResize: true
+				}
+			});
 	oldIE = $('html').hasClass('lt-ie10');
 
 	doc = $(document); 

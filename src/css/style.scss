@@ -760,6 +760,7 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 
 
 }
+.filtr_list .jq-checkbox {margin-right:10px;}
 .dropdown.open .b-add {text-indent:-999em; background:#666666 url('../icons/ic_add_open.png')no-repeat center center; outline:none;}
 .b-btn-toolbar .dropdown.open .btn.b-link_filtr, .b-btn-toolbar .dropdown.open .btn.b-link_actions {background: #666666; color:#ffffff; outline:none;}
 
@@ -800,6 +801,14 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	
 	}
 }
+.app_list {margin:15px 20px 40px 20px; border-right:1px solid #e6e6e6;}
+.app_list .b-table {width:auto;float:left;}
+.app_list .js-horisontal-scroll {overflow:hidden; max-width:calc(100vw - 280px);
+ .b-table {width:100vw; border:0 none; border-bottom:1px solid #e6e6e6; border-top:1px solid #e6e6e6;}
+ .b-table th {height:41px; white-space:nowrap;}
+  .b-table td {height:71px;}
+  .mCSB_horizontal.mCSB_inside > .mCSB_container {margin-bottom:0;}
+ }
 .b-table.docs {
 	thead {
 		tr th {text-align:left;}

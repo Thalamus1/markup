@@ -5226,6 +5226,10 @@ body > .b-fix-wrapper {
 	float: right;
 }
 
+.filtr_list .jq-checkbox {
+	margin-right: 10px;
+}
+
 .dropdown.open .b-add {
 	text-indent: -999em;
 	background: #666 url('../icons/ic_add_open.png') no-repeat center center;
@@ -5356,6 +5360,38 @@ body > .b-fix-wrapper {
 }
 .b-table tbody tr:hover td.fon {
 	background: #e6e6e6;
+}
+
+.app_list {
+	margin: 15px 20px 40px 20px;
+	border-right: 1px solid #e6e6e6;
+}
+
+.app_list .b-table {
+	float: left; 
+	width: auto;
+}
+
+.app_list .js-horisontal-scroll {
+	overflow: hidden;
+	max-width: -webkit-calc(100vw - 280px);
+	max-width:         calc(100vw - 280px);
+}
+.app_list .js-horisontal-scroll .b-table {
+	width: 100vw;
+	border: 0 none;
+	border-top: 1px solid #e6e6e6; 
+	border-bottom: 1px solid #e6e6e6;
+}
+.app_list .js-horisontal-scroll .b-table th {
+	height: 41px;
+	white-space: nowrap;
+}
+.app_list .js-horisontal-scroll .b-table td {
+	height: 71px;
+}
+.app_list .js-horisontal-scroll .mCSB_horizontal.mCSB_inside > .mCSB_container {
+	margin-bottom: 0;
 }
 
 .b-table.docs thead tr th {

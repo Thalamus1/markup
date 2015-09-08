@@ -74,7 +74,11 @@
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
 			<div class="dropdown">
-				<button class="b-add btn fc-button" data-target="#apl-import" data-toggle="modal">&#xe67a</button>
+				<button class="b-add btn fc-button"  data-toggle="dropdown" >&#xe67a</button>
+				<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Add New Applicant</a></li>
+							<li role="presentation"><a role="menuitem" data-target="#apl-import" data-toggle="modal">Import Applicants</a></li>
+						  </ul>
 			</div>
 			<form class="b-search-form" method="get" action=".">
 				<fieldset>
@@ -89,8 +93,10 @@
 					<div class="dropdown">
 						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>&#xe68c</span></button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Show Dashboard</a></li>
 							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+							<li role="presentation"><a role="menuitem" href="#/applicants_list">Refresh View</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
 						  </ul>
 					</div>
 				</div>
@@ -98,7 +104,7 @@
 		</div>
 		<div class="d_table docsEmpty">
 			<div class="d_table_cell">
-				There are no Applicants added to the Program. Please <a  data-target="#apl-import-ok" data-toggle="modal">import</a>...
+				There are no Applicants added to the Program.<br/>Please <a  data-target="#apl-import-ok" data-toggle="modal">import</a> Applicants or simply <a href="#">add</a> them manually.
 			</div>
 		</div>
 	</div>
