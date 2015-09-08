@@ -4950,11 +4950,13 @@ body > .b-fix-wrapper {
 	        border-radius: 4px;
 }
 .b-btn-toolbar .b-tab-view .b-link_tab {
-	float: left; 
+	padding: 0; 
+	float: left;
 	-webkit-border-radius: 4px 0 0 4px;
 	        border-radius: 4px 0 0 4px;
 }
 .b-btn-toolbar .b-tab-view .b-link_list {
+	padding: 0;
 	float: left; 
 	border-left: 0 none;
 	-webkit-border-radius: 0 4px 4px 0;
@@ -5181,7 +5183,8 @@ body > .b-fix-wrapper {
 }
 
 .b-filter.fc-toolbar {
-	margin: 0; 
+	position: relative; 
+	margin: 0;
 	padding: 10px 20px;
 	border-bottom: 1px solid #ccc;
 }
@@ -7190,6 +7193,21 @@ a[data-toggle='modal'] {
 	line-height: 20px;
 	vertical-align: top;
 }
+.b-info_progress .b-prog.b-prog_blue .progressing {
+	background: #59abe3;
+}
+.b-info_progress .b-prog.b-prog_red .progressing {
+	background: #f64747;
+}
+.b-info_progress .b-prog.b-prog_orange .progressing {
+	background: #f5ab35;
+}
+.b-info_progress .b-prog.b-prog_green .progressing {
+	background: #87d37c;
+}
+.b-info_progress .b-prog.b-prog_darkblue .progressing {
+	background: #4ea5bb;
+}
 .b-info_progress .b-prog {
 	position: relative;
 	margin-bottom: 1px;
@@ -7686,6 +7704,156 @@ a[data-toggle='modal'] {
 .b-fix-wrapper .modal .pupMenu .m-icon:hover .icon {
 	color: #fff; 
 	background-color: #4ea4ba;
+}
+
+.app_tiles {
+	margin: 15px 20px 40px 20px;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	border: 0 none;
+}
+.app_tiles .col-lg-3 {
+	margin: -1px 0 0 -1px;
+	padding: 0; 
+	width: 20%;
+	border: 1px solid #e6e6e6;
+}
+.app_tiles .b-applicants_item {
+	position: relative;
+	padding: 40px; 
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+.app_tiles .b-applicants_item .name {
+	margin-top: 20px; 
+	display: block;
+	font-size: 21px;
+	line-height: 25px;
+}
+.app_tiles .b-applicants_item .b-status {
+	font-size: 15px;
+	line-height: 20px;
+	color: #111;
+}
+.app_tiles .b-applicants_item .b-id {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	display: block;
+	width: 100%;
+	font-family: 'Open Sans'; 
+	text-align: center;
+	color: #999;
+}
+.app_tiles .b-applicants_item .b-description {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: block;
+	width: 3px; 
+	height: 15px;
+	text-indent: -999em;
+	background: url('../icons/ic_descr.png') no-repeat center center;
+}
+.app_tiles .b-applicants_item .jq-checkbox {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.app_tiles .b-applicants_item.active {
+	background: #f7f7f7;
+}
+
+.b-result_filtr {
+	margin: 15px 20px 0 20px;
+	font-family: 'HelveticaNeueLTStd-Md'; 
+	line-height: 40px;
+}
+.b-result_filtr .tit {
+	margin-right: 20px; 
+	display: inline-block;
+	font-size: 13px;
+	vertical-align: top;
+	text-transform: uppercase;
+	color: #999;
+}
+.b-result_filtr .b-filtr_item {
+	padding: 0 15px; 
+	display: inline-block;
+	height: 40px;
+	font-size: 15px;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: top;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.b-result_filtr .b-filtr_item .icon-del {
+	margin-left: 10px;
+	display: block;
+	width: 12px; 
+	height: 40px;
+	text-indent: -999em;
+	background: url('../icons/ic_del.png') no-repeat 0 center;
+	outline: none;
+}
+.b-result_filtr .b-filtr_item .icon-filter:before {
+	margin-right: 5px;
+	font-size: 13px;
+}
+.b-result_filtr .b-filtr_item a {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.b-apl_statistic {
+	text-align: center;
+	background: #f7f7f7;
+	border-bottom: 1px solid #ccc;
+}
+.b-apl_statistic h2 {
+	margin: 0 auto;
+	padding: 20px 20px 0 20px;
+	max-width: 1220px; 
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+	text-align: left;
+	color: #111;
+}
+.b-apl_statistic h2 .total {
+	margin-left: 20px; 
+	font-family: 'HelveticaNeueLT-Roman';
+	font-size: 13px;
+	color: #999;
+}
+.b-apl_statistic h2 .total strong {
+	font-family: 'HelveticaNeueLTStd-Md'; 
+	font-size: 13px;
+	font-weight: normal;
+	color: #111;
+}
+.b-apl_statistic h3 {
+	margin-bottom: 10px; 
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 20px;
+	color: #111;
+}
+.b-apl_statistic .b-info_progress {
+	display: inline-block;
+	text-align: left; 
+	vertical-align: top;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.app_tiles .col-sm-4 {
+		width: 33.3333333333%;
+	}
 }
 
 /*!
