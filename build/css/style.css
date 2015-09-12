@@ -5589,7 +5589,9 @@ input:focus {
 	margin-right: 0;
 }
 .b-modal .modal-content {
-	border: 0 none; 
+	overflow: auto; 
+	max-height: 600px;
+	border: 0 none;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
@@ -6436,8 +6438,8 @@ input:focus {
 }
 .b-modal .modal-body {
 	padding: 0;
-	/*max-height:680px;*/
 	overflow: hidden; 
+	max-height: 680px;
 	background: #fff;
 }
 .b-modal .modal-footer {
@@ -7846,6 +7848,10 @@ a[data-toggle='modal'] {
 }
 .b-fix-wrapper .modal #seasonName {
 	padding-left: 15px;
+}
+.b-fix-wrapper .modal .prevProg {
+	padding: 0; 
+	background-color: #fff;
 }
 .b-fix-wrapper .modal .pupMenu {
 	border-bottom: 1px solid #f0f0f0;
