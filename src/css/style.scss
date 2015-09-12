@@ -1005,7 +1005,7 @@ input:focus { outline: 0 none; }
 	.time_period.timepicker  .form-control {width:100px;}
 	.time_period .b-dash {font-size:24px; line-height:30px; font-family: 'HelveticaNeueLT-Light'; color:#4ea5bb;}
 	.inf-warn {font-size:15px;}
-	.inf-warn span {display:inline-block; vertical-align:top;}
+	.inf-warn span {display:inline-block; vertical-align:top; width:87%;}
 	.inf-warn:before {display:inline-block; vertical-align:top; content: "\e603"; 	font-family: 'thalamus'; color:#ffcc00; width:32px; height:32px; font-size:32px; line-height:32px; margin-right:15px; }
 	.timepicker .form-control {width:84%; text-align:right;}
 	.weekly-group {text-align:center;}
@@ -1370,8 +1370,8 @@ a[data-toggle="modal"] {cursor:pointer;}
 	.empty .b-prog {color:#999999;}
 
 }
-.b-fix-wrapper {
-	.p-program,.program-modal {
+
+	.p-program {
 	& {background-color: $c-gray-light;min-height:calc(100vh - 150px);}
 		.iconBtn {
 			font-family: 'thalamus';
@@ -1499,9 +1499,10 @@ a[data-toggle="modal"] {cursor:pointer;}
 			.rightCol {
 				.p-item {background-color:lighten($c-gray,28);border-bottom:1px solid $c-gray-light;
 					.b-btn-toolbar {position:relative;top:0;left:0;font-size:14px;color:$c-gray-dark;padding:15px;
-						.icon {color:#4ea4ba;display:inline-block;vertical-align:top; width:10%;}
-						span {display:inline-block;vertical-align:top;width:87%;margin-bottom:10px;}
-						button {width:100%;padding-top:10px; height:auto; white-space:normal;}
+						.icon {color:#4ea4ba;display:inline-block;vertical-align:top; width:15px; height:15px; position:absolute; top:20px; left:15px;}
+						span {display:inline-block;vertical-align:top;width:100%;margin-bottom:10px;padding-left:20px;}
+						button {width:100%; text-align:center; padding:0;  height:auto; white-space:normal;}
+						button span {width:auto; padding:10px 0;margin:0;}
 					}
 					.p-itemContent {
 						padding:15px;
@@ -1596,13 +1597,15 @@ a[data-toggle="modal"] {cursor:pointer;}
 					.col-sm-6:nth-child(2) {padding-right:15px;}
 					&.editable {
 						.deleteBtn {position:absolute;right:0;top:0;line-height:50px;color:$c-gray;cursor:pointer;width:30px;text-align:center;}
-						dl {padding:0 0 0 15px;margin:0;display:table-cell;vertical-align:middle;
-							span {display:table-cell;vertical-align:middle;height:50px;white-space:nowrap;padding: 0 10px;
-								&.wysiwigBody {min-width:120px;
-									&.text-right {text-align:right;}
+						dl {padding:0 0 0 15px;margin:0;display:table;vertical-align:middle; width:100%;
+							span {display:table-cell;vertical-align:middle;height:50px;padding: 0 10px;
+								&.wysiwigBody {width:auto;
+									&.text-right {text-align:right; width:100%;}
 								}
 							}
 						}
+						dl.col-sm-3 {width:25%;}
+						dl.col-sm-9 {width:75%;}
 						.col-sm-6 {
 							dd {display:block;width:100%;background:#ffffff;}
 						}
@@ -1616,7 +1619,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 			}
 		}
 	}
-	.modal {
+	.p-program {
 		#seasonName {padding-left:15px;}
 		.prevProg {background-color:#ffffff;padding:0;}
 		.pupMenu {border-bottom:1px solid #f0f0f0;
@@ -1627,9 +1630,9 @@ a[data-toggle="modal"] {cursor:pointer;}
 			}
 			.switch {margin-top:3px;} 
 		}
-		&#pub-prog {
-			.modal-dialog {min-width: 992px;background:red;
-				.b-modal {width: 992px;background:green;
+	}
+
+				.b-modal.p-program {width: 992px; border-radius:0 0 5px 5px;
 					.b-btn-toolbar {position:relative;
 						.btn-line {background:transparent;border:1px solid #ffffff;color:#ffffff;opacity:0.8;
 							&:hover{opacity:1;}
@@ -1682,10 +1685,10 @@ a[data-toggle="modal"] {cursor:pointer;}
 						}
 					}
 				}
-			}
-		}
-	}
-}
+			
+		
+	
+
 .app_tiles {text-align:center;margin:15px 20px 40px 20px; font-size:15px; line-height:20px; border:0 none;
 	.col-lg-3 {
 	    width: 20%; border:1px solid #e6e6e6; margin:-1px 0 0 -1px; padding:0;
@@ -1721,6 +1724,8 @@ a[data-toggle="modal"] {cursor:pointer;}
 	.app_tiles .col-sm-4 {
 	    width: 33.3333333333%;
 	}
+	.p-program .p-content .rightCol .p-item .p-itemContent .itemList dt {top:0; margin:0;}
+	.p-program .p-content .rightCol .p-item .p-itemContent .itemList dd {padding-left:0; padding-top:50px;}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 }
