@@ -4042,7 +4042,7 @@ a:hover {
 
 .b-content {
 	position: relative; 
-	padding-bottom: 90px;
+	padding-bottom: 20px;
 }
 
 /*
@@ -4679,6 +4679,9 @@ body > .b-fix-wrapper {
 	        border-radius: 4px;
 	outline: none;
 }
+#directives-calendar .fc-unthemed .fc-today {
+	background: transparent;
+}
 #directives-calendar .fc-view-group {
 	margin-right: 10px; 
 	float: left;
@@ -4810,7 +4813,7 @@ body > .b-fix-wrapper {
 .fc-title {
 	padding: 20px 20px 10px 20px; 
 	font-family: 'HelveticaNeueLTStd-Md';
-	font-size: 18px;
+	font-size: 13px;
 	line-height: 20px;
 }
 
@@ -4933,6 +4936,10 @@ body > .b-fix-wrapper {
 	border-left: 9px solid transparent;
 }
 .b-btn-toolbar .open.dropdown .b-link_settings {
+	color: #fff; 
+	background: #666;
+}
+.b-btn-toolbar .btn.b-link_info.active {
 	color: #fff; 
 	background: #666;
 }
@@ -6604,12 +6611,29 @@ a[data-toggle='modal'] {
 	background: url('../icons/ic_add.png') no-repeat center center;
 }
 #directives-calendar .nav-tabs li.active a {
-	padding-right: 30px;
-	background: #fff url('../icons/ic_edite.png') no-repeat 100% center;
+	padding-right: 50px;
+	/*background:#fff url('../icons/ic_edite.png') no-repeat 100% center;*/
+}
+#directives-calendar .nav-tabs .lnk-edite {
+	position: absolute;
+	z-index: 1; 
+	top: 20px;
+	right: 20px;
+	padding: 0;
+	font-size: 13px;
+	color: #4ea5bb;
+	border: 0 none;
+}
+#directives-calendar .nav-tabs li.active a.lnk-edite {
+	padding: 0;
 }
 
 .calendar.marginTop .fc-view-container {
 	margin-top: 120px;
+}
+
+.calendar.marginRight .fc-view-container {
+	margin-right: 300px;
 }
 
 .ic_etc {
@@ -6754,12 +6778,21 @@ a[data-toggle='modal'] {
 
 .b-app_users_list {
 	position: absolute;
+	z-index: 1;
 	top: 133px; 
 	left: 0;
 	padding: 0 60px;
-	overflow: hidden;
 	width: 100%;
 	white-space: nowrap;
+}
+.b-app_users_list .empty {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 40px;
+	color: #999;
+	border-right: 1px solid #e6e6e6; 
+
+	verticla-align: top;
 }
 .b-app_users_list .b-app_user:first-child a {
 	color: #000;
@@ -6813,7 +6846,59 @@ a[data-toggle='modal'] {
 }
 
 .b-interview_info {
-	display: none;
+	position: absolute;
+	top: 56px;
+	right: 0;
+	width: 280px;
+	height: 100%;
+	background: #fafafa;
+	border-left: 1px solid #e6e6e6;
+}
+.b-interview_info .nav {
+	margin: 0 20px;
+}
+.b-interview_info .nav li {
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: 3px solid #fafafa;
+}
+.b-interview_info .nav li.active {
+	border-bottom: 3px solid #4ea5bb;
+}
+.b-interview_info .nav li.active a {
+	color: #111;
+}
+.b-interview_info .nav li a:hover {
+	background: #fafafa;
+}
+.b-interview_info .nav li a {
+	padding: 10px;
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 15px;
+	line-height: 20px;
+}
+.b-interview_info .b-interview_item {
+	padding: 20px; 
+	border-top: 1px solid #e6e6e6;
+}
+.b-interview_info .title_info {
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #111;
+}
+.b-interview_info .empty {
+	font-size: 15px;
+	line-height: 20px; 
+	color: #999;
+}
+.b-interview_info .b-info_progress {
+	padding: 0;
+	background: #fafafa;
+}
+.b-interview_info .b-info_progress .name {
+	width: 94px;
 }
 
 .b-detalis .panel {
@@ -7911,7 +7996,7 @@ a[data-toggle='modal'] {
 	height: 170px;
 	background-color: #fff;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center 0;
 	-webkit-background-size: cover;
 	        background-size: cover; 
 	-webkit-border-radius: 4px;
@@ -8053,6 +8138,116 @@ a[data-toggle='modal'] {
 	background: #f7f7f7;
 }
 
+.b-load_more {
+	margin: 20px auto;
+	display: block;
+	max-width: 840px;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-size: 13px;
+	line-height: 55px;
+	text-align: center;
+	text-transform: uppercase; 
+	background: #fff;
+	border: 1px solid #e6e6e6;
+}
+.b-load_more .icon-retweet {
+	margin-right: 5px;
+}
+
+.users_tiles {
+	margin: 15px 20px 40px 20px;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	border: 0 none;
+}
+.users_tiles .col-lg-3 {
+	margin: -1px 0 0 -1px;
+	padding: 0; 
+	width: 20%;
+	border: 1px solid #e6e6e6;
+}
+.users_tiles .b-users_item {
+	position: relative;
+	padding: 40px 20px 20px 20px; 
+	display: block;
+	width: 100%;
+	min-height: 400px;
+}
+.users_tiles .b-users_item .name {
+	margin-top: 20px; 
+	display: block;
+	font-size: 21px;
+	line-height: 25px;
+}
+.users_tiles .b-users_item .b-user_rol {
+	margin-top: 20px; 
+	padding-top: 20px;
+	text-align: left;
+	border-top: 1px solid #e6e6e6;
+}
+.users_tiles .b-users_item .b-user_rol a {
+	display: block;
+}
+.users_tiles .b-users_item .b-user_rol .icon {
+	margin-right: 10px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+	vertical-align: top;
+	background: #f0f0f0;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.users_tiles .b-users_item .b-user_rol .name {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 20px; 
+	vertical-align: top;
+}
+.users_tiles .b-users_item .b-user_rol .b-res {
+	color: #111;
+}
+.users_tiles .b-users_item .b-user_rol a strong {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md';
+	font-weight: normal;
+}
+.users_tiles .b-users_item .b-status {
+	font-size: 15px;
+	line-height: 20px;
+	color: #999;
+}
+.users_tiles .b-users_item .b-description {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: block;
+	width: 3px; 
+	height: 15px;
+	text-indent: -999em;
+	background: url('../icons/ic_descr.png') no-repeat center center;
+}
+.users_tiles .b-users_item .jq-checkbox {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.users_tiles .b-contacts {
+	margin-top: 25px;
+	font-size: 15px;
+	line-height: 20px;
+	word-wrap: break-word;
+}
+.users_tiles .b-contacts a {
+	display: block;
+}
+.users_tiles .b-users_item.active {
+	background: #f7f7f7;
+}
+
 .b-result_filtr {
 	margin: 15px 20px 0 20px;
 	font-family: 'HelveticaNeueLTStd-Md'; 
@@ -8179,11 +8374,11 @@ body .fc {
 .fc-unthemed tbody,
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-row {
-	border-color: #ddd;
+	border-color: #e6e6e6;
 }
 .fc-unthemed .fc-popover {
 	background-color: #fff; 
-	border-color: #ddd;
+	border-color: #e6e6e6;
 }
 .fc-unthemed .fc-divider {
 	background: #eee;
@@ -8195,7 +8390,8 @@ body .fc {
 	color: #666;
 }
 .fc-unthemed .fc-today {
-	background: #fcf8e3;
+	border: 1px solid #4ea5bb;
+	/*  background: #fcf8e3;*/
 }
 
 .fc-highlight {

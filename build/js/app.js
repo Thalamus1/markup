@@ -28,6 +28,9 @@ angular.module('thalamusApp', [
 	 when('/administration/users', {
         templateUrl: 'tmpl/security.html'
       }).
+	 when('/administration/users_tiles', {
+        templateUrl: 'tmpl/security_tiles.html'
+      }).
 	 when('/administration/roles', {
         templateUrl: 'tmpl/security_roles.html'
       }).
