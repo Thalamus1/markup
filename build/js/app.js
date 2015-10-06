@@ -28,6 +28,9 @@ angular.module('thalamusApp', [
 	 when('/administration/users', {
         templateUrl: 'tmpl/security.html'
       }).
+	 when('/administration/users_tiles', {
+        templateUrl: 'tmpl/security_tiles.html'
+      }).
 	 when('/administration/roles', {
         templateUrl: 'tmpl/security_roles.html'
       }).
@@ -39,6 +42,12 @@ angular.module('thalamusApp', [
       }).
 	when('/applicants', {
         templateUrl: 'tmpl/applicants.html'
+      }).
+	when('/applicants_list', {
+        templateUrl: 'tmpl/applicants_list.html'
+      }).
+	when('/applicants_tiles', {
+        templateUrl: 'tmpl/applicants_tiles.html'
       }).
 	when('/program', {
         templateUrl: 'tmpl/program.html'

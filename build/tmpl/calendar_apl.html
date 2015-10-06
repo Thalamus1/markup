@@ -10,8 +10,8 @@
 				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">Application</a>
 				</li>
-				<li class="menuitem active dropdown" >
-					<a  class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
+				<li class="menuitem active dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">Calendar</a>
 					<!--<ul class="dropdown-menu" role="menu">
 						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar_empty" >Empty Calendar</a></li>
 						<li role="presentation" class="disabled"><a role="menuitem" href="#/calendar" >Calendar</a></li>
@@ -25,106 +25,176 @@
 					<a href="" class="b-prof" data-toggle="dropdown">
 						<span class="b-user_name">
 							<span class="name">System Admin</span>
-							<b class="b-job">Thalamus System</b>
-						</span>
-						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-					</a>
-					<div class="dropdown-menu dropdown-menu-right" role="menu">
-						<div class="b-profile">
-							<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
-							<div class="b-info">
-								<span class="my-user">My user Profile</span>
-								<span class="name">Patricia Oakes</span>
-								<a href="#">View Profile</a>
-								<a href="#" class="but_out">Sign out</a>
-							</div>
-						</div>
-						<div class="b-prof_roles">
-							<span class="my-user">My Granted Roles</span>
-							<a href="#" class="b-user_role">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">System Admin</span>
-									<b class="b-job">Thalamus System</b>
-								</span>
-							</a>
-							<a href="#" class="b-user_role">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">Interviewer</span>
-									<b class="b-job">Harvard Medical School</b>
-								</span>
-							</a>
-							<a href="#" class="b-user_role active">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">Applicant</span>
-									<b class="b-job">Archived</b>
-								</span>
-							</a>
+				<b class="b-job">Thalamus System</b>
+				</span>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" role="menu">
+					<div class="b-profile">
+						<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
+						<div class="b-info">
+							<span class="my-user">My user Profile</span>
+							<span class="name">Patricia Oakes</span>
+							<a href="#">View Profile</a>
+							<a href="#" class="but_out">Sign out</a>
 						</div>
 					</div>
+					<div class="b-prof_roles">
+						<span class="my-user">My Granted Roles</span>
+						<a href="#" class="b-user_role">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">System Admin</span>
+							<b class="b-job">Thalamus System</b>
+							</span>
+						</a>
+						<a href="#" class="b-user_role">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">Interviewer</span>
+							<b class="b-job">Harvard Medical School</b>
+							</span>
+						</a>
+						<a href="#" class="b-user_role active">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">Applicant</span>
+							<b class="b-job">Archived</b>
+							</span>
+						</a>
+					</div>
+				</div>
 				</span>
 				<a href="#" class="b-mess">&#xe661</a>
 				<a href="#" class="b-dzn">&#xe670</a>
 			</div>
-
 		</div>
 	</nav>
 </header>
 <div class="b-fix-wrapper">
 	<div class="b-content" ng-controller="CalendarCtrl">
-		<section id="directives-calendar">	
+		<section id="directives-calendar">
 			<button ng-show="menuactive=='agendaDay'" class="btn btn-success fc-button b-btn-datepicker"></button>
 			<div class="b-btn-toolbar">
 				<div class="btn-group fc-button-group fc-view-group">
-					<button class="btn btn-success"  ng-class="{active:menuactive=='month'}" ng-click="changeView('month', 'myCalendar1')">Month</button>
-					<button class="btn btn-success"  ng-class="{active:menuactive=='agendaWeek'}" ng-click="changeView('agendaWeek', 'myCalendar1')">Week</button>
-					<button class="btn btn-success"  ng-class="{active:menuactive=='agendaDay'}" ng-click="changeView('agendaDay', 'myCalendar1')">Day</button>
+					<button class="btn btn-success" ng-class="{active:menuactive=='month'}" ng-click="changeView('month', 'myCalendar1')">Month</button>
+					<button class="btn btn-success" ng-class="{active:menuactive=='agendaWeek'}" ng-click="changeView('agendaWeek', 'myCalendar1')">Week</button>
+					<button class="btn btn-success" ng-class="{active:menuactive=='agendaDay'}" ng-click="changeView('agendaDay', 'myCalendar1')">Day</button>
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>settings</span></button>
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>settings</span>
+						</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Show Information Panel</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Show Information Panel</a>
+							</li>
 							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" href="#">Refresh View</a></li>
-							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Refresh View</a>
+							</li>
+							<li role="presentation"><a role="menuitem" href="#">Print Current View</a>
+							</li>
 							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" data-target="#settings" data-toggle="modal">Settings</a></li>
-					   </ul>
-					</div>				
+							<li role="presentation"><a role="menuitem" data-target="#settings" data-toggle="modal">Settings</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="btn-group fc-button-group">
 					<button class="btn btn-success fc-button b-link_info">info</button>
 				</div>
 			</div>
 		</section>
-		<div class="cal_apl">
-				<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{cal_apl: menuactive=='agendaDay'}"></div>
-				<aside class="fc-aside">
-					<div class="fc-ahead">Confirmed Interviews<em>Nothing to show</em></div>
-					<div class="fc-abody">
-						My programs<em class="hidden">No Program to show</em>
-						<div class="fc-abody-item b-pink">
-							<div class="col-sm-2"><em></em></div>
-							<div class="col-sm-10">Mayo Medical School<a href="#"><i class="ic_etc"></i></a></div>
-						</div>
-						<!--<table class="fc-aBodyItem">
-							<tr class="p-c"><td><em></em></td><td>Mayo Medical School</td><td><a href="#"><i class="ic_etc"></i></a></td></tr>
-							<tr class="v-c"><td><em></em></td><td>UW School of Medicine</td><td><a href="#"><i class="ic_etc"></i></a></td></tr>
-							<tr class="g-c"><td><em></em></td><td>Johns Hopkins School of Medicine</td><td><a href="#"><i class="ic_etc"></i></a></td></tr>
-							<tr class="b-c"><td><em></em></td><td>Harvard Medical School</td><td><a href="#"><i class="ic_etc"></i></a></td></tr>
-						</table>-->
-					</div>
-					<div class="fc-afoot">
-						Legend<em>Nothing to show</em>
-						<table class="fc-aFootItem">
-							<tr><td></td><td></td></tr>
-						</table>
-					</div>
-				</aside>
+		<div class="cal_apl clearfix">
+			<div class="apl_fc-today">
+				<div class="apl_fc-event b-pink" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="left" data-html="true" data-content="<div class='popover-content'>
+						<h4 class='b-pink'>Mayo Medical School<span>Neurology</span></h4>
+						<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
+						<div class='content b-yell spots clearfix'><span class='col-sm-10'>Spots remaining:</span><span class='pull-right'>1</span></div>
+						<div class='foot clearfix'><a hre='#' class='col-sm-7'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
+						</div>">
+					Mayo Medical School<span class="b-yell">3</span>
+				</div>
+				<div class="apl_fc-event b-violet" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="left" data-html="true" data-content="<div class='popover-content'>
+						<h4 class='b-violet'>Johns Hopkins School of Medicine<span>Neurology</span></h4>
+						<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
+						<div class='content b-greenlight spots clearfix'><span class='col-sm-10'>Spots remaining:</span><span class='pull-right'>1</span></div>
+						<div class='foot clearfix'><a hre='#' class='col-sm-7'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
+						</div>">UW School of Medicine<span class="b-greenlight">3</span>
+				</div>
+				<div class="apl_fc-event b-green" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="left" data-html="true" data-content="<div class='popover-content'>
+						<h4 class='b-green'>Johns Hopkins School of Medicine<span>Neurology</span></h4>
+						<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
+						<div class='content b-red spots clearfix'><span class='col-sm-10'>Wait:</span><span class='pull-right'><i class='icon-clock'></i></span></div>
+						<div class='foot clearfix'><a hre='#' class='col-sm-7'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
+						</div>">Johns Hopkins School of Medicine<span class="b-red"><i class="icon-clock"></i></span>
+				</div>
+				<a href="#">&nbsp;1 more...</a>
 			</div>
+			<div class="apl_fc-today mute">
+				<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
+				</div>
+				<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
+				</div>
+			</div>
+			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{cal_apl: menuactive=='agendaDay'}"></div>
+			<aside class="fc-aside col-sm-2">
+				<div class="fc-ahead">Confirmed Interviews<em>Nothing to show</em>
+				</div>
+				<div class="fc-abody">
+					My programs<em class="hidden">No Program to show</em>
+					<div class="fc-abody-item clearfix b-pink">
+						<div class="col-sm-2"><em></em>
+						</div>
+						<div class="col-sm-8">Mayo Medical School</div>
+						<div class="col-sm-2"><a href="#"><i class="ic_etc"></i></a>
+						</div>
+					</div>
+					<div class="fc-abody-item clearfix b-violet">
+						<div class="col-sm-2"><em></em>
+						</div>
+						<div class="col-sm-8">UW School of Medicine</div>
+						<div class="col-sm-2"><a href="#"><i class="ic_etc"></i></a>
+						</div>
+					</div>
+					<div class="fc-abody-item clearfix b-green">
+						<div class="col-sm-2"><em></em>
+						</div>
+						<div class="col-sm-8">Johns Hopkins School of Medicine</div>
+						<div class="col-sm-2"><a href="#"><i class="ic_etc"></i></a>
+						</div>
+					</div>
+					<div class="fc-abody-item clearfix b-brown">
+						<div class="col-sm-2"><em></em>
+						</div>
+						<div class="col-sm-8">Harvard Medical School</div>
+						<div class="col-sm-2"><a href="#"><i class="ic_etc"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="fc-afoot">
+					Legend
+					<!--<em>Nothing to show</em>-->
+					<div class="fc-afoot-item clearfix">
+						<div class="col-sm-2"><span class="b-greenlight">8</span>
+						</div>
+						<div class="col-sm-10"><em>More then 4 spots remainig</em>
+						</div>
+					</div>
+					<div class="fc-afoot-item clearfix">
+						<div class="col-sm-2"><span class="b-yell">8</span>
+						</div>
+						<div class="col-sm-10"><em>1 to 4 spots remainig</em>
+						</div>
+					</div>
+					<div class="fc-afoot-item clearfix">
+						<div class="col-sm-2"><span class="b-red"><i class="icon-clock"></i></span>
+						</div>
+						<div class="col-sm-10"><em>1 to 4 spots remainig</em>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
 	</div>
 </div>
 <footer id="footer">
@@ -154,7 +224,8 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
+						</p>
 					</div>
 				</div>
 			</div>

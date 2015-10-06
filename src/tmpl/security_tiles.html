@@ -111,8 +111,8 @@
 					</div>
 				</div>
 				<div class="btn-group fc-button-group b-tab-view clearfix">
-					<a href="#/administration/users_tiles" class="btn btn-success fc-button b-link_tab">&#xe646</a>
-					<a href="#/administration/users" class="btn btn-success fc-button b-link_list active">&#xe687</a>
+					<a href="#/administration/users_tiles" class="btn btn-success fc-button b-link_tab active">&#xe646</a>
+					<a href="#/administration/users" class="btn btn-success fc-button b-link_list">&#xe687</a>
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
@@ -134,174 +134,233 @@
 		  <li><a href="#/administration/roles">Roles & Permissions<span class="b-count">Records Count: 1</span></a></li>
 		</ul>
 
-			<table class="b-table">
-				<thead>
-					<tr>
-						<th>
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+			<div class="users_tiles clearfix">
+				<div class="container-fluid ">
+					<div class="row">
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item active">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</th>
-						<th>Photo</th>
-						<th>Name</th>
-						<th>Surname</th>
-						<th class="b-description"></th>
-						<th>Username</th>
-						<th>Role Group</th>
-						<th>Role</th>
-						<th>Email</th>
-						<th>Phone</th>
-						<th>Locked</th>
-						<th class="b-td_last"><a href="#">Last Updated</a></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item active">
+								<div class="jq-checkbox checked" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>
-						<td class="fon"><a data-target="#edite_user"  data-toggle="modal"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a data-target="#view_user"  data-toggle="modal"><b>John</b></a></td>
-						<td  class="fon"><a data-target="#view_user"  data-toggle="modal"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a  data-target="#view_role"  data-toggle="modal">System Administration</a></td>
-						<td><a  data-target="#edite_role"  data-toggle="modal">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203)<span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>					
-						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td  class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td  class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
                                     <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-				</tbody>
-			</table>
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+							<div class="b-users_item">
+								<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+								 </div>
+								<span class="b-description"></span>
+								<img src="images/pic_03.jpg" height="140" width="140" class="img-circle">
+								<a href="#" class="name">Warren Mayers</a>
+								<span class="b-status">WMayers</span>
+								<div class="b-contacts">
+										<a href="#">Richard.Webber@greysloanmem.edu</a>
+										<span class="phone">+1 (475) 555-5566</span>
+								</div>
+								<div class="b-user_rol">
+									<a href="#">
+										<span class="icon icon-user"></span>
+										<span class="name">Business Administration <span class="b-rez">/</span> 
+										<strong>Business Manager</strong></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="b-load_more"><span class="icon-retweet"></span>Load more</a>
+			</div>
 	</div>
 </div>
 <footer id="footer">

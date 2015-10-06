@@ -108,11 +108,11 @@
 					</div>				
 				</div>
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success fc-button b-link_info">&#xe651</button>
+					<button class="btn btn-success fc-button b-link_info"  ng-class="{active: info.show}" ng-click="info.show = !info.show">&#xe651</button>
 				</div>
 			</div>
 			<ul class="nav nav-tabs" ng-show="menuactive=='agendaDay'">
-			  <li class="active"><a href="#">Interview Day Event<span class="b-count">8:00AM—5:00PM</span></a></li>
+			  <li class="active"><a href="#">Interview Day Event<span class="b-count">8:00AM—5:00PM</span></a><a href="#" class="lnk-edite"><span class="icon-write"></span></a></li>
 			  <li><a href="#">Interview Day Event 2<span class="b-count">5:00PM—9:00PM</span></a></li>
 			  <li><a data-target="#event" data-toggle="modal" class="b-add_interview"><span class="ico">+</span> Create Interview Event</a></li>
 			</ul>
@@ -124,14 +124,18 @@
 						<span class="b-descr"></span>
 					</a>
 				</div>
-				<div class="b-app_user">
-					<a href="#">
+				<!--<i class="empty">Nobody has signed up yet for this date.</i>--><!--вставлять елси нет юзеров-->
+				<div class="b-app_user dropdown">
+					<a href=""  data-toggle="dropdown">
 						
 						<span class="b-tier">T1</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 						<span class="name">John  <br/>Someone</span>
 						<span class="b-descr"></span>
 					</a>
+					<div class="dropdown-menu dropdown-menu-right" role="menu">
+					</div>
+
 				</div>
 				<div class="b-app_user">
 					<a href="#">
@@ -169,33 +173,18 @@
 						<span class="b-descr"></span>
 					</a>
 				</div>
-				<div class="b-app_user">
-					<a href="#">
-						
-						<span class="b-tier">T6</span>
-						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-						<span class="name">John  <br/>Someone</span>
-						<span class="b-descr"></span>
-					</a>
-				</div>
-				<div class="b-app_user">
-					<a href="#">
-						
-						<span class="b-tier">T7</span>
-						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-						<span class="name">John  <br/>Someone</span>
-					</a>
-				</div>
+				
 
 			</div>
-			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{marginTop: menuactive=='agendaDay'}"></div>
-			<div class="b-interview_info" >
+			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{marginTop: menuactive=='agendaDay',marginRight:info.show}"></div>
+			<div class="b-interview_info" ng-show="info.show">
 				<ul class="nav">
 					<li  class="active"><a href="#">Current Event</a></li>
 					<li><a href="#">Interview Date</a></li>
 				</ul>
 				<div class="b-interview_item">
-						<div class="b-info_progress">
+				<div class="title_info">Distribution</div>
+					<div class="b-info_progress">
 															<div class="b-progress_item">
 																<div>
 																	<span class="name">Male</span>
@@ -230,7 +219,18 @@
 																	<span class="b-prog"><span class="progressing" style="width:90%;"></span><span class="num">7</span></span>
 																</div>
 															</div>
-						</div>
+					</div>
+
+				</div>
+				<div class="b-interview_item">
+				<div class="title_info">Attachments</div>
+
+				<i class="empty">No documents attached</i>
+
+				</div>
+				<div class="b-interview_item">
+				<div class="title_info">Wait List</div>
+				<i class="empty">Empty</i>
 
 				</div>
 			</div>

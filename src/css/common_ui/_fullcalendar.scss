@@ -23,10 +23,10 @@ body .fc {
 
 .fc-unthemed {
   th, td, thead, tbody, .fc-divider, .fc-row {
-    border-color: #ddd;
+    border-color: #e6e6e6;
   }
   .fc-popover {
-    border-color: #ddd;
+    border-color: #e6e6e6;
     background-color: #fff;
   }
   .fc-divider {
@@ -39,7 +39,8 @@ body .fc {
     }
   }
   .fc-today {
-    background: #fcf8e3;
+	border:1px solid #4ea5bb;
+  /*  background: #fcf8e3;*/
   }
 }
 
