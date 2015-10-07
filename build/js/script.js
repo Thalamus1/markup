@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 	doc = $(document); 
 	
-	$(document).on('click','.editBtn',function() {
+	doc.on('click','.editBtn',function() {
 		var item = $(this).parents('.p-item');
 		$(this).find('.iconBtn').toggleClass('icon-write icon-delete');
 		item.toggleClass('edit').find('.wysiwigHead').toggle();
@@ -81,10 +81,10 @@ $(document).ready(function() {
 			item.find('.disclamer').addClass('hidden');
 		}
 	});
-	$(document).on('click','.saveBtn',function() {
+	doc.on('click','.saveBtn',function() {
 		$(this).parents('.p-item').find('.editBtn').click();
 	});
-	$(document).on('click','.uploadBtn',function() {
+	doc.on('click','.uploadBtn',function() {
 		$('input[name="program-photo"]').click();
 	});
 }); //  document ready

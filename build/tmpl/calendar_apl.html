@@ -105,40 +105,136 @@
 			</div>
 		</section>
 		<div class="cal_apl clearfix">
-			<div class="apl_fc-today">
-				<div class="apl_fc-event b-pink" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="left" data-html="true" data-content="<div class='popover-content'>
-						<h4 class='b-pink'>Mayo Medical School<span>Neurology</span></h4>
-						<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
-						<div class='content b-yell spots clearfix'><span class='col-sm-10'>Spots remaining:</span><span class='pull-right'>1</span></div>
-						<div class='foot clearfix'><a hre='#' class='col-sm-7'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
-						</div>">
-					Mayo Medical School<span class="b-yell">3</span>
-				</div>
-				<div class="apl_fc-event b-violet" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="left" data-html="true" data-content="<div class='popover-content'>
-						<h4 class='b-violet'>Johns Hopkins School of Medicine<span>Neurology</span></h4>
-						<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
-						<div class='content b-greenlight spots clearfix'><span class='col-sm-10'>Spots remaining:</span><span class='pull-right'>1</span></div>
-						<div class='foot clearfix'><a hre='#' class='col-sm-7'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
-						</div>">UW School of Medicine<span class="b-greenlight">3</span>
-				</div>
-				<div class="apl_fc-event b-green" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="left" data-html="true" data-content="<div class='popover-content'>
-						<h4 class='b-green'>Johns Hopkins School of Medicine<span>Neurology</span></h4>
-						<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
-						<div class='content b-red spots clearfix'><span class='col-sm-10'>Wait:</span><span class='pull-right'><i class='icon-clock'></i></span></div>
-						<div class='foot clearfix'><a hre='#' class='col-sm-7'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
-						</div>">Johns Hopkins School of Medicine<span class="b-red"><i class="icon-clock"></i></span>
-				</div>
-				<a href="#">&nbsp;1 more...</a>
-			</div>
-			<div class="apl_fc-today mute">
-				<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
-				</div>
-				<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
-				</div>
-			</div>
 			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{cal_apl: menuactive=='agendaDay'}"></div>
+			<div class="fct fc-row">
+				<table class="">
+					<tr>
+						<td>
+							<div class="apl_fc-day-grid">
+								<div class="fc-header">April, 24, 2015</div>
+								<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="apl_fc-day-grid fc-today">
+								<div class="fc-header">April, 23, 2015</div>
+								<div class="fc-content">
+									<div class="apl_fc-event b-pink" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="right" data-html="true" data-content="<div class='popover-content'>
+										<h4 class='b-pink'>Mayo Medical School<span>Neurology</span></h4>
+										<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
+										<div class='content b-yell spots clearfix'><span class='col-sm-10'>Spots remaining:</span><span class='pull-right'>1</span></div>
+										<div class='foot clearfix'><a hre='#view_details' class='col-sm-7' data-target='#view_details_confirm' data-toggle='modal'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
+										</div>">
+										Mayo Medical School<span class="b-yell">3</span>
+									</div>
+									<div class="apl_fc-event b-violet" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="right" data-html="true" data-content="<div class='popover-content'>
+										<h4 class='b-violet'>Johns Hopkins School of Medicine<span>Neurology</span></h4>
+										<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
+										<div class='content b-greenlight spots clearfix'><span class='col-sm-10'>Spots remaining:</span><span class='pull-right'>1</span></div>
+										<div class='foot clearfix'><a hre='#view_details' class='col-sm-7' data-target='#view_details' data-toggle='modal'>View Details</a><a class='col-sm-5' hre='#'>Sign Up</a></div>
+										</div>">UW School of Medicine<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-green" rel="popover" tb-popover data-container=".cal_apl" data-toggle="popover" data-placement="right" data-html="true" data-content="<div class='popover-content'>
+										<h4 class='b-green'>Johns Hopkins School of Medicine<span>Neurology</span></h4>
+										<div class='content'>Date: Wednesday, 29 Apr, 2015<br/>Time: 8.00 A.M - 6.00 P.M</div>
+										<div class='content b-red spots clearfix'><span class='col-sm-10'>Wait list:</span><span class='pull-right'><a href='#'>open</a></span></div>
+										<div class='foot clearfix'><a hre='#view_details' class='col-sm-7' data-target='#view_details_cancel' data-toggle='modal'>View Details</a><a class='col-sm-5 pull-right' hre='#'>Sign Up</a></div>
+										</div>">Johns Hopkins School of Medicine<span class="b-red"><i class="icon-clock"></i></span>
+									</div>
+									<a class="fc-more" href="#">&nbsp;1 more...</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="apl_fc-day-grid mute">
+								<div class="fc-header">April, 24, 2015</div>
+								<div class="fc-content">
+									<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="apl_fc-day-grid fc-popover">
+								<div class="fc-header clearfix">April, 24, 2015<i class="icon-delete pull-right"></i>
+								</div>
+								<div class="fc-content">
+									<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-pink">Mayo Medical School<span class="b-greenlight">3</span>
+									</div>
+									<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="apl_fc-day-grid">
+								<div class="fc-header">April, 24, 2015</div>
+								<div class="fc-content">
+									<div class="apl_fc-event b-pink full">Mayo Medical School<i class="icon-check pull-right"></i>
+									</div>
+									<div class="apl_fc-event b-gray">Harvard Medical School</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="apl_fc-day-grid">
+								<div class="fc-header">April, 24, 2015</div>
+								<div class="fc-content">
+									<div class="apl_fc-event b-gray">Mayo Medical School</div>
+									<div class="apl_fc-event b-violet full">UW School of Medicine<i class="icon-check pull-right"></i>
+									</div>
+									<div class="apl_fc-event b-brown">Harvard Medical School<span class="b-greenlight">3</span>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
 			<aside class="fc-aside col-sm-2">
-				<div class="fc-ahead">Confirmed Interviews<em>Nothing to show</em>
+				<div class="fc-ahead">
+					Confirmed Interviews<em class="hidden">Nothing to show</em>
+					<div class="slider">
+						<nav class="row">
+							<span class="col-sm-9"><a href="#">2 this month</a></span>
+							<span class="col-sm-3 text-right"><i class="icon-navigateleft"></i>&nbsp;<i class="icon-navigateright active"></i></span>
+						</nav>
+						<div>
+							<div class="slider-item b-violet full active">
+								<div class="slider-item-title">UW School of Medicine<span>Neurology</span>
+								</div>
+								<div class="slider-item-content">
+									<span>23/04/2015&nbsp;|&nbsp;8:00 AM - 5:00 PM</span>
+									The interview time in
+									<br/>the program timezone is:
+									<br/>
+									<strong>9:00 am EDT - 1:00 pm EDT</strong>
+								</div>
+							</div>
+							<div class="slider-item b-pink full">
+								<div class="slider-item-title">Mayo Medical School<span>Neurology</span>
+								</div>
+								<div class="slider-item-content">
+									<span>23/04/2015&nbsp;|&nbsp;8:00 AM - 5:00 PM</span>
+									The interview time in
+									<br/>the program timezone is:
+									<br/>
+									<strong>9:00 am EDT - 1:00 pm EDT</strong>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="fc-abody">
 					My programs<em class="hidden">No Program to show</em>
@@ -232,3 +328,131 @@
 		</div>
 	</div>
 </footer>
+<!-- /Modal -->
+<div class="modal fade cal-apl-modal" id="view_details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel1">Details: Interview Date</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body js-scroll container-fluid">
+						<div class="formTitle">
+							<div class="form-group">
+								Program:&nbsp;<span class="b-violet">UW School of Medicine</span>
+							</div>
+							<div class="form-group">
+								Spetiality:&nbsp;<span>Neurology</span>
+							</div>
+							<div class="form-group">
+								When:&nbsp;<span>23/04/2015, 8:00 AM - 5:00 PM</span>
+							</div>
+						</div>
+						<div class="form-group remaning">
+							Spots remaning:&nbsp;<i class="b-yell">1</i>
+						</div>
+						<div class="form-group description">
+							Description
+							<p>description</p>
+						</div>
+						<div class="form-group attach">
+							Attachment
+							<div class="attach-items">
+								<a href="#"><i class="icon-file"></i><span><b>document.pdf</b><br/>April, 24, 2015 &bull; PDF  &bull; 450kb</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">SIGN UP</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Modal -->
+<div class="modal fade cal-apl-modal" id="view_details_confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel2">Details: Interview Date</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body js-scroll container-fluid">
+						<div class="form-group warn">
+							<i class="icon-alert"></i>You've just signed up to interview event
+						</div>
+						<div class="formTitle">
+							<div class="form-group">
+								Program:&nbsp;<span class="b-violet">UW School of Medicine</span>
+							</div>
+							<div class="form-group">
+								Spetiality:&nbsp;<span>Neurology</span>
+							</div>
+							<div class="form-group">
+								When:&nbsp;<span>23/04/2015, 8:00 AM - 5:00 PM</span>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Confirm</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Modal -->
+<div class="modal fade cal-apl-modal" id="view_details_cancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel3">Details: Interview Date</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body js-scroll container-fluid">
+						<div class="form-group warn">
+							<i class="icon-info"></i>You've just signed up to interview event
+						</div>
+						<div class="formTitle">
+							<div class="form-group">
+								Program:&nbsp;<span class="b-violet">UW School of Medicine</span>
+							</div>
+							<div class="form-group">
+								Spetiality:&nbsp;<span>Neurology</span>
+							</div>
+							<div class="form-group">
+								When:&nbsp;<span>23/04/2015, 8:00 AM - 5:00 PM</span>
+							</div>
+						</div>
+						<div class="form-group remaning">
+							Spots remaning:&nbsp;<i class="b-yell">1</i>
+						</div>
+						<div class="form-group description">
+							Description
+							<p>description</p>
+						</div>
+						<div class="form-group attach">
+							Attachment
+							<div class="attach-items">
+								<a href="#"><i class="icon-file"></i><span><b>document.pdf</b><br/>April, 24, 2015 &bull; PDF  &bull; 450kb</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button b-cancel-red">Cancel Interview</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
