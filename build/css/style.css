@@ -6631,8 +6631,7 @@ a[data-toggle='modal'] {
 .cal_apl .b-red {
 	background-color: #cc2d2d;
 }
-.cal_apl .b-pink,
-.cal_apl h4.b-pink {
+.cal_apl .b-pink {
 	color: #bd6ac5;
 }
 .cal_apl .b-violet {
