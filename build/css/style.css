@@ -4111,6 +4111,18 @@ body > .b-fix-wrapper {
 	top: 7px;
 }
 
+.icon-rows {
+	position: absolute;
+	top: 0; 
+	left: 0;
+}
+
+.navbar-collapse {
+	padding-left: 120px; 
+	float: right;
+	height: 79px;
+}
+
 .b-add-nav {
 	margin: 0 -15px 0 0;
 	float: right;

@@ -22,45 +22,45 @@
 					<a href="" class="b-prof" data-toggle="dropdown">
 						<span class="b-user_name">
 							<span class="name">System Admin</span>
-							<b class="b-job">Thalamus System</b>
-						</span>
-						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-					</a>
-					<div class="dropdown-menu dropdown-menu-right" role="menu">
-						<div class="b-profile">
-							<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
-							<div class="b-info">
-								<span class="my-user">My user Profile</span>
-								<span class="name">Patricia Oakes</span>
-								<a href="#">View Profile</a>
-								<a href="#" class="but_out">Sign out</a>
-							</div>
-						</div>
-						<div class="b-prof_roles">
-							<span class="my-user">My Granted Roles</span>
-							<a href="#" class="b-user_role active">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">System Admin</span>
-									<b class="b-job">Thalamus System</b>
-								</span>
-							</a>
-							<a href="#" class="b-user_role">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">Interviewer</span>
-									<b class="b-job">Harvard Medical School</b>
-								</span>
-							</a>
-							<a href="#" class="b-user_role">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">Applicant</span>
-									<b class="b-job">Archived</b>
-								</span>
-							</a>
+				<b class="b-job">Thalamus System</b>
+				</span>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" role="menu">
+					<div class="b-profile">
+						<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
+						<div class="b-info">
+							<span class="my-user">My user Profile</span>
+							<span class="name">Patricia Oakes</span>
+							<a href="#">View Profile</a>
+							<a href="#" class="but_out">Sign out</a>
 						</div>
 					</div>
+					<div class="b-prof_roles">
+						<span class="my-user">My Granted Roles</span>
+						<a href="#" class="b-user_role active">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">System Admin</span>
+							<b class="b-job">Thalamus System</b>
+							</span>
+						</a>
+						<a href="#" class="b-user_role">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">Interviewer</span>
+							<b class="b-job">Harvard Medical School</b>
+							</span>
+						</a>
+						<a href="#" class="b-user_role">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">Applicant</span>
+							<b class="b-job">Archived</b>
+							</span>
+						</a>
+					</div>
+				</div>
 				</span>
 				<a href="#" class="b-mess">&#xe661</a>
 				<a href="#" class="b-dzn">&#xe670</a>
@@ -72,11 +72,13 @@
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
 			<div class="dropdown">
-				<button class="b-add btn fc-button" data-toggle="dropdown" >&#xe67a</button>
+				<button class="b-add btn fc-button" data-toggle="dropdown">&#xe67a</button>
 				<ul class="dropdown-menu" role="menu">
-					<li role="presentation"><a role="menuitem" data-target="#add_user"  data-toggle="modal">Create New User</a></li>
-					<li role="presentation"><a role="menuitem" data-target="#add_role"  data-toggle="modal">Create New Role</a></li>
-				  </ul>
+					<li role="presentation"><a role="menuitem" data-target="#add_user" data-toggle="modal">Create New User</a>
+					</li>
+					<li role="presentation"><a role="menuitem" data-target="#add_role" data-toggle="modal">Create New Role</a>
+					</li>
+				</ul>
 			</div>
 			<form class="b-search-form" method="get" action=".">
 				<fieldset>
@@ -88,26 +90,62 @@
 				<span class="b-result">340 records</span>
 				<div class="btn-group fc-button-group" ng-show="user.checked">
 					<div class="dropdown">
-						<button class="btn btn-success b-link_actions" data-toggle="dropdown"><span class="icon icon-target"></span><span>Actions</span></button>
+						<button class="btn btn-success b-link_actions" data-toggle="dropdown"><span class="icon icon-target"></span><span>Actions</span>
+						</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Delete Users</a></li>
-							<li role="presentation"><a role="menuitem" href="#">Move to Category...</a></li>
-						  </ul>
+							<li role="presentation"><a role="menuitem" href="#">Delete Users</a>
+							</li>
+							<li role="presentation"><a role="menuitem" href="#">Move to Category...</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span></button>
+						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span>
+						</button>
 						<ul class="dropdown-menu" role="menu">
-							<li role="presentation"><label for="filtr1">No Tier<input type="checkbox" class="form-control" id="filtr1"></label></li>
-							<li role="presentation"><label for="filtr2">Tier I<input type="checkbox" class="form-control" id="filtr2"></label></li>
-							<li role="presentation"><label for="filtr3">Tier II<input type="checkbox" class="form-control" id="filtr3"></label></li>
-							<li role="presentation"><label for="filtr4">Tier III<input type="checkbox" class="form-control" id="filtr4"></label></li>
-							<li role="presentation"><label for="filtr5">Tier GTA<input type="checkbox" class="form-control" id="filtr5"></label></li>
-							<li role="presentation"><label for="filtr6">Male<input type="checkbox" class="form-control" id="filtr6"></label></li>
-							<li role="presentation"><label for="filtr7">Female<input type="checkbox" class="form-control" id="filtr7"></label></li>
-							<li role="presentation"><label for="filtr8">Inactive<input type="checkbox" class="form-control" id="filtr8"></label></li>
-						  </ul>
+							<li role="presentation">
+								<label for="filtr1">No Tier
+									<input type="checkbox" class="form-control" id="filtr1">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr2">Tier I
+									<input type="checkbox" class="form-control" id="filtr2">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr3">Tier II
+									<input type="checkbox" class="form-control" id="filtr3">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr4">Tier III
+									<input type="checkbox" class="form-control" id="filtr4">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr5">Tier GTA
+									<input type="checkbox" class="form-control" id="filtr5">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr6">Male
+									<input type="checkbox" class="form-control" id="filtr6">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr7">Female
+									<input type="checkbox" class="form-control" id="filtr7">
+								</label>
+							</li>
+							<li role="presentation">
+								<label for="filtr8">Inactive
+									<input type="checkbox" class="form-control" id="filtr8">
+								</label>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="btn-group fc-button-group b-tab-view clearfix">
@@ -118,9 +156,11 @@
 					<div class="dropdown">
 						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown">&#xe68c</button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a></li>
-							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
-						  </ul>
+							<li role="presentation"><a role="menuitem" href="#">Hide Dashboard</a>
+							</li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="btn-group fc-button-group">
@@ -128,180 +168,269 @@
 				</div>
 			</div>
 		</div>
-
 		<ul class="nav nav-tabs">
-		  <li class="active"><a href="#/administration/users">Users<span class="b-count">Records Count: 340</span></a></li>
-		  <li><a href="#/administration/roles">Roles & Permissions<span class="b-count">Records Count: 1</span></a></li>
+			<li class="active"><a href="#/administration/users">Users<span class="b-count">Records Count: 340</span></a>
+			</li>
+			<li><a href="#/administration/roles">Roles & Permissions<span class="b-count">Records Count: 1</span></a>
+			</li>
 		</ul>
-
-			<table class="b-table">
-				<thead>
-					<tr>
-						<th>
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</th>
-						<th>Photo</th>
-						<th>Name</th>
-						<th>Surname</th>
-						<th class="b-description"></th>
-						<th>Username</th>
-						<th>Role Group</th>
-						<th>Role</th>
-						<th>Email</th>
-						<th>Phone</th>
-						<th>Locked</th>
-						<th class="b-td_last"><a href="#">Last Updated</a></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>
-						<td class="fon"><a data-target="#edite_user"  data-toggle="modal"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a data-target="#view_user"  data-toggle="modal"><b>John</b></a></td>
-						<td  class="fon"><a data-target="#view_user"  data-toggle="modal"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a  data-target="#view_role"  data-toggle="modal">System Administration</a></td>
-						<td><a  data-target="#edite_role"  data-toggle="modal">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203)<span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>					
-						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td  class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/avatar.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td  class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-					<tr>
-						<td class="fon">
-							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
-                                    <div class="jq-checkbox__div">&#xe614</div>
-                             </div>
-						</td>	
-						<td class="fon"><a href="#"><img src="images/pic_01.jpg" height="40" width="40" class="img-circle"></a></td>
-						<td class="fon"><a href="#"><b>John</b></a></td>
-						<td class="fon"><a href="#"><b>Doe</b></a></td>
-						<td class="b-description fon"><a href="#">...</a></td>
-						<td><a href="#">SysAdm</a></td>
-						<td><a href="#">System Administration</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">admin@thalamus.com</a></td>
-						<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
-						<td>No</td>
-						<td>Apr 24, 2015</td>
-					</tr>
-				</tbody>
-			</table>
+		<table class="b-table">
+			<thead>
+				<tr>
+					<th>
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</th>
+					<th>Photo</th>
+					<th>Name</th>
+					<th>Surname</th>
+					<th class="b-description"></th>
+					<th>Username</th>
+					<th>Role Group</th>
+					<th>Role</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>Locked</th>
+					<th class="b-td_last"><a href="#">Last Updated</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a data-target="#edite_user" data-toggle="modal">
+							<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a data-target="#view_user" data-toggle="modal"><b>John</b></a>
+					</td>
+					<td class="fon"><a data-target="#view_user" data-toggle="modal"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a data-target="#view_role" data-toggle="modal">System Administration</a>
+					</td>
+					<td><a data-target="#edite_role" data-toggle="modal">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203)<span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+				<tr>
+					<td class="fon">
+						<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+							<div class="jq-checkbox__div">&#xe614</div>
+						</div>
+					</td>
+					<td class="fon">
+						<a href="#">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+						</a>
+					</td>
+					<td class="fon"><a href="#"><b>John</b></a>
+					</td>
+					<td class="fon"><a href="#"><b>Doe</b></a>
+					</td>
+					<td class="b-description fon"><a href="#">...</a>
+					</td>
+					<td><a href="#">SysAdm</a>
+					</td>
+					<td><a href="#">System Administration</a>
+					</td>
+					<td><a href="#">System Administrator</a>
+					</td>
+					<td><a href="#">admin@thalamus.com</a>
+					</td>
+					<td>+1 (203) <span class="noskype">&nbsp;</span> 555-4545</td>
+					<td>No</td>
+					<td>Apr 24, 2015</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 <footer id="footer">
@@ -331,518 +460,545 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
+						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a>  <span class="b-color_grey">|</span>  <a href="#">Privacy Policy</a>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-				<!-- Modal -->
-					<div class="modal fade" id="add_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-									<div class="modal-header container-fluid">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Create New User</h4>
-											<div class="b-info row">
-												<div class="col-xs-12 col-md-6"><strong>ID:</strong> 678876</div>
-												<div class="col-xs-12 col-md-6"><strong>Last Modified:</strong> N/A</div>
-											</div>
-										</div>
-										<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid js-scroll">
-												<div class="form-group">
-													<div class="b-avatar_img"><img src="images/avatar_user.png" class="img-circle" height="100" width="100" alt="" ></div>
-													<div class="b-profile">
-													<label for="ProfilePicture">Profile Picture</label>
-													<span class="inp_file_wrap">
+<!-- Modal -->
+<div class="modal fade" id="add_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header container-fluid">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Create New User</h4>
+					<div class="b-info row">
+						<div class="col-xs-12 col-md-6"><strong>ID:</strong> 678876</div>
+						<div class="col-xs-12 col-md-6"><strong>Last Modified:</strong> N/A</div>
+					</div>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid js-scroll">
+						<div class="form-group">
+							<div class="b-avatar_img">
+								<img src="images/avatar_user.png" class="img-circle" height="100" width="100" alt="">
+							</div>
+							<div class="b-profile">
+								<label for="ProfilePicture">Profile Picture</label>
+								<span class="inp_file_wrap">
 														<input type="file" class="form-control" name="file" id=""/>
 														<span>Upload</span>
-													</span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="Firstname">First name</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Firstname" placeholder="Type First Name" required="" >
-												</div>
-												<div class="form-group">
-													<label for="Lastname">Last name</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Lastname" placeholder="Type Last Name" required="" >
-												</div>
-												<div class="form-group">
-													<label for="Username">Username</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Username" placeholder="Type Nickname" required="" >
-												</div>
-												<div class="form-group">
-													<label for="E-mail">E-mail</label>
-													<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="E-mail" placeholder="Type E-mail" required="">
-												</div>
-												<div class="form-group">
-													<label for="Phone">Phone</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Phone" placeholder="Type Phone Number" required="">
-												</div>
-												<div class="form-group">
-														<label for="Phone" class="b-lbaddrole clearfix">USer Role<a href="#" >Add new user role</a></label>
-														<a href="" class="b-addrole" tb-popover  data-container="body" data-toggle="popover" data-placement="right" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role_title">System Administration</span></li><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">System Operator<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role active">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li></ul>'><span>+</span></a>
-														<div class="loaded-file"><a href="#"><span class="ico icon-user"></span>Business Administration / Business Manager</a><a href="#" class="remove"></a></div>
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Locked</label>
-													<div class="col-sm-8">
-														<span class="switch"><input type="checkbox"><i></i></span>
-													</div>
-												</div>
-											
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Create</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+								</span>
 							</div>
-						  </div>
 						</div>
-					  </div>
+						<div class="form-group">
+							<label for="Firstname">First name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Firstname" placeholder="Type First Name" required="">
+						</div>
+						<div class="form-group">
+							<label for="Lastname">Last name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Lastname" placeholder="Type Last Name" required="">
+						</div>
+						<div class="form-group">
+							<label for="Username">Username</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Username" placeholder="Type Nickname" required="">
+						</div>
+						<div class="form-group">
+							<label for="E-mail">E-mail</label>
+							<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="E-mail" placeholder="Type E-mail" required="">
+						</div>
+						<div class="form-group">
+							<label for="Phone">Phone</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Phone" placeholder="Type Phone Number" required="">
+						</div>
+						<div class="form-group">
+							<label for="Phone" class="b-lbaddrole clearfix">USer Role<a href="#">Add new user role</a>
+							</label>
+							<a href="" class="b-addrole" tb-popover data-container="body" data-toggle="popover" data-placement="right" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role_title">System Administration</span></li><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">System Operator<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role active">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li></ul>'><span>+</span></a>
+							<div class="loaded-file"><a href="#"><span class="ico icon-user"></span>Business Administration / Business Manager</a>
+								<a href="#" class="remove"></a>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Locked</label>
+							<div class="col-sm-8">
+								<span class="switch"><input type="checkbox"><i></i></span>
+							</div>
+						</div>
 					</div>
-			<!-- /Modal -->
-				<!-- Modal -->
-					<div class="modal fade" id="edite_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header container-fluid">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Edit User</h4>
-											<div class="b-info row">
-												<div class="col-xs-12 col-md-6"><strong>ID:</strong> 678876</div>
-												<div class="col-xs-12 col-md-6"><strong>Last Modified:</strong> Apr 26, 2015 12:21PM</div>
-											</div>
-										</div>
-										<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid js-scroll">
-												<div class="form-group">
-													<div class="b-avatar_img"><img src="images/pic_02.jpg" class="img-circle" height="100" width="100" alt="" ></div>
-													<div class="b-profile">
-													<label for="ProfilePicture">Profile Picture</label>
-													<span class="inp_file_wrap">
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Create</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="edite_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header container-fluid">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Edit User</h4>
+					<div class="b-info row">
+						<div class="col-xs-12 col-md-6"><strong>ID:</strong> 678876</div>
+						<div class="col-xs-12 col-md-6"><strong>Last Modified:</strong> Apr 26, 2015 12:21PM</div>
+					</div>
+				</div>
+				<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid js-scroll">
+						<div class="form-group">
+							<div class="b-avatar_img">
+								<img src="images/pic_02.jpg" class="img-circle" height="100" width="100" alt="">
+							</div>
+							<div class="b-profile">
+								<label for="ProfilePicture">Profile Picture</label>
+								<span class="inp_file_wrap">
 														<input type="file" class="form-control" name="file" id=""/>
 														<span>Update</span>
-													</span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="Firstname">First name</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Firstname" placeholder="Type First Name" value="John" required="">
-												</div>
-												<div class="form-group">
-													<label for="Lastname">Last name</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Lastname" placeholder="Type Last Name"value="Doe" required="">
-												</div>
-												<div class="form-group">
-													<label for="Username">Username</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Username" placeholder="Type Nickname"value="SysAdm" required="">
-												</div>
-												<div class="form-group">
-													<label for="E-mail">E-mail</label>
-													<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="E-mail" placeholder="Type E-mail" value="admin@thalamus.co" required="">
-												</div>
-												<div class="form-group">
-													<label for="Phone">Phone</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Phone" placeholder="Type Phone Number" value="+1 (203) 555-4545" required="">
-												</div>
-												<div class="form-group">
-														<label for="Phone" class="b-lbaddrole clearfix">USer Role<a href="#" >Add new user role</a></label>
-														<a href="" class="b-addrole" tb-popover  data-container="body" data-toggle="popover" data-placement="right" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role_title">System Administration</span></li><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">System Operator<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role active">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li></ul>'><span>+</span></a>
-														<div class="loaded-file"><a href="#"><span class="ico icon-user"></span>Business Administration / Business Manager</a><a href="#" class="remove"></a></div>
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Locked</label>
-													<div class="col-sm-8">
-														<span class="switch"><input type="checkbox"><i></i></span>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-3 control-label">Email Signature</label>
-													<div class="col-sm-9">
-														<label>Change your Email sugnature or just paste from any source</label>
-														<span class="switch"><input data-toggle="collapse" data-target="#description"  type="checkbox"><i></i></span>
-													</div>
-												</div>
-												<div class="form-group collapse" id="description">
-														<textarea  class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
-													
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Edit</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+								</span>
 							</div>
-						  </div>
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-				<!-- Modal -->
-					<div class="modal fade" id="add_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header container-fluid">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Create New Role</h4>
-										</div>
-										<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid js-scroll">
-												<div class="form-group">
-													<label for="ROlename">ROle name</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="ROlename" placeholder="Type Role Name" required="">
-												</div>
-												
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Add Description</label>
-													<div class="col-sm-8">
-														<label>Optional</label>
-														<span class="switch"><input type="checkbox" data-toggle="collapse" data-target="#adddescription"><i></i></span>
-													</div>
-												</div>
-												<div class="form-group collapse" id="adddescription">
-														<textarea  class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
-													
-												</div>
-												<div class="form-group row pupMenu">
-													<label class="col-sm-4 control-label">Select Role Group</label>
-													<div class="col-sm-8 cat-name">
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="RoleGroup" name="RoleGroup" required="" placeholder="Type or choose from list" value="Business Administration"><span class="m-icon">
-														<i class="icon icon-users" rel="popover" tb-popover="" data-container="body" data-toggle="popover" data-placement="left" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role active">Business Administration<i class="icon icon-check"></i></span></li><li><span class="b-role">Program Administration<i class="icon icon-check"></i></span></li><li><span class="b-role">Program Applicants<i class="icon icon-check"></i></span></li></ul>'></i>
-														
-													</span>
-													
-													</div>
-												</div>
-												<div class="form-group b-premisssion_list">
-													<label class="control-label">Select Permissions</label>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create program director</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create program associate director</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create program assistant director</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create account for program coordinator</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create account for program interviewer</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can update any program user data</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can add/remove program user to/from role</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can update medical program data</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create applications</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can update applications</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Create</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+						<div class="form-group">
+							<label for="Firstname">First name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Firstname" placeholder="Type First Name" value="John" required="">
+						</div>
+						<div class="form-group">
+							<label for="Lastname">Last name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Lastname" placeholder="Type Last Name" value="Doe" required="">
+						</div>
+						<div class="form-group">
+							<label for="Username">Username</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Username" placeholder="Type Nickname" value="SysAdm" required="">
+						</div>
+						<div class="form-group">
+							<label for="E-mail">E-mail</label>
+							<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="E-mail" placeholder="Type E-mail" value="admin@thalamus.co" required="">
+						</div>
+						<div class="form-group">
+							<label for="Phone">Phone</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="Phone" placeholder="Type Phone Number" value="+1 (203) 555-4545" required="">
+						</div>
+						<div class="form-group">
+							<label for="Phone" class="b-lbaddrole clearfix">USer Role<a href="#">Add new user role</a>
+							</label>
+							<a href="" class="b-addrole" tb-popover data-container="body" data-toggle="popover" data-placement="right" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role_title">System Administration</span></li><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">System Operator<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role active">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li><li><span class="b-role_title">Business Administration</span></li><li><span class="b-role">Business Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role">Business Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Manager<i class="icon icon-check"></i></span></li><li><span class="b-role">Finance Agent<i class="icon icon-check"></i></span></li><li><span class="b-role">Customer Service Agent<i class="icon icon-check"></i></span></li></ul>'><span>+</span></a>
+							<div class="loaded-file"><a href="#"><span class="ico icon-user"></span>Business Administration / Business Manager</a>
+								<a href="#" class="remove"></a>
 							</div>
-						  </div>
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-							<!-- Modal -->
-					<div class="modal fade" id="edite_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal">
-										<div class="modal-header container-fluid">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Edit Role</h4>
-											<div class="b-info row">
-												<div class="col-xs-12 col-md-6"><strong>ID:</strong> 678876</div>
-												<div class="col-xs-12 col-md-6"><strong>Last Modified:</strong> Apr 26, 2015 12:21PM</div>
-											</div>
-										</div>
-										<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-											<div class="modal-body container-fluid js-scroll">
-												<div class="form-group">
-													<label for="ROlename">ROle name</label>
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="ROlename" placeholder="Type Role Name" value="Program Coordinator Special Projects" required="">
-												</div>
-												
-												<div class="form-group row">
-													<label class="col-sm-4 control-label">Add Description</label>
-													<div class="col-sm-8">
-														<label>Optional</label>
-														<span class="switch"><input type="checkbox" data-toggle="collapse" data-target="#adddescription"><i></i></span>
-													</div>
-												</div>
-												<div class="form-group collapse" id="adddescription">
-														<textarea  class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
-													
-												</div>
-												<div class="form-group row pupMenu">
-													<label class="col-sm-4 control-label">Select Role Group</label>
-													<div class="col-sm-8 cat-name">
-													<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="RoleGroup" name="RoleGroup" required="" placeholder="Type or choose from list" value="Business Administration"><span class="m-icon">
-														<i class="icon icon-users" rel="popover" tb-popover="" data-container="body" data-toggle="popover" data-placement="left" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span></li><li><span class="b-role active">Business Administration<i class="icon icon-check"></i></span></li><li><span class="b-role">Program Administration<i class="icon icon-check"></i></span></li><li><span class="b-role">Program Applicants<i class="icon icon-check"></i></span></li></ul>'></i>
-														
-													</span>
-													
-													</div>
-												</div>
-												<div class="form-group b-premisssion_list">
-													<label class="control-label">Select Permissions</label>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create program director</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create program associate director</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create program assistant director</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create account for program coordinator</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create account for program interviewer</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can update any program user data</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can add/remove program user to/from role</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can update medical program data</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can create applications</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-													<div class="form-group row">
-														<label class="col-sm-6">Can update applications</label>
-														<div class="col-sm-6">
-															<span class="switch"><input type="checkbox"><i></i></span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="submit" class="b-button">Edit</button>
-												<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
-											</div>
-										</form>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Locked</label>
+							<div class="col-sm-8">
+								<span class="switch"><input type="checkbox"><i></i></span>
 							</div>
-						  </div>
 						</div>
-					  </div>
-					</div>
-			<!-- /Modal -->
-			<!-- Modal -->
-					<div class="modal fade" id="view_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal w440">
-										<div class="modal-header container-fluid">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">User Details</h4>
-											<div class="b-info_detalis row">
-												<div class="col-xs-12 col-md-6">ID: 678876</div>
-												<div class="col-xs-12 col-md-6">
-													<span class="form-group">
-														<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span></a>
-														<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
-													</span>
-													<a href="#" class="lnk_print"><span class="ico icon-fax"></span></a>
-												</div>
-											</div>
-										</div>
-											<div class="modal-body b-detalis container-fluid js-scroll" ng-class="{lock: user.locked}">
-												<div class="b-profile_user">
-													<div class="b-avatar_img"><img src="images/pic_02.jpg" class="img-circle" height="100" width="100" alt="" ></div>
-													<div class="b-profile">
-														<span class="name">Richard Webber</span>
-														MD, JD
-														<span class="nikname">richardwebber</span>
-														<div class="contacts">
-															<a href="#">Richard.Webber@greysloanmem.edu</a>
-															<span class="phone">+1 (475) 555-5566</span>
-														</div>
-													</div>
-												</div>
-												<div class="b-adding_role">
-													<span class="title">User Roles</span>
-													<a href="#">
-														<span class="icon icon-user"></span>
-														<span class="name">Business Administration <span class="b-rez">/</span> 
-														<strong>Business Manager</strong></span>
-													</a>
-												</div>
-												<div class="panel">
-													<span data-toggle="collapse" data-target="#roleinfo" class="b-name collapsed">Email Signature</span>
-													<div  id="roleinfo" class="collapse roleinfo">
-														<hr/>
-														Sincirelly Yours,
-														<strong><i>Richard Webber</i>, MD</strong>
-														Chief of Surgery at Seattle Grace Mercy West Hospital
-														<p>
-															Phone: <span class="phone">+1 (475) 555-5566</span>
-															<br/>Email: <a href="#">Richard.Webber@greysloanmem.edu</a>
-														</p>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-sm-6 control-label">Locked</label>
-													<div class="col-sm-6">
-														<span class="switch"><input ng-model="user.locked" type="checkbox"><i></i></span>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<a href="#" class="b-button">Edit</a>
-												<a data-dismiss="modal" ng-click="cancel()" href="#" class="b-button b-cancel">Close</a>
-											</div>
+						<div class="form-group row">
+							<label class="col-sm-3 control-label">Email Signature</label>
+							<div class="col-sm-9">
+								<label>Change your Email sugnature or just paste from any source</label>
+								<span class="switch"><input data-toggle="collapse" data-target="#description"  type="checkbox"><i></i></span>
 							</div>
-						  </div>
 						</div>
-					  </div>
+						<div class="form-group collapse" id="description">
+							<textarea class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
+						</div>
 					</div>
-			<!-- /Modal -->
-	<!-- Modal -->
-					<div class="modal fade" id="view_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-					  <div class="modal-dialog">
-						<div class="modal-content">
-							<div class="b-modal w440">
-										<div class="modal-header container-fluid">
-											<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-											<h4 class="modal-title" id="myModalLabel">Role Details</h4>
-											<div class="b-info_detalis row">
-												<div class="col-xs-12 col-md-6">ID: 345</div>
-												<div class="col-xs-12 col-md-6">
-													<span class="form-group">
-														<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span></a>
-														<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
-													</span>
-													<a href="#" class="lnk_print"><span class="ico icon-fax"></span></a>
-												</div>
-											</div>
-										</div>
-											<div class="modal-body b-detalis container-fluid js-scroll">
-												<div class="b-rolegroup">
-													<span class="icon icon-users"></span>
-													<span class="name"><strong>group</strong>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Edit</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="add_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header container-fluid">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Create New Role</h4>
+				</div>
+				<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid js-scroll">
+						<div class="form-group">
+							<label for="ROlename">ROle name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="ROlename" placeholder="Type Role Name" required="">
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Add Description</label>
+							<div class="col-sm-8">
+								<label>Optional</label>
+								<span class="switch"><input type="checkbox" data-toggle="collapse" data-target="#adddescription"><i></i></span>
+							</div>
+						</div>
+						<div class="form-group collapse" id="adddescription">
+							<textarea class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
+						</div>
+						<div class="form-group row pupMenu">
+							<label class="col-sm-4 control-label">Select Role Group</label>
+							<div class="col-sm-8 cat-name">
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="RoleGroup" name="RoleGroup" required="" placeholder="Type or choose from list" value="Business Administration"><span class="m-icon">
+														<i class="icon icon-users" rel="popover" tb-popover="" data-container="body" data-toggle="popover" data-placement="left" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span>
+								</li>
+								<li><span class="b-role active">Business Administration<i class="icon icon-check"></i></span>
+								</li>
+								<li><span class="b-role">Program Administration<i class="icon icon-check"></i></span>
+								</li>
+								<li><span class="b-role">Program Applicants<i class="icon icon-check"></i></span>
+								</li>
+								</ul>'></i>
+								</span>
+							</div>
+						</div>
+						<div class="form-group b-premisssion_list">
+							<label class="control-label">Select Permissions</label>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create program director</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create program associate director</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create program assistant director</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create account for program coordinator</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create account for program interviewer</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can update any program user data</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can add/remove program user to/from role</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can update medical program data</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create applications</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can update applications</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Create</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="edite_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header container-fluid">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Edit Role</h4>
+					<div class="b-info row">
+						<div class="col-xs-12 col-md-6"><strong>ID:</strong> 678876</div>
+						<div class="col-xs-12 col-md-6"><strong>Last Modified:</strong> Apr 26, 2015 12:21PM</div>
+					</div>
+				</div>
+				<form class="b-form  ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body container-fluid js-scroll">
+						<div class="form-group">
+							<label for="ROlename">ROle name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="ROlename" placeholder="Type Role Name" value="Program Coordinator Special Projects" required="">
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-4 control-label">Add Description</label>
+							<div class="col-sm-8">
+								<label>Optional</label>
+								<span class="switch"><input type="checkbox" data-toggle="collapse" data-target="#adddescription"><i></i></span>
+							</div>
+						</div>
+						<div class="form-group collapse" id="adddescription">
+							<textarea class="form-control">Students in all of UW Neurology education programs benefit from faculty members who are dedicated teachers and mentors to the next generation of neurologists. .</textarea>
+						</div>
+						<div class="form-group row pupMenu">
+							<label class="col-sm-4 control-label">Select Role Group</label>
+							<div class="col-sm-8 cat-name">
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="RoleGroup" name="RoleGroup" required="" placeholder="Type or choose from list" value="Business Administration"><span class="m-icon">
+														<i class="icon icon-users" rel="popover" tb-popover="" data-container="body" data-toggle="popover" data-placement="left" data-content='<ul class="js-scroll b-rollist"><li><span class="b-role">System Administrator<i class="icon icon-check"></i></span>
+								</li>
+								<li><span class="b-role active">Business Administration<i class="icon icon-check"></i></span>
+								</li>
+								<li><span class="b-role">Program Administration<i class="icon icon-check"></i></span>
+								</li>
+								<li><span class="b-role">Program Applicants<i class="icon icon-check"></i></span>
+								</li>
+								</ul>'></i>
+								</span>
+							</div>
+						</div>
+						<div class="form-group b-premisssion_list">
+							<label class="control-label">Select Permissions</label>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create program director</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create program associate director</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create program assistant director</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create account for program coordinator</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create account for program interviewer</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can update any program user data</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can add/remove program user to/from role</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can update medical program data</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can create applications</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-6">Can update applications</label>
+								<div class="col-sm-6">
+									<span class="switch"><input type="checkbox"><i></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="b-button">Edit</button>
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="view_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal w440">
+				<div class="modal-header container-fluid">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">User Details</h4>
+					<div class="b-info_detalis row">
+						<div class="col-xs-12 col-md-6">ID: 678876</div>
+						<div class="col-xs-12 col-md-6">
+							<span class="form-group">
+														<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span>
+							</a>
+							<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
+							</span>
+							<a href="#" class="lnk_print"><span class="ico icon-fax"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body b-detalis container-fluid js-scroll" ng-class="{lock: user.locked}">
+					<div class="b-profile_user">
+						<div class="b-avatar_img">
+							<img src="images/pic_02.jpg" class="img-circle" height="100" width="100" alt="">
+						</div>
+						<div class="b-profile">
+							<span class="name">Richard Webber</span>MD, JD
+							<span class="nikname">richardwebber</span>
+							<div class="contacts">
+								<a href="#">Richard.Webber@greysloanmem.edu</a>
+								<span class="phone">+1 (475) 555-5566</span>
+							</div>
+						</div>
+					</div>
+					<div class="b-adding_role">
+						<span class="title">User Roles</span>
+						<a href="#">
+							<span class="icon icon-user"></span>
+							<span class="name">Business Administration <span class="b-rez">/</span> 
+							<strong>Business Manager</strong>
+							</span>
+						</a>
+					</div>
+					<div class="panel">
+						<span data-toggle="collapse" data-target="#roleinfo" class="b-name collapsed">Email Signature</span>
+						<div id="roleinfo" class="collapse roleinfo">
+							<hr/>Sincirelly Yours,
+							<strong><i>Richard Webber</i>, MD</strong>Chief of Surgery at Seattle Grace Mercy West Hospital
+							<p>
+								Phone: <span class="phone">+1 (475) 555-5566</span>
+								<br/>Email: <a href="#">Richard.Webber@greysloanmem.edu</a>
+							</p>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-6 control-label">Locked</label>
+						<div class="col-sm-6">
+							<span class="switch"><input ng-model="user.locked" type="checkbox"><i></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="b-button">Edit</a>
+					<a data-dismiss="modal" ng-click="cancel()" href="#" class="b-button b-cancel">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modal fade" id="view_role" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal w440">
+				<div class="modal-header container-fluid">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Role Details</h4>
+					<div class="b-info_detalis row">
+						<div class="col-xs-12 col-md-6">ID: 345</div>
+						<div class="col-xs-12 col-md-6">
+							<span class="form-group">
+														<a href="#" class="lnk_left"><span class="ico icon-navigateleft"></span>
+							</a>
+							<a href="#" class="lnk_right"><span class="ico icon-navigateright"></span></a>
+							</span>
+							<a href="#" class="lnk_print"><span class="ico icon-fax"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body b-detalis container-fluid js-scroll">
+					<div class="b-rolegroup">
+						<span class="icon icon-users"></span>
+						<span class="name"><strong>group</strong>
 													Business Administration</span>
-												</div>
-												<div class="b-role_view">
-													<i class="icon icon-user"></i>
-													<span class="title">Program Coordinator Special Projects</span>
-													<p>This role is responsible to create special events within program timeframe and manage them. </p>
-												</div>
-
-												<div class="panel">
-													<span data-toggle="collapse" data-target="#rolelist" class="b-name collapsed">List of Permissions</span>
-													<div  id="rolelist" class="collapse b-permissons_list">
-														<div class="b-permissons_item"><span>Can create program director</span></div>
-														<div class="b-permissons_item"><span>Can create program associate director</span></div>
-														<div class="b-permissons_item"><span>Can create program assistant director</span></div>
-														<div class="b-permissons_item"><span>Can create program director</span></div>
-														<div class="b-permissons_item check"><span>Can create program associate director</span></div>
-														<div class="b-permissons_item check"><span>Can create program assistant director</span></div>
-														<div class="b-permissons_item check"><span>Can create program director</span></div>
-														<div class="b-permissons_item"><span>Can create program associate director</span></div>
-														<div class="b-permissons_item"><span>Can create program assistant director</span></div>
-														<div class="b-permissons_item"><span>Can create program director</span></div>
-														<div class="b-permissons_item"><span>Can create program associate director</span></div>
-														<div class="b-permissons_item"><span>Can create program assistant director</span></div>
-													</div>
-												</div>
-													
-											</div>
-											<div class="modal-footer">
-												<a href="#" class="b-button">Edit</a>
-												<a data-dismiss="modal" ng-click="cancel()" href="#" class="b-button b-cancel">Close</a>
-											</div>
-							</div>
-						  </div>
-						</div>
-					  </div>
 					</div>
-			<!-- /Modal -->
-
-
+					<div class="b-role_view">
+						<i class="icon icon-user"></i>
+						<span class="title">Program Coordinator Special Projects</span>
+						<p>This role is responsible to create special events within program timeframe and manage them.</p>
+					</div>
+					<div class="panel">
+						<span data-toggle="collapse" data-target="#rolelist" class="b-name collapsed">List of Permissions</span>
+						<div id="rolelist" class="collapse b-permissons_list">
+							<div class="b-permissons_item"><span>Can create program director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program associate director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program assistant director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program director</span>
+							</div>
+							<div class="b-permissons_item check"><span>Can create program associate director</span>
+							</div>
+							<div class="b-permissons_item check"><span>Can create program assistant director</span>
+							</div>
+							<div class="b-permissons_item check"><span>Can create program director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program associate director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program assistant director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program associate director</span>
+							</div>
+							<div class="b-permissons_item"><span>Can create program assistant director</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="b-button">Edit</a>
+					<a data-dismiss="modal" ng-click="cancel()" href="#" class="b-button b-cancel">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /Modal -->
