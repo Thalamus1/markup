@@ -6672,7 +6672,8 @@ a[data-toggle='modal'] {
 	border-bottom: 1px solid #e6e6e6;
 }
 .cal_apl .popover .popover-content h4 span {
-	display: block; 
+	padding: 5px 0; 
+	display: block;
 	opacity: .4;
 }
 .cal_apl .popover .popover-content .content {
