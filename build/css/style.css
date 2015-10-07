@@ -6685,14 +6685,23 @@ a[data-toggle='modal'] {
 	color: #fff;
 }
 .cal_apl .popover .popover-content .content.spots span {
-	padding-right: 0; 
+	padding-right: 0;
 	padding-left: 0;
-}
-.cal_apl .popover .popover-content .content.spots a {
+	cursor: default; 
+	text-decoration: none;
 	color: #fff;
+	background: transparent;
+	border: none;
+}
+.cal_apl .popover .popover-content .content.spots span a {
+	cursor: pointer;
+	text-decoration: none; 
+	color: #fff;
+	background: transparent;
 }
 .cal_apl .popover .popover-content .foot {
 	padding: 15px 0;
+	overflow: hidden;
 	font-family: 'HelveticaNeueLTStd-Md';
 }
 .cal_apl .popover .popover-content .foot a {
