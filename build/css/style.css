@@ -6774,8 +6774,9 @@ a[data-toggle='modal'] {
 	right: 0;
 	bottom: -10px;
 	display: block;
-	overflow: hidden; 
+	overflow: hidden;
 	width: 300px;
+	min-height: 80vh; 
 	background-color: #fafafa;
 	border-left: 1px solid #e6e6e6;
 }
