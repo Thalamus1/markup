@@ -98,15 +98,31 @@
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
 						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span></button>
-						<ul class="dropdown-menu" role="menu">
-							<li role="presentation"><label for="filtr1">No Tier<input type="checkbox" class="form-control" id="filtr1"></label></li>
-							<li role="presentation"><label for="filtr2">Tier I<input type="checkbox" class="form-control" id="filtr2"></label></li>
-							<li role="presentation"><label for="filtr3">Tier II<input type="checkbox" class="form-control" id="filtr3"></label></li>
-							<li role="presentation"><label for="filtr4">Tier III<input type="checkbox" class="form-control" id="filtr4"></label></li>
-							<li role="presentation"><label for="filtr5">Tier GTA<input type="checkbox" class="form-control" id="filtr5"></label></li>
-							<li role="presentation"><label for="filtr6">Male<input type="checkbox" class="form-control" id="filtr6"></label></li>
-							<li role="presentation"><label for="filtr7">Female<input type="checkbox" class="form-control" id="filtr7"></label></li>
-							<li role="presentation"><label for="filtr8">Inactive<input type="checkbox" class="form-control" id="filtr8"></label></li>
+												<ul class="dropdown-menu filtr_list" role="menu">
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox " role="checkbox" ng-checked="filtr1.checked" ng-class="{checked: filtr1.checked}" ng-click="filtr1.checked = !filtr1.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>No Tier</a></li>
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox checked" role="checkbox" ng-checked="filtr2.checked" ng-class="{checked: filtr2.checked}" ng-click="filtr2.checked = !filtr2.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>Tier I</a></li>
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox" role="checkbox" ng-checked="filtr3.checked" ng-class="{checked: filtr3.checked}" ng-click="filtr3.checked = !filtr3.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>Tier II</a></li>
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox" role="checkbox" ng-checked="filtr4.checked" ng-class="{checked: filtr4.checked}" ng-click="filtr4.checked = !filtr4.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>Tier III</a></li>
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox" role="checkbox" ng-checked="filtr5.checked" ng-class="{checked: filtr5.checked}" ng-click="filtr5.checked = !filtr5.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>Tier GTA</a></li>
+							 <li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox" role="checkbox" ng-checked="filtr6.checked" ng-class="{checked: filtr6.checked}" ng-click="filtr6.checked = !filtr6.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+								</div>Male</a></li>
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox" role="checkbox" ng-checked="filtr7.checked" ng-class="{checked: filtr7.checked}" ng-click="filtr7.checked = !filtr7.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>Female</a></li>
+							<li role="presentation"><a role="menuitem" href="#"><div class="jq-checkbox" role="checkbox" ng-checked="filtr8.checked" ng-class="{checked: filtr8.checked}" ng-click="filtr8.checked = !filtr8.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>Inactive</a></li>
 						  </ul>
 					</div>
 				</div>
@@ -367,32 +383,31 @@
 	<div class="b-footer-wrapper">
 		<div class="container-fluid b-footer-aboutme">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 pull-right">
-					<div class="b-footer-soc">
-						<ul class="b-footer_link">
-							<li>
-								<a href="#" class="soc_fb"></a>
-							</li>
-							<li>
-								<a href="#" class="soc_tw"></a>
-							</li>
-							<li>
-								<a href="#" class="soc_in"></a>
-							</li>
-							<li>
-								<a href="#" class="soc_yt"></a>
-							</li>
-							<li>
-								<a href="#" class="b-help"></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-6">
-					<div class="b-footer-copy">
-						<p>© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp; <a href="#">Terms of Service</a> <span class="b-color_grey">|</span> <a href="#">Privacy Policy</a></p>
-					</div>
-				</div>
+                        <div class="col-xs-12 col-md-3 pull-right">
+                            <div class="b-footer-soc">
+                                <ul class="b-footer_link">
+                                    <li><a href="https://twitter.com/thalamusgme" target="_blank" class="soc_tw"></a></li>
+                                    <li><a href="https://www.linkedin.com/company/thalamusgme" target="_blank" class="soc_in"></a></li>
+                                    <li><a href="https://www.facebook.com/thalamusgme" target="_blank" class="soc_fb"></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCWI0_Ip5Ie-aDpjnCa8xBvw" target="_blank" class="soc_yt"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            <div class="b-footer-copy">
+                                <p>
+                                    © SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp;
+                                    <a href="/termsOfUse">Terms of Service</a>
+                                    <span class="b-color_grey">|</span>
+                                    <a href="/privacyPolicy">Privacy Policy</a>
+                                    <span class="b-color_grey">|</span>
+                                    Version: 1.0.0.37396
+                                    <span class="b-color_grey">|</span>
+                                    Created: 16.10.2015 18:46:33 UTC
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 			</div>
 		</div>
 	</div>

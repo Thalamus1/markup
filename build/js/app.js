@@ -6,6 +6,7 @@ angular.module('thalamusApp', [
 	'ui.calendar', 
 	'CalendarControllers',
 	'PopoverModule',
+	'TooltipModule',
 	'ui.bootstrap'
 ]).config(['$routeProvider',
   function($routeProvider) {
@@ -76,6 +77,12 @@ angular.module("PopoverModule", [])
 				$(element).on('hide.bs.popover', function () {
 					 $(this).removeClass('active');
 				});
+        };
+ });
+ angular.module("TooltipModule", [])
+    .directive("tbTooltip", function(){
+        return function(scope, element, iAttrs) {
+                $(element).tooltip();
         };
  });
  angular.module('CalendarControllers', []).controller("CalendarCtrl", ["$scope", "$compile", "uiCalendarConfig", function($scope, $compile, uiCalendarConfig) {
