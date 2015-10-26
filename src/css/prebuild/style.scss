@@ -467,6 +467,7 @@ font-size:13px; text-indent:0; background-image:none; text-transform:uppercase;}
 	position: absolute;
 	top: 10px;
 	right: 20px;
+	z-index:11;
 	
 	.b-link_update {
 	width: 40px;
@@ -1257,7 +1258,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 	.b-gray  { color:$c-gray; }
 
 	.fc-toolbar {padding-left:20px;}
-	.fc-view-container {padding-right:300px;opacity:0;}
+	.fc-view-container {padding-right:300px;}
 	
 	.fct {
 		position:absolute;

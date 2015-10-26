@@ -75,7 +75,6 @@
 <div class="b-fix-wrapper">
 	<div class="b-content" ng-controller="CalendarCtrl">
 		<section id="directives-calendar">	
-			<button ng-show="menuactive=='agendaDay'" class="btn btn-success fc-button b-btn-datepicker"></button>
 			<div class="b-btn-toolbar">
 				<div class="btn-group fc-button-group fc-view-group">
 					<button class="btn btn-success"  ng-class="{active:menuactive=='month'}" ng-click="changeView('month', 'myCalendar1')">Month</button>
@@ -84,7 +83,7 @@
 				</div>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
-						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>settings</span></button>
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>&#xe68c</span></button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu">
 							<li role="presentation"><a role="menuitem" href="#">Show Information Panel</a></li>
 							<li role="presentation" class="divider"></li>
@@ -96,13 +95,13 @@
 					</div>				
 				</div>
 				<div class="btn-group fc-button-group">
-					<button class="btn btn-success fc-button b-link_info">info</button>
+					<button class="btn btn-success fc-button b-link_info">&#xe651</button>
 				</div>
 			</div>
-		</section>
+		
 		<div class="cal_apl clearfix">
 			
-				<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar" ng-class="{cal_apl: menuactive=='agendaDay'}"></div>
+			<div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
 				<div class="fct fc-row">
 					<table class="">
 						<tr>
@@ -205,6 +204,7 @@
 						</tr>
 					</table>
 				</div>
+				
 				<aside class="fc-aside col-sm-2">
 					<div class="fc-ahead">
 						Confirmed Interviews<em class="hidden">Nothing to show</em>
@@ -273,6 +273,7 @@
 					</div>
 				</aside>
 			</div>
+			</section>
 	</div>
 </div>
 <footer id="footer">

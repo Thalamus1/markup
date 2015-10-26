@@ -4877,6 +4877,7 @@ body > .b-fix-wrapper {
 
 .b-btn-toolbar {
 	position: absolute;
+	z-index: 11; 
 	top: 10px;
 	right: 20px;
 }
@@ -6956,7 +6957,6 @@ a[data-toggle='modal'] {
 }
 .cal_apl .fc-view-container {
 	padding-right: 300px;
-	opacity: 0;
 }
 .cal_apl .fct {
 	position: absolute;
