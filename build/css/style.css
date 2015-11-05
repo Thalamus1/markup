@@ -9077,6 +9077,48 @@ a[data-toggle='modal'] {
 	color: #999;
 }
 
+.programs_list .b-table .b-img {
+	margin: 0 auto;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #4ea5bb; 
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.programs_list .b-table tbody tr.disabl td .img-circle {
+	opacity: .5;
+}
+.programs_list .b-table tbody tr td {
+	padding: 10px 5px;
+	text-align: left;
+}
+.programs_list .b-table tbody tr.active td {
+	background: #e6e6e6;
+}
+.programs_list .b-table tbody tr.disabl td {
+	background: #f7f7f7;
+}
+.programs_list .b-table tbody tr td[align='center'] {
+	text-align: center;
+}
+.programs_list .b-table tbody tr .name {
+	width: 190px;
+}
+.programs_list .b-table tbody tr .b-description {
+	width: 30px;
+}
+.programs_list .b-table thead tr th {
+	padding: 15px 5px; 
+	text-align: left;
+}
+.programs_list .b-table thead tr th[align='center'] {
+	text-align: center;
+}
+.programs_list .js-horisontal-scroll .b-table td {
+	height: 61px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.app_tiles .col-sm-4 {
 		width: 33.3333333333%;

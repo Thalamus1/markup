@@ -1,0 +1,308 @@
+<header id="header" class="b-header b-header_auth">
+	<nav id="main-menu" class="b-header__nav-wrapper">
+		<div class="container-fluid">
+			<a href="#/" class="b-logo">
+				<img src="icons/logo.png" alt="Thalamus">
+			</a>
+			<!-- - основное меню-->
+			<ul class="nav b-main-menu">
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
+				</li>
+				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/program">Program</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
+				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
+				</li>
+			</ul>
+			<div class="b-user">
+				<span class="dropdown">
+					<a href="" class="b-prof" data-toggle="dropdown">
+						<span class="b-user_name">
+							<span class="name">System Admin</span>
+							<b class="b-job">Thalamus System</b>
+						</span>
+						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" role="menu">
+						<div class="b-profile">
+							<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
+							<div class="b-info">
+								<span class="my-user">My user Profile</span>
+								<span class="name">Patricia Oakes</span>
+								<a href="#">View Profile</a>
+								<a href="#" class="but_out">Sign out</a>
+							</div>
+						</div>
+						<div class="b-prof_roles">
+							<span class="my-user">My Granted Roles</span>
+							<a href="#" class="b-user_role active">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="b-user_name">
+									<span class="name">System Admin</span>
+									<b class="b-job">Thalamus System</b>
+								</span>
+							</a>
+							<a href="#" class="b-user_role">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="b-user_name">
+									<span class="name">Interviewer</span>
+									<b class="b-job">Harvard Medical School</b>
+								</span>
+							</a>
+							<a href="#" class="b-user_role">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="b-user_name">
+									<span class="name">Applicant</span>
+									<b class="b-job">Archived</b>
+								</span>
+							</a>
+						</div>
+					</div>
+				</span>
+				<a href="#" class="b-mess">&#xe661</a>
+				<a href="#" class="b-dzn">&#xe670</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<div class="b-fix-wrapper">
+	<div class="b-content">
+		<div class="fc-toolbar b-filter clearfix">
+			<div class="dropdown">
+				<button class="b-add btn fc-button" data-toggle="dropdown" >&#xe67a</button>
+				<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Create New Program</a></li>
+				</ul>
+			</div>
+			<form class="b-search-form" method="get" action=".">
+				<fieldset>
+					<input type="button" class="b-search-panel__button">
+					<input type="text" name="q" class="b-search-input" value='' placeholder="Program Search…">
+				</fieldset>
+			</form>
+			<div class="b-btn-toolbar">
+				<span class="b-result">4 records</span>
+				<div class="btn-group fc-button-group" ng-show="user.checked">
+					<div class="dropdown">
+						<button class="btn btn-success b-link_actions" data-toggle="dropdown"><span class="icon icon-target"></span><span>Actions</span></button>
+						
+					</div>
+				</div>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success b-link_filtr" data-toggle="dropdown"><span>Filter</span></button>
+					</div>
+				</div>
+				<div class="btn-group fc-button-group b-tab-view clearfix">
+					<a href="#/programs/tiles" class="btn btn-success fc-button b-link_tab">&#xe646</a>
+					<a href="#/programs/list" class="btn btn-success fc-button b-link_list active">&#xe687</a>
+				</div>
+				<div class="btn-group fc-button-group">
+					<div class="dropdown">
+						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>&#xe68c</span></button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Show Dashboard</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
+							<li role="presentation"><a role="menuitem" href="#/applicants_list">Refresh View</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
+						  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="app_list clearfix programs_list">
+			<table class="b-table">
+				<thead>
+					<tr>
+						<th align="center">
+							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>
+						</th>
+						<th align="center">Logo</th>
+						<th class="name">Program Name</th>
+						<th class="b-description" align="center"></th>
+				</tr>
+				</thead>
+						
+					
+				<tbody>
+					<tr ng-class="{disabl: prog.disabl}">
+						<td class="fon" align="center">
+							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>
+						</td>
+						<td align="center" class="fon"><a href="#" class="b-img"><img src="images/avatar_program.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon  name"><a href="#"><b>UW Neurology Residency program </b></a></td>
+						<td class="b-description fon"><div class="dropdown"><a href="" data-toggle="dropdown">...</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Manage as Program Admin</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Edit Settings</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="" ng-click="prog.disabl=true">Disable Program</a></li>
+						  </ul>
+						  </div>
+						</td>
+					</tr>
+					<tr class="active">
+						<td class="fon" align="center">
+							<div class="jq-checkbox checked" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>
+						</td>
+						<td class="fon" align="center"><a href="#" class="b-img"><img src="images/avatar_program.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon name"><a href="#"><b>Harvard Neurology  Residency program</b></a></td>
+						<td class="b-description fon"><div class="dropdown"><a href="" data-toggle="dropdown">...</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Manage as Program Admin</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Edit Settings</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Disable Program</a></li>
+						  </ul>
+						  </div>
+						</td>
+					</tr>
+					<tr>
+						<td class="fon" align="center">
+							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>
+						</td>
+						<td class="fon" align="center"><a href="#" class="b-img"><img src="images/avatar_program.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon name"><a href="#"><b>UCSF Neurology Residency  program</b></a></td>
+						<td class="b-description fon"><div class="dropdown"><a href="" data-toggle="dropdown">...</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Manage as Program Admin</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Edit Settings</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Disable Program</a></li>
+						  </ul>
+						  </div>
+						</td>
+					</tr>
+					<tr class="disabl">
+						<td class="fon" align="center">
+							<div class="jq-checkbox" role="checkbox" ng-checked="user.checked" ng-class="{checked: user.checked}" ng-click="user.checked = !user.checked">
+                                    <div class="jq-checkbox__div">&#xe614</div>
+                             </div>
+						</td>
+						<td class="fon" align="center"><a href="#" class="b-img"><img src="images/avatar_program.jpg" height="40" width="40" class="img-circle"></a></td>
+						<td class="fon"><a href="#"><b>John Hopkins Neurology  Fellowship program</b></a></td>
+						<td class="b-description fon"><div class="dropdown"><a href="" data-toggle="dropdown">...</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Manage as Program Admin</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Edit Settings</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Disable Program</a></li>
+						  </ul>
+						  </div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="js-horisontal-scroll">
+			<table class="b-table">
+				<thead>
+					<tr>
+						<th>Last Updated</th>
+						<th>Program Type</th>
+						<th class="name">Institution</th>
+						<th>ACGME Number</th>
+						<th align="center">Specialities</th>
+						<th>Primary Admin Email</th>
+						<th>Secondary Admin Email</th>
+						<th align="center">Enable Doc. Management</th>
+						<th align="center">Enable Program</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr  ng-class="{disabl: prog.disabl}">
+						<td>Apr 24, 2015</td>
+						<td>Residency</td>
+						<td class="name"><a href="#">University of Washington  School of Medicine (UWSOM)</a></td>
+						<td>983782178</td>
+						<td align="center">1</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
+					</tr>
+					<tr  class="active">
+						<td>Apr 24, 2015</td>
+						<td>Residency</td>
+						<td class="name"><a href="#">Harvard Medical School</a></td>
+						<td>983782178</td>
+						<td align="center">4</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
+					</tr>
+					<tr>
+						<td>Apr 24, 2015</td>
+						<td>Residency</td>
+						<td class="name"><a href="#">UCSF School of Medicine</a></td>
+						<td>983782178</td>
+						<td align="center">4</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
+					</tr>
+					<tr class="disabl">
+						<td>Apr 24, 2015</td>
+						<td>Fellowship</td>
+						<td class="name"><a href="#">Johns Hopkins School  of Medicine</a></td>
+						<td>983782178</td>
+						<td align="center">1</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			</div>
+			</div>
+	</div>
+</div>
+<footer id="footer">
+	<div class="b-footer-wrapper">
+		<div class="container-fluid b-footer-aboutme">
+			<div class="row">
+                        <div class="col-xs-12 col-md-3 pull-right">
+                            <div class="b-footer-soc">
+                                <ul class="b-footer_link">
+                                    <li><a href="https://twitter.com/thalamusgme" target="_blank" class="soc_tw"></a></li>
+                                    <li><a href="https://www.linkedin.com/company/thalamusgme" target="_blank" class="soc_in"></a></li>
+                                    <li><a href="https://www.facebook.com/thalamusgme" target="_blank" class="soc_fb"></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCWI0_Ip5Ie-aDpjnCa8xBvw" target="_blank" class="soc_yt"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            <div class="b-footer-copy">
+                                <p>
+                                    © SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp;
+                                    <a href="/termsOfUse">Terms of Service</a>
+                                    <span class="b-color_grey">|</span>
+                                    <a href="/privacyPolicy">Privacy Policy</a>
+                                    <span class="b-color_grey">|</span>
+                                    Version: 1.0.0.37396
+                                    <span class="b-color_grey">|</span>
+                                    Created: 16.10.2015 18:46:33 UTC
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -15,6 +15,9 @@ angular.module('thalamusApp', [
         templateUrl: 'tmpl/calendar.html',
 	    controller: 'CalendarCtrl'
       }).
+		when('/programs/list', {
+        templateUrl: 'tmpl/programs_list.html',
+      }).
 	  when('/calendar_empty', {
         templateUrl: 'tmpl/calendar_empty.html',
 	    controller: 'CalendarCtrl'

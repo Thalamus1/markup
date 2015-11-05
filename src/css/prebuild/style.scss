@@ -2073,6 +2073,20 @@ a[data-toggle="modal"] {cursor:pointer;}
 	 }
 	 .b-color_grey {color:#999999; display:block; margin-top:20px;}
 }
+.programs_list {
+	.b-table .b-img {display:block; margin:0 auto; height:40px; width:40px; border-radius:20px;background:#4ea5bb;}
+	.b-table tbody tr.disabl td .img-circle {opacity:.5;}
+	.b-table tbody tr td {padding:10px 5px; text-align:left;}
+	.b-table tbody tr.active td {background:#e6e6e6;}
+	.b-table tbody tr.disabl td {background:#f7f7f7;}
+	.b-table tbody tr td[align="center"] {text-align:center;}
+	.b-table tbody tr .name {width:190px;}
+	.b-table tbody tr .b-description {width:30px;}
+	.b-table thead tr th { text-align:left; padding:15px 5px;}
+	.b-table thead tr th[align="center"] {text-align:center;}
+	 .js-horisontal-scroll .b-table td {height:61px;}
+
+}
 @media (min-width: 768px) and (max-width: 991px) {
 	.app_tiles .col-sm-4 {
 	    width: 33.3333333333%;
