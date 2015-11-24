@@ -5456,30 +5456,18 @@ body > .b-fix-wrapper {
 }
 
 .app_list .b-table {
-	float: left; 
-	width: auto;
-}
-
-.app_list .js-horisontal-scroll {
-	overflow: hidden;
-	max-width: -webkit-calc(100vw - 280px);
-	max-width:         calc(100vw - 280px);
-}
-.app_list .js-horisontal-scroll .b-table {
-	width: 100vw;
+	overflow-x: auto;
+	overflow-y: auto;
 	border: 0 none;
 	border-top: 1px solid #e6e6e6; 
 	border-bottom: 1px solid #e6e6e6;
 }
-.app_list .js-horisontal-scroll .b-table th {
+.app_list .b-table th {
 	height: 41px;
 	white-space: nowrap;
 }
-.app_list .js-horisontal-scroll .b-table td {
+.app_list .b-table td {
 	height: 71px;
-}
-.app_list .js-horisontal-scroll .mCSB_horizontal.mCSB_inside > .mCSB_container {
-	margin-bottom: 0;
 }
 
 .b-table.docs thead tr th {
@@ -5762,6 +5750,15 @@ input:focus {
 .b-modal .modal-header .b-info strong {
 	font-family: 'HelveticaNeueLTStd-Md';
 	font-weight: normal;
+}
+.b-modal .modal-header .info-descr {
+	margin-top: 10px; 
+	font-size: 14px;
+	line-height: 20px;
+	color: #303030;
+}
+.b-modal .modal-header .info-descr .icon {
+	color: #4ea4ba;
 }
 .b-modal .modal-header .b-warn {
 	margin-top: 10px;
@@ -7664,11 +7661,70 @@ a[data-toggle='modal'] {
 .b-detalis .form-group.row .col-sm-6 {
 	text-align: right;
 }
+.b-detalis .form-group.row .col-sm-2 {
+	margin-top: 10px;
+}
+.b-detalis .form-group.row label.col-sm-10 {
+	font-size: 13px;
+	line-height: 50px; 
+	color: #999;
+}
 .b-detalis .form-group.row .col-sm-6:first-child {
 	text-align: left;
 }
 .b-detalis .form-group.row .full .num {
 	background: #f36;
+}
+.b-detalis .b-prof_roles .my-user {
+	padding: 0 10px;
+}
+.b-detalis .b-prof_roles .b-user_role {
+	padding: 10px 15px;
+	display: block;
+	cursor: pointer;
+	background: #fafafa;
+	border-bottom: 1px solid #e6e6e6;
+	border-left: 3px solid #fafafa;
+}
+.b-detalis .b-prof_roles .b-user_role .b-job {
+	display: block;
+	font-family: 'HelveticaNeueLTStd-Md'; 
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #999;
+}
+.b-detalis .b-prof_roles .b-user_role img {
+	margin: 5px 10px 0 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.b-detalis .b-prof_roles .b-user_role .name {
+	font-size: 15px;
+	line-height: 30px;
+	color: #4ea5bb;
+}
+.b-detalis .b-prof_roles .b-user_role .jq-checkbox {
+	margin-top: 15px; 
+	float: right;
+}
+.b-detalis .b-prof_roles .b-user_role.active {
+	border-left: 3px solid #4ea5bb;
+}
+.b-detalis .b-prof_roles .b-user_role.active .b-job {
+	color: #111;
+}
+.b-detalis .b-prof_roles .b-user_role:hover .b-job {
+	color: #111;
+}
+.b-detalis .b-prof_roles .b-user_role:hover {
+	background: #f0f0f0;
+	border-left: 3px solid #f0f0f0;
+}
+.b-detalis .b-prof_roles .b-user_name {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
 }
 .b-detalis .b-file_info {
 	padding: 0 20px 20px 20px;
@@ -8111,15 +8167,6 @@ a[data-toggle='modal'] {
 }
 .p-program .fc-toolbar .leftSet .dropdown li.archived a {
 	background-color: #f3f3f3;
-}
-.p-program .pTitle {
-	padding-top: 12px; 
-	display: block;
-	width: 100%;
-	height: 40px;
-	font-family: 'HelveticaNeueLT-Light';
-	font-size: 2em;
-	text-align: center;
 }
 .p-program .p-content {
 	padding: 15px 0;
@@ -9119,6 +9166,206 @@ a[data-toggle='modal'] {
 	height: 61px;
 }
 
+.pTitle {
+	padding-top: 12px; 
+	display: block;
+	width: 100%;
+	height: 40px;
+	font-family: 'HelveticaNeueLT-Light';
+	font-size: 2em;
+	text-align: center;
+}
+
+.leftSet {
+	position: absolute;
+	top: 10px;
+	right: auto; 
+	left: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.leftSet .btn-default {
+	color: #b2b2b2;
+	background: transparent;
+}
+
+.apl_profile {
+	margin-right: 320px; 
+	margin-bottom: -20px;
+	padding-bottom: 20px;
+	font-size: 15px;
+	line-height: 20px;
+	background: #e6e6e6;
+}
+.apl_profile h2 {
+	margin: 0; 
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 50px;
+}
+.apl_profile .bleft_menu {
+	margin-top: 20px;
+}
+.apl_profile .bleft_menu li {
+	background: #fafafa;
+	border-top: 1px solid #f0f0f0;
+}
+.apl_profile .bleft_menu li:first-child {
+	border-top: 0 none;
+}
+.apl_profile .bleft_menu li.active {
+	background: #fff;
+}
+.apl_profile .bleft_menu li .status {
+	padding: 10px 15px;
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	line-height: 30px;
+	vertical-align: top;
+	color: #999;
+}
+.apl_profile .bleft_menu li a {
+	display: inline-block;
+	line-height: 30px; 
+	vertical-align: top;
+}
+.apl_profile .bleft_menu li a:hover {
+	background: none;
+}
+.apl_profile .bleft_menu li.active a {
+	color: #000;
+}
+.apl_profile .main {
+	margin-top: 20px;
+	padding: 0;
+}
+.apl_profile .main .js-scroll {
+	margin-right: 20px;
+	padding: 0 15px;
+	min-height: 660px;
+	background: #fff;
+}
+.apl_profile .sidebar {
+	padding-right: 0;
+}
+
+.apl_profile + .b-interview_info {
+	top: 61px;
+	width: 320px; 
+	background: #f5f5f5;
+	border-left: 1px solid #ccc;
+}
+.apl_profile + .b-interview_info h2 {
+	margin: 0;
+	padding: 0 20px; 
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 50px;
+}
+.apl_profile + .b-interview_info .nav {
+	padding: 0; 
+	border-bottom: 1px solid #e6e6e6;
+}
+.apl_profile + .b-interview_info .nav li {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.fht-head {
+	position: relative; 
+	z-index: 1;
+}
+
+.fht-fixed-column {
+	z-index: 1;
+}
+
+/*!
+* jquery.fixedHeaderTable. The jQuery fixedHeaderTable plugin
+*
+* Copyright (c) 2011 Mark Malek
+* http://fixedheadertable.com
+*
+* Licensed under MIT
+* http://www.opensource.org/licenses/mit-license.php
+* 
+* http://docs.jquery.com/Plugins/Authoring
+* jQuery authoring guidelines
+*
+* Launch  : October 2009
+* Version : 1.3
+* Released: May 9th, 2011
+*
+* 
+* all CSS sizing (width,height) is done in pixels (px)
+*/
+/* @group Reset */
+.fht-table,
+.fht-table thead,
+.fht-table tfoot,
+.fht-table tbody,
+.fht-table tr,
+.fht-table th,
+.fht-table td {
+	/* position */
+	margin: 0;
+	/* size */
+	padding: 0;
+	font: inherit;
+	/* text */
+	font-size: 100%;
+	vertical-align: top;
+}
+
+.fht-table {
+	border-spacing: 0; 
+	/* appearance */
+	border-collapse: collapse;
+}
+
+/* @end */
+/* @group Content */
+.fht-table-wrapper,
+.fht-table-wrapper .fht-thead,
+.fht-table-wrapper .fht-tfoot,
+.fht-table-wrapper .fht-fixed-column .fht-tbody,
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+	/* position */
+	position: relative; 
+	/* appearance */
+	overflow: hidden;
+}
+
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+	/* appearance */
+	overflow: auto;
+}
+
+.fht-table-wrapper .fht-table .fht-cell {
+	/* appearance */
+	overflow: hidden;
+	/* size */
+	height: 1px;
+}
+
+.fht-table-wrapper .fht-fixed-column,
+.fht-table-wrapper .fht-fixed-body {
+	position: absolute; 
+	/* position */
+	top: 0;
+	left: 0;
+}
+
+.fht-table-wrapper .fht-fixed-column {
+	/* position */
+	z-index: 1;
+}
+
+/* @end */
 @media (min-width: 768px) and (max-width: 991px) {
 	.app_tiles .col-sm-4 {
 		width: 33.3333333333%;

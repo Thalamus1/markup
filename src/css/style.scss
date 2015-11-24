@@ -840,12 +840,11 @@ tr td.fon {background:#f7f7f7;}
 }
 .app_list {margin:15px 20px 40px 20px; border-right:1px solid #e6e6e6;}
 .app_list .b-table tr:hover td {background:#fafafa;}
-.app_list .b-table {width:auto;float:left;}
-.app_list .js-horisontal-scroll {overflow:hidden; max-width:calc(100vw - 280px);
- .b-table {width:100vw; border:0 none; border-bottom:1px solid #e6e6e6; border-top:1px solid #e6e6e6;}
+.app_list {
+ .b-table { border:0 none; overflow-x: auto;
+        overflow-y: auto; border-bottom:1px solid #e6e6e6; border-top:1px solid #e6e6e6;}
  .b-table th {height:41px; white-space:nowrap;}
   .b-table td {height:71px;}
-  .mCSB_horizontal.mCSB_inside > .mCSB_container {margin-bottom:0;}
  }
 .b-table.docs {
 	thead {
@@ -950,6 +949,9 @@ input:focus { outline: 0 none; }
 			 .col-md-6:first-child {text-align:left;}
 			 strong { font-family: 'HelveticaNeueLTStd-Md'; font-weight:normal;}
 			
+		}
+		.info-descr {font-size:14px; line-height:20px;color:$c-gray-dark; margin-top:10px;
+			.icon {color:#4ea4ba;}
 		}
 		.b-warn {font-size:15px;color:#666666; line-height:20px; margin-top:10px; padding-left:20px;
 		 .icon {color:#ff3366; margin-left:-20px; margin-right:5px;}
@@ -1617,9 +1619,26 @@ a[data-toggle="modal"] {cursor:pointer;}
 		.num {border-radius:10px; padding:0 10px; line-height:20px; height:20px; font-size:12px; font-family: 'HelveticaNeueLTStd-Md';  color:#ffffff; background:#4ea5bb; display:inline-block; vertical-align:top; margin-left:10px; }
 		label {cursor:pointer; text-transform:uppercase; margin:0; font-size:15px; line-height:20px; font-weight:normal; font-family: 'HelveticaNeueLTStd-Md';}
 		.col-sm-6 {text-align:right;}
-		.col-sm-6:first-child {text-align:left;}
+		.col-sm-2 {margin-top:10px;}
+		label.col-sm-10 {color:#999999;font-size:13px;line-height:50px;}
+		.col-sm-6:first-child {text-align:left; }
 		.full .num {background:#ff3366;}
 	}
+	.b-prof_roles {
+			.my-user {padding:0 10px;}
+			.b-user_role {
+				display:block; cursor:pointer; border-bottom:1px solid #e6e6e6; background:#fafafa; padding:10px 15px; border-left:3px solid #fafafa;
+				.b-job {display:block; font-size:13px; line-height:16px; color:#999999; font-weight:normal; font-family: 'HelveticaNeueLTStd-Md';}
+				img {margin:5px 10px 0 0; display:inline-block; vertical-align:top;}
+				.name {font-size:15px; line-height:30px; color:#4ea5bb;}
+				.jq-checkbox {float:right; margin-top:15px;}
+			}
+			.b-user_role.active {border-left:3px solid #4ea5bb;}
+			.b-user_role.active .b-job {color:#111111;}
+			.b-user_role:hover .b-job {color:#111111;}
+			.b-user_role:hover {background:#f0f0f0; border-left:3px solid #f0f0f0;}
+			.b-user_name {text-align:left; display:inline-block; vertical-align:top;}
+		}
 	.b-file_info {
 		padding:0 20px 20px 20px;
 		color:#999999;
@@ -1758,15 +1777,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 				}
 			}
 		}
-		.pTitle {
-			width:100%;
-			font-size: 2em;
-			text-align:center;
-			height:40px;
-			display:block;
-			font-family: 'HelveticaNeueLT-Light'; 
-			padding-top:12px;
-		}
+		
 		.p-content {padding:15px 0;
 			.switch {position:relative; text-align:right;}
 			.switch input {
@@ -2125,6 +2136,143 @@ a[data-toggle="modal"] {cursor:pointer;}
 	 .js-horisontal-scroll .b-table td {height:61px;}
 
 }
+.pTitle {
+			width:100%;
+			font-size: 2em;
+			text-align:center;
+			height:40px;
+			display:block;
+			font-family: 'HelveticaNeueLT-Light'; 
+			padding-top:12px;
+		}
+
+.leftSet {position:absolute;display:inline-block;vertical-align:top;margin:0;padding:0;top:10px;left:20px; right:auto;
+	.btn-default {
+	    color: #b2b2b2;
+	    background: transparent;
+	}
+}
+
+.apl_profile {
+	background:#e6e6e6; font-size:15px; line-height:20px; margin-bottom:-20px; padding-bottom:20px; margin-right:320px;
+	h2 {font-size:21px; line-height:50px; font-weight:normal; margin:0;}
+	.bleft_menu {margin-top:20px;}
+	.bleft_menu li {background:#fafafa; border-top:1px solid #f0f0f0;}
+	.bleft_menu li:first-child {border-top:0 none;}
+	.bleft_menu li.active {background:#ffffff;}
+	.bleft_menu li .status {float:right; display:inline-block;vertical-align:top; font-size:13px; padding:10px 15px; line-height:30px; color:#999999;}
+	.bleft_menu li a {display:inline-block;vertical-align:top; line-height:30px;}
+	.bleft_menu li a:hover {background:none;}
+	.bleft_menu li.active a {color:#000000;}
+	.main { margin-top:20px; padding:0;}
+	.main .js-scroll {  padding:0 15px;  margin-right: 20px;
+    min-height: 660px;
+    background: #fff;}
+	.sidebar {padding-right:0;}
+}
+.apl_profile +	.b-interview_info {
+	top:61px; background:#f5f5f5; border-left:1px solid #cccccc; width:320px;
+	h2 {font-size:21px; line-height:50px; font-weight:normal; margin:0; padding:0 20px;}
+	.nav {border-bottom:1px solid #e6e6e6; padding:0;}
+	.nav li {border-bottom:1px solid #e6e6e6;}
+}
+.fht-head {
+	z-index: 1;
+	position:relative;
+	}
+.fht-fixed-column {z-index:1;}
+/*!
+* jquery.fixedHeaderTable. The jQuery fixedHeaderTable plugin
+*
+* Copyright (c) 2011 Mark Malek
+* http://fixedheadertable.com
+*
+* Licensed under MIT
+* http://www.opensource.org/licenses/mit-license.php
+* 
+* http://docs.jquery.com/Plugins/Authoring
+* jQuery authoring guidelines
+*
+* Launch  : October 2009
+* Version : 1.3
+* Released: May 9th, 2011
+*
+* 
+* all CSS sizing (width,height) is done in pixels (px)
+*/
+
+/* @group Reset */
+
+.fht-table,
+.fht-table thead,
+.fht-table tfoot,
+.fht-table tbody,
+.fht-table tr,
+.fht-table th,
+.fht-table td {
+	/* position */
+    margin: 0;
+    
+    /* size */
+	padding: 0;
+
+	/* text */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+	}
+
+.fht-table {
+	/* appearance */
+    border-collapse: collapse;
+    border-spacing: 0;
+	}
+
+/* @end */
+
+/* @group Content */
+
+.fht-table-wrapper,
+.fht-table-wrapper .fht-thead,
+.fht-table-wrapper .fht-tfoot,
+.fht-table-wrapper .fht-fixed-column .fht-tbody,
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+	/* appearance */
+	overflow: hidden;
+	
+	/* position */
+	position: relative;
+	}
+
+	.fht-table-wrapper .fht-fixed-body .fht-tbody,
+	.fht-table-wrapper .fht-tbody {
+		/* appearance */
+	    overflow: auto;
+		}
+
+		.fht-table-wrapper .fht-table .fht-cell {
+			/* appearance */
+			overflow: hidden;
+			
+			/* size */
+		    height: 1px;
+			}
+	
+	.fht-table-wrapper .fht-fixed-column,
+	.fht-table-wrapper .fht-fixed-body {
+	    /* position */
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    }
+	    
+	.fht-table-wrapper .fht-fixed-column {
+	    /* position */
+	    z-index: 1;
+	    }
+
+/* @end */
 @media (min-width: 768px) and (max-width: 991px) {
 	.app_tiles .col-sm-4 {
 	    width: 33.3333333333%;

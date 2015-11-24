@@ -47,6 +47,9 @@ angular.module('thalamusApp', [
 	when('/applicants', {
         templateUrl: 'tmpl/applicants.html'
       }).
+	when('/applicant_profile', {
+        templateUrl: 'tmpl/applicants_profile.html'
+      }).
 	when('/applicants_list', {
         templateUrl: 'tmpl/applicants_list.html'
       }).

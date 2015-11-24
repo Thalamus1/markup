@@ -115,8 +115,13 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			$(document).ready(function() {
+			$('#myTable').fixedHeaderTable({fixedColumns: 5, height:  $(window).height()-200});
+			});
+		</script>
 			<div class="app_list clearfix programs_list">
-			<table class="b-table">
+			<table class="b-table" id="myTable">
 				<thead>
 					<tr>
 						<th align="center">
@@ -127,6 +132,15 @@
 						<th align="center">Logo</th>
 						<th class="name">Program Name</th>
 						<th class="b-description" align="center"></th>
+						<th>Last Updated</th>
+						<th>Program Type</th>
+						<th class="name">Institution</th>
+						<th>ACGME Number</th>
+						<th align="center">Specialities</th>
+						<th>Primary Admin Email</th>
+						<th>Secondary Admin Email</th>
+						<th align="center">Enable Doc. Management</th>
+						<th align="center">Enable Program</th>
 				</tr>
 				</thead>
 						
@@ -149,6 +163,15 @@
 						  </ul>
 						  </div>
 						</td>
+						<td>Apr 24, 2015</td>
+						<td>Residency</td>
+						<td class="name"><a href="#">University of Washington  School of Medicine (UWSOM)</a></td>
+						<td>983782178</td>
+						<td align="center">1</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
 					</tr>
 					<tr class="active">
 						<td class="fon" align="center">
@@ -167,6 +190,15 @@
 						  </ul>
 						  </div>
 						</td>
+						<td>Apr 24, 2015</td>
+						<td>Residency</td>
+						<td class="name"><a href="#">Harvard Medical School</a></td>
+						<td>983782178</td>
+						<td align="center">4</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
 					</tr>
 					<tr>
 						<td class="fon" align="center">
@@ -185,6 +217,15 @@
 						  </ul>
 						  </div>
 						</td>
+						<td>Apr 24, 2015</td>
+						<td>Residency</td>
+						<td class="name"><a href="#">UCSF School of Medicine</a></td>
+						<td>983782178</td>
+						<td align="center">4</td>
+						<td><a href="#">admin2@uw.edu</a></td>
+						<td><a href="#">admin@uw.edu</a></td>
+						<td align="center">No</td>
+						<td align="center">Yes</td>
 					</tr>
 					<tr class="disabl">
 						<td class="fon" align="center">
@@ -203,59 +244,6 @@
 						  </ul>
 						  </div>
 						</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="js-horisontal-scroll">
-			<table class="b-table">
-				<thead>
-					<tr>
-						<th>Last Updated</th>
-						<th>Program Type</th>
-						<th class="name">Institution</th>
-						<th>ACGME Number</th>
-						<th align="center">Specialities</th>
-						<th>Primary Admin Email</th>
-						<th>Secondary Admin Email</th>
-						<th align="center">Enable Doc. Management</th>
-						<th align="center">Enable Program</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr  ng-class="{disabl: prog.disabl}">
-						<td>Apr 24, 2015</td>
-						<td>Residency</td>
-						<td class="name"><a href="#">University of Washington  School of Medicine (UWSOM)</a></td>
-						<td>983782178</td>
-						<td align="center">1</td>
-						<td><a href="#">admin2@uw.edu</a></td>
-						<td><a href="#">admin@uw.edu</a></td>
-						<td align="center">No</td>
-						<td align="center">Yes</td>
-					</tr>
-					<tr  class="active">
-						<td>Apr 24, 2015</td>
-						<td>Residency</td>
-						<td class="name"><a href="#">Harvard Medical School</a></td>
-						<td>983782178</td>
-						<td align="center">4</td>
-						<td><a href="#">admin2@uw.edu</a></td>
-						<td><a href="#">admin@uw.edu</a></td>
-						<td align="center">No</td>
-						<td align="center">Yes</td>
-					</tr>
-					<tr>
-						<td>Apr 24, 2015</td>
-						<td>Residency</td>
-						<td class="name"><a href="#">UCSF School of Medicine</a></td>
-						<td>983782178</td>
-						<td align="center">4</td>
-						<td><a href="#">admin2@uw.edu</a></td>
-						<td><a href="#">admin@uw.edu</a></td>
-						<td align="center">No</td>
-						<td align="center">Yes</td>
-					</tr>
-					<tr class="disabl">
 						<td>Apr 24, 2015</td>
 						<td>Fellowship</td>
 						<td class="name"><a href="#">Johns Hopkins School  of Medicine</a></td>
@@ -266,10 +254,9 @@
 						<td align="center">No</td>
 						<td align="center">Yes</td>
 					</tr>
-					
 				</tbody>
 			</table>
-			</div>
+			
 			</div>
 	</div>
 </div>

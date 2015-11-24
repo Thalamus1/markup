@@ -8,14 +8,9 @@
 			<ul class="nav b-main-menu">
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/dashboard">Dashboard</a>
 				</li>
-				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/program">Program</a>
+				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/application">Application</a>
 				</li>
-				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/administration">Administration</a>
-				</li>
-				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar">Calendar</a>
-				</li>
-				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/applicants">Applicants</a>
-				</li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar_apl">Calendar</a></li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
 				</li>
 			</ul>
@@ -23,8 +18,8 @@
 				<span class="dropdown">
 					<a href="" class="b-prof" data-toggle="dropdown">
 						<span class="b-user_name">
-							<span class="name">System Admin</span>
-							<b class="b-job">Thalamus System</b>
+							<span class="name">Applicant</span>
+							<b class="b-job">Archived</b>
 						</span>
 						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 					</a>
@@ -34,7 +29,7 @@
 							<div class="b-info">
 								<span class="my-user">My user Profile</span>
 								<span class="name">Patricia Oakes</span>
-								<a href="#/applicant_profile">View Profile</a>
+								<a href="#">View Profile</a>
 								<a href="#" class="but_out">Sign out</a>
 							</div>
 						</div>
@@ -54,7 +49,7 @@
 									<b class="b-job">Harvard Medical School</b>
 								</span>
 							</a>
-							<a href="#/applicant_profile" class="b-user_role active">
+							<a href="#" class="b-user_role active">
 								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
 								<span class="b-user_name">
 									<span class="name">Applicant</span>
@@ -73,22 +68,10 @@
 <div class="b-fix-wrapper">
 	<div class="b-content">
 		<div class="fc-toolbar b-filter clearfix">
-			<div class="dropdown">
-				<button class="b-add btn fc-button"  data-toggle="dropdown" >&#xe67a</button>
-				<ul class="dropdown-menu" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Add New Applicant</a></li>
-							<li role="presentation"><a role="menuitem" data-target="#apl-import" data-toggle="modal">Import Applicants</a></li>
-						  </ul>
-			</div>
-			<form class="b-search-form" method="get" action=".">
-				<fieldset>
-					<input type="button" class="b-search-panel__button">
-					<input type="text" name="q" class="b-search-input" value='' placeholder="Applicants search…">
-					
-				</fieldset>
-			</form>
+			
+			<div class="b-btn-toolbar leftSet"><button class="btn btn-default">update Application</button></div>
+			<div class="pTitle">Application</div>
 			<div class="b-btn-toolbar">
-				<span class="b-result">No records</span>
 				<div class="btn-group fc-button-group">
 					<div class="dropdown">
 						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>&#xe68c</span></button>
@@ -100,13 +83,38 @@
 						  </ul>
 					</div>
 				</div>
+				<div class="btn-group fc-button-group">
+					<button class="btn btn-success fc-button b-link_info active">&#xe651</button>
+				</div>
 			</div>
 		</div>
-		<div class="d_table docsEmpty">
-			<div class="d_table_cell">
-				There are no Applicants added to the Program.<br/>Please <a  data-target="#apl-import-ok" data-toggle="modal">import</a> Applicants or simply <a href="#">add</a> them manually.
+		<div class="apl_profile clearfix">
+			<div class="col-sm-4 col-md-4 sidebar">
+			  <ul class="nav nav-sidebar bleft_menu">
+						<li class="active"><a href="#">Introduction</a><span class="status">Completed</span></li>
+						<li><a href="#">Personal Information</a><span class="status">Completed</span></li>
+						<li><a href="#">Citizenship</a><span class="status">Completed</span></li>
+						<li><a href="#">Education</a><span class="status">Completed</span></li>
+						<li><a href="#">Exams & Certifications</a><span class="status">Completed</span></li>
+						<li><a href="#">Supporting Documents</a><span class="status">Completed</span></li>
+						<li><a href="#">Recommendations</a><span class="status">Completed</span></li>
+			  </ul>
+			 
+			</div>
+			<div class="col-sm-8 col-md-8 main">
+				<div class="js-scroll">
+				<h2>Thalamus Universal Fellowship Application</h2>
+				<p>Welcome to the Thalamus Universal Fellowship Application. Please complete all fields and upload all required documents in the sections that follow. You may save your application at any point and return to complete the process at a later time. Should you have any questions regarding the specifics of the application process, please contact one of the sponsoring institutions directly. For technical questions, please contact us at <a href="#">support@thalamusgme.com</a> or click on the question mark at the lower right hand corner of the webpage. Best of luck with your application and thank you for using Thalamus! </p>
+				</div>
 			</div>
 		</div>
+		<div class="sidebar b-interview_info">
+				<h2>Application Submission</h2>
+				<ul class="nav">
+					<li><a href="#">Active Programs</a></li>
+					<li class="active"><a href="#">Archive</a></li>
+				</ul>
+			</div>
 	</div>
 </div>
 <footer id="footer">

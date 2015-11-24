@@ -49,7 +49,6 @@ $(document).ready(function() {
 	wnd = $(window);
 	$('.js-scroll').mCustomScrollbar({
 				live:true,
-				axis:"y",
 				advanced:{
 					updateOnContentResize: true
 				}
