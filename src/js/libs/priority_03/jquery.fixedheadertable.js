@@ -460,7 +460,7 @@
         // set width of fixed column wrapper
         $fixedColumn.css({
           'height': 0,
-          'width': fixedColumnWidth+28
+          'width': fixedColumnWidth
         });
 
 

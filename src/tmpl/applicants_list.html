@@ -155,7 +155,12 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-			$('#myTable').fixedHeaderTable({fixedColumns: 4, height:  $(window).height()-200});
+				$('#myTable').fixedHeaderTable({fixedColumns: 5, height:  $(window).height()-200 });
+			});
+			$(window).resize(function() {
+
+				$('#myTable').fixedHeaderTable('destroy');
+				$('#myTable').fixedHeaderTable({fixedColumns: 5, height:  $(window).height()-200});
 			});
 		</script>
 			<div class="app_list clearfix">
@@ -170,7 +175,21 @@
 						<th></th>
 						<th>First</th>
 						<th>Last</th>
-						<th class="b-description"></th>
+						<th class="b-description"><div class="dropdown"><a href="" data-toggle="dropdown">...</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a role="menuitem" href="#">Assign Tier</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Assign Track</a></li>
+							<li role="presentation"><a role="menuitem"  data-target="#assign_applicant" data-toggle="modal" href="">Assign Applicant to Event</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#" tb-tooltip  data-toggle="tooltip" data-placement="top" title="Applicant not invited to Interview">Invite to Interview</a></li>
+							<li role="presentation" ><a role="menuitem" data-target="#confirm_inteview" data-toggle="modal" href="">Invite and Schedule</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">Send Email</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" href="#">View Applicant Profile</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Cancel Application</a></li>
+						  </ul>
+						  </div></th>
 						<th>Email</th>
 						<th>Gender</th>
 						<th class="b-td_last"><a href="#">Tier</a></th>

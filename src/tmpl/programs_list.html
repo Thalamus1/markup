@@ -117,7 +117,12 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-			$('#myTable').fixedHeaderTable({fixedColumns: 5, height:  $(window).height()-200});
+				$('#myTable').fixedHeaderTable({fixedColumns: 4, height:  $(window).height()-200 });
+			});
+			$(window).resize(function() {
+
+				$('#myTable').fixedHeaderTable('destroy');
+				$('#myTable').fixedHeaderTable({fixedColumns: 4, height:  $(window).height()-200});
 			});
 		</script>
 			<div class="app_list clearfix programs_list">
