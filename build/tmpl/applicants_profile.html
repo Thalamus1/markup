@@ -10,7 +10,8 @@
 				</li>
 				<li class="menuitem active"><a role="menuitem" tabindex="-1" href="#/application">Application</a>
 				</li>
-				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar_apl">Calendar</a></li>
+				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/calendar_apl">Calendar</a>
+				</li>
 				<li class="menuitem"><a role="menuitem" tabindex="-1" href="#/documents">Documents</a>
 				</li>
 			</ul>
@@ -19,45 +20,45 @@
 					<a href="" class="b-prof" data-toggle="dropdown">
 						<span class="b-user_name">
 							<span class="name">Applicant</span>
-							<b class="b-job">Archived</b>
-						</span>
-						<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-					</a>
-					<div class="dropdown-menu dropdown-menu-right" role="menu">
-						<div class="b-profile">
-							<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
-							<div class="b-info">
-								<span class="my-user">My user Profile</span>
-								<span class="name">Patricia Oakes</span>
-								<a href="#">View Profile</a>
-								<a href="#" class="but_out">Sign out</a>
-							</div>
-						</div>
-						<div class="b-prof_roles">
-							<span class="my-user">My Granted Roles</span>
-							<a href="#" class="b-user_role">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">System Admin</span>
-									<b class="b-job">Thalamus System</b>
-								</span>
-							</a>
-							<a href="#" class="b-user_role">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">Interviewer</span>
-									<b class="b-job">Harvard Medical School</b>
-								</span>
-							</a>
-							<a href="#" class="b-user_role active">
-								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-								<span class="b-user_name">
-									<span class="name">Applicant</span>
-									<b class="b-job">Archived</b>
-								</span>
-							</a>
+				<b class="b-job">Archived</b>
+				</span>
+				<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" role="menu">
+					<div class="b-profile">
+						<img src="images/pic_01.jpg" height="80" width="80" class="img-circle">
+						<div class="b-info">
+							<span class="my-user">My user Profile</span>
+							<span class="name">Patricia Oakes</span>
+							<a href="#">View Profile</a>
+							<a href="#" class="but_out">Sign out</a>
 						</div>
 					</div>
+					<div class="b-prof_roles">
+						<span class="my-user">My Granted Roles</span>
+						<a href="#" class="b-user_role">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">System Admin</span>
+							<b class="b-job">Thalamus System</b>
+							</span>
+						</a>
+						<a href="#" class="b-user_role">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">Interviewer</span>
+							<b class="b-job">Harvard Medical School</b>
+							</span>
+						</a>
+						<a href="#" class="b-user_role active">
+							<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+							<span class="b-user_name">
+									<span class="name">Applicant</span>
+							<b class="b-job">Archived</b>
+							</span>
+						</a>
+					</div>
+				</div>
 				</span>
 				<a href="#" class="b-mess">&#xe661</a>
 				<a href="#" class="b-dzn">&#xe670</a>
@@ -67,218 +68,349 @@
 </header>
 <div class="b-fix-wrapper">
 	<div class="b-content">
-		<div class="fc-toolbar b-filter clearfix">
-			
-			<div class="b-btn-toolbar leftSet"><button class="btn btn-default">update Application</button></div>
-			<div class="pTitle">Application</div>
-			<div class="b-btn-toolbar">
-				<div class="btn-group fc-button-group">
-					<div class="dropdown">
-						<button class="btn btn-success fc-button b-link_settings" data-toggle="dropdown"><span>&#xe68c</span></button>
-						<ul class="dropdown-menu dropdown-menu-right" role="menu">
-							<li role="presentation"><a role="menuitem" href="#">Show Dashboard</a></li>
-							<li role="presentation"><a role="menuitem" href="#">Change Table Columns</a></li>
-							<li role="presentation"><a role="menuitem" href="#/applicants_list">Refresh View</a></li>
-							<li role="presentation"><a role="menuitem" href="#">Print Current View</a></li>
-						  </ul>
+		<div class="apl_profile clearfix">
+			<div class="b-apl_profile">
+				<ul class="nav nav-sidebar bleft_menu">
+					<li><a href="#">Introduction</a>
+					</li>
+					<li><a href="#">Personal Information<span class="status">Not Completed</span></a>
+					</li>
+					<li><a href="#">Citizenship<span class="status">Not Completed</span></a>
+					</li>
+					<li><a href="#">Education<span class="status">Not Completed</span></a>
+					</li>
+					<li><a href="#">Exams & Certifications<span class="status">Not Completed</span></a>
+					</li>
+					<li><a href="#">Supporting Documents<span class="status">Not Completed</span></a>
+					</li>
+					<li class="active"><a href="#">Recommendations<span class="status">Not Completed</span></a>
+					</li>
+				</ul>
+				<!-- <div class="b-description">
+				<p>Thalamus supports the following file types:</p>
+				<p>PDF (.pdf) (strongly preferred)  
+					<br/>Microsoft Office (.doc, .ppt, .xls) 
+					<br/>Microsoft Office 2007 & newer (.docx, .pptx, .xlsx)  
+					<br/>Open Office/Libre Office/Word (.odt)  
+					<br/>Images (.jpeg, .jpg, .gif, .png, .bmp)  
+				</p>
+			  </div>-->
+			</div>
+			<div class="main">
+				<div class="b-tile_apl">
+					<h2>Thalamus Universal Fellowship Application</h2>
+				</div>
+				<div class="fc-toolbar b-butt_command clearfix">
+					<button class="btn btn-success" disabled="disabled"><span>cancel editing</span>
+					</button>
+					<button class="btn btn-success fl_right active"><span>save and close</span>
+					</button>
+					<button class="btn btn-success fl_right"><span>save and continue</span>
+					</button>
+				</div>
+				<!--<div class="b-instruction">
+					<p>Welcome to the Thalamus Universal Fellowship Application. Please complete all fields and upload all required documents in the sections that follow. You may save your application at any point and return to complete the process at a later time. </p>
+					<p>Should you have any questions regarding the specifics of the application process, please contact one of the sponsoring institutions directly.</p>
+					<p>For technical questions, please contact us at <a href="#">support@thalamusgme.com</a> or click on the question mark at the lower right hand corner of the webpage. Best of luck with your application and thank you for using Thalamus! </p>
+					<button class="btn btn-success"><span>Edit Application</span></button>
+				</div>-->
+				<div class="b-editory_wrap js-scroll">
+					<div class="b-instr">
+						<p>Please list the names and INSTITUTIONAL email addresses of a minimum of three (3) and a maximum of five (5) individuals who will write letters of recommendation in support of your application. Thalamus will automatically generate an email that will
+							be sent to each recommender with a link to upload his/her letter directly to our system. Please make each writer aware of this communication in advance. In the event that this communication request is lost, please ask the recommender to first check
+							his/her spam folder before further troubleshooting.</p>
+						<p><strong>Note:</strong> If your recommender doesn't receive an email within 24 hours, you can try resending the request. If the recommender still doesn't receive the email, please contact us at <a href="#">support@thalamusgme.com</a> or click on the
+							question mark at the lower right hand corner of the webpage."</p>
+					</div>
+					<div class="b-etitle">
+						First Recommender
+						<span class="inf icon icon-check"></span>
+					</div>
+					<div class="b-editory">
+						<div class="form-group">
+							<label for="exampleInputName">First Name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputName" placeholder="First" required="" autofocus="">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputLastName">Last Name</label>
+							<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputLastName" placeholder="Lastname" required="">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail">Email</label>
+							<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail" placeholder="First.Lastname@program.edu" required="">
+						</div>
+						<div class="form-group">
+							<p>
+								<button class="btn btn-success"><span class="icon icon-check"></span>
+								</button>
+								<span class="b-descr">Your recommender has uploaded your recommendation. It is now available to be viewed by prospective programs.</span>
+							</p>
+						</div>
+						<div class="b-etitle">
+							Second Recommender
+							<span class="inf">Waiting for Recommendation</span>
+						</div>
+						<div class="b-editory">
+							<div class="form-group">
+								<label for="exampleInputName">First Name</label>
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputName" placeholder="Doctor" required="" autofocus="">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputLastName">Last Name</label>
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputLastName" placeholder="Who" required="">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail">Email</label>
+								<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail" placeholder="whodoctor@academy.edu" required="">
+							</div>
+							<div class="form-group">
+								<p>
+									<button class="btn btn-success"><span class="icon icon-check"></span>
+									</button>
+									<span class="b-descr">The system is waiting for Recommendation upload.</span>
+								</p>
+							</div>
+						</div>
+						<div class="b-etitle tit-error">
+							Third Recommender
+							<span class="inf">Waiting for Recommendation</span>
+						</div>
+						<div class="b-editory edite-error">
+							<div class="form-group">
+								<label for="exampleInputName">First Name</label>
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputName" placeholder="Doctor" required="" autofocus="">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputLastName">Last Name</label>
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputLastName" placeholder="Who" required="">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail">Email</label>
+								<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail" placeholder="whodoctor@academy.edu" required="">
+							</div>
+							<div class="form-group">
+								<p>
+									<button class="btn btn-success active"><span>reSend request</span>
+									</button>
+									<span class="b-descr">Your recommender doesn't receive an email within 24 hours, you can try resending the request.</span>
+								</p>
+							</div>
+						</div>
+						<div class="b-etitle disabl">
+							Fourth Recommender — Optional
+						</div>
+						<div class="b-editory">
+							<div class="form-group">
+								<label for="exampleInputName">First Name</label>
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputName" placeholder="First Name" required="" autofocus="">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputLastName">Last Name</label>
+								<input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputLastName" placeholder="Recommender’s Last Name" required="">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail">Email</label>
+								<input type="email" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="exampleInputEmail" placeholder="Recommender’s Email" required="">
+							</div>
+							<div class="form-group">
+								<p>
+									<button class="btn btn-success active"><span>Send request</span>
+									</button>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="btn-group fc-button-group">
-					<button class="btn btn-success fc-button b-link_info active">&#xe651</button>
+				<div class="sidebar b-interview_info">
+					<h2>Application Submission</h2>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active">
+							<a href="#">
+							Active Programs
+						 </a>
+						</li>
+						<li>
+							<a href="#">
+							  Archive
+						 </a>
+						</li>
+					</ul>
+					<div class="b-notific_list js-scroll">
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="apl_profile clearfix">
-			<div class="col-sm-4 col-md-4 sidebar">
-			  <ul class="nav nav-sidebar bleft_menu">
-						<li class="active"><a href="#">Introduction</a><span class="status">Completed</span></li>
-						<li><a href="#">Personal Information</a><span class="status">Completed</span></li>
-						<li><a href="#">Citizenship</a><span class="status">Completed</span></li>
-						<li><a href="#">Education</a><span class="status">Completed</span></li>
-						<li><a href="#">Exams & Certifications</a><span class="status">Completed</span></li>
-						<li><a href="#">Supporting Documents</a><span class="status">Completed</span></li>
-						<li><a href="#">Recommendations</a><span class="status">Completed</span></li>
-			  </ul>
-			 
-			</div>
-			<div class="col-sm-8 col-md-8 main">
-				<div class="js-scroll">
-				<h2>Thalamus Universal Fellowship Application</h2>
-				<p>Welcome to the Thalamus Universal Fellowship Application. Please complete all fields and upload all required documents in the sections that follow. You may save your application at any point and return to complete the process at a later time. Should you have any questions regarding the specifics of the application process, please contact one of the sponsoring institutions directly. For technical questions, please contact us at <a href="#">support@thalamusgme.com</a> or click on the question mark at the lower right hand corner of the webpage. Best of luck with your application and thank you for using Thalamus! </p>
-				</div>
-			</div>
-		</div>
-		<div class="sidebar b-interview_info">
-				<h2>Application Submission</h2>
-				<ul class="nav">
-					<li><a href="#">Active Programs</a></li>
-					<li class="active"><a href="#">Archive</a></li>
-				</ul>
-			</div>
 	</div>
+	<footer id="footer">
+		<div class="b-footer-wrapper">
+			<div class="container-fluid b-footer-aboutme">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 pull-right">
+						<div class="b-footer-soc">
+							<ul class="b-footer_link">
+								<li>
+									<a href="https://twitter.com/thalamusgme" target="_blank" class="soc_tw"></a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/thalamusgme" target="_blank" class="soc_in"></a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/thalamusgme" target="_blank" class="soc_fb"></a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCWI0_Ip5Ie-aDpjnCa8xBvw" target="_blank" class="soc_yt"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-9">
+						<div class="b-footer-copy">
+							<p>
+								© SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp;
+								<a href="/termsOfUse">Terms of Service</a>
+								<span class="b-color_grey">|</span>
+								<a href="/privacyPolicy">Privacy Policy</a>
+								<span class="b-color_grey">|</span>Version: 1.0.0.37396
+								<span class="b-color_grey">|</span>Created: 16.10.2015 18:46:33 UTC
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 </div>
-<footer id="footer">
-	<div class="b-footer-wrapper">
-		<div class="container-fluid b-footer-aboutme">
-			<div class="row">
-                        <div class="col-xs-12 col-md-3 pull-right">
-                            <div class="b-footer-soc">
-                                <ul class="b-footer_link">
-                                    <li><a href="https://twitter.com/thalamusgme" target="_blank" class="soc_tw"></a></li>
-                                    <li><a href="https://www.linkedin.com/company/thalamusgme" target="_blank" class="soc_in"></a></li>
-                                    <li><a href="https://www.facebook.com/thalamusgme" target="_blank" class="soc_fb"></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCWI0_Ip5Ie-aDpjnCa8xBvw" target="_blank" class="soc_yt"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-9">
-                            <div class="b-footer-copy">
-                                <p>
-                                    © SJ MedConnect Inc. 2015.&nbsp;&nbsp;&nbsp;
-                                    <a href="/termsOfUse">Terms of Service</a>
-                                    <span class="b-color_grey">|</span>
-                                    <a href="/privacyPolicy">Privacy Policy</a>
-                                    <span class="b-color_grey">|</span>
-                                    Version: 1.0.0.37396
-                                    <span class="b-color_grey">|</span>
-                                    Created: 16.10.2015 18:46:33 UTC
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-			</div>
-		</div>
-	</div>
 </footer>
 <!-- /Modal -->
 <div class="modal fade" id="apl-import" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-dialog">
-	<div class="modal-content">
-		<div class="b-modal">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-						<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
-					</div>
-					<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-						<div class="modal-body js-scroll container-fluid">
-							<div class="form-group row fileSet collapse" id="aplUpload">
-								<label class="col-sm-12 control-label">Importing Applicants List</label>
-								<div class="col-sm-12">
-									<label class="cFile" for="">UW-ERAS Applicant1.csv</label>
-									<div class="row">
-										<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
-									</div>
-									<div class="row errorTxt">
-										<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
-									</div>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body js-scroll container-fluid">
+						<div class="form-group row fileSet collapse" id="aplUpload">
+							<label class="col-sm-12 control-label">Importing Applicants List</label>
+							<div class="col-sm-12">
+								<label class="cFile" for="">UW-ERAS Applicant1.csv</label>
+								<div class="row">
+									<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
+								</div>
+								<div class="row errorTxt">
+									<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
 								</div>
 							</div>
-							<div class="form-group row fileSetPan">
-								<div class="col-sm-12">
-									<div class="file_wrapper">
-										<a href="#" class="b-name"><i class="icon icon-plus"></i>Open Import Files</a>
-										<input type="file" name="files[]">
-									</div>
-									<span>Please select .CSV file you previuosly downloaded from ERAS.<br/>
+						</div>
+						<div class="form-group row fileSetPan">
+							<div class="col-sm-12">
+								<div class="file_wrapper">
+									<a href="#" class="b-name"><i class="icon icon-plus"></i>Open Import Files</a>
+									<input type="file" name="files[]">
+								</div>
+								<span>Please select .CSV file you previuosly downloaded from ERAS.<br/>
 									Impor process will immediately start.<br/>
 									We will provide import report after processing.</span>
-								</div>
 							</div>
 						</div>
-						<div class="modal-footer">
-							<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel singleBtn">Cancel</button>
-						</div>
-					</form>
+					</div>
+					<div class="modal-footer">
+						<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel singleBtn">Cancel</button>
+					</div>
+				</form>
+			</div>
 		</div>
-	  </div>
 	</div>
-  </div>
+</div>
 </div>
 <!-- /Modal -->
 <!-- /Modal -->
 <div class="modal fade" id="apl-import-ok" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-dialog">
-	<div class="modal-content">
-		<div class="b-modal">
-					<div class="modal-header done">
-						<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
-						<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
-						<div class="info-descr"><span class="icon icon-info"></span> Broken records should be added manualy.</div>
-					</div>
-					<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
-						<div class="modal-body js-scroll container-fluid">
-							<div class="form-group row fileSet grayPad">
-								<label class="col-sm-12 control-label">Success!</label>
-								<div class="col-sm-12">
-									<label class="cFile uploaded" for="">UW-ERAS Applicant1.csv<i class="icon icon-check"></i></label>
-									<div class="row">
-										<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
-									</div>
-									<div class="row errorTxt">
-										<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
-									</div>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="b-modal">
+				<div class="modal-header done">
+					<button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel1">Import Applicants</h4>
+					<div class="info-descr"><span class="icon icon-info"></span> Broken records should be added manualy.</div>
+				</div>
+				<form class="b-form ng-pristine ng-valid ng-valid-required" role="form" method="post" data-ng-submit="">
+					<div class="modal-body js-scroll container-fluid">
+						<div class="form-group row fileSet grayPad">
+							<label class="col-sm-12 control-label">Success!</label>
+							<div class="col-sm-12">
+								<label class="cFile uploaded" for="">UW-ERAS Applicant1.csv<i class="icon icon-check"></i>
+								</label>
+								<div class="row">
+									<span class="col-sm-3">Import processed:</span><span class="col-sm-9">365 of 760</span>
 								</div>
-								<div class="form-group row">
-									<div class="b-btn-toolbar inner col-sm-12">
-										<div class="btn-group col-sm-12">
-											<button class="btn btn-success fc-button"><span class="icon icon-print"></span><span>Print Report</span></button>
-										</div>
-									</div>
+								<div class="row errorTxt">
+									<span class="col-sm-3">Broken records:</span><span class="col-sm-9">5</span>
 								</div>
 							</div>
-							<div class="form-group apl-list">
-								<div class="apl-item col-sm-12 done">
-									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="icon icon-check"></span>
-								</div>
-								<div class="apl-item col-sm-12 done">
-									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="icon icon-check"></span>
-								</div>
-								<div class="apl-item col-sm-12 done">
-									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="icon icon-check"></span>
-								</div>
-								<div class="apl-item col-sm-12">
-									<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="errorTxt">Broken</span>
-								</div>
-								<div class="apl-item col-sm-12">
-									<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="errorTxt">Broken</span>
-								</div>
-								<div class="apl-item col-sm-12 done">
-									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="icon icon-check"></span>
-								</div>
-								<div class="apl-item col-sm-12 done">
-									<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="icon icon-check"></span>
-								</div>
-								<div class="apl-item col-sm-12">
-									<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
-									<span class="name">John  <br/>Someone</span>
-									<span class="errorTxt">Broken</span>
+							<div class="form-group row">
+								<div class="b-btn-toolbar inner col-sm-12">
+									<div class="btn-group col-sm-12">
+										<button class="btn btn-success fc-button"><span class="icon icon-print"></span><span>Print Report</span>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="form-group apl-list">
+							<div class="apl-item col-sm-12 done">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="icon icon-check"></span>
+							</div>
+							<div class="apl-item col-sm-12 done">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="icon icon-check"></span>
+							</div>
+							<div class="apl-item col-sm-12 done">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="icon icon-check"></span>
+							</div>
+							<div class="apl-item col-sm-12">
+								<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="errorTxt">Broken</span>
+							</div>
+							<div class="apl-item col-sm-12">
+								<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="errorTxt">Broken</span>
+							</div>
+							<div class="apl-item col-sm-12 done">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="icon icon-check"></span>
+							</div>
+							<div class="apl-item col-sm-12 done">
+								<img src="images/pic_01.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="icon icon-check"></span>
+							</div>
+							<div class="apl-item col-sm-12">
+								<img src="images/avatar.jpg" height="40" width="40" class="img-circle">
+								<span class="name">John  <br/>Someone</span>
+								<span class="errorTxt">Broken</span>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
 						<div class="modal-footer">
-							<div class="modal-footer">
 							<button type="submit" class="b-button">Finish</button>
 							<button data-dismiss="modal" ng-click="cancel()" type="submit" class="b-button b-cancel">Cancel</button>
 						</div>
-						</div>
-					</form>
+					</div>
+				</form>
+			</div>
 		</div>
-	  </div>
 	</div>
-  </div>
+</div>
 </div>
 <!-- /Modal -->

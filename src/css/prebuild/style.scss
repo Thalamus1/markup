@@ -1960,6 +1960,26 @@ a[data-toggle="modal"] {cursor:pointer;}
 	}
 	.b-applicants_item.active {background:#f7f7f7;}
 }
+.b-butt_command.fc-toolbar {padding:10px 20px; border-bottom:1px solid #cccccc; background-color:rgba(204, 204, 204, 0.9); margin:0; position:relative; z-index:1;
+	.btn.fl_right {float:right; margin-left:20px;}
+	.btn.active {background:#4ea5bb; color:#ffffff;}
+	.btn {padding: 0 15px; float:left;
+	    height: 40px;
+	    font-family: 'HelveticaNeueLTStd-Md';
+	    font-size: 13px;
+	    line-height: 20px;
+	    cursor: pointer;
+	    white-space: nowrap;
+	    letter-spacing: .025em;
+	    text-transform: uppercase;
+	    color: #4ea5bb;
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    -webkit-border-radius: 4px;
+	    border-radius: 4px;
+	    outline: none;}
+	    .btn:disabled {color:#999999;}
+}
 .b-load_more {display:block; text-align:center; font-family: 'HelveticaNeueLTStd-Md'; font-size:13px; line-height:55px; background:#ffffff; border:1px solid #e6e6e6; max-width:840px; margin:20px auto; text-transform:uppercase;
 		.icon-retweet {margin-right:5px;}
 	}
@@ -2038,28 +2058,75 @@ a[data-toggle="modal"] {cursor:pointer;}
 			font-family: 'HelveticaNeueLT-Light'; 
 			padding-top:12px;
 		}
-		.apl_profile {
-	background:#e6e6e6; font-size:15px; line-height:20px; margin-bottom:-20px; padding-bottom:20px; margin-right:320px;
-	h2 {font-size:21px; line-height:50px; font-weight:normal; margin:0;}
-	.bleft_menu {margin-top:20px;}
-	.bleft_menu li {background:#fafafa; border-top:1px solid #f0f0f0;}
-	.bleft_menu li:first-child {border-top:0 none;}
-	.bleft_menu li.active {background:#ffffff;}
-	.bleft_menu li .status {float:right; display:inline-block;vertical-align:top; font-size:13px; padding:10px 15px; line-height:30px; color:#999999;}
-	.bleft_menu li a {display:inline-block;vertical-align:top; line-height:30px;}
-	.bleft_menu li a:hover {background:none;}
-	.bleft_menu li.active a {color:#000000;}
-	.main { margin-top:20px; padding:0;}
-	.main .js-scroll {  padding:0 15px;  margin-right: 20px;
-    min-height: 660px;
-    background: #fff;}
-	.sidebar {padding-right:0;}
-}
-.apl_profile +	.b-interview_info {
-	top:61px; background:#f5f5f5; border-left:1px solid #cccccc; width:320px;
-	h2 {font-size:21px; line-height:50px; font-weight:normal; margin:0; padding:0 20px;}
-	.nav {border-bottom:1px solid #e6e6e6; padding:0;}
-	.nav li {border-bottom:1px solid #e6e6e6;}
+.apl_profile { 
+	.bleft_menu {margin-top:110px; border-bottom:1px solid #e6e6e6;}
+	.bleft_menu li {border-left:2px solid #fafafa;}
+	.bleft_menu li.active {border-left:2px solid #4ea5bb;}
+	.bleft_menu li .status { display:block;font-size:13px; color:#999999;}
+	.bleft_menu li a {display:block; font-size:18px; }
+	.bleft_menu li.active a {display:block; font-size:18px; color:#000000;}
+	.bleft_menu li.active a .status { color:#999999;}
+
+	.b-description { padding:20px; color:#999999;}
+	.b-instruction { background:#fafafa; padding:20px; color:#111111; font-size:15px; line-height:20px;
+		.btn {padding: 0 15px; 
+	    height: 40px;
+	    font-family: 'HelveticaNeueLTStd-Md';
+	    font-size: 13px;
+	    line-height: 20px;
+	    cursor: pointer;
+	    white-space: nowrap;
+	    letter-spacing: .025em;
+	    text-transform: uppercase;
+	    color: #4ea5bb;
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    -webkit-border-radius: 4px;
+	    border-radius: 4px;
+	    outline: none;}
+	}
+	.main {
+	.btn.active {background:#4ea5bb; color:#ffffff;}
+	.btn {padding: 0 15px;
+	    height: 40px;
+	    font-family: 'HelveticaNeueLTStd-Md';
+	    font-size: 13px;
+	    line-height: 20px;
+	    cursor: pointer;
+	    white-space: nowrap;
+	    letter-spacing: .025em;
+	    text-transform: uppercase;
+	    color: #4ea5bb;
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    -webkit-border-radius: 4px;
+	    border-radius: 4px;
+	    outline: none;}
+	    .btn:disabled {color:#999999;}
+	}
+	.b-editory_wrap { max-height:76vh; position:relative;
+		.mCustomScrollBox {margin-top:-60px;}
+		.mCSB_inside > .mCSB_container { max-width:680px; margin:0 auto; }
+		.b-etitle {background:#4ea5bb; color:#ffffff; text-transform:uppercase; position:relative; padding:10px 20px; font-size:13px;font-family: 'HelveticaNeueLTStd-Md';line-height: 20px;
+			.inf {display:inline-block; vertical-align:top; position:absolute; right:20px; top:10px;font-family:'HelveticaNeueLT-Roman'; text-transform:none; color:#ffffff;}
+ 		}
+		.b-etitle.tit-error {background:#d27979;}
+		.b-etitle.disabl {background:#999999;}
+		.b-editory {background:#f7f7f7;
+			.btn {background:#f7f7f7; margin-right:20px;}
+			.b-descr {display:inline-block; vertical-align:top; width: calc(100% - 240px);}
+			.btn.active {background:#4ea5bb;}
+			.form-group {border-top:1px solid #e6e6e6; padding:5px 20px;}
+			label {text-transform:uppercase; color:#999999; display:block;  font-size:13px; font-family: 'HelveticaNeueLTStd-Md'; line-height: 20px;}
+			.form-control {color:#999999; font-size:21px; background:none; border:0 none;}
+		}
+		.b-editory.edite-error {
+			.b-descr {color:#d27979;}
+		}
+		.b-instr {background:#f7f7f7; padding:20px; color:#111111; font-size:15px; line-height:20px;}
+		.btn {width:180px;}
+
+	}
 }
 .fht-head {
 	z-index: 1;
@@ -2160,9 +2227,9 @@ a[data-toggle="modal"] {cursor:pointer;}
 	    }
 
 /* @end */
-.b-apl_dashboard {
-	.main {margin:0 280px -20px 280px; background:#e6e6e6;
-		.b-tile_apl {background:#fafafa;
+.apl_profile {
+	.main {margin:60px 280px -20px 280px; background:#e6e6e6;
+		.b-tile_apl {background:#fafafa; min-height:95px;
 			h2 {margin:0; font-weight:normal; font-size:21px; line-height:50px; padding-left:20px;
 			span { display:inline-block;vertical-align:middle; font-size:11px; padding:0 20px;line-height:20px; color:#999999; margin-left:20px; text-transform:uppercase; font-family: 'HelveticaNeueLTStd-Md'; border:1px solid #e6e6e6; border-radius:20px;}
 			}
@@ -2200,6 +2267,7 @@ a[data-toggle="modal"] {cursor:pointer;}
 }
 .b-apl_profile {
 	position:fixed;
+	top:60px;
 	width:280px;
 	border-right:1px solid #e6e6e6;
 	background:#fafafa;
